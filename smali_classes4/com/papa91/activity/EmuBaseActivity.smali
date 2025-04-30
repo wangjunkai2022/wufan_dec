@@ -4174,6 +4174,7 @@
 
     .line 1
     invoke-virtual {p0}, Lcom/papa91/activity/EmuBaseActivity;->closeRealNameDialog()V
+    return-void
 
     if-eqz p1, :cond_2
 
