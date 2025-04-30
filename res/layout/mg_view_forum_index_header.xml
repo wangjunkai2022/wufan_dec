@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.join.mgps.customview.ViewPagerWithADs android:id="@id/ad_viewpager" android:paddingTop="@dimen/wdp24" android:paddingBottom="@dimen/wdp22" android:visibility="gone" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/wdp298" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/mg_forum_ad_layout" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginBottom="6.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/llMyForum" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="20.0dip" android:layout_height="15.0dip" android:src="@drawable/icon_f_my_forum" android:scaleType="fitXY" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff3b3b3b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="我的社区" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/llGroupAll" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/icon_f_group_all" android:scaleType="fitXY" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff3b3b3b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="小组广场" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/section_follow" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="1.0px">
+        <TextView android:id="@id/textView" android:background="@drawable/papa_yelow_side" android:visibility="gone" android:layout_width="3.0dip" android:layout_height="20.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff5f5f5f" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="推荐小组" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/more" android:paddingRight="11.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0" android:layout_alignParentRight="true">
+            <TextView android:textSize="11.0dip" android:textColor="#fff47500" android:id="@id/moreTv" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="全部" />
+            <ImageView android:id="@id/imageView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_arrow_right" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.join.mgps.customview.WrapContentListView android:id="@id/wrapListView" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="none" android:fadingEdge="none" android:clickable="true" android:longClickable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0px" android:layout_marginBottom="1.0px" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llForumMore" android:background="@color/white" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/classify_title_color" android:gravity="center_vertical" android:id="@id/forum_more" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mg_forum_item_padding" android:text="发现更多小组" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/classify_title_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/mg_forum_item_padding" android:text="查看" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rlTagFollow" android:background="@color/white" android:paddingLeft="24.0dip" android:paddingTop="16.0dip" android:paddingRight="24.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <TextView android:textSize="17.0sp" android:textColor="#ff4a4a4a" android:id="@id/textView66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="选择感兴趣的话题" android:layout_centerHorizontal="true" android:textAlignment="center" />
+        <TextView android:textColor="#ff8a8a8a" android:id="@id/textView64" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="我们将为你推荐帖子" android:layout_below="@id/textView66" android:layout_centerHorizontal="true" android:textAlignment="center" />
+    </LinearLayout>
+    <com.join.mgps.customview.MyFlowLayout android:id="@id/flowLayout" android:background="@color/white" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textView64" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rlTagFollowB" android:background="@color/white" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <RelativeLayout android:id="@id/refreshTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/flowLayout" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/ivRefresh" android:background="@drawable/mg_forum_reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/classify_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="换一批" android:layout_toRightOf="@id/ivRefresh" />
+        </RelativeLayout>
+        <TextView android:enabled="false" android:textSize="16.0sp" android:textColor="@color/forum_label_recomm" android:gravity="center" android:layout_gravity="center" android:id="@id/forumRecomm" android:background="@drawable/forum_more_bg1_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginTop="12.0dip" android:text="@string/forum_label_recomm_disable" android:layout_below="@id/refreshTag" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rlTagTip" android:background="@color/white" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:paddingBottom="17.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff3b3b3b" android:id="@id/textView68" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="推荐内容小贴士" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffa8a8a8" android:id="@id/textView67" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="以下内容来自你加入的小组、关注的话题" android:layout_below="@id/textView68" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/forumExtFunc" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="9.0dip" android:minWidth="30.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/moreFunc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/cross" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:visibility="gone" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+</merge>

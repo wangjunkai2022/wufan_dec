@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/titleImg" android:background="@drawable/usercenter_back_default" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp50" android:layout_marginTop="@dimen/wdp227" android:layout_marginRight="@dimen/wdp50" android:layout_marginBottom="@dimen/wdp50">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/b" android:background="@drawable/home_card_bg" android:paddingBottom="@dimen/wdp82" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp64">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/nameLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp80">
+                <TextView android:textSize="@dimen/wdp36" android:textColor="#ff262626" android:id="@id/userName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户名" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/sexImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp10" android:src="@drawable/favorite_sex_men" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#fff37500" android:id="@id/tipName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10" android:text="悟饭鉴赏家" android:drawableLeft="@drawable/auth_ic" android:layout_below="@id/nameLayout" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tipsLayout" android:layout_width="fill_parent" android:layout_height="@dimen/wdp40" android:layout_marginTop="@dimen/wdp35" android:layout_below="@id/tipName" />
+        </LinearLayout>
+        <ImageView android:id="@id/vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp5" android:layout_marginRight="@dimen/wdp10" android:src="@drawable/favorite_vip" android:layout_alignTop="@id/b" android:layout_alignRight="@id/b" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/userIcon" android:layout_width="@dimen/wdp128" android:layout_height="@dimen/wdp128" android:layout_centerHorizontal="true" app:roundAsCircle="true" />
+        <com.join.mgps.customview.VipView android:id="@id/svip" android:layout_width="@dimen/wdp28" android:layout_height="@dimen/wdp28" android:layout_alignRight="@id/userIcon" android:layout_alignBottom="@id/userIcon" />
+        <TextView android:textSize="@dimen/wdp20" android:textColor="#ffcdcdcd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp30" android:layout_marginBottom="@dimen/wdp30" android:text="悟饭AI印像生成" android:drawableLeft="@drawable/android_icon" android:layout_alignBottom="@id/b" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

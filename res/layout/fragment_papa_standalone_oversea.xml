@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/tv_free" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="免费榜" android:layout_weight="1.0" />
+        <View android:background="#ffd8d8d8" android:layout_width="1.0dip" android:layout_height="15.0dip" />
+        <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/tv_new" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="新品榜" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:id="@id/line" android:visibility="visible" style="@style/TextViewStyle_line_H" />
+    <com.join.mgps.customview.InterceptEventViewPager android:id="@id/mViewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:background="#ff14181e" android:fitsSystemWindows="false" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/back" android:background="@drawable/detial_mini_backbutn_selecter" android:layout_width="@dimen/wdp65" android:layout_height="@dimen/wdp65" android:layout_marginLeft="@dimen/wdp17" android:layout_marginTop="@dimen/wdp20" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff686868" android:gravity="center" android:id="@id/positionShow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12/30" android:layout_alignTop="@id/back" android:layout_alignBottom="@id/back" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/bottomLayout" android:background="@color/black_70_alpha" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="@dimen/wdp207" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="界面还是蛮漂亮的，满满的中国水墨风场景建筑也做了非常大的改版，一张图顶很多张.." android:lines="2" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff686868" android:id="@id/nameAndDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" />
+    </LinearLayout>
+</RelativeLayout>

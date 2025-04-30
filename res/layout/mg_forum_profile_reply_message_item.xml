@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff787878" android:id="@id/mg_forum_profile_message_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="52.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="" android:lineSpacingExtra="2.0dip" android:lineSpacingMultiplier="1.2" />
+    <View android:id="@id/mg_forum_profile_message_divider" android:background="#ffebebeb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/itemLayout" android:background="@drawable/dynamic_list_bg" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:id="@id/itemImage" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/itemTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@id/itemImage" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+        <ImageView android:id="@id/arrowImage" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/dynamic_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/itemCount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_toLeftOf="@id/arrowImage" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

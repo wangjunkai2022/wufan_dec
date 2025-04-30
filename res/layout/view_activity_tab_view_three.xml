@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/bg_detail_activity_2" android:paddingLeft="@dimen/wdp21" android:paddingTop="@dimen/wdp22" android:paddingRight="@dimen/wdp21" android:paddingBottom="@dimen/wdp22" android:layout_width="fill_parent" android:layout_height="@dimen/wdp155"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_tab_1" android:paddingLeft="@dimen/wdp15" android:layout_width="@dimen/wdp276" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_icon_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_detail_acitvity_notify" />
+            <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/tv_title_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp4" android:text="活动公告" android:singleLine="true" android:textIsSelectable="false" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp22" android:textColor="#ff6b6b6b" android:ellipsize="end" android:id="@id/tv_desc_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp8" android:layout_marginTop="@dimen/wdp4" android:text="价值 ¥1000" android:maxEms="12" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_tab_2" android:layout_width="@dimen/wdp207" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp276">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20">
+            <ImageView android:id="@id/iv_icon_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_detail_acitvity_voucher" />
+            <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/tv_title_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp4" android:text="代金券" android:singleLine="true" android:textIsSelectable="false" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp22" android:textColor="#ff6b6b6b" android:ellipsize="end" android:id="@id/tv_desc_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp4" android:text="价值 ¥1000" android:maxEms="8" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_tab_3" android:layout_width="@dimen/wdp195" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_icon_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_detail_acitvity_gift" />
+            <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/tv_title_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp2" android:text="福利礼包" android:singleLine="true" android:textIsSelectable="false" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp22" android:textColor="#ff6b6b6b" android:ellipsize="end" android:id="@id/tv_desc_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:layout_marginTop="@dimen/wdp4" android:text="价值 ¥1000" android:maxEms="8" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+</RelativeLayout>

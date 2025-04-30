@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/qr_code_img" android:layout_width="@dimen/qr_code_img_size" android:layout_height="@dimen/qr_code_img_size" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <TextView android:id="@id/qr_code_declare_txt" android:layout_marginTop="@dimen/qr_code_declare_txt_margin_top" android:text="@string/txt_builded_qr_code_declar" android:layout_below="@id/qr_code_img" android:layout_centerHorizontal="true" style="@style/qr_code_declare_txt_style" />
+    <TextView android:gravity="center_horizontal" android:id="@id/ssidTxt" android:visibility="invisible" android:layout_marginBottom="@dimen/qr_code_declare_txt_margin_top" android:text="111" android:layout_above="@id/qr_code_img" android:layout_centerHorizontal="true" style="@style/qr_code_declare_txt_style" />
+</RelativeLayout>

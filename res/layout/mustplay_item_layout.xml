@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:tag="layout/mustplay_item_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/mustplay_back" android:paddingLeft="@dimen/wdp13" android:paddingTop="@dimen/wdp15" android:paddingRight="@dimen/wdp13" android:paddingBottom="@dimen/wdp15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp17" android:layout_marginRight="@dimen/wdp17">
+        <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.join.kotlin.domain.widget.CornersLinearLayout android:id="@id/video" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:conner_top_left="@dimen/wdp24" app:conner_top_right="@dimen/wdp24" app:layout_constraintTop_toTopOf="parent">
+                <include layout="@layout/video_dbs_layout" />
+            </com.join.kotlin.domain.widget.CornersLinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/tag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp28" android:layout_marginTop="@dimen/wdp22" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/video">
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ffff5900" android:id="@id/appType" android:tag="binding_2" android:background="@drawable/stroke_f15c01_butn" android:paddingLeft="@dimen/wdp7" android:paddingRight="@dimen/wdp7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp2" android:layout_marginRight="@dimen/wdp13" />
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ff0c8de7" android:id="@id/appdownCount" android:tag="binding_3" android:background="@drawable/stroke_df91cd_butn" android:paddingLeft="@dimen/wdp7" android:paddingRight="@dimen/wdp7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp2" android:layout_marginRight="@dimen/wdp13" android:lines="1" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/wdp32" android:textColor="@color/black" android:id="@id/gameName" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp28" android:layout_marginTop="@dimen/wdp10" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/tag" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:id="@id/message" android:tag="binding_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp28" android:layout_marginTop="@dimen/wdp10" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/downloadView" app:layout_constraintTop_toBottomOf="@id/gameName" />
+            <com.join.mgps.customview.DownloadViewStroke android:id="@id/downloadView" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp30" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</LinearLayout>

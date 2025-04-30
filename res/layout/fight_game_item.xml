@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="115.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/fightLayoutLeft" android:layout_width="fill_parent" android:layout_height="115.0dip" android:layout_marginLeft="9.0dip" android:layout_marginRight="3.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="77.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/fightImgLeft" android:layout_width="fill_parent" android:layout_height="77.0dip" android:src="@drawable/main_normal_icon" android:scaleType="fitXY" />
+            <ImageView android:id="@id/statusImgLeft" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="77.0dip" android:src="@drawable/fight_status_bg" android:scaleType="fitXY" />
+            <ImageView android:id="@id/tagImgLeft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/fight_tag" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/downloadStatusLeft" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp34" android:layout_marginRight="@dimen/dp34" android:layout_centerInParent="true">
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/statusBtnLeft" android:focusable="false" android:layout_width="@dimen/gridview_butn_right" android:layout_height="wrap_content" style="@style/FightStyle11_Text" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp31">
+                    <TextView android:textSize="@dimen/dp27" android:textColor="@color/gray_dark" android:id="@id/appSizeTvLeft" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/dp27" android:textColor="@color/gray_dark" android:id="@id/speedTvLeft" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.0" />
+                </LinearLayout>
+                <ProgressBar android:id="@id/progressBarZipLeft" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/my_game_progress_h" android:progress="0" style="@style/progress_fight_zip_style" />
+                <ProgressBar android:id="@id/progressBarLeft" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/my_game_progress_h" android:progress="0" style="@style/progress_fight_style" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/fightNameTvLeft" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="38.0dip" android:singleLine="true" style="@style/TextViewStyle_12sp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/fightLayoutMid" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="115.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="77.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/fightImgMid" android:layout_width="fill_parent" android:layout_height="77.0dip" android:src="@drawable/main_normal_icon" android:scaleType="fitXY" />
+            <ImageView android:id="@id/statusImgMid" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="77.0dip" android:src="@drawable/fight_status_bg" android:scaleType="fitXY" />
+            <ImageView android:id="@id/tagImgMid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/fight_tag" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/downloadStatusMid" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp34" android:layout_marginRight="@dimen/dp34" android:layout_centerInParent="true">
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/statusBtnMid" android:focusable="false" android:layout_width="@dimen/gridview_butn_right" android:layout_height="wrap_content" style="@style/FightStyle11_Text" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp31">
+                    <TextView android:textSize="@dimen/dp27" android:textColor="@color/gray_dark" android:id="@id/appSizeTvMid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/dp27" android:textColor="@color/gray_dark" android:id="@id/speedTvMid" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.0" />
+                </LinearLayout>
+                <ProgressBar android:id="@id/progressBarZipMid" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/my_game_progress_h" android:progress="0" style="@style/progress_fight_zip_style" />
+                <ProgressBar android:id="@id/progressBarMid" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/my_game_progress_h" android:progress="0" style="@style/progress_fight_style" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/fightNameTvMid" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="38.0dip" android:singleLine="true" style="@style/TextViewStyle_12sp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/fightLayoutRight" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="115.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="9.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="77.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/fightImgRight" android:layout_width="fill_parent" android:layout_height="77.0dip" android:src="@drawable/main_normal_icon" android:scaleType="fitXY" />
+            <ImageView android:id="@id/statusImgRight" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="77.0dip" android:src="@drawable/fight_status_bg" android:scaleType="fitXY" />
+            <ImageView android:id="@id/tagImgRight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/fight_tag" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/downloadStatusRight" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp34" android:layout_marginRight="@dimen/dp34" android:layout_centerInParent="true">
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/statusBtnRight" android:focusable="false" android:layout_width="@dimen/gridview_butn_right" android:layout_height="wrap_content" style="@style/FightStyle11_Text" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp31">
+                    <TextView android:textSize="@dimen/dp27" android:textColor="@color/gray_dark" android:id="@id/appSizeTvRight" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/dp27" android:textColor="@color/gray_dark" android:id="@id/speedTvRight" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.0" />
+                </LinearLayout>
+                <ProgressBar android:id="@id/progressBarZipRight" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/my_game_progress_h" android:progress="0" style="@style/progress_fight_zip_style" />
+                <ProgressBar android:id="@id/progressBarRight" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/my_game_progress_h" android:progress="0" style="@style/progress_fight_style" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/fightNameIvRight" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="38.0dip" android:singleLine="true" style="@style/TextViewStyle_12sp" />
+    </LinearLayout>
+</LinearLayout>

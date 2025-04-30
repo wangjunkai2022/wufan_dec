@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#fff7f8f9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/headview" android:background="@drawable/shape_gradient_blue" android:paddingTop="@dimen/wdp72" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/back_image" android:paddingTop="@dimen/wdp32" android:paddingBottom="@dimen/wdp32" android:visibility="visible" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp97" android:src="@drawable/back_icon_discover" />
+        <TextView android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/title_textview" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97" android:text="模拟器专区" android:singleLine="true" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-condensed-medium" style="@style/TextViewStyle_18sp" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="@dimen/wdp97" android:layout_alignParentEnd="true">
+            <com.join.mgps.customview.ScrollTextViewLayout android:layout_gravity="center" android:id="@id/scroll_text_layout" android:layout_width="56.0dip" android:layout_height="28.0dip" android:layout_alignParentRight="true" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/flSearch" android:layout_width="fill_parent" android:layout_height="@dimen/wdp70" android:layout_marginLeft="@dimen/wdp64" android:layout_marginTop="@dimen/wdp3" android:layout_marginRight="@dimen/wdp64" android:layout_marginBottom="@dimen/wdp40" android:layout_below="@id/back_image" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/wdp24" android:textColorHint="#ffa2a2a2" android:gravity="center_vertical" android:id="@id/tvSearch" android:background="@drawable/shape_bg_simulator_search" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="搜索游戏、厂商、帖子" android:paddingStart="@dimen/wdp28" />
+            <ImageView android:layout_gravity="end" android:id="@id/ivSearchIcon" android:padding="@dimen/wdp23" android:layout_width="@dimen/wdp70" android:layout_height="fill_parent" android:src="@drawable/search_image_black" android:layout_marginEnd="@dimen/wdp5" />
+        </FrameLayout>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview" android:layout_width="0.0dip" android:layout_height="0.0dip" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/headview" />
+    <include layout="@layout/loding_layout_include" />
+    <include layout="@layout/failed_layout_include" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topbar_title_right_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.join.mgps.customview.TabPageIndicator android:id="@id/pageIndicator" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_alignParentTop="true" />
+        <View android:id="@id/line" android:visibility="visible" android:layout_alignBottom="@id/pageIndicator" style="@style/TextViewStyle_line_H" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pageIndicator" />
+    </RelativeLayout>
+</LinearLayout>

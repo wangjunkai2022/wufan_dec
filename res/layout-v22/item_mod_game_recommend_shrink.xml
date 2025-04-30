@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/wdp132" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp25" android:layout_marginTop="@dimen/wdp10" android:layout_marginRight="@dimen/wdp25" android:layout_marginBottom="@dimen/wdp10" android:layout_marginHorizontal="@dimen/wdp25" android:layout_marginVertical="@dimen/wdp10"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fressco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivGameIcon" android:layout_width="@dimen/wdp110" android:layout_height="@dimen/wdp110" android:src="@drawable/main_normal_icon" fressco:failureImage="@drawable/main_normal_icon" fressco:failureImageScaleType="fitXY" fressco:placeholderImage="@drawable/main_normal_icon" fressco:placeholderImageScaleType="fitXY" fressco:roundedCornerRadius="@dimen/wdp12" />
+    <TextView android:textSize="@dimen/wdp24" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tvGameName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp12" android:text="饥荒" android:maxLines="2" />
+</LinearLayout>

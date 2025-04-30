@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/wdp5" android:paddingRight="@dimen/wdp5" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/iv" android:background="@drawable/search_tab_indicater_back" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/wdp12" android:layout_alignLeft="@id/tv" android:layout_alignRight="@id/tv" android:layout_alignBottom="@id/tv" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/wdp28" android:textColor="#ff535353" android:gravity="center" android:id="@id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你好" android:layout_centerHorizontal="true" />
+</RelativeLayout>

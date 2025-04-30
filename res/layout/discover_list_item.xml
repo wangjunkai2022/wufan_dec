@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/wdp26" android:paddingTop="@dimen/wdp17" android:paddingRight="@dimen/wdp26" android:paddingBottom="@dimen/wdp17" android:layout_width="fill_parent" android:layout_height="@dimen/wdp209">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/wdp32" android:textColor="#ff3b3b3b" android:ellipsize="end" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp10" android:text="阿克苏解答考生巨大石块难阿森纳撒，的" android:lines="2" android:layout_weight="1.0" android:lineSpacingMultiplier="1.2" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp10">
+                <TextView android:textSize="@dimen/wdp22" android:textColor="#ffa8a8a8" android:ellipsize="end" android:id="@id/gameType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="FC" android:lines="1" android:layout_weight="1.0" />
+                <TextView android:textColor="#ffa8a8a8" android:id="@id/seeNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1234" android:drawableLeft="@drawable/eye_grey" />
+                <TextView android:textColor="#ffa8a8a8" android:id="@id/commentNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp33" android:text="1234" android:drawableLeft="@drawable/message_little" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image" android:layout_width="@dimen/wdp274" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp22" android:layout_weight="0.0" />
+    </LinearLayout>
+    <View android:layout_marginLeft="@dimen/wdp26" android:layout_marginRight="@dimen/wdp26" style="@style/TextViewStyle_line_H" />
+</LinearLayout>

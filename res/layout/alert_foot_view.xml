@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchParentWidthStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/white" android:gravity="center" android:id="@id/btn_dialog_ok" android:text="@string/yes" android:onClick="exitOk" style="@style/OrderItemRl" />
+    <Button android:textColor="@color/merchant_listing_name_color" android:gravity="center" android:id="@id/btn_dialog_cancel" android:background="@drawable/btn_exit_alert" android:layout_marginLeft="10.0dip" android:text="@string/no" android:onClick="exitCancel" style="@style/OrderItemRl" />
+</LinearLayout>

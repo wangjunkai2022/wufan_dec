@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/parentLayout" android:background="#b3000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/holder" android:layout_width="@dimen/wdp534" android:layout_height="@dimen/wdp753" android:layout_centerInParent="true" />
+        <com.join.android.app.component.photoviewer.MultiTouchViewPager android:id="@id/viewPager" android:layout_width="@dimen/wdp534" android:layout_height="@dimen/wdp753" android:layout_centerInParent="true" android:overScrollMode="never" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/more" android:layout_width="@dimen/dp406" android:layout_height="@dimen/dp96" android:layout_marginBottom="@dimen/dp50" android:scaleType="fitXY" android:layout_above="@id/holder" android:layout_alignRight="@id/holder" />
+        <me.relex.circleindicator.CircleIndicator android:layout_gravity="bottom" android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="@dimen/dp80" android:layout_marginTop="@dimen/dp20" android:layout_below="@id/holder" app:ci_animator="@anim/home_popup_indicator_anim" app:ci_height="@dimen/dp15" app:ci_width="@dimen/dp15" />
+    </RelativeLayout>
+</LinearLayout>

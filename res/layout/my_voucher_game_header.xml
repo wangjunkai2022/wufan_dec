@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/voucherGameDetail" android:background="@drawable/account_voucher_game_blue_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/gamrVoucherNumber" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voucher_game_header" style="@style/TextViewStyle_14sp_black" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/btn1" android:id="@id/gameVocherDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voucher_game_detail" android:maxLines="1" android:singleLine="true" />
+</LinearLayout>

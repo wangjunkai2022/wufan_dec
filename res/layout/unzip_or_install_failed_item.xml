@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main" android:background="@drawable/wufungame_grey_stroke_butn" android:padding="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp27">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/icon" android:layout_width="@dimen/wdp28" android:layout_height="@dimen/wdp32" android:src="@drawable/sdcardicon" />
+            <TextView android:textSize="@dimen/wdp26" android:textStyle="bold" android:textColor="@color/black" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp10" android:text="内存是否充足" />
+            <TextView android:textSize="@dimen/wdp26" android:textColor="#fffc2c30" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="（可用空间20M）" />
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <ImageView android:layout_width="@dimen/wdp13" android:layout_height="@dimen/wdp20" android:src="@drawable/ic_more_black" android:layout_weight="0.0" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff7c7c7c" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:text="前往手机文件夹查看手机内存是否不够" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff3b3b3b" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp30" android:layout_marginBottom="@dimen/wdp30" android:text="红人推荐" />
+    <it.sephiroth.android.library.widget.HListView android:id="@id/hongrenlist" android:layout_width="fill_parent" android:layout_height="@dimen/wdp296" android:divider="#00000000" app:hlv_dividerWidth="@dimen/wdp20" />
+</LinearLayout>

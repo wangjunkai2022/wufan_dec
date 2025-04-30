@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/tabLayout" android:background="#fff7f7f7" android:layout_width="@dimen/wdp136" android:layout_height="fill_parent" android:layout_weight="0.0" />
+    <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/ll_main" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.join.android.app.component.xrecyclerview.XRecyclerView android:id="@id/dataList" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.join.mgps.ptr.PtrClassicFrameLayout>
+    <include android:id="@id/loadingLayoutMain" layout="@layout/loding_layout_include" />
+    <include android:id="@id/failedLayoutMain" android:visibility="visible" layout="@layout/failed_layout_include" />
+    <com.join.android.app.component.xrecyclerview.XRecyclerView android:id="@id/typeList" android:background="@color/white" android:paddingLeft="@dimen/wdp36" android:paddingRight="@dimen/wdp36" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

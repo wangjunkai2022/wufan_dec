@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/actionBar" layout="@layout/mg_forum_title_layout" />
+    <view android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/actionBar" class="com.join.mgps.customview.ForumLoadingView">
+        <com.join.mgps.customview.SlidingTabLayout1 android:id="@id/mTab" android:background="@android:color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/mTab">
+            <androidx.viewpager.widget.ViewPager android:id="@id/mPager" android:background="@android:color/transparent" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" />
+            <View android:id="@id/lineTop" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+            <View android:id="@id/viewBg" android:background="@color/dialog_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </view>
+</RelativeLayout>

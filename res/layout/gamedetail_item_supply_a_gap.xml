@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_top" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp60" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_bottom" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp96" />
+</LinearLayout>

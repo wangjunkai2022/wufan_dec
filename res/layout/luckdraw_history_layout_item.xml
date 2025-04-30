@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="@dimen/wdp60"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff626262" android:gravity="center" android:id="@id/time" android:layout_width="0.0dip" android:layout_height="@dimen/wdp60" android:text="2020.12.29" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff626262" android:gravity="center" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="@dimen/wdp60" android:text="500铜板" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

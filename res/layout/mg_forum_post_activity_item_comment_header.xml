@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_main" android:background="@color/white" android:paddingLeft="@dimen/mg_forum_post_item_padding" android:paddingRight="@dimen/mg_forum_post_item_padding" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/mg_forum_post_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <view android:id="@id/comment_avatar_src" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/main_normal_icon" android:scaleType="centerCrop" app:border_color="@color/mg_forum_avatar_round_stroke_color" app:border_width="@dimen/mg_forum_avatar_round_stroke_width" app:riv_border_color="@color/mg_forum_avatar_round_stroke_color" app:riv_border_width="@dimen/mg_forum_avatar_round_stroke_width" app:riv_corner_radius="@dimen/mg_forum_avatar_round_width" app:riv_oval="false" class="com.facebook.drawee.view.SimpleDraweeView" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0dip" android:textColor="@color/forum_nickname_color" android:gravity="center_vertical" android:layout_gravity="top" android:id="@id/comment_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="昵称" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/forum_post_moderator" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/icon_moderator" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/isOfficial" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/official_icon" />
+                        <com.join.mgps.customview.VipView android:layout_gravity="center_vertical" android:id="@id/vipFlag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+                        <TextView android:textSize="8.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/moderator" android:background="@drawable/forum_post_host_moderator" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="14.0dip" android:layout_marginLeft="8.0dip" android:text="管" />
+                        <TextView android:textSize="8.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/member_honor" android:background="@drawable/forum_post_host_member_honor" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="14.0dip" android:layout_marginLeft="8.0dip" />
+                        <Button android:textSize="8.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/forum_post_host" android:background="@drawable/forum_post_host" android:visibility="gone" android:layout_width="23.0dip" android:layout_height="13.0dip" android:layout_marginLeft="8.0dip" android:text="楼主" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                        <TextView android:textSize="10.0dip" android:textColor="#ffa9a9a9" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/comment_floor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="\#" android:contentDescription="楼层" />
+                        <TextView android:textSize="10.0dip" android:textColor="#ffa9a9a9" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/comment_add_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时间" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/flagBestAnswer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flag_answer_resolve_best" android:layout_alignParentRight="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="@dimen/mg_forum_post_item_padding">
+            <ImageView android:layout_gravity="center|right" android:id="@id/comment_reply" android:clickable="true" android:layout_width="24.0dip" android:layout_height="22.0dip" android:src="@drawable/reply" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

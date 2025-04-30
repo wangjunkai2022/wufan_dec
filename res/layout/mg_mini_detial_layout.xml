@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="visible" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/detial_main_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.viewpager.widget.ViewPager android:id="@id/detial_mini_viewpager" android:layout_width="fill_parent" android:layout_height="215.0dip" />
+        <com.join.mgps.customview.CirclePageIndicator android:layout_gravity="bottom|center" android:id="@id/indecater" android:padding="6.0dip" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="183.0dip" app:fillColor="#fff0872b" app:pageColor="#ffd9d9d9" app:strokeColor="#00000000" xmlns:app="scheme.android.com/apk/res/res-auto" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/appinfo" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_weight="1.0" android:layout_below="@id/detial_mini_viewpager">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/detialIconImage" android:layout_width="68.0dip" android:layout_height="68.0dip" android:layout_marginLeft="17.0dip" android:src="@drawable/main_normal_icon" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_weight="1.0">
+                <TextView android:id="@id/appName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/TextViewStyle_16sp" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/tipsLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" />
+                <TextView android:id="@id/downCountAndSize" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Text" style="@style/TextViewStyle_10sp" />
+            </LinearLayout>
+            <Button android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/installButn" android:background="@drawable/recom_install_butn" android:visibility="gone" android:layout_width="@dimen/install_butn_w" android:layout_height="38.0dip" android:layout_marginRight="19.0dip" android:layout_weight="0.0" />
+            <Button android:textSize="11.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/fourmButn" android:background="@drawable/detial_fourm_butn_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="19.0dip" android:text="社区交流" android:layout_weight="0.0" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/bottomLayout" android:background="@drawable/papa_title_back" android:layout_width="fill_parent" android:layout_height="@dimen/detail_simple_installllayout_h" android:layout_alignParentBottom="true">
+            <View android:focusable="false" android:layout_alignParentTop="true" style="@style/TextViewStyle_line_H" />
+            <LinearLayout android:orientation="vertical" android:id="@id/detialDownBottom" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="@dimen/detail_simple_installllayout_h" android:layout_toLeftOf="@id/shareRLayout">
+                <RelativeLayout android:id="@id/instalbutnLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="@dimen/detail_simple_installbutn_textsize" android:textColor="#ffffffff" android:gravity="center" android:id="@id/instalButtomButn" android:background="@drawable/detial_simple_install_selecter" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/detail_simple_installlbutn_h" android:layout_marginLeft="@dimen/dp92" android:layout_marginRight="@dimen/dp92" android:text="" android:layout_weight="1.0" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/progressbarLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ProgressBar android:id="@id/butnProgressBar" android:layout_width="fill_parent" android:layout_height="@dimen/detail_simple_installlbutn_h" android:layout_marginLeft="@dimen/dp92" android:layout_marginRight="@dimen/dp92" android:max="100" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/progress_butn_style_green" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/progress_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                        <ImageView android:id="@id/butn_showdownload" android:layout_width="@dimen/detail_showdowloding_image_w_h" android:layout_height="@dimen/detail_showdowloding_image_w_h" android:src="@drawable/detail_comment_download_pause" />
+                        <TextView android:textSize="@dimen/main_detial_textsize" android:textColor="#ffffffff" android:id="@id/percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_starmagin_t" android:text="0%" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/shareRLayout" android:visibility="visible" android:layout_width="@dimen/dp171" android:layout_height="@dimen/detail_simple_installllayout_h" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/shareBtn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/papa_detail_share_selecter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottomLayout" android:layout_below="@id/appinfo">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <WebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/dragToch" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/shareLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="19.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="0.0">
+                    <TextView android:textColor="@color/main_appname_color" android:id="@id/shareUser" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="分享者：" android:layout_weight="1.0" />
+                    <TextView android:textColor="#ff3a85e2" android:gravity="center|right" android:id="@id/iWillUp" android:layout_width="100.0dip" android:layout_height="24.0dip" android:text="我要上传" android:layout_weight="0.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <include layout="@layout/loding_layout_include" />
+    <include layout="@layout/failed_layout_include" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/loding_back" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/detial_mini_backbutn_selecter" />
+    <RelativeLayout android:gravity="center" android:id="@id/downloadRLayout" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+        <include layout="@layout/download_detial_layout" />
+    </RelativeLayout>
+</RelativeLayout>

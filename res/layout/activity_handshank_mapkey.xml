@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fadeScrollbars="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/handshank_title_include" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <LinearLayout android:id="@id/lay_1" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center|left" android:id="@id/on_off_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_virtualkey_off_icon" />
+                <TextView android:textSize="@dimen/main_title_textsize" android:textColor="@color/handshank_tip_txt" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="隐藏游戏虚拟按键" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center|right" android:id="@id/handshank_on_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_virtualkey_off" />
+            </LinearLayout>
+            <View android:layout_gravity="center|top" style="@style/view_line" />
+            <View android:layout_gravity="bottom|center" style="@style/view_line" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:id="@id/lay_2" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_check_icon" />
+                <TextView android:textSize="@dimen/main_title_textsize" android:layout_gravity="center" android:id="@id/handshank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="检验与设置手柄按键" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_arrow_icon" />
+            </LinearLayout>
+            <View android:layout_gravity="center|top" style="@style/view_line" />
+            <View android:layout_gravity="bottom|center" style="@style/view_line" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:id="@id/fba_lay" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_jj_icon" />
+                <TextView android:textSize="@dimen/main_title_textsize" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="街机手柄方案" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_arrow_icon" />
+            </LinearLayout>
+            <View android:layout_gravity="center|top" style="@style/view_line" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/fc_lay" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_fc_icon" />
+                <TextView android:textSize="@dimen/main_title_textsize" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="FC手柄方案" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_arrow_icon" />
+            </LinearLayout>
+            <View android:layout_gravity="center|top" style="@style/view_line" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/gba_lay" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_gba_icon" />
+                <TextView android:textSize="@dimen/main_title_textsize" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="GBA手柄方案" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_arrow_icon" />
+            </LinearLayout>
+            <View android:layout_gravity="center|top" style="@style/view_line" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/sfc_lay" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_sfc_icon" />
+                <TextView android:textSize="@dimen/main_title_textsize" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="SFC手柄方案" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_arrow_icon" />
+            </LinearLayout>
+            <View android:layout_gravity="center|top" style="@style/view_line" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/psp_lay" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_psp_icon" />
+                <TextView android:textSize="@dimen/main_title_textsize" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="PSP手柄方案" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_arrow_icon" />
+            </LinearLayout>
+            <View android:layout_gravity="center|top" style="@style/view_line" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/md_lay" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_md_icon" />
+                <TextView android:textSize="@dimen/main_title_textsize" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="MD手柄方案" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_arrow_icon" />
+            </LinearLayout>
+            <View android:layout_gravity="center|top" style="@style/view_line" />
+            <View android:layout_gravity="bottom|center" style="@style/view_line" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/ps_lay" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_ps_icon" />
+                <TextView android:textSize="@dimen/main_title_textsize" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="PS手柄方案" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_arrow_icon" />
+            </LinearLayout>
+            <View android:layout_gravity="center|top" style="@style/view_line" />
+            <View android:layout_gravity="bottom|center" style="@style/view_line" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/wsc_lay" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_wsc_icon" />
+                <TextView android:textSize="@dimen/main_title_textsize" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="WSC手柄方案" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_arrow_icon" />
+            </LinearLayout>
+            <View android:layout_gravity="center|top" style="@style/view_line" />
+            <View android:layout_gravity="bottom|center" style="@style/view_line" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/gbc_lay" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_gbc_icon" />
+                <TextView android:textSize="@dimen/main_title_textsize" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="GBC手柄方案" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_arrow_icon" />
+            </LinearLayout>
+            <View android:layout_gravity="center|top" style="@style/view_line" />
+            <View android:layout_gravity="bottom|center" style="@style/view_line" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/nds_lay" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_nds" />
+                <TextView android:textSize="@dimen/main_title_textsize" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="NDS手柄方案" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_arrow_icon" />
+            </LinearLayout>
+            <View android:layout_gravity="center|top" style="@style/view_line" />
+            <View android:layout_gravity="bottom|center" style="@style/view_line" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:id="@id/papaHandList" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_mysoubing" />
+                <TextView android:textSize="@dimen/main_title_textsize" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="悟饭支持的手柄" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/handshank_arrow_icon" />
+            </LinearLayout>
+            <View android:layout_gravity="center|top" style="@style/view_line" />
+            <View android:layout_gravity="bottom|center" style="@style/view_line" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

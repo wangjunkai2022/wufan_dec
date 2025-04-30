@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffffddff" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="72.0dip" android:layout_height="66.0dip" />
+    <TextView android:textStyle="bold" android:id="@id/person_video_list_honey_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="footer_text" />
+    <View android:layout_width="72.0dip" android:layout_height="66.0dip" />
+</LinearLayout>

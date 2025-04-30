@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp100"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/wdp28" android:textColor="#fff47500" android:gravity="center" android:id="@id/textView39" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="查看更多" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/post_footer_divider" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" android:layout_marginStart="@dimen/wdp30" android:layout_marginEnd="@dimen/wdp30" app:layout_constraintBottom_toBottomOf="parent" style="@style/TextViewStyle_line_H" />
+</androidx.constraintlayout.widget.ConstraintLayout>

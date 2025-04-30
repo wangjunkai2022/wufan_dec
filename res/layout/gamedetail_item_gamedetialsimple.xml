@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/layoutTop" android:background="#00000000" android:visibility="gone" android:layout_marginLeft="@dimen/dp30" android:layout_marginRight="@dimen/dp30" style="@style/TextViewStyle_line_detial" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/backLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp132">
+        <TextView android:id="@id/textView9" android:background="@drawable/papa_yelow_side" android:visibility="gone" android:layout_width="4.0dip" android:layout_height="15.0dip" android:layout_marginLeft="@dimen/dp24" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="0.0" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ffa8a8a8" android:gravity="center_vertical" android:id="@id/titleText" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp24" android:text="详细信息" android:layout_weight="1.0" style="@style/TextViewStyle_16sp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/look_other" android:paddingRight="@dimen/wdp36" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0">
+            <TextView android:id="@id/moreText" android:background="@drawable/arena_down_arrow" android:layout_width="@dimen/wdp65" android:layout_height="@dimen/wdp45" />
+            <ImageView android:id="@id/imageView5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="10.0dip" android:src="@drawable/arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/line_h" android:visibility="gone" android:layout_marginLeft="@dimen/dp24" android:layout_marginRight="@dimen/dp24" style="@style/TextViewStyle_line_H" />
+    <RelativeLayout android:textSize="14.0sp" android:textColor="#ff4a4a4a" android:orientation="vertical" android:id="@id/message" android:background="@color/white" android:paddingBottom="@dimen/wdp15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/downNumberLayout" android:paddingBottom="@dimen/wdp17" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ff8a8a8a" android:gravity="right" android:id="@id/downNumberTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="下载量" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ff4a4a4a" android:id="@id/downNumber" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp44" android:layout_weight="2.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/nowVersionLayout" android:paddingBottom="@dimen/wdp17" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ff8a8a8a" android:gravity="right" android:id="@id/textView60" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="当前版本" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ff4a4a4a" android:id="@id/nowVersion" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp44" android:layout_weight="2.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/sizelayout" android:paddingBottom="@dimen/wdp17" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ff8a8a8a" android:gravity="right" android:id="@id/textView56" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="大小" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ff4a4a4a" android:id="@id/appSize" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp44" android:layout_weight="2.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/updateDateLayout" android:paddingBottom="@dimen/wdp17" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ff8a8a8a" android:gravity="right" android:id="@id/textView54" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="更新日期" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ff4a4a4a" android:id="@id/updateDate" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp44" android:layout_weight="2.0" android:textIsSelectable="false" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/androdVersionLayout" android:paddingBottom="@dimen/wdp17" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ff8a8a8a" android:gravity="right" android:id="@id/textView52" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="系统要求" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ff4a4a4a" android:id="@id/androdVersion" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp44" android:layout_weight="2.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/commpanyLayout" android:paddingBottom="@dimen/wdp17" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ff8a8a8a" android:gravity="right" android:id="@id/textView43" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="厂商" android:layout_weight="1.0" android:textIsSelectable="false" />
+                <TextView android:textSize="@dimen/wdp28" android:textColor="@color/main_bar_color" android:id="@id/commpany" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp44" android:layout_weight="2.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/resousFromLayout" android:paddingBottom="@dimen/wdp17" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ff8a8a8a" android:gravity="right" android:id="@id/textView57" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="来源" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ff4a4a4a" android:id="@id/resousFrom" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp44" android:layout_weight="2.0" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ff3ca4fd" android:layout_gravity="right" android:id="@id/upGame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp36" android:layout_marginBottom="@dimen/wdp15" android:text="上传游戏" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

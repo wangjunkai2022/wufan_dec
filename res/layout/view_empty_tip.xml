@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp157" android:src="@drawable/ic_empty_monkey" />
+    <TextView android:textSize="@dimen/wdp28" android:textColor="#ff67c1f5" android:id="@id/tv_tip_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:text="暂无相关金手指" />
+</LinearLayout>

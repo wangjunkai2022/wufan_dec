@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/nowwufun_item_back" android:paddingLeft="@dimen/wdp22" android:paddingRight="@dimen/wdp22" android:paddingBottom="@dimen/wdp22" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/round_conner_listitem_back_15" android:paddingLeft="@dimen/wdp71" android:paddingRight="@dimen/wdp71" android:paddingBottom="@dimen/wdp89" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="@dimen/wdp36" android:textColorHint="#ffa8a8a8" android:id="@id/phoneText" android:background="@drawable/alph" android:layout_width="fill_parent" android:layout_height="@dimen/wdp70" android:layout_marginTop="@dimen/wdp80" android:hint="输入你注册的手机号码" android:inputType="phone" />
+            <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+            <Button android:textSize="@dimen/wdp34" android:textColor="@color/white" android:id="@id/getpassByPhoneNumber" android:background="@drawable/account_butn_selector" android:layout_width="fill_parent" android:layout_height="@dimen/wdp88" android:layout_marginTop="@dimen/wdp130" android:text="提交" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

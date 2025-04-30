@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/mod_upload_archive_activity_0" android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp100">
+        <ImageView android:id="@id/back" android:tag="binding_1" android:padding="@dimen/wdp33" android:layout_width="@dimen/wdp97" android:layout_height="@dimen/wdp97" android:src="@drawable/back_f1" />
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff000000" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ffffffff" android:gravity="center" android:id="@id/save" android:tag="binding_3" android:background="@drawable/bg_border_f47500_6" android:layout_width="@dimen/wdp94" android:layout_height="@dimen/wdp50" android:layout_marginRight="@dimen/wdp33" android:text="发布" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View style="@style/TextViewGameDetailStyle_line_H" />
+    <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/archiveLayout" android:tag="binding_4" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="@dimen/wdp110" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30">
+            <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff3b3b3b" android:ellipsize="end" android:gravity="center_vertical" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp24" android:lines="2" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp24" />
+        </LinearLayout>
+        <ImageView android:textColor="@color/red" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sx_orh" android:layout_alignTop="@id/archiveLayout" android:layout_alignRight="@id/archiveLayout" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp20" android:text="您只能发布自己的本地默认存档，无法发布别人的存档" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/wdp30">
+        <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/wdp28" android:textColorHint="#ff8a8a8a" android:gravity="top" android:id="@id/message" android:tag="binding_8" android:background="@drawable/round_conner_back_24" android:padding="@dimen/wdp28" android:paddingBottom="@dimen/wdp200" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/wdp502" android:text="" android:hint="说说你的分享理由吧～ \n \n1、在游戏中创造了什么 \n2、有哪些装备 \n3、达到了什么等级关卡 \n4、存档有什么特点 \n5、进度如何等等" android:maxLength="61" />
+        <RelativeLayout android:tag="binding_9" android:layout_width="@dimen/wdp165" android:layout_height="@dimen/wdp165" android:layout_marginLeft="@dimen/wdp28" android:layout_marginBottom="@dimen/wdp28" android:layout_alignBottom="@id/message">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/selectedIcon" android:tag="binding_10" android:layout_width="fill_parent" android:layout_height="fill_parent" app:roundedCornerRadius="@dimen/wdp26" defaultId="@drawable/papa_loading_null" />
+            <ImageView android:id="@id/clearImage" android:tag="binding_11" android:layout_width="@dimen/wdp46" android:layout_height="@dimen/wdp46" android:layout_marginTop="@dimen/wdp8" android:layout_marginBottom="@dimen/wdp8" android:src="@drawable/update_closed_image" android:layout_alignParentRight="true" android:layout_marginStart="@dimen/wdp8" android:layout_marginEnd="@dimen/wdp8" />
+        </RelativeLayout>
+        <ImageView android:id="@id/choiceIcon" android:tag="binding_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/wdp41" android:src="@drawable/image_icon" android:layout_alignBottom="@id/message" />
+    </RelativeLayout>
+</LinearLayout>

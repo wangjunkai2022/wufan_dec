@@ -1,0 +1,13 @@
+package com.ss.android.socialbase.downloader.e;
+
+import com.ss.android.socialbase.downloader.exception.BaseException;
+import java.io.IOException;
+/* compiled from: IStreamReader.java */
+/* loaded from: classes4.dex */
+public interface b {
+    com.ss.android.socialbase.downloader.f.a a() throws IOException, BaseException, InterruptedException;
+
+    void a(com.ss.android.socialbase.downloader.f.a aVar);
+
+    void b();
+}

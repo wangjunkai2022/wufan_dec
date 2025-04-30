@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffefeff4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp115">
+        <LinearLayout android:gravity="center" android:id="@id/iv_back" android:layout_width="@dimen/wdp67" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp40" android:src="@drawable/back_icon" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/tv_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/iv_back">
+            <TextView android:textSize="@dimen/wdp32" android:textColor="#ff262626" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:text="收藏/游戏单" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#fff37500" android:id="@id/tv_buildGmae" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp36" android:layout_marginRight="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp36" android:text="创建游戏单" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="#ffefeff4" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.flyco.tablayout.SlidingTabLayout android:id="@id/tableLayout" android:layout_width="wrap_content" android:layout_height="@dimen/wdp91" android:layout_centerHorizontal="true" app:tl_indicator_color="@color/main_yello_color" app:tl_indicator_height="@dimen/wdp4" app:tl_indicator_width="@dimen/wdp64" app:tl_textSelectColor="@color/main_yello_color" app:tl_textUnselectColor="#ffb1b1b1" app:tl_textsize="@dimen/wdp28" />
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

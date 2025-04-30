@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp105"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_tab_1" android:background="@drawable/bg_detail_activity_0" android:paddingLeft="@dimen/wdp21" android:paddingTop="@dimen/wdp7" android:paddingRight="@dimen/wdp21" android:paddingBottom="@dimen/wdp7" android:layout_width="fill_parent" android:layout_height="@dimen/wdp91">
+        <ImageView android:id="@id/iv_icon_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:layout_marginRight="@dimen/wdp14" android:src="@drawable/ic_detail_acitvity_notify" />
+        <TextView android:textSize="@dimen/wdp22" android:textColor="#ffff8b0f" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title_1" android:background="@drawable/shape_notice_bt_stroke_f2cfa9" android:paddingLeft="@dimen/wdp10" android:paddingTop="@dimen/wdp4" android:paddingRight="@dimen/wdp10" android:paddingBottom="@dimen/wdp3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp10" android:text="活动公告" android:singleLine="true" android:textIsSelectable="false" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/tv_desc_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp8" android:text="价值 ¥1000" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:id="@id/imageView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp20" android:src="@drawable/arrow_right_black" />
+    </LinearLayout>
+</LinearLayout>

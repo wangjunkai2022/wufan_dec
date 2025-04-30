@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_detail_activity_1" android:paddingLeft="@dimen/wdp21" android:paddingRight="@dimen/wdp21" android:layout_width="fill_parent" android:layout_height="@dimen/wdp155" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_tab_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5">
+        <ImageView android:id="@id/iv_icon_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:layout_marginRight="@dimen/wdp10" android:src="@drawable/ic_detail_acitvity_voucher" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="代金券" android:singleLine="true" android:textIsSelectable="false" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff6b6b6b" android:ellipsize="end" android:id="@id/tv_desc_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp2" android:text="价值 ¥1000" android:maxEms="12" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_tab_3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.5">
+        <ImageView android:id="@id/iv_icon_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp65" android:layout_marginRight="@dimen/wdp10" android:src="@drawable/ic_detail_acitvity_gift" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="福利礼包" android:singleLine="true" android:textIsSelectable="false" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff6b6b6b" android:ellipsize="end" android:id="@id/tv_desc_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp2" android:text="价值 ¥1000" android:maxEms="8" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

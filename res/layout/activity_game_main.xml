@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/topBg" android:background="@drawable/gamemain_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/title" android:background="@drawable/net_match2_top_icon" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="拳皇" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/noticeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+        <ImageView android:id="@id/imageView26" android:layout_width="@dimen/wdp28" android:layout_height="@dimen/wdp28" android:src="@drawable/gamemain_notice" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff9dd4e8" android:id="@id/notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp11" android:text="赛事：4点-6点，97淘汰小组塞开场" />
+    </LinearLayout>
+    <Button android:layout_gravity="left" android:id="@id/backButton" android:background="@drawable/net_match2_close_btn" android:layout_width="@dimen/wdp116" android:layout_height="@dimen/wdp56" android:layout_marginLeft="@dimen/wdp35" android:layout_marginTop="@dimen/wdp25" />
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp23" android:layout_marginBottom="@dimen/wdp40" android:layout_above="@id/bottomLayout" android:layout_below="@id/noticeLayout" android:layout_centerHorizontal="true" android:fadeScrollbars="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mainLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <RelativeLayout android:id="@id/btnFastGame" android:background="@drawable/gamemain_back_stroke" android:layout_width="@dimen/wdp405" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp40">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/singgameImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0px" fresco:placeholderImage="@drawable/card_arena_fight_normal" fresco:placeholderImageScaleType="fitXY" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/joiinSwitchLayout" android:background="@drawable/gamemain_net_top_back" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp59" android:layout_marginLeft="1.0px" android:layout_marginTop="1.0px" android:layout_marginRight="1.0px">
+                    <TextView android:textSize="@dimen/wdp24" android:textColor="#ffc8c8c8" android:id="@id/textView59" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:text="游戏中允许其他人加入" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/iv_switch_netfight" android:layout_width="@dimen/wdp76" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp19" android:src="@drawable/gamemain_notchecked" />
+                </LinearLayout>
+                <View android:id="@id/lingmidle" android:background="@drawable/gamemain_line_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/signGameLayout" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/signGameLayout" android:background="@drawable/gamemain_back_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp95" android:layout_marginLeft="1.0px" android:layout_marginRight="1.0px" android:layout_alignParentBottom="true">
+                    <ImageView android:id="@id/imageView27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gamemian_singgam_text" />
+                </LinearLayout>
+                <View android:id="@id/bottomline" android:background="@drawable/gamemain_line_bottom" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/ll_netfight_parent" android:background="@drawable/gamemain_back_stroke2" android:layout_width="@dimen/wdp305" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp44">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/networkgameImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0px" fresco:placeholderImage="@drawable/card_solo_fight_normal" fresco:placeholderImageScaleType="fitXY" />
+                <RelativeLayout android:gravity="center_horizontal" android:background="@drawable/gamemain_tipback" android:layout_width="@dimen/wdp142" android:layout_height="@dimen/wdp77" android:layout_marginRight="@dimen/wdp41" android:layout_alignParentRight="true">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/wdp20" android:textColor="@android:color/white" android:id="@id/network_palayer" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                        <TextView android:textSize="@dimen/wdp20" android:textColor="#fffac9ab" android:layout_gravity="center" android:id="@id/textView63" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="在线" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <View android:id="@id/lingmidle2" android:background="@drawable/gamemain_line_bottom" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/networkGameLayout" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/networkGameLayout" android:background="@drawable/gamemain_back_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp95" android:layout_marginLeft="1.0px" android:layout_marginRight="1.0px" android:layout_alignParentBottom="true">
+                    <ImageView android:id="@id/a2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gamemian_network_text" />
+                </LinearLayout>
+                <View android:id="@id/bottomline2" android:background="@drawable/gamemain_line_bottom" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/netmatch_paiwei" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp44">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/netmatch_paiwei_image" android:layout_width="@dimen/wdp306" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" fresco:actualImageScaleType="fitXY" fresco:placeholderImage="@drawable/card_invite_paiwei_normal" fresco:placeholderImageScaleType="fitXY" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/netmatch_fight" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp44">
+                <RelativeLayout android:gravity="center_horizontal" android:background="@drawable/gamemain_tipback" android:layout_width="@dimen/wdp142" android:layout_height="@dimen/wdp77" android:layout_marginRight="@dimen/wdp41" android:layout_alignParentRight="false">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/wdp28" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/textView67" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10" android:text="0流量" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/netmatch_fight_image" android:layout_width="@dimen/wdp306" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" fresco:actualImageScaleType="fitXY" fresco:placeholderImage="@drawable/card_invite_fight_normal" fresco:placeholderImageScaleType="fitXY" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_localfight" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp44" android:layout_marginRight="@dimen/wdp44">
+                <RelativeLayout android:gravity="center_horizontal" android:background="@drawable/gamemain_tipback" android:layout_width="@dimen/wdp142" android:layout_height="@dimen/wdp77" android:layout_marginRight="@dimen/wdp41" android:layout_alignTop="@id/rl_localfight_image" android:layout_alignRight="@id/rl_localfight_image" android:layout_alignParentRight="false">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/wdp28" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/textView65" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10" android:text="0流量" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/rl_localfight_image" android:layout_width="@dimen/wdp306" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" fresco:actualImageScaleType="fitXY" fresco:placeholderImage="@drawable/gamemain_localfight" fresco:placeholderImageScaleType="fitXY" />
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bottomLayout" android:background="@drawable/gamemain_bottomback" android:layout_width="fill_parent" android:layout_height="@dimen/wdp77" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gamemainForumLayout" android:layout_width="@dimen/wdp173" android:layout_height="fill_parent">
+                <ImageView android:id="@id/imageView29" android:layout_width="@dimen/wdp115" android:layout_height="@dimen/wdp44" android:src="@drawable/gamemain_forum" android:layout_weight="1.0" />
+                <ImageView android:id="@id/imageView30" android:background="@drawable/gamemain_line_v" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/gamemainarchiveLayout" android:visibility="gone" android:layout_width="@dimen/wdp173" android:layout_height="fill_parent">
+                <ImageView android:id="@id/imageView32" android:layout_width="wrap_content" android:layout_height="@dimen/wdp32" android:src="@drawable/gamemain_chengjiu" />
+                <ImageView android:id="@id/redRoundPoint" android:layout_width="@dimen/wdp14" android:layout_height="@dimen/wdp14" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/mygame_litle_round" />
+                <ImageView android:id="@id/imageView33" android:background="@drawable/gamemain_line_v" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gamemainOnekeyLayout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/adFirstImage" android:layout_width="@dimen/wdp200" android:layout_height="@dimen/wdp50" android:src="@drawable/gamemain_onekey" fresco:actualImageScaleType="fitCenter" fresco:placeholderImage="@drawable/gamemain_chengjiu" fresco:placeholderImageScaleType="centerInside" />
+                <ImageView android:id="@id/imageView37" android:background="@drawable/gamemain_line_v" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gamemainfengerLayout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/adseconedImage" android:layout_width="@dimen/wdp200" android:layout_height="@dimen/wdp50" android:src="@drawable/gamemain_godlenfinger" android:layout_weight="1.0" fresco:actualImageScaleType="fitCenter" />
+                <ImageView android:id="@id/imageView35" android:background="@drawable/gamemain_line_v" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gamemainvidioLayout" android:visibility="invisible" android:layout_width="@dimen/wdp173" android:layout_height="fill_parent">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/gamemainvidioImage" android:layout_width="@dimen/wdp200" android:layout_height="@dimen/wdp50" android:src="@drawable/gamemain_relive" fresco:actualImageScaleType="fitCenter" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/imageView31" android:background="@drawable/gamemain_line_v" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/gameTest" android:paddingTop="@dimen/wdp22" android:paddingBottom="@dimen/wdp14" android:layout_width="@dimen/wdp222" android:layout_height="fill_parent" android:src="@drawable/gamemain_playtest" android:scaleType="fitCenter" android:layout_weight="0.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/iv_loading" android:indeterminate="false" android:indeterminateDrawable="@drawable/gameroomlist_loading" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/tv_loading_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="约战房间创建中..." />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/simulatorlayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/wdp50" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/simulatorImage" android:layout_width="@dimen/wdp50" android:layout_height="@dimen/wdp50" android:src="@drawable/gameleve1" android:scaleType="fitXY" />
+        <TextView android:textColor="#ff4cc6ca" android:id="@id/simulatorText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp5" android:layout_marginRight="@dimen/wdp15" android:text="传说" />
+        <RelativeLayout android:gravity="center" android:id="@id/game" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:id="@id/simulatorProgress" android:background="@drawable/gamemain_progress_back" android:layout_width="@dimen/wdp161" android:layout_height="@dimen/wdp32" android:progress="50" android:layout_centerInParent="true" style="@style/progress_gamemain" />
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/simulatorProgressText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50/100" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

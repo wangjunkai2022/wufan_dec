@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="44.0dip">
+        <ImageView android:id="@id/indication" android:layout_width="23.0dip" android:layout_height="3.0dip" android:layout_marginTop="82.0dip" android:src="@drawable/shadow" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff757575" android:id="@id/promptTV" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:minWidth="44.0dip" android:layout_below="@id/indication" android:layout_centerHorizontal="true" />
+        <com.mingle.widget.ShapeLoadingView android:id="@id/shapeLoadingView" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="2.0dip" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

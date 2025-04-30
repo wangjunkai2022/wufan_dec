@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/titleMoreLayout" android:background="@color/white" android:paddingTop="@dimen/wdp36" android:paddingBottom="@dimen/wdp40" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:orientation="horizontal" android:id="@id/scrollView" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="@dimen/sp36" android:layout_marginRight="@dimen/sp36">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/titleMoreTip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <ImageView android:id="@id/imageView18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notice_greey" />
+        <TextView android:textSize="@dimen/dp36" android:textColor="#ff8a8a8a" android:id="@id/titleMoreMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="预约可获取游戏开放下载和礼包提醒" />
+    </LinearLayout>
+    <Button android:textSize="15.0dip" android:textColor="@color/white" android:id="@id/titleMoreBookButn" android:background="@drawable/detial_simple_open_selecter" android:layout_width="@dimen/wdp497" android:layout_height="@dimen/wdp64" android:layout_marginTop="10.0dip" android:text="预约" style="?android:buttonStyleSmall" />
+</LinearLayout>

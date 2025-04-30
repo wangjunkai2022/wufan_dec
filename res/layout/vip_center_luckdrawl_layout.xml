@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp100">
+        <ImageView android:layout_width="@dimen/wdp42" android:layout_height="@dimen/wdp37" android:src="@drawable/icon_vip3" />
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp10" android:text="每日抽奖" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ffd38149" android:gravity="right" android:id="@id/todayScratchNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="今日剩余机会：1次" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp197">
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:id="@id/scratchBack" android:background="@drawable/scratch_imag_back" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="奖品" />
+        <com.join.mgps.customview.ScratchView android:id="@id/scratch" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:outter_bg="@drawable/scratch_imag" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp36">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/prizeListLayout" android:background="#fffafafa" android:layout_width="wrap_content" android:layout_height="@dimen/wdp96" android:layout_marginRight="@dimen/wdp12" android:layout_weight="1.0">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/prizeListImg" android:layout_width="@dimen/wdp81" android:layout_height="@dimen/wdp81" app:placeholderImage="@drawable/prize_list_icon" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ff3f3f3f" android:id="@id/prizeListName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中奖纪录" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/prizeDataLayout" android:background="#fffafafa" android:layout_width="wrap_content" android:layout_height="@dimen/wdp96" android:layout_marginRight="@dimen/wdp12" android:layout_weight="1.0">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/prizeDataImg" android:layout_width="@dimen/wdp81" android:layout_height="@dimen/wdp81" app:placeholderImage="@drawable/prize_data_icon" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ff3f3f3f" android:id="@id/prizeDataName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="奖品池" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/prizeRuleLayout" android:background="#fffafafa" android:layout_width="wrap_content" android:layout_height="@dimen/wdp96" android:layout_marginRight="@dimen/wdp12" android:layout_weight="1.0">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/prizeRuleImg" android:layout_width="@dimen/wdp81" android:layout_height="@dimen/wdp81" app:placeholderImage="@drawable/prize_role_icon" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ff3f3f3f" android:id="@id/prizeRuleName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="活动规则" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

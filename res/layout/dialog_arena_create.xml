@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="@dimen/wdp740" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_top" android:background="@drawable/newarena_selecter_game_top" android:layout_width="fill_parent" android:layout_height="@dimen/wdp95">
+            <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_top" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp36" android:layout_width="@dimen/wdp236" android:layout_height="wrap_content" android:text="请选择游戏" android:singleLine="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:background="@drawable/newarena_selecter_game_bottomback" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/wdp400" android:layout_below="@id/rl_top">
+            <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp14" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/noRecord" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/iv1" android:background="@drawable/ic_no_record1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/tv1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.4" app:layout_constraintVertical_chainStyle="packed" />
+                <TextView android:textSize="@dimen/wdp26" android:textColor="@color/white" android:id="@id/tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp24" android:text="本地暂无对战游戏！" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv1" />
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ffa05e08" android:id="@id/tv2" android:background="@drawable/shape_friend_download_game" android:paddingLeft="@dimen/wdp124" android:paddingTop="@dimen/wdp8" android:paddingRight="@dimen/wdp124" android:paddingBottom="@dimen/wdp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp24" android:text="去下载" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv1" app:layout_constraintVertical_bias="0.54" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/iv_close" android:layout_width="@dimen/wdp90" android:layout_height="@dimen/wdp95" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close2" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

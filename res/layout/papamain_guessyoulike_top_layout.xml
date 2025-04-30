@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/relativeLayout" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_below="@id/pager"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="false">
+        <TextView android:id="@id/textView3" android:background="#ffd2d2d2" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginLeft="7.0dip" android:text="New Text" android:layout_weight="1.0" />
+        <TextView android:id="@id/guessyoulikeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="@dimen/dp38" android:layout_marginRight="8.0dip" android:layout_marginBottom="@dimen/dp38" android:text="猜你喜欢" android:layout_weight="0.0" style="@style/TextViewStyle_10sp" />
+        <TextView android:id="@id/textView5" android:background="#ffd2d2d2" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginRight="7.0dip" android:text="New Text" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:id="@id/hideh5" android:layout_width="60.0dip" android:layout_height="fill_parent" />
+</RelativeLayout>

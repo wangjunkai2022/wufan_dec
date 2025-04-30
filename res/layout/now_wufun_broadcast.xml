@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/nowwufun_item_back" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main" android:background="@drawable/now_wufun_listitem_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" android:layout_marginBottom="@dimen/wdp50">
+        <TextView android:textSize="@dimen/wdp62" android:textStyle="bold" android:textColor="#ff181818" android:gravity="center_vertical" android:id="@id/titleText" android:paddingLeft="@dimen/wdp34" android:layout_width="fill_parent" android:layout_height="@dimen/wdp146" android:text="大总管播报" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="@dimen/wdp259" />
+        <TextView android:textSize="@dimen/wdp48" android:textStyle="bold" android:textColor="#ff1f1f1f" android:ellipsize="end" android:id="@id/appDescribe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp34" android:layout_marginTop="@dimen/wdp41" android:layout_marginRight="@dimen/wdp34" android:text="龙之丘续作来袭，公主不再需要王子的救助自己复仇阿斯卡来得及" android:maxLines="2" android:lineSpacingExtra="@dimen/wdp14" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/downLayout" android:layout_width="fill_parent" android:layout_height="@dimen/wdp178">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/appIcon" android:layout_width="@dimen/wdp80" android:layout_height="@dimen/wdp80" android:layout_marginLeft="@dimen/wdp34" android:layout_weight="0.0" />
+            <TextView android:textSize="@dimen/wdp34" android:textColor="#ff919197" android:id="@id/appName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:text="龙之丘2" android:layout_weight="1.0" />
+            <com.join.mgps.customview.DownloadViewNormal android:gravity="center" android:id="@id/downloadView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp48" android:layout_marginTop="@dimen/wdp48" android:layout_marginRight="@dimen/wdp48" android:layout_marginBottom="@dimen/wdp42" android:layout_weight="0.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

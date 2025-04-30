@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff4a4a4a" android:id="@id/htmlEditRecommend" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:layout_marginRight="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp24" android:text="过了皮卡三大刻录机啊时代卡仕达卡拉上的卡萨帝豪卡萨帝豪凯萨琳的" android:lineSpacingExtra="1.0dip" android:lineSpacingMultiplier="1.2" />
+</LinearLayout>

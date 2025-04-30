@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/apfight_zxing_bg" android:paddingLeft="@dimen/wdp51" android:paddingTop="@dimen/wdp46" android:layout_width="@dimen/wdp915" android:layout_height="@dimen/wdp424" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/wdp36" android:textStyle="bold" android:textColor="@color/white" android:id="@id/dialogMessageTitleTx" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="请按以下步骤进行热点联机：" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:id="@id/dialogMessagOneTx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp19" android:text="（1）创建热点，设置名称为拳皇97；" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#fff5a623" android:autoLink="all" android:layout_gravity="right" android:id="@id/dialogMessagCopyTx" android:paddingLeft="@dimen/wdp19" android:paddingTop="@dimen/wdp19" android:paddingRight="@dimen/wdp32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="复制热点名称" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:id="@id/dialogMessagTwoTx" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp19" android:text="（2）设置密码为12345678；" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:id="@id/dialogMessagThreeTx" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp19" android:text="（3）邀请好友链接热点后，创建游戏。" />
+        <Button android:textSize="@dimen/wdp28" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/dialogMessagBt" android:background="@drawable/dialog_bottom_selecter" android:layout_width="@dimen/wdp240" android:layout_height="@dimen/wdp59" android:layout_marginTop="@dimen/wdp46" android:text="去创建热点" />
+    </LinearLayout>
+    <Button android:id="@id/dialogMessagCloseBt" android:background="@drawable/apfight_zxing_close_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_alignParentRight="true" />
+</RelativeLayout>

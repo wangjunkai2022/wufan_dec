@@ -1,0 +1,9 @@
+package com.ss.android.socialbase.downloader.f;
+
+import androidx.annotation.NonNull;
+import java.io.IOException;
+/* compiled from: IOutput.java */
+/* loaded from: classes4.dex */
+public interface e {
+    void b(@NonNull a aVar) throws IOException;
+}

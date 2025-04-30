@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/bg_linear_fff_f7f8f9" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+                <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll">
+                    <include android:id="@id/v_no_data" android:visibility="gone" layout="@layout/mg_forum_search_item_all_no_more" />
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <com.join.android.app.component.xrecyclerview.XQuickRecyclerView android:id="@id/rv_list_data" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp10" android:layout_marginRight="@dimen/wdp10" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <include layout="@layout/loding_layout_include" />
+        <include layout="@layout/failed_layout_include" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

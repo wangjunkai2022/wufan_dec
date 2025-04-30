@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/oldVersion" android:paddingLeft="@dimen/wdp82" android:paddingRight="@dimen/wdp82" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/dialog_app_update_header_img" android:layout_width="fill_parent" android:layout_height="@dimen/wdp363" android:src="@drawable/dialog_app_update_header_icon" android:scaleType="fitXY" />
+        <ScrollView android:id="@id/dialog_app_update_sv" android:background="@color/white" android:paddingLeft="@dimen/wdp44" android:paddingTop="@dimen/wdp44" android:paddingBottom="@dimen/wdp44" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="@dimen/wdp420" android:minHeight="@dimen/wdp400" android:layout_below="@id/dialog_app_update_header_img">
+            <WebView android:id="@id/info" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </ScrollView>
+        <RelativeLayout android:id="@id/dialog_app_update_bottom_rl" android:background="@drawable/dialog_app_upadate_bottom_rl_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/dialog_app_update_sv">
+            <ImageView android:id="@id/dialog_app_update_bottom_img" android:layout_width="fill_parent" android:layout_height="@dimen/wdp160" android:src="@drawable/dialog_app_update_bottom_bg" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/dialog_app_update_bottom_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp62" android:layout_marginTop="@dimen/wdp60" android:layout_marginRight="@dimen/wdp62">
+                <Button android:gravity="center" android:id="@id/cancel" android:background="@drawable/dialog_app_update_cancel_btn_bg" android:layout_marginRight="@dimen/wdp26" android:text="@string/dialog_app_update_next_time" style="@style/dialog_app_update_bottom_btn_style" />
+                <Button android:gravity="center" android:id="@id/updateNow" android:background="@drawable/dialog_app_update_ok_btn_bg" android:layout_marginLeft="@dimen/wdp26" android:text="@string/dialog_app_update_now" style="@style/dialog_app_update_bottom_btn_style" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/wdp20" android:id="@id/installNotice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10" android:text="已为你准备好安装包" android:layout_below="@id/dialog_app_update_bottom_ll" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/newVersion" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/newUpdateImage" android:layout_width="fill_parent" android:layout_height="fill_parent" fresco:actualImageScaleType="fitXY" />
+        <Button android:id="@id/newClosed" android:background="@drawable/update_closed_image" android:visibility="gone" android:layout_width="@dimen/wdp64" android:layout_height="@dimen/wdp64" android:layout_marginTop="@dimen/wdp40" android:layout_marginRight="@dimen/wdp40" android:layout_weight="0.0" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

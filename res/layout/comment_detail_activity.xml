@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/papa_title_back" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <View android:layout_alignParentBottom="true" style="@style/TextViewStyle_line_H" />
+        <ImageView android:id="@id/back_image" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="45.0dip" android:src="@drawable/back_icon" android:layout_centerVertical="true" />
+        <TextView android:gravity="center" android:id="@id/title_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="45.0dip" android:singleLine="true" android:layout_toRightOf="@id/back_image" android:layout_centerVertical="true" style="@style/TextViewStyle_18sp" />
+        <ImageView android:id="@id/imTopRight" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="45.0dip" android:src="@drawable/more_ic" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/mPtrFrame" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.join.mgps.customview.XListView2 android:id="@id/comment_detail_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:divider="#ffdddddd" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+    </com.join.mgps.ptr.PtrClassicFrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/inputLl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/include_chat_bottom_bar" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loding_layout_include" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/failed_layout_include" />
+    <TextView android:gravity="center" android:id="@id/deletedTv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="点评已被删除～" />
+</LinearLayout>

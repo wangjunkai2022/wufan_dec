@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/modgame_cloud_archive_fragment_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.flyco.tablayout.SlidingTabLayout android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="@dimen/wdp48" android:layout_marginTop="@dimen/wdp23" app:tl_indicator_color="#ff339cf4" app:tl_indicator_corner_radius="@dimen/wdp3" app:tl_indicator_height="@dimen/wdp3" app:tl_indicator_width="@dimen/wdp36" app:tl_tab_padding="@dimen/wdp29" app:tl_tab_space_equal="false" app:tl_textSelectColor="@color/white" app:tl_textUnselectColor="#ffc1d0dd" app:tl_textsize="@dimen/wdp28" />
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title" />
+</RelativeLayout>

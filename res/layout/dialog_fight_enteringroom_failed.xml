@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="286.0dip" android:layout_height="200.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/title" android:background="@drawable/bg_input_border_top" android:layout_width="fill_parent" android:layout_height="39.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="13.0dip" android:text="@string/connect_server_error_title" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_input_border_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="13.0dip" android:layout_below="@id/title">
+            <TextView android:textSize="15.0sp" android:textColor="#ff686868" android:gravity="center" android:id="@id/info" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/connect_server_error_hint" android:layout_weight="1.0" />
+            <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/reJoin" android:background="@drawable/bg_btn_border_blue_four" android:layout_width="fill_parent" android:layout_height="37.0dip" android:layout_marginLeft="19.0dip" android:layout_marginRight="19.0dip" android:layout_marginBottom="24.0dip" android:text="重新加入" />
+        </LinearLayout>
+        <ImageView android:id="@id/cancel" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

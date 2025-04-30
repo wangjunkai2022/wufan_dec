@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_dismiss" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/popo_bg" android:layout_width="fill_parent" android:layout_height="@dimen/wdp720">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_our" android:layout_width="fill_parent" android:layout_height="@dimen/wdp81">
+            <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff262626" android:gravity="center_vertical" android:id="@id/tv_show_tips" android:layout_width="fill_parent" android:layout_height="@dimen/wdp81" android:layout_marginLeft="@dimen/wdp20" android:text="收藏到游戏单" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#fff37500" android:gravity="center" android:id="@id/tv_finish" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp20" android:text="完成" />
+        </LinearLayout>
+        <View android:background="#ffd8d8d8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/wdp15" android:layout_marginRight="@dimen/wdp20" />
+        <com.join.mgps.customview.XListView2 android:id="@id/listview" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp558" android:layout_marginLeft="@dimen/wdp20" android:divider="@null" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_show_finish" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp558" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:background="@drawable/tick" android:layout_width="@dimen/wdp58" android:layout_height="@dimen/wdp40" android:layout_marginTop="@dimen/wdp92" />
+            <TextView android:textSize="@dimen/wdp30" android:textColor="#ff4a4a4a" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp47" android:text="可前往【我的】 - 【游戏单】 查看" />
+            <EditText android:textSize="@dimen/wdp28" android:textColor="#ffb1b1b1" android:gravity="top" android:layout_gravity="center" android:id="@id/game_ed" android:background="@drawable/ed_bg" android:paddingLeft="@dimen/wdp20" android:paddingTop="@dimen/wdp16" android:layout_width="@dimen/wdp640" android:layout_height="@dimen/wdp200" android:layout_marginTop="@dimen/wdp80" android:hint="说说你收藏的理由，帮助自己备忘." android:inputType="textMultiLine" />
+        </LinearLayout>
+        <View android:background="#ffd8d8d8" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_build" android:paddingLeft="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="@dimen/wdp80">
+            <ImageView android:background="@drawable/game_add" android:layout_width="@dimen/wdp20" android:layout_height="@dimen/wdp20" android:layout_marginTop="@dimen/wdp30" android:layout_marginRight="@dimen/wdp20" />
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#fff37500" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:text="新建游戏单" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

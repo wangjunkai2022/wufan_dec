@@ -1,0 +1,14 @@
+package com.mob.mgs.impl;
+/* loaded from: classes4.dex */
+public abstract class h extends Thread {
+    protected abstract void a() throws Throwable;
+
+    @Override // java.lang.Thread, java.lang.Runnable
+    public final void run() {
+        try {
+            a();
+        } catch (Throwable th) {
+            e.a().a(th);
+        }
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff333333" android:gravity="center" android:id="@id/downloadDialogOneTv" android:paddingTop="@dimen/wdp25" android:paddingBottom="@dimen/wdp25" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="使用系统服务（推荐）" />
+        <View style="@style/TextViewStyle_line_H" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff9b9b9b" android:gravity="center" android:id="@id/downloadDialogTwoTv" android:paddingTop="@dimen/wdp25" android:paddingBottom="@dimen/wdp25" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="使用浏览器下载" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutInformation" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp24" android:layout_marginRight="@dimen/dp24">
+        <LinearLayout android:orientation="horizontal" android:id="@id/layoutTop" android:background="@drawable/listview_top_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/line_h" android:visibility="visible" style="@style/TextViewGameDetailStyle_line_H" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:orientation="horizontal" android:id="@id/informationTitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sp42" android:layout_marginTop="@dimen/sp23" android:layout_marginBottom="@dimen/sp20" android:text="相关资讯" style="@style/TextViewStyleGameDetail_14sp" />
+            </LinearLayout>
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp30" android:layout_marginBottom="@dimen/dp30">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/informationImage" android:visibility="gone" android:layout_width="@dimen/sp232" android:layout_height="@dimen/sp153" android:layout_marginLeft="@dimen/sp42" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="11.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/messageType" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp48" android:layout_marginLeft="@dimen/dp24" android:minWidth="33.0dip" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/dp39" android:textColor="#ff3b3b3b" android:id="@id/informationTv" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp24" android:text="龙城之怒" android:singleLine="true" android:layout_toLeftOf="@id/pubtime" android:layout_toRightOf="@id/messageType" android:layout_centerVertical="true" style="@style/TextViewStyleGameDetail_14sp_notsingle" />
+                <TextView android:textSize="11.0dip" android:textColor="#ff979797" android:id="@id/pubtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp24" android:text="5小时前" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

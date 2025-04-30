@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/appIcon" android:layout_width="@dimen/wdp110" android:layout_height="@dimen/wdp110" android:layout_marginRight="@dimen/wdp30" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff3b3b3b" android:id="@id/appName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="王者荣耀" android:lines="1" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp6" android:layout_marginBottom="@dimen/wdp9">
+            <TextView android:textSize="@dimen/wdp18" android:textColor="#fff47500" android:id="@id/appType" android:background="@drawable/stroke_mainyello_butn" android:paddingLeft="@dimen/wdp7" android:paddingRight="@dimen/wdp7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp20" android:text="街机" />
+            <TextView android:textSize="@dimen/wdp18" android:textColor="@color/white" android:id="@id/appTag" android:background="@drawable/comment_tag_back" android:paddingLeft="@dimen/wdp7" android:paddingRight="@dimen/wdp7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp15" android:text="街机" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp22" android:textColor="#ff8a8a8a" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="经典毛选生存游戏" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/selectbutn" android:padding="@dimen/wdp40" android:layout_width="@dimen/wdp123" android:layout_height="@dimen/wdp157" android:src="@drawable/comment_selecte_normal" />
+</LinearLayout>

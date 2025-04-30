@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/forumPost" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_discuss_first" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="14.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="13.0sp" android:textColor="#ff8a8a8a" android:gravity="center|left" android:id="@id/tv_discuss_first" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="悟饭97高手名单，大伙说说悟饭里的97风云再都有谁" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_gray_arrow" />
+    </LinearLayout>
+    <View android:background="#ffefeff3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

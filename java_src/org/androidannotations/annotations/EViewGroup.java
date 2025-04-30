@@ -1,0 +1,16 @@
+package org.androidannotations.annotations;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+import org.androidannotations.api.KotlinOpen;
+@Target({ElementType.TYPE})
+@Retention(RetentionPolicy.CLASS)
+@KotlinOpen
+/* loaded from: classes.dex */
+public @interface EViewGroup {
+    String resName() default "";
+
+    int value() default -1;
+}

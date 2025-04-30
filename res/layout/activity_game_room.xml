@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/newarena_fight_back" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/activity_main" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp422">
+        <RelativeLayout android:background="@drawable/arena_main_title" android:layout_width="fill_parent" android:layout_height="@dimen/wdp85">
+            <LinearLayout android:id="@id/iv_back" android:layout_width="wrap_content" android:layout_height="@dimen/wdp85">
+                <ImageView android:paddingLeft="@dimen/wdp30" android:paddingTop="@dimen/wdp25" android:paddingRight="@dimen/wdp20" android:paddingBottom="@dimen/wdp25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/game_main_new_back" android:layout_centerInParent="true" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ffffffff" android:id="@id/tv_game_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拳皇97" android:layout_toRightOf="@id/iv_back" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_elite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:layout_marginRight="16.0dip" android:src="@drawable/icon_elite" android:layout_toRightOf="@id/tv_game_name" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff75c2e3" android:id="@id/tv_roomNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp35" android:text="房间号：45382" android:drawablePadding="2.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff75c2e3" android:id="@id/tv_game_time_state" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp35" android:text="等待开始" android:drawableLeft="@drawable/icon_time_blue" android:drawablePadding="2.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/tv_invite_fight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp250" android:text="约战" android:drawableLeft="@drawable/ic_local_fight_white" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp20">
+                <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/showTitleMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp10" android:text="拳皇97" />
+            </LinearLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/wdp12" android:src="@drawable/newarena_room_line" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.join.mgps.customview.PlayerInfoContainerView android:id="@id/mPlayerInfoContainerView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/wdp43" android:layout_marginRight="@dimen/wdp43" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ffa8a8a8" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tv_hint_owner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:text="点击位置邀请/关闭空位/踢人" />
+                </LinearLayout>
+                <View android:background="#ff386270" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="8.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="8.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="#ff8a8a8a" android:paddingLeft="13.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="房间信息" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                <RelativeLayout android:id="@id/rl_set_pwd" android:background="@drawable/selector_newarena_list_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_marginTop="4.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="#ffd8d8d8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="加入密码" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/iv_arrow_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/icon_gray_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ffa8a8a8" android:id="@id/tv_set_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="未设置" android:layout_toLeftOf="@id/iv_arrow_pwd" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_net_archive" android:background="@drawable/selector_newarena_list_item" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_marginTop="4.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="#ffd8d8d8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="网络存档" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/iv_arrow_net_archive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/icon_gray_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ffa8a8a8" android:id="@id/tv_archive_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="未选择" android:layout_toLeftOf="@id/iv_arrow_net_archive" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:background="@drawable/selector_newarena_list_item" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_marginTop="4.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="#ffd8d8d8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="允许旁观" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/iv_switch_onlook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/ic_switch_open_yellow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:background="@drawable/selector_newarena_list_item" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="#ffd8d8d8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="允许使用外设" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/iv_switch_outdevice_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/ic_switch_open_yellow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <RelativeLayout android:background="@drawable/newarena_audienc_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/wdp85" android:layout_marginLeft="@dimen/wdp43" android:layout_marginRight="8.0dip" android:layout_weight="0.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rl_audience_1" android:paddingLeft="@dimen/wdp22" android:paddingRight="@dimen/wdp10" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/wdp24" android:textColor="@color/white" android:id="@id/tv_audience" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="0人" />
+                    <TextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="观众席" android:layout_alignParentLeft="true" />
+                </LinearLayout>
+                <View android:id="@id/linesee" android:background="#ff385d74" android:layout_width="@dimen/wdp2" android:layout_height="@dimen/wdp24" android:layout_marginTop="@dimen/wdp31" android:layout_toRightOf="@id/rl_audience_1" />
+                <RelativeLayout android:id="@id/rl_audience_2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp12" android:layout_toRightOf="@id/rl_audience_1" android:layout_centerVertical="true">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_audience" android:layout_width="@dimen/wdp62" android:layout_height="@dimen/wdp62" android:layout_marginLeft="@dimen/wdp12" android:layout_marginRight="@dimen/wdp10" android:layout_centerVertical="true" app:placeholderImage="@drawable/icon" app:roundAsCircle="true" />
+                    <TextView android:textSize="@dimen/wdp22" android:textColor="#ffc4c4c4" android:id="@id/tv_info_audience" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你已加入" android:layout_toRightOf="@id/iv_audience" android:layout_centerVertical="true" />
+                    <View android:id="@id/mDefaultBg" android:background="#ff072739" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginRight="11.0dip" android:layout_centerVertical="true" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="14.0sp" android:textColor="#ffd8d8d8" android:id="@id/tv_audience_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="观众席" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        <TextView android:textSize="11.0sp" android:textColor="#ffa8a8a8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="房间已满，被自动移到观众席" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <FrameLayout android:id="@id/btnEntranceGame" android:layout_width="wrap_content" android:layout_height="@dimen/wdp68" android:layout_marginLeft="@dimen/wdp43" android:foreground="@drawable/alph_butn_selector" android:layout_weight="0.0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/arena_fastmatch" android:paddingLeft="@dimen/wdp43" android:paddingRight="@dimen/wdp43" android:layout_width="wrap_content" android:layout_height="@dimen/wdp68" android:minWidth="@dimen/wdp196">
+                    <ImageView android:textSize="19.0sp" android:textStyle="bold|italic" android:textColor="#ffa05e08" android:id="@id/btnEntranceGameI" android:layout_width="fill_parent" android:layout_height="@dimen/wdp68" android:src="@drawable/newarena_start" android:drawable="@drawable/icon" />
+                    <TextView android:textSize="@dimen/wdp22" android:textStyle="bold" android:textColor="#ffa05e08" android:id="@id/btnEntranceGameM" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13s" />
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:id="@id/rlRoomType" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/alph_butn_selector" android:layout_weight="0.0">
+                <ImageView android:id="@id/iv_room_type" android:paddingLeft="@dimen/wdp36" android:paddingRight="@dimen/wdp36" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp68" android:src="@drawable/newarena_setting_back" />
+                <TextView android:textSize="11.0sp" android:textColor="#ffa8a8a8" android:id="@id/tvRoomType" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="综合房" android:layout_toLeftOf="@id/iv_room_type" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </FrameLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+                <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/ll_set_challenge_gold" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/wdp50" android:layout_marginRight="@dimen/wdp43">
+                    <TextView android:textSize="@dimen/wdp24" android:textColor="#ffe2b347" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="挑战金:" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/wdp24" android:textColor="#ffe2b347" android:id="@id/tv_copper_plate_count" android:background="@drawable/newarena_audienc_back" android:paddingLeft="@dimen/wdp26" android:paddingRight="@dimen/wdp26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp6" android:layout_marginRight="@dimen/wdp3" android:text="500" />
+                    <ImageView android:id="@id/iv_challenge_gold_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/newarena_fight_more" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ffa8a8a8" android:id="@id/tv_gold_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="获胜一方获得该挑战金" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/llPlayMode" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp43">
+                    <TextView android:textSize="@dimen/wdp24" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp20" android:text="流畅模式" />
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RadioGroup android:orientation="horizontal" android:id="@id/radioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <RadioButton android:gravity="center" android:id="@id/ivPlayModeSwitcher" android:layout_width="wrap_content" android:layout_height="@dimen/wdp42" android:button="@drawable/newarena_fastgame_butn_selector" android:minWidth="@dimen/wdp95" android:singleLine="true" />
+                        </RadioGroup>
+                        <TextView android:id="@id/ivPlayModeSwitcherlayout" android:visibility="visible" android:layout_width="@dimen/wdp100" android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llCopper" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp49">
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ffc4c4c4" android:id="@id/txtHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始游戏后,将扣除您" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="@color/papayellow" android:id="@id/txtCopper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20铜板" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/frameLayout" android:layout_width="@dimen/wdp422" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/wdp810" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@id/rl_top" android:background="@drawable/newarena_bg_input_border_top" android:layout_width="fill_parent" android:layout_height="@dimen/wdp65">
+            <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:background="@drawable/newarena_titleblack" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp36" android:layout_width="@dimen/wdp236" android:layout_height="wrap_content" android:text="房间筛选" android:singleLine="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/serverLayout" android:background="@drawable/newarena_bg_input_border_midle" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_top">
+            <TextView android:textSize="13.0sp" android:textColor="#ffc4c4c4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="所属服务器" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/clo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <RelativeLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/rl_sh" android:background="@drawable/bg_item_battle_area" android:layout_width="fill_parent" android:layout_height="@dimen/wdp60" android:layout_marginRight="@dimen/wdp23" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <View android:id="@id/view_sh" android:background="@drawable/bg_circle_30d92d" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+                            <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp10" android:text="上海区" />
+                        </LinearLayout>
+                        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_sh" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="在线：--人" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/iv_sh_battle_area_rec" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_battle_area_rec" android:scaleType="fitEnd" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/rl_bj" android:background="@drawable/bg_item_battle_area" android:layout_width="fill_parent" android:layout_height="@dimen/wdp60" android:layout_marginLeft="@dimen/wdp23" android:layout_marginRight="@dimen/wdp23" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <View android:id="@id/view_bj" android:background="@drawable/bg_circle_30d92d" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+                            <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp10" android:text="北京区" />
+                        </LinearLayout>
+                        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_bj" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="在线：--人" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/iv_bj_battle_area_rec" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_battle_area_rec" android:scaleType="fitEnd" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/rl_gz" android:background="@drawable/bg_item_battle_area" android:layout_width="fill_parent" android:layout_height="@dimen/wdp60" android:layout_marginLeft="@dimen/wdp23" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <View android:id="@id/view_gz" android:background="@drawable/bg_circle_30d92d" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+                            <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp10" android:text="广东区" />
+                        </LinearLayout>
+                        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_gz" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="在线：--人" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/iv_gz_battle_area_rec" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_battle_area_rec" android:scaleType="fitEnd" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/newarena_bg_input_border_bottom" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:paddingBottom="@dimen/wdp32" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/serverLayout">
+            <TextView android:textSize="13.0sp" android:textColor="#ffc4c4c4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="房间类型" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/rgRoomType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <RadioButton android:textSize="@dimen/wdp24" android:textColor="@color/dialog_room_sort_item" android:gravity="center" android:id="@id/rb_synthesize" android:padding="@dimen/wdp10" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_dialog_room_sort_item_bg" android:text="综合房间" android:singleLine="true" />
+                <RadioButton android:textSize="@dimen/wdp24" android:textColor="@color/dialog_room_sort_item" android:gravity="center" android:id="@id/rb_phone" android:padding="@dimen/wdp10" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:checked="true" android:button="@drawable/selector_dialog_room_sort_item_bg" android:text="手机房间" android:singleLine="true" />
+            </RadioGroup>
+            <TextView android:textSize="13.0sp" android:textColor="#ffc4c4c4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="房间排序" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/rgRoomSort" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <RadioButton android:textSize="@dimen/wdp24" android:textColor="@color/white" android:gravity="center" android:id="@id/rb_rank_desc" android:padding="@dimen/wdp10" android:paddingTop="@dimen/wdp16" android:paddingBottom="@dimen/wdp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/selector_dialog_room_sort_item_bg" android:text="称呼等级高" />
+                <RadioButton android:textSize="@dimen/wdp24" android:textColor="@color/dialog_room_sort_item" android:gravity="center" android:id="@id/rb_rank_asc" android:padding="@dimen/wdp10" android:paddingTop="@dimen/wdp16" android:paddingBottom="@dimen/wdp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp36" android:button="@drawable/selector_dialog_room_sort_item_bg" android:text="称呼等级低" />
+                <RadioButton android:textSize="@dimen/wdp24" android:textColor="@color/dialog_room_sort_item" android:gravity="center" android:id="@id/rb_time_asc" android:padding="@dimen/wdp10" android:paddingTop="@dimen/wdp16" android:paddingBottom="@dimen/wdp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp36" android:button="@drawable/selector_dialog_room_sort_item_bg" android:text="开始时间短" />
+                <RadioButton android:textSize="@dimen/wdp24" android:textColor="@color/dialog_room_sort_item" android:gravity="center" android:id="@id/rb_seat_asc" android:padding="@dimen/wdp10" android:paddingTop="@dimen/wdp16" android:paddingBottom="@dimen/wdp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp36" android:button="@drawable/selector_dialog_room_sort_item_bg" android:text="有座" />
+            </RadioGroup>
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/tvSubmit" android:background="@drawable/app_maincolor_solidfull" android:paddingTop="@dimen/wdp16" android:paddingBottom="@dimen/wdp16" android:visibility="gone" android:layout_width="135.0dip" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginBottom="22.0dip" android:text="完成" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/iv_close" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp65" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close2" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

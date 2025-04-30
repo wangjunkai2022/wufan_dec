@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/notice_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/notice_text" android:background="@drawable/comment_notopen_notice" android:paddingLeft="@dimen/wdp20" android:paddingTop="@dimen/wdp22" android:paddingRight="@dimen/wdp20" android:paddingBottom="@dimen/wdp22" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp40" android:layout_marginRight="@dimen/wdp40" android:text="" />
+    <TextView android:background="@drawable/comment_three_conner" android:layout_width="@dimen/wdp28" android:layout_height="@dimen/wdp21" />
+</LinearLayout>

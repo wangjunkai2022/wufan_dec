@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/toplayout" android:background="#fffd5c2c" android:paddingLeft="@dimen/wdp23" android:paddingRight="@dimen/wdp23" android:layout_width="fill_parent" android:layout_height="@dimen/wdp90"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp26" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="@dimen/wdp90" android:text="TextView" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:gravity="center" android:id="@id/button" android:background="@drawable/detial_white_stroke_butn" android:layout_width="@dimen/wdp121" android:layout_height="@dimen/wdp56" android:text="详情" android:layout_weight="0.0" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff5f5f5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/search_bar_layout" layout="@layout/search_bar_layout" />
+    <view android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.join.mgps.customview.ForumLoadingView">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/recommend" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/search_recommend_layout" />
+            <ListView android:id="@id/autoListView" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/white" android:dividerHeight="1.0px" />
+            <View android:id="@id/line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/autoListView" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/clearLayout" android:background="#fff5f5f5" android:paddingBottom="@dimen/wdp30" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/line">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp95" android:layout_below="@id/line">
+                    <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:text="搜索历史" android:layout_weight="1.0" style="@style/TextViewStyle_12sp_notsingle" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/clearHistoryx" android:padding="@dimen/wdp20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp10" android:src="@drawable/delete" />
+                </LinearLayout>
+                <com.join.mgps.customview.FlowLayout android:gravity="left" android:id="@id/historyFlow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" android:numColumns="3" />
+            </LinearLayout>
+        </RelativeLayout>
+    </view>
+</LinearLayout>

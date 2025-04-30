@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar_layout" layout="@layout/topbar_left_title_layout" />
+    <RelativeLayout android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/loding_layout_include" />
+        <include layout="@layout/failed_layout_include" />
+        <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/mPtrFrame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.join.mgps.customview.XListView2 android:id="@id/xListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="4.0dip" />
+        </com.join.mgps.ptr.PtrClassicFrameLayout>
+    </RelativeLayout>
+</LinearLayout>

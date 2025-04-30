@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.join.mgps.customview.CornersLinearLayout android:orientation="vertical" android:background="#ff1d222b" android:layout_width="fill_parent" android:layout_height="fill_parent" app:conner_bottom_left="@dimen/wdp8" app:conner_top_left="@dimen/wdp8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp85">
+        <ImageView android:id="@id/iv_back" android:padding="@dimen/wdp20" android:visibility="gone" android:layout_width="@dimen/wdp60" android:layout_height="@dimen/wdp60" android:layout_marginRight="@dimen/wdp20" android:src="@drawable/ic_introduction_back_white" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ffffffff" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评论" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_close" android:padding="@dimen/wdp20" android:layout_width="@dimen/wdp60" android:layout_height="@dimen/wdp60" android:layout_marginRight="@dimen/wdp20" android:src="@drawable/ic_close2" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ff323744" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/rl_comment_list" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list_data" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            <include layout="@layout/loding_layout_include" />
+            <include layout="@layout/failed_layout_include" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/imageView44" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/arena_no_play" />
+                <TextView android:textSize="@dimen/wdp27" android:textColor="#ffa8a8a8" android:gravity="center" android:id="@id/editText5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp7" android:text="暂无数据" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_comment_detail" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.join.android.app.component.xrecyclerview.XRecyclerView android:id="@id/rv_comment_detail_list" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            <include layout="@layout/loding_layout_include_detail" />
+            <include layout="@layout/failed_layout_include_detail" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <include layout="@layout/view_introduction_commont_input" />
+</com.join.mgps.customview.CornersLinearLayout>

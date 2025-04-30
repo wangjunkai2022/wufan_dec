@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/forums_hot_item_forum_all" android:background="@drawable/forum_more_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="34.0dip" android:layout_margin="@dimen/mg_forum_post_item_padding" android:text="关注更多精彩专区" />
+    </LinearLayout>
+</LinearLayout>

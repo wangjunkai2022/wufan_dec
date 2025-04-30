@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/paiwei_rule_dialog" android:layout_width="339.0dip" android:layout_height="236.5dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="排位赛规则" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:id="@id/paiwei_cancel_iv" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fight_dialog_cancel_ic" />
+        </LinearLayout>
+        <TextView android:textSize="15.0sp" android:textColor="#ff518595" android:gravity="center_vertical" android:id="@id/paiwei_rule_tv" android:paddingLeft="35.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/paiwei_rule_str" android:lineSpacingMultiplier="1.5" />
+    </LinearLayout>
+</LinearLayout>

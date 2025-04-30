@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainx" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/wdp571" android:layout_above="@id/indicator" android:overScrollMode="never" />
+    <me.relex.circleindicator.CircleIndicator android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="@dimen/wdp32" android:layout_alignParentBottom="true" app:ci_animator="@anim/home_popup_indicator_anim" app:ci_drawable="@drawable/ic_app_down_finish_dot_selected" app:ci_drawable_unselected="@drawable/ic_app_down_finish_dot_unselected" app:ci_height="@dimen/dp10" app:ci_margin="@dimen/wdp10" app:ci_width="@dimen/dp10" />
+</RelativeLayout>

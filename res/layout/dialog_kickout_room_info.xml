@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/wdp526" android:layout_height="@dimen/wdp300" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:background="@drawable/newarena_bg_input_border_top" android:paddingLeft="@dimen/wdp36" android:layout_width="fill_parent" android:layout_height="@dimen/wdp65" />
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_top" android:background="@drawable/newarena_titleblack" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp36" android:layout_width="@dimen/wdp236" android:layout_height="wrap_content" android:text="提示" android:singleLine="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/newarena_bg_input_border_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tv_top">
+            <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_title" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="37.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="20.0dip">
+                <Button android:textSize="@dimen/wdp28" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_cancel" android:background="@drawable/bg_btn_border_gray_four_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+                <View android:layout_width="@dimen/wdp50" android:layout_height="fill_parent" />
+                <Button android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ffa05e08" android:gravity="center" android:id="@id/btn_ok" android:background="@drawable/bg_btn_border_blue_four" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="踢出" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/iv_close" android:layout_width="@dimen/wdp90" android:layout_height="@dimen/wdp65" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close2" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

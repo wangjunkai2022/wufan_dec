@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/yd_rl_navigation" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/yd_iv_navigation" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="10.0dip" android:src="@drawable/yd_left" android:scaleType="centerCrop" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff080808" android:gravity="center_vertical" android:id="@id/yd_tv_navigation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="免密登录" android:layout_centerInParent="true" />
+</RelativeLayout>

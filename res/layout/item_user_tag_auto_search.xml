@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" android:layout_marginLeft="@dimen/wdp26" android:layout_marginRight="@dimen/wdp26" />
+    <TextView android:textSize="@dimen/wdp28" android:textColor="#ff292929" android:gravity="center_vertical" android:id="@id/tv_tag_text" android:layout_width="fill_parent" android:layout_height="@dimen/wdp84" android:layout_marginLeft="@dimen/wdp26" android:layout_marginRight="@dimen/wdp26" android:text="FPS激斗合集2021最新…" />
+</LinearLayout>

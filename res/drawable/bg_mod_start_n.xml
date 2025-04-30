@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/bg_mod_start" />
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#22000000" />
+            <corners android:topRightRadius="@dimen/wdp8" android:bottomRightRadius="@dimen/wdp8" />
+        </shape>
+    </item>
+</layer-list>

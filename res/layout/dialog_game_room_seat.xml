@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_main" android:background="@android:color/transparent" android:layout_width="@dimen/wdp526" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:background="@drawable/newarena_bg_input_border_top" android:paddingLeft="@dimen/wdp36" android:layout_width="fill_parent" android:layout_height="@dimen/wdp65" />
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_position" android:background="@drawable/newarena_titleblack" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp36" android:layout_width="@dimen/wdp236" android:layout_height="wrap_content" android:text="提示" android:singleLine="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/newarena_bg_input_border_bottom" android:padding="@dimen/wdp52" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_position">
+            <Button android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ffa05e08" android:gravity="center" android:id="@id/btn_position" android:background="@drawable/bg_btn_border_blue_four" android:layout_width="fill_parent" android:layout_height="@dimen/wdp56" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:text="关闭位置" />
+            <Button android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ffa05e08" android:gravity="center" android:id="@id/btn_report" android:background="@drawable/bg_btn_border_blue_four" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp56" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:text="投诉举报" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/iv_close" android:layout_width="@dimen/wdp90" android:layout_height="@dimen/wdp65" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close2" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

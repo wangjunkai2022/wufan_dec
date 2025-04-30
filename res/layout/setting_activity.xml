@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_default_background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar_layout" layout="@layout/topbar_left_title_layout" />
+    <RelativeLayout android:id="@id/shareToFrendsLayout" android:background="@drawable/dynamic_list_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="13.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/set_item_magin_L_R" android:text="分享APP给朋友" android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff5e5e5e" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toLeftOf="@id/imageView5" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/imageView5" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/dynamic_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/checkVerLayout" android:background="@drawable/dynamic_list_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="8.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/set_item_magin_L_R" android:text="检查更新" android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+        <TextView android:id="@id/papaVer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toLeftOf="@id/arrowImage" android:layout_centerVertical="true" style="@style/TextViewStyle_12sp" />
+        <ImageView android:id="@id/arrowImage" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/dynamic_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/papaAboutLayout" android:background="@drawable/dynamic_list_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="8.0dip">
+        <TextView android:id="@id/about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/set_item_magin_L_R" android:text="关于悟饭" android:layout_alignParentLeft="false" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+        <ImageView android:id="@id/arrowImageAbout" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/dynamic_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:id="@id/responsibility" android:background="@drawable/dynamic_list_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/set_item_magin_L_R" android:text="免责声明" android:layout_alignParentLeft="false" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+        <ImageView android:id="@id/imageView3" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/dynamic_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

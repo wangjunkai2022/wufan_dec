@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="alph">#00000000</item>
+    <item type="drawable" name="alph25">#40000000</item>
+    <item type="drawable" name="alph50">#80000000</item>
+    <item type="drawable" name="alph65">#a6000000</item>
+    <item type="drawable" name="alph70">#b3000000</item>
+    <item type="drawable" name="alph80">#cc000000</item>
+    <item type="drawable" name="alphhaf">#66000000</item>
+    <item type="drawable" name="blackd">#ff000000</item>
+    <item type="drawable" name="d9d9dc">#ffd9d9dc</item>
+    <item type="drawable" name="material_ic_keyboard_arrow_next_black_24dp">@drawable/material_ic_keyboard_arrow_right_black_24dp</item>
+    <item type="drawable" name="material_ic_keyboard_arrow_previous_black_24dp">@drawable/material_ic_keyboard_arrow_left_black_24dp</item>
+    <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
+    <item type="drawable" name="notification_template_icon_low_bg">#0cffffff</item>
+    <item type="drawable" name="ssdk_oks_classic_platfrom_cell_back_nor">#ffffffff</item>
+    <item type="drawable" name="ssdk_oks_classic_platfrom_cell_back_sel">#ffeeeeee</item>
+    <item type="drawable" name="trans">@color/transparent</item>
+    <item type="drawable" name="white">#ffffffff</item>
+</resources>

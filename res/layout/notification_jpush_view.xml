@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notifyRootLl" android:paddingLeft="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/notifyIv" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="2.0dip" android:src="@drawable/icon" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/wdp35" android:paddingRight="@dimen/wdp10" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/wdp24" android:id="@id/notifyTitleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="参与者数据上传中" />
+        <TextView android:textSize="@dimen/wdp24" android:id="@id/notifyProgressTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(1/10)" android:singleLine="true" android:layout_below="@id/notifyTitleTv" />
+    </RelativeLayout>
+</LinearLayout>

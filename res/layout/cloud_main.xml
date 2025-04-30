@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relativeLayout" android:background="@drawable/papa_title_back" android:layout_width="fill_parent" android:layout_height="50.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@id/backImage" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/back_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/grid_text" android:gravity="center" android:id="@id/titleText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="存档云备份" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/lay_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <TextView android:id="@id/localRom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="本地存档：30个" android:drawableLeft="@drawable/cloud_1" android:drawablePadding="10.0dip" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="点击备份按钮，备份存档永不丢失" />
+        </LinearLayout>
+        <FrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/lay_1" android:layout_alignTop="@id/lay_1" android:layout_alignBottom="@id/lay_1" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center|top" android:id="@id/backups" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cloud_2" />
+            <TextView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="备份" />
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/lay_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <TextView android:id="@id/cloudRom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="云端存档：30个" android:drawableLeft="@drawable/cloud_down_2" android:drawablePadding="10.0dip" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="点击下载按钮，备份存档永不丢失" />
+        </LinearLayout>
+        <FrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/lay_2" android:layout_alignTop="@id/lay_2" android:layout_alignBottom="@id/lay_2" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cloud_down_1" />
+            <TextView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下载" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

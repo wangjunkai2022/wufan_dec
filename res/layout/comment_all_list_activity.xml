@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/papa_title_back" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <View android:layout_alignParentBottom="true" style="@style/TextViewStyle_line_H" />
+        <ImageView android:id="@id/back_image" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="45.0dip" android:src="@drawable/back_icon" android:layout_centerVertical="true" />
+        <TextView android:gravity="center" android:id="@id/title_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="45.0dip" android:singleLine="true" android:layout_toRightOf="@id/back_image" android:layout_centerVertical="true" style="@style/TextViewStyle_18sp" />
+        <TextView android:textSize="13.0sp" android:textColor="#fff47500" android:gravity="center" android:id="@id/textTopRight" android:background="@drawable/gamedetial_commit_back" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/wdp54" android:layout_marginRight="15.0dip" android:text="写点评" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/mPtrFrame" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.join.mgps.customview.XListView2 android:id="@id/comment_all_list" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:divider="#ffdddddd" android:dividerHeight="0.0dip" />
+    </com.join.mgps.ptr.PtrClassicFrameLayout>
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loding_layout_include" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/failed_layout_include" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/noCommentLl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView android:textSize="@dimen/wdp27" android:textColor="#ffa8a8a8" android:gravity="center" android:id="@id/editText5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp7" android:text="暂无点评内容" />
+        <ImageView android:id="@id/imageView44" android:layout_width="fill_parent" android:layout_height="wrap_content" app:srcCompat="@drawable/arena_no_play" />
+    </LinearLayout>
+</LinearLayout>

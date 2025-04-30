@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="167.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/backImage" android:layout_width="fill_parent" android:layout_height="167.0dip" android:scaleType="fitXY" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/usericon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="35.0dip" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/imageViewMuberOne" android:layout_width="44.0dip" android:layout_height="38.0dip" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/usericon">
+        <TextView android:textSize="15.0dip" android:textColor="#ff535353" android:id="@id/userName" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.join.mgps.customview.VipView android:id="@id/svip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dip" android:textColor="#ff525252" android:gravity="center_vertical" android:id="@id/contrybution" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/ll" android:layout_centerHorizontal="true" />
+</RelativeLayout>

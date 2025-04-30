@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="@dimen/wdp546" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/images" android:layout_width="@dimen/wdp580" android:layout_height="@dimen/wdp320" fresco:roundBottomLeft="false" fresco:roundBottomRight="false" fresco:roundTopLeft="true" fresco:roundTopRight="true" fresco:roundedCornerRadius="@dimen/wdp12" />
+        <ImageView android:id="@id/closed" android:padding="@dimen/wdp20" android:layout_width="@dimen/wdp90" android:layout_height="@dimen/wdp90" android:src="@drawable/update_closed_image" android:layout_alignTop="@id/images" android:layout_alignRight="@id/images" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:background="@drawable/bg_input_border_bottom" android:paddingLeft="@dimen/wdp40" android:paddingTop="@dimen/wdp42" android:paddingRight="@dimen/wdp40" android:paddingBottom="@dimen/wdp42" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:layout_below="@id/images">
+            <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/dialog_button_ok" android:background="@drawable/bg_btn_border_blue_four_maincolor" android:layout_width="wrap_content" android:layout_height="@dimen/wdp74" android:layout_marginLeft="@dimen/wdp15" android:text="立即加群" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

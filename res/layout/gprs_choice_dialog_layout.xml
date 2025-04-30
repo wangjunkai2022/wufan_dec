@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/white_bg" android:layout_width="263.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="15.0dip" android:textStyle="normal" android:textColor="#ffffffff" android:gravity="center" android:id="@id/titleText" android:background="#ff3a85e2" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="手机流量下载提醒" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/noticeall" android:background="@drawable/dynamic_list_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:id="@id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="每次都提醒" android:layout_weight="1.0" style="@style/TextViewStyle_12sp" />
+            <CheckBox android:id="@id/noticeallbox" android:background="@drawable/downpath_show_selector" android:clickable="false" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="30.0dip" android:checked="true" android:button="@null" />
+        </LinearLayout>
+        <TextView android:id="@id/textView7" android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_weight="0.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notice10" android:background="@drawable/dynamic_list_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="超过30M" android:layout_weight="1.0" style="@style/TextViewStyle_12sp" />
+            <CheckBox android:id="@id/notice10box" android:background="@drawable/downpath_show_selector" android:clickable="false" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="30.0dip" android:checked="false" android:button="@null" />
+        </LinearLayout>
+        <TextView android:id="@id/textView6" android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_weight="0.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notice50" android:background="@drawable/dynamic_list_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="超过50M" android:layout_weight="1.0" style="@style/TextViewStyle_12sp" />
+            <CheckBox android:id="@id/notice50box" android:background="@drawable/downpath_show_selector" android:clickable="false" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="30.0dip" android:checked="false" android:button="@null" />
+        </LinearLayout>
+        <TextView android:id="@id/textView3" android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_weight="0.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notice100" android:background="@drawable/dynamic_list_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="超过100M" android:layout_weight="1.0" style="@style/TextViewStyle_12sp" />
+            <CheckBox android:id="@id/notice100box" android:background="@drawable/downpath_show_selector" android:clickable="false" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="30.0dip" android:checked="false" android:button="@null" />
+        </LinearLayout>
+        <TextView android:id="@id/textView9" android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_weight="0.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/noticeno" android:background="@drawable/dynamic_list_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:id="@id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="永不提醒" android:layout_weight="1.0" style="@style/TextViewStyle_12sp" />
+            <CheckBox android:id="@id/noticenobox" android:background="@drawable/downpath_show_selector" android:clickable="false" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="30.0dip" android:checked="false" android:button="@null" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

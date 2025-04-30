@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layoutBottom" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/commentHeaderLayout" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/wdp105">
+        <TextView android:id="@id/textView9" android:background="@drawable/papa_yelow_side" android:visibility="invisible" android:layout_width="@dimen/wdp8" android:layout_height="15.0dip" android:layout_marginLeft="@dimen/wdp12" />
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff262626" android:id="@id/commitTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="热门点评" android:layout_toRightOf="@id/textView9" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff424242" android:id="@id/commitCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@id/commitTv" />
+        <TextView android:id="@id/textView53" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff444444" android:id="@id/tv_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp44" android:text="查看全部" />
+        <ImageView android:textSize="@dimen/wdp25" android:textColor="#fff47500" android:gravity="center" android:id="@id/commitImage" android:padding="@dimen/wdp13" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="visible" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp54" android:layout_marginLeft="10.0dip" android:layout_marginRight="@dimen/dp24" android:src="@drawable/more_arrow_right1" android:text="写点评" android:layout_weight="0.0" />
+    </LinearLayout>
+</LinearLayout>

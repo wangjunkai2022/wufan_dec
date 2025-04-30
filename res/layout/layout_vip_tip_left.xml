@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="@dimen/wdp467" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/ic_vip_font" android:layout_width="@dimen/wdp126" android:layout_height="@dimen/wdp56" android:layout_marginTop="@dimen/wdp36" />
+    <View android:background="@drawable/ic_vip_font_tip" android:layout_width="fill_parent" android:layout_height="@dimen/wdp33" android:layout_marginLeft="@dimen/wdp66" android:layout_marginTop="@dimen/wdp47" android:layout_marginRight="@dimen/wdp66" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp120" android:layout_marginTop="@dimen/wdp62">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/wdp69" android:layout_height="@dimen/wdp69" android:src="@drawable/ic_vip_cheat_a" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ffd3bcac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp14" android:text="金手指" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp22">
+            <ImageView android:layout_width="@dimen/wdp69" android:layout_height="@dimen/wdp69" android:src="@drawable/ic_vip_onekey" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ffd3bcac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp14" android:text="一键技能" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp18">
+            <ImageView android:layout_width="@dimen/wdp69" android:layout_height="@dimen/wdp69" android:src="@drawable/ic_vip_gate" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ffd3bcac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp14" android:text="任意选关" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp17">
+            <ImageView android:layout_width="@dimen/wdp69" android:layout_height="@dimen/wdp69" android:src="@drawable/ic_vip_slot_a" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ffd3bcac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp14" android:text="存档权益" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="@dimen/wdp367" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp61">
+        <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff3e3028" android:gravity="center" android:id="@id/tv_open_vip" android:background="@drawable/bg_btn_open_vip_tip" android:layout_width="@dimen/wdp367" android:layout_height="@dimen/wdp69" android:layout_marginTop="@dimen/wdp13" android:text="开通会员" />
+        <TextView android:textSize="@dimen/wdp22" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_no_more_tip" android:background="@drawable/shape_open_vip_price" android:layout_width="@dimen/wdp124" android:layout_height="@dimen/wdp38" android:text="限时5元" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/wdp22" android:textColor="#ff7a7a7a" android:id="@id/tv_nomore_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:text="不再提示" android:includeFontPadding="false" />
+</LinearLayout>

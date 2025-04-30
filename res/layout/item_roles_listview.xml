@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_roles_ll" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="#ff156d84" android:id="@id/item_name_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部" android:layout_weight="1.0" />
+        <ImageView android:id="@id/item_select_iv" android:layout_width="@dimen/wdp25" android:layout_height="@dimen/wdp25" android:src="@drawable/rank_check_ic" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <View android:background="#ff194f62" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+</LinearLayout>

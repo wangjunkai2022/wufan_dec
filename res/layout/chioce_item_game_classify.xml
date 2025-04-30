@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/wdp17" android:paddingTop="@dimen/wdp29" android:paddingRight="@dimen/wdp17" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/item1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/choice_item_game_classify_item" />
+    <View android:layout_width="8.0dip" android:layout_height="1.0dip" />
+    <include android:id="@id/item2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/choice_item_game_classify_item" />
+    <View android:layout_width="8.0dip" android:layout_height="1.0dip" />
+    <include android:id="@id/item3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/choice_item_game_classify_item" />
+</LinearLayout>

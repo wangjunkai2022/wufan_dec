@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#c8000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/backImg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/wdp118">
+        <LinearLayout android:orientation="vertical" android:id="@id/sharMainlayout" android:background="@drawable/share_bottomwhite_back" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp900" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp100" android:layout_marginRight="@dimen/wdp40">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp380">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/titleImg" android:layout_width="fill_parent" android:layout_height="fill_parent" app:roundBottomLeft="false" app:roundBottomRight="false" app:roundTopLeft="true" app:roundTopRight="true" app:roundedCornerRadius="@dimen/wdp10" />
+                <View android:background="@drawable/share_top_trasback" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ffb1b1b1" android:id="@id/msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:layout_marginTop="@dimen/wdp5" android:layout_marginBottom="@dimen/wdp30" android:text="222人平均打分5" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="@dimen/wdp32" android:textColor="@color/white" android:id="@id/appName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:text="生化危城" android:layout_above="@id/msg" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/icon" android:layout_width="@dimen/wdp110" android:layout_height="@dimen/wdp110" android:layout_marginRight="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp30" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/starLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp520">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/userIcon" android:background="@drawable/sharegame_usericon_back" android:layout_width="@dimen/wdp90" android:layout_height="@dimen/wdp90" android:layout_marginTop="@dimen/wdp80" app:roundAsCircle="true" />
+                <TextView android:textSize="@dimen/wdp32" android:textColor="#ff3b3b3b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp44" android:text="点击星星给游戏评分" />
+                <com.join.mgps.customview.MStarBar android:id="@id/selecteStar" android:layout_width="wrap_content" android:layout_height="@dimen/wdp54" android:layout_marginTop="@dimen/wdp40" app:integerMark="false" app:starCount="5" app:starDistance="@dimen/wdp26" app:starEmpty="@drawable/star_empty" app:starFill="@drawable/star_full" app:starSize="@dimen/wdp54" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/tipsLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp520">
+                <RelativeLayout android:padding="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/userIcon2" android:background="@drawable/sharegame_usericon_back_72" android:layout_width="@dimen/wdp72" android:layout_height="@dimen/wdp72" android:layout_marginRight="@dimen/wdp13" app:roundAsCircle="true" />
+                    <TextView android:textSize="@dimen/wdp24" android:textColor="#ff262626" android:id="@id/userName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp5" android:text="点击星星给游戏评分" android:layout_toRightOf="@id/userIcon2" android:layout_alignTop="@id/userIcon2" />
+                    <com.join.mgps.customview.MStarBar android:id="@id/selecteStar2" android:layout_width="wrap_content" android:layout_height="@dimen/wdp54" android:layout_marginTop="@dimen/wdp10" android:layout_toRightOf="@id/userIcon2" android:layout_below="@id/userName" app:integerMark="false" app:starCount="5" app:starDistance="@dimen/wdp8" app:starEmpty="@drawable/star_empty" app:starFill="@drawable/star_full" app:starSize="@dimen/wdp16" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/wdp32" android:textColor="#ff3b3b3b" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp30" android:text="给游戏选个短评" />
+                <com.zhy.view.flowlayout.TagFlowLayout android:id="@id/tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp40" android:layout_marginRight="@dimen/wdp30" app:max_select="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sharEndlayout" android:visibility="gone" android:layout_width="@dimen/wdp580" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp150" android:layout_marginRight="@dimen/wdp40" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp330">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/titleImgEnd" android:layout_width="fill_parent" android:layout_height="fill_parent" app:roundBottomLeft="false" app:roundBottomRight="false" app:roundTopLeft="true" app:roundTopRight="true" app:roundedCornerRadius="@dimen/wdp10" />
+                <View android:background="@drawable/share_top_trasback" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ffb1b1b1" android:id="@id/msgEnd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:layout_marginTop="@dimen/wdp5" android:layout_marginBottom="@dimen/wdp30" android:text="222人平均打分5" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/white" android:id="@id/appNameEnd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:text="生化危城" android:layout_above="@id/msgEnd" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iconEnd" android:layout_width="@dimen/wdp110" android:layout_height="@dimen/wdp110" android:layout_marginRight="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp30" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/game_share_endtop" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/wdp250">
+                    <RelativeLayout android:padding="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+                        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/userIconEnd" android:background="@drawable/sharegame_usericon_back_72" android:layout_width="@dimen/wdp72" android:layout_height="@dimen/wdp72" android:layout_marginRight="@dimen/wdp13" app:roundAsCircle="true" />
+                        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff262626" android:id="@id/userNameEnd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp5" android:text="点击星星给游戏评分" android:layout_toRightOf="@id/userIconEnd" android:layout_alignTop="@id/userIconEnd" />
+                        <com.join.mgps.customview.MStarBar android:id="@id/selecteStarEnd" android:layout_width="wrap_content" android:layout_height="@dimen/wdp54" android:layout_marginTop="@dimen/wdp10" android:layout_toRightOf="@id/userIconEnd" android:layout_below="@id/userNameEnd" app:integerMark="false" app:starCount="5" app:starDistance="@dimen/wdp8" app:starEmpty="@drawable/star_empty" app:starFill="@drawable/star_full" app:starSize="@dimen/wdp16" />
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/wdp28" android:textColor="#ff3b3b3b" android:id="@id/selectedMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp20" android:text="格斗游戏扛鼎之作" android:layout_weight="0.0" />
+                </LinearLayout>
+                <RelativeLayout android:background="@drawable/game_share_endbottom" android:layout_width="fill_parent" android:layout_height="@dimen/wdp135" android:layout_weight="0.0">
+                    <View android:background="@drawable/game_share_line" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" android:layout_alignParentTop="true" />
+                    <ImageView android:id="@id/zxing" android:background="@drawable/game_share_erweima" android:layout_width="@dimen/wdp75" android:layout_height="@dimen/wdp75" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp20" android:scaleType="fitXY" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/wdp24" android:textColor="#ff9f9f9f" android:id="@id/tt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="识别二维码" android:layout_toRightOf="@id/zxing" android:layout_alignTop="@id/zxing" />
+                    <TextView android:textSize="@dimen/wdp24" android:textColor="#ff9f9f9f" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp5" android:text="前往悟饭游戏厅下载" android:layout_toRightOf="@id/zxing" android:layout_below="@id/tt" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/startGameLayout" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp118" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/wdp32" android:textColor="@color/white" android:gravity="center" android:id="@id/startGame" android:background="@drawable/corner_yellow_bg_4" android:layout_width="fill_parent" android:layout_height="@dimen/wdp78" android:layout_marginLeft="@dimen/wdp20" android:layout_marginRight="@dimen/wdp20" android:text="启动游戏" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/commitLayout" android:background="@drawable/share_bottomwhite_back" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp900" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp100" android:layout_marginRight="@dimen/wdp40">
+        <RelativeLayout android:padding="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/userIcon3" android:background="@drawable/sharegame_usericon_back_72" android:layout_width="@dimen/wdp72" android:layout_height="@dimen/wdp72" android:layout_marginRight="@dimen/wdp13" app:roundAsCircle="true" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff3b3b3b" android:id="@id/userName3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp5" android:text="点击星星给游戏评分" android:layout_toRightOf="@id/userIcon3" android:layout_alignTop="@id/userIcon3" />
+            <com.join.mgps.customview.MStarBar android:id="@id/selecteStar3" android:layout_width="wrap_content" android:layout_height="@dimen/wdp54" android:layout_marginTop="@dimen/wdp10" android:layout_toRightOf="@id/userIcon3" android:layout_below="@id/userName3" app:integerMark="false" app:starCount="5" app:starDistance="@dimen/wdp8" app:starEmpty="@drawable/star_empty" app:starFill="@drawable/star_full" app:starSize="@dimen/wdp16" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="@color/main_yello_color" android:gravity="center" android:id="@id/commit" android:background="@drawable/share_tag_checked_bg" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp30" android:layout_width="wrap_content" android:layout_height="@dimen/wdp50" android:minWidth="@dimen/wdp93" android:text="完成" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <EditText android:textSize="@dimen/wdp28" android:textColor="#ffa8a8a8" android:gravity="top" android:id="@id/editText" android:background="@color/white" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="哪里不好玩，吐个槽吧" android:maxLength="50" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/shareLayout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp258" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp30">
+            <View android:background="#ffd8d8d8" android:layout_width="@dimen/wdp80" android:layout_height="@dimen/wdp2" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分享给好友" />
+            <View android:background="#ffd8d8d8" android:layout_width="@dimen/wdp80" android:layout_height="@dimen/wdp2" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/weichartLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="@dimen/wdp68" android:layout_height="@dimen/wdp68" android:src="@drawable/icon_weixin" />
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10" android:text="微信" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/friendLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="@dimen/wdp68" android:layout_height="@dimen/wdp68" android:src="@drawable/icon_weixi_friend" />
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10" android:text="朋友圈" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/qqLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="@dimen/wdp68" android:layout_height="@dimen/wdp68" android:src="@drawable/icon_qq" />
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10" android:text="手机QQ" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/qZoneLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="@dimen/wdp68" android:layout_height="@dimen/wdp68" android:src="@drawable/icon_qzone" />
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10" android:text="QQ空间" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/closeImg" android:padding="@dimen/wdp38" android:visibility="gone" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp100" android:src="@drawable/posting_close_white" />
+    <ImageView android:id="@id/notShow" android:padding="@dimen/wdp38" android:visibility="visible" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp100" android:src="@drawable/posting_close_white" />
+    <ImageView android:id="@id/back" android:padding="@dimen/wdp35" android:visibility="gone" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp100" android:src="@drawable/back_icon_discover" />
+</RelativeLayout>

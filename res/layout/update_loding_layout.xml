@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/lodingBackImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/fight_back_btn" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="70.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/uZIPLoading" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:indeterminateDrawable="@drawable/update_unzip_loding_progress" android:indeterminateDuration="1000" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffc9c9c9" android:id="@id/progressmessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="正在下载中" android:singleLine="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/progressBar" android:layout_width="300.0dip" android:layout_height="8.0dip" android:max="100" android:layout_above="@id/message" android:layout_alignParentBottom="false" android:layout_centerHorizontal="true" style="@style/progress_butn_style_yellow" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.join.mgps.customview.swiperefresh.SwipeRefresh android:id="@id/refreshx" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.join.android.app.component.xrecyclerview.XRecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.join.mgps.customview.swiperefresh.SwipeRefresh>
+    <include layout="@layout/loding_layout_include" />
+    <include layout="@layout/failed_layout_include" />
+    <include layout="@layout/none_layout_include2" />
+</LinearLayout>

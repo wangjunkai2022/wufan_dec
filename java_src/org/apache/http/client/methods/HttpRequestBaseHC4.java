@@ -1,0 +1,67 @@
+package org.apache.http.client.methods;
+
+import java.net.URI;
+import net.lingala.zip4j.util.e;
+import org.apache.http.ProtocolVersion;
+import org.apache.http.RequestLine;
+import org.apache.http.annotation.NotThreadSafe;
+import org.apache.http.client.config.RequestConfig;
+import org.apache.http.message.BasicRequestLine;
+import org.apache.http.params.HttpProtocolParams;
+@NotThreadSafe
+/* loaded from: classes5.dex */
+public abstract class HttpRequestBaseHC4 extends AbstractExecutionAwareRequest implements HttpUriRequest, Configurable {
+    private RequestConfig config;
+    private URI uri;
+    private ProtocolVersion version;
+
+    @Override // org.apache.http.client.methods.Configurable
+    public RequestConfig getConfig() {
+        return this.config;
+    }
+
+    public abstract String getMethod();
+
+    public ProtocolVersion getProtocolVersion() {
+        ProtocolVersion protocolVersion = this.version;
+        return protocolVersion != null ? protocolVersion : HttpProtocolParams.getVersion(getParams());
+    }
+
+    public RequestLine getRequestLine() {
+        String method = getMethod();
+        ProtocolVersion protocolVersion = getProtocolVersion();
+        URI uri = getURI();
+        String aSCIIString = uri != null ? uri.toASCIIString() : null;
+        if (aSCIIString == null || aSCIIString.length() == 0) {
+            aSCIIString = e.F0;
+        }
+        return new BasicRequestLine(method, aSCIIString, protocolVersion);
+    }
+
+    public URI getURI() {
+        return this.uri;
+    }
+
+    public void releaseConnection() {
+        reset();
+    }
+
+    public void setConfig(RequestConfig requestConfig) {
+        this.config = requestConfig;
+    }
+
+    public void setProtocolVersion(ProtocolVersion protocolVersion) {
+        this.version = protocolVersion;
+    }
+
+    public void setURI(URI uri) {
+        this.uri = uri;
+    }
+
+    public void started() {
+    }
+
+    public String toString() {
+        return getMethod() + " " + getURI() + " " + getProtocolVersion();
+    }
+}

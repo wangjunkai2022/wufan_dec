@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/isSelector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/account_my_game_del_bg" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/editAll" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="全部" android:layout_toRightOf="@id/isSelector" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/app_blue_color" android:gravity="center" android:id="@id/editCancel" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:text="@string/cancel" android:layout_alignParentRight="true" />
+        <View android:id="@id/lineTop" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.join.mgps.customview.XListView2 android:id="@id/listView" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@drawable/dynamic_list_bg" android:divider="@color/activity_default_background" android:dividerHeight="0.5dip" android:layout_weight="1.0" />
+    <Button android:gravity="center" android:id="@id/editGameNumber" android:background="@drawable/account_my_game_edit_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_margin="10.0dip" android:text="" style="@style/TextViewStyle_14sp_white" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/noneLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0sp" android:textColor="#ff908f8f" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="还没有下载游戏哦~" />
+        <ImageView android:id="@id/lodingBackImage" android:background="#ffcdcdcd" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="100.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="100.0dip" android:layout_marginBottom="11.0dip" />
+        <Button android:id="@id/setNetwork" android:layout_width="wrap_content" android:text="@string/have_a_look" style="@style/ButtonStyle12_Text" />
+    </LinearLayout>
+</LinearLayout>

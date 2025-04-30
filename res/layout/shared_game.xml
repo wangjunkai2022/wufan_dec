@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/favoirte_dialog_bg" android:layout_width="@dimen/wdp546" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp30" android:textColor="@color/white" android:gravity="center" android:id="@id/title" android:background="@drawable/favorite_title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/wdp77" android:text="分享的游戏" android:textAlignment="center" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/wdp35" android:paddingTop="@dimen/wdp33" android:paddingRight="@dimen/wdp35" android:paddingBottom="@dimen/wdp39" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/game_icon" android:layout_width="@dimen/wdp110" android:layout_height="@dimen/wdp110" />
+        <TextView android:textSize="@dimen/wdp30" android:textColor="#ff3b3b3b" android:layout_gravity="center" android:id="@id/game_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp13" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:ellipsize="end" android:layout_gravity="center" android:id="@id/game_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp74" android:layout_marginTop="@dimen/wdp8" android:layout_marginRight="@dimen/wdp74" android:maxLines="2" />
+        <Button android:textSize="@dimen/wdp30" android:textColor="@color/white" android:id="@id/ok" android:background="@drawable/favorite_btn_bg" android:padding="@dimen/wdp16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp36" android:text="立即查看" />
+    </LinearLayout>
+</RelativeLayout>

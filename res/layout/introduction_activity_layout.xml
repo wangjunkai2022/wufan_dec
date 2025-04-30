@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff232734" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/weblayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/fl_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp138" />
+        <RelativeLayout android:id="@id/rl_menu_layer" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ScrollView android:background="#ff232734" android:descendantFocusability="blocksDescendants" android:layout_width="@dimen/wdp138" android:layout_height="fill_parent" android:fillViewport="true" android:layout_alignParentRight="true">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_close_drawer" android:background="@drawable/shape_introduction_close" android:layout_width="@dimen/wdp56" android:layout_height="@dimen/wdp56" android:layout_marginTop="@dimen/wdp26">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_introduction_close" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_praise" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp32">
+                        <ImageView android:id="@id/iv_praise" android:layout_width="@dimen/wdp40" android:layout_height="@dimen/wdp40" android:src="@drawable/ic_introduction_star_white" />
+                        <TextView android:textSize="@dimen/wdp22" android:textColor="#ffffffff" android:id="@id/tv_praise_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp8" android:text="0" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp32">
+                        <ImageView android:layout_width="@dimen/wdp40" android:layout_height="@dimen/wdp40" android:src="@drawable/ic_introduction_comment" />
+                        <TextView android:textSize="@dimen/wdp22" android:textColor="#ffffffff" android:id="@id/tv_comment_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp8" android:text="0" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp32">
+                        <ImageView android:layout_width="@dimen/wdp40" android:layout_height="@dimen/wdp40" android:src="@drawable/ic_introduction_progress_white" />
+                        <TextView android:textSize="@dimen/wdp22" android:textColor="#ffffffff" android:id="@id/tv_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp8" android:text="进度" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_recommend" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp32">
+                        <ImageView android:layout_width="@dimen/wdp40" android:layout_height="@dimen/wdp40" android:src="@drawable/ic_introduction_favorite_white" />
+                        <TextView android:textSize="@dimen/wdp22" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp8" android:text="推荐" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_more" android:paddingTop="@dimen/wdp20" android:paddingBottom="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp12">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_introduction_report_grey" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <FrameLayout android:id="@id/fl_front_view" android:layout_width="@dimen/wdp616" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ProgressBar android:id="@id/pb_progress" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/wdp4" android:max="100" android:indeterminateOnly="false" android:progressDrawable="@drawable/progress_bar_horizontal" style="?android:progressBarStyleHorizontal" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/loding_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp137">
+        <include layout="@layout/loding_layout" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp137">
+        <include layout="@layout/failed_layout_include" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/video_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

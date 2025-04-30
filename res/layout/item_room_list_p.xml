@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/pMain" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/wdp10">
+        <View android:id="@id/borderView" android:background="@drawable/mg_proficiency_level_special_guest_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/iv_state" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_seat_waiting" android:layout_centerInParent="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/avatar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/wdp1" android:scaleType="fitXY" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:roundAsCircle="true" />
+        <ImageView android:id="@id/tv_chenghao" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/platformType" android:background="#ff052430" android:visibility="gone" android:layout_width="9.0dip" android:layout_height="9.0dip" android:src="@drawable/icon_peripheral_phone" android:scaleType="centerInside" android:layout_alignTop="@id/avatar" android:layout_alignRight="@id/avatar" />
+    </RelativeLayout>
+    <ImageView android:id="@id/ivProficiencyLevel" android:background="@drawable/mg_proficiency_level_trainee" android:visibility="gone" android:layout_width="@dimen/wdp20" android:layout_height="@dimen/wdp20" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.join.mgps.customview.VipView android:id="@id/vipView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10" android:layout_alignParentRight="true" />
+</RelativeLayout>

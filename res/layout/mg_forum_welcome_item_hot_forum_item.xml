@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="1.0px" android:paddingTop="1.0px" android:paddingRight="1.0px" android:paddingBottom="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/mg_forum_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/mg_forum_item_for_welcome" />
+</LinearLayout>

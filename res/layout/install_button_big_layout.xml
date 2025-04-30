@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/progressbarLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp78" android:layout_marginBottom="@dimen/wdp18">
+        <ProgressBar android:id="@id/butnProgressBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:progress="50" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/progress_installlbutn_big_style_blue" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/progress_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <ImageView android:id="@id/butn_showdownload" android:layout_width="@dimen/detail_showdowloding_image_w_h" android:layout_height="@dimen/detail_showdowloding_image_w_h" android:src="@drawable/detail_comment_download_pause" />
+            <TextView android:textSize="@dimen/main_detial_textsize" android:textColor="#ffffffff" android:id="@id/percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_starmagin_t" android:text="0%" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/instalbutnLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/detail_simple_installbutn_textsize" android:textColor="#ffffffff" android:gravity="center" android:id="@id/instalButtomButn" android:background="@drawable/installbutn_big_normal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp78" android:text="@string/download_status_download" android:layout_weight="1.0" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/wdp18" android:textColor="@color/money_text_color" android:id="@id/moneyText" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_weight="1.0" android:layout_below="@id/instalButtomButn" android:layout_centerInParent="true" />
+</LinearLayout>

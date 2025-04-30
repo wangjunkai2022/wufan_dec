@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar_layout" layout="@layout/topbar_title_center_layout" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.core.widget.NestedScrollView android:id="@id/nsv_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/wdp20" android:paddingRight="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97">
+                    <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff111111" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部标签" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/wdp28" android:textColor="#ff3ca4fd" android:id="@id/tv_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投诉" />
+                </LinearLayout>
+                <com.join.mgps.customview.FlowLayout android:id="@id/fl_tag_all" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp18" android:layout_marginRight="@dimen/wdp18" android:layout_marginBottom="@dimen/wdp50" />
+                <View android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="@dimen/wdp15" />
+                <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff111111" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97" android:layout_marginLeft="@dimen/wdp20" android:text="我常用的标签" />
+                <com.join.mgps.customview.FlowLayout android:id="@id/fl_tag_my" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp18" android:layout_marginRight="@dimen/wdp18" android:layout_marginBottom="@dimen/wdp18" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp43">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_f7f7f7_r_44" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:layout_marginRight="@dimen/wdp32" android:minHeight="@dimen/wdp82" android:layout_weight="1.0">
+                        <EditText android:textSize="@dimen/wdp28" android:textColorHint="#ffb6b4b4" android:id="@id/et_tag" android:background="@null" android:paddingLeft="@dimen/wdp26" android:paddingRight="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="@dimen/wdp82" android:hint="为游戏打新标签" android:singleLine="true" android:maxLength="10" android:inputType="text" />
+                        <ListView android:id="@id/lv_auto_search" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="#ff0fff00" android:dividerHeight="1.0px" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_add_tag" android:background="@drawable/shape_3ca4fd_r_44" android:layout_width="@dimen/wdp270" android:layout_height="@dimen/wdp82" android:layout_marginRight="@dimen/wdp20" android:layout_alignParentRight="true">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_add_white" />
+                        <TextView android:textSize="@dimen/wdp28" android:textColor="#ffffffff" android:id="@id/tv_tag_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp14" android:text="添加标签" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <include layout="@layout/loding_layout_include" />
+        <include layout="@layout/failed_layout_include" />
+        <View android:id="@id/viewBg" android:background="@color/dialog_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

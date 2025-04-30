@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffefeff4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97">
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff262626" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="@dimen/wdp97" android:text="消息设置" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/back" android:paddingTop="@dimen/wdp32" android:paddingBottom="@dimen/wdp32" android:layout_width="@dimen/wdp97" android:layout_height="@dimen/wdp97" android:src="@drawable/back_icon" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/isGetMessageLl" android:background="@color/white" android:paddingLeft="@dimen/wdp30" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/wdp90" android:layout_marginTop="@dimen/wdp2">
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="接收推送通知" android:layout_weight="1.0" />
+        <ImageView android:id="@id/isGetMessageIv" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp30" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_notif_open" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/isGetReplayLl" android:background="@color/white" android:paddingLeft="@dimen/wdp30" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/wdp90" android:layout_marginTop="@dimen/wdp2">
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="接收回复通知" android:layout_weight="1.0" />
+        <ImageView android:id="@id/isGetReplayIv" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp30" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_notif_open" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/isGetLikeLl" android:background="@color/white" android:paddingLeft="@dimen/wdp30" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/wdp90" android:layout_marginTop="@dimen/wdp2">
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="接收点赞通知" android:layout_weight="1.0" />
+        <ImageView android:id="@id/isGetLikeIv" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp30" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_notif_open" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="@dimen/wdp546" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff202020" android:gravity="center" android:id="@id/tip_title" android:background="@drawable/bg_input_border_top_maincolor" android:paddingTop="@dimen/wdp42" android:paddingBottom="@dimen/wdp28" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="提示" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_input_border_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/wdp30" android:textColor="#ff686868" android:gravity="center" android:id="@id/dialog_content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp80" android:text="" />
+            <TextView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:gravity="center" android:id="@id/dialog_button_ok" android:background="@drawable/solid_blue_radio4_butn" android:layout_width="fill_parent" android:layout_height="@dimen/wdp78" android:layout_marginLeft="@dimen/wdp43" android:layout_marginRight="@dimen/wdp43" android:text="立即更新" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ff108ee9" android:gravity="center" android:id="@id/dialog_button_cancel" android:background="@drawable/stroke_blue_radio4_butn" android:layout_width="fill_parent" android:layout_height="@dimen/wdp78" android:layout_marginLeft="@dimen/wdp43" android:layout_marginTop="@dimen/wdp28" android:layout_marginRight="@dimen/wdp43" android:layout_marginBottom="@dimen/wdp68" android:text="直接启动" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

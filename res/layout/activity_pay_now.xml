@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:background="#66000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/papa_pay" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="15.0sp" android:textColor="#ff3b3b3b" android:gravity="center" android:id="@id/payTitle" android:layout_width="fill_parent" android:layout_height="53.0dip" android:text="请选择支付方式" />
+        <View style="@style/TextViewStyle_line_H" />
+        <LinearLayout android:orientation="vertical" android:id="@id/payDefault" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="15.0sp" android:textColor="#ff3b3b3b" android:id="@id/payProduct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="22.0dip" android:text="商品" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff3b3b3b" android:id="@id/payMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:text="金额" android:textIsSelectable="false" />
+            <View android:layout_marginTop="20.0dip" style="@style/TextViewStyle_line_H" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/anotherPayType" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="使用支付宝支付" android:drawableRight="@drawable/pay_another_image" android:drawablePadding="5.0dip" />
+            <View android:layout_marginBottom="20.0dip" style="@style/TextViewStyle_line_H" />
+            <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/ok" android:background="@drawable/account_butn_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="确认" />
+        </LinearLayout>
+        <HorizontalScrollView android:id="@id/payChoisePayType" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="55.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutWeixin" android:background="@drawable/papay_choice_pay_type_selector" android:padding="10.0dip" android:layout_width="90.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/weichatPay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/payweichatimage" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff8a8a8a" android:id="@id/textView21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="微信支付" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutAlipay" android:background="@drawable/papay_choice_pay_type_selector" android:layout_width="90.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/aliPay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/payalipayimage" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff8a8a8a" android:id="@id/textView16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="支付宝" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutPabiPay" android:background="@drawable/papay_choice_pay_type_selector" android:visibility="gone" android:layout_width="90.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/pabiPay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pabipay_image" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff8a8a8a" android:id="@id/textView29" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="饭票支付" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layouthongbaoPay" android:background="@drawable/papay_choice_pay_type_selector" android:visibility="gone" android:layout_width="90.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/hongbaoPay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hongbaopay_image" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff8a8a8a" android:id="@id/textView30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="红包支付" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutUnionpay" android:background="@drawable/papay_choice_pay_type_selector" android:visibility="gone" android:layout_width="90.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/unionpay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/payunionpayimage" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff8a8a8a" android:id="@id/textView17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="银联" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutCreditCardPay" android:background="@drawable/papay_choice_pay_type_selector" android:visibility="gone" android:layout_width="90.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/creditCardPay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/paycreditcardimage" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff8a8a8a" android:id="@id/textView18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="信用卡" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/payLoding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/mg_loading" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginTop="73.0dip" android:indeterminateDrawable="@drawable/loding_progress_big" android:indeterminateDuration="1000" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff908f8f" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="102.0dip" android:text="获取订单中" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_userrecom_activity_0" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/wdp150" android:minHeight="@dimen/wdp250" android:layout_weight="0.0" />
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/wdp250" android:layout_weight="1.0" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/toplayout" android:background="@drawable/top_round_bottom_bg" android:layout_width="fill_parent" android:layout_height="@dimen/wdp112" android:layout_weight="0.0">
+        <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff3b3b3b" android:gravity="center_vertical" android:id="@id/title_textview" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:singleLine="true" android:layout_centerVertical="true" style="@style/TextViewStyle_18sp" />
+        <ImageView android:tag="binding_2" android:padding="@dimen/wdp35" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp112" android:src="@drawable/closed_grey" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View style="@style/TextViewStyle_line_H" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycleView" android:tag="binding_3" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

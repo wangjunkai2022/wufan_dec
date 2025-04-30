@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/actionPlaceHolder" android:layout_width="fill_parent" android:layout_height="@dimen/wdp96" layout="@layout/mg_forum_title_layout" />
+    <TextView android:textSize="@dimen/wdp28" android:textColor="@color/black" android:gravity="center" android:id="@id/aboutWF" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/wdp96" android:layout_marginRight="@dimen/wdp30" android:text="关于悟饭" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/layout_others" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <view android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/actionPlaceHolder" class="com.join.mgps.customview.ForumLoadingView">
+        <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/mPtrFrame" android:layout_width="fill_parent" android:layout_height="fill_parent" app:ptr_header_style="DropBounce">
+            <ru.noties.scrollable.ScrollableLayout android:id="@id/scrollableLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+                <com.join.mgps.customview.ForumIndexHeaderView android:id="@id/headerView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.join.mgps.customview.SlidingTabLayout4 android:id="@id/tabsLayout" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+                <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/tabs_height" />
+            </ru.noties.scrollable.ScrollableLayout>
+        </com.join.mgps.ptr.PtrClassicFrameLayout>
+    </view>
+</RelativeLayout>

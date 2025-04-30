@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_default_background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/loding_layout_include" />
+    <include layout="@layout/failed_layout_include" />
+    <com.join.mgps.customview.MViewpagerV4 android:id="@id/mBottomVIewPager" android:background="@android:color/transparent" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/img_iconback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/detial_mini_backbutn_selecter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/relateLayoutRight" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_toRightOf="@id/img_iconback">
+            <TextView android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/textViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/lLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/textViewPosition" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/textViewTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

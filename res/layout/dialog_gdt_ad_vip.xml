@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_gdt_ad_ffffff_r26" android:paddingBottom="@dimen/wdp64" android:layout_width="@dimen/wdp604" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@id/iv_close" android:padding="@dimen/wdp8" android:layout_width="@dimen/wdp45" android:layout_height="@dimen/wdp45" android:layout_marginTop="@dimen/wdp20" android:layout_marginRight="@dimen/wdp20" android:src="@drawable/ic_gdt_ad_close" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/icon" android:layout_width="@dimen/wdp284" android:layout_height="@dimen/wdp210" android:layout_marginLeft="@dimen/wdp16" android:layout_marginTop="@dimen/wdp5" app:actualImageScaleType="fitCenter" app:placeholderImage="@drawable/ic_gdt_ad_tv" app:placeholderImageScaleType="fitCenter" />
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_ad_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp12" android:text="看个广告支持下悟饭吧" android:minLines="2" />
+        <RelativeLayout android:id="@id/rl_opt_vip" android:layout_width="@dimen/wdp502" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp36">
+            <TextView android:textSize="@dimen/wdp32" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_opt_vip" android:background="@drawable/btn_gdt_ad_5580ff" android:layout_width="fill_parent" android:layout_height="@dimen/wdp90" android:layout_marginTop="@dimen/wdp10" android:text="开通会员免广告" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_ad_vip_tip" android:background="@drawable/bg_gdt_ad_lable" android:paddingLeft="@dimen/wdp10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp15" android:text="最低5元/月" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff5580ff" android:gravity="center" android:id="@id/tv_opt_view_ad" android:background="@drawable/btn_gdt_ad_5580ff_stroke" android:layout_width="@dimen/wdp502" android:layout_height="@dimen/wdp90" android:layout_marginTop="@dimen/wdp32" android:text="看广告免费玩" />
+    </LinearLayout>
+</LinearLayout>

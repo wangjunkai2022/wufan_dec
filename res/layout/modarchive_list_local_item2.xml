@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/modarchive_list_local_item2_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp24" android:layout_marginRight="@dimen/wdp24" android:layout_marginBottom="@dimen/wdp24">
+        <com.facebook.drawee.view.SimpleDraweeView android:tag="binding_2" android:layout_width="@dimen/wdp205" android:layout_height="@dimen/wdp115" android:layout_marginLeft="@dimen/wdp24" android:layout_marginTop="@dimen/wdp24" android:layout_marginBottom="@dimen/wdp24" app:actualImageScaleType="centerCrop" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="@dimen/wdp24" android:paddingTop="@dimen/wdp24" android:paddingRight="@dimen/wdp12" android:paddingBottom="@dimen/wdp26" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/messageLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/more" app:layout_constraintTop_toTopOf="parent">
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ffc1d0dd" android:ellipsize="end" android:id="@id/contentsimpble" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp50" android:lines="1" android:includeFontPadding="false" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ff2ea5ff" android:id="@id/more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="展开" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="@dimen/wdp21" android:textColor="#ff9ea5ad" android:id="@id/userName" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp8" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/messageLayout" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/wdp8" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/userName">
+                <LinearLayout android:orientation="horizontal" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/downImg" android:paddingTop="@dimen/wdp8" android:paddingBottom="@dimen/wdp8" android:layout_width="@dimen/wdp20" android:layout_height="@dimen/wdp36" android:src="@drawable/cloud_down_load_icon" android:layout_marginEnd="@dimen/wdp8" />
+                    <TextView android:gravity="center_vertical" android:id="@id/downNumber" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/TextViewStyle_10sp" />
+                    <ImageView android:id="@id/parise" android:tag="binding_7" android:padding="@dimen/wdp7" android:layout_width="@dimen/wdp36" android:layout_height="@dimen/wdp36" android:layout_marginLeft="@dimen/wdp8" />
+                    <TextView android:gravity="center_vertical" android:id="@id/pariseNumber" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/TextViewStyle_10sp" />
+                    <ImageView android:id="@id/disLike" android:tag="binding_9" android:padding="@dimen/wdp7" android:layout_width="@dimen/wdp36" android:layout_height="@dimen/wdp36" android:layout_marginLeft="@dimen/wdp8" />
+                    <TextView android:gravity="center_vertical" android:id="@id/disLikeNumber" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/TextViewStyle_10sp" />
+                </LinearLayout>
+                <View android:tag="binding_11" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ffffffff" android:gravity="center" android:id="@id/uploadCloud" android:tag="binding_12" android:background="@drawable/mod_start_normal_back" android:layout_width="@dimen/wdp118" android:layout_height="@dimen/wdp55" android:layout_marginTop="@dimen/wdp2" android:layout_marginRight="@dimen/wdp58" android:text="分享" />
+                <RelativeLayout android:tag="binding_13" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/wdp24" android:textColor="#ffffffff" android:gravity="center" android:id="@id/startCloud" android:tag="binding_14" android:layout_width="@dimen/wdp88" android:layout_height="@dimen/wdp45" />
+                    <View android:tag="binding_15" android:background="@drawable/red_dot" android:layout_width="@dimen/wdp9" android:layout_height="@dimen/wdp9" android:layout_alignRight="@id/startCloud" />
+                </RelativeLayout>
+                <ImageView android:id="@id/moreDelete" android:tag="binding_16" android:layout_width="@dimen/wdp36" android:layout_height="@dimen/wdp36" android:layout_marginLeft="@dimen/wdp4" android:src="@drawable/mod_cloudmore" android:layout_weight="0.0" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>

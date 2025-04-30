@@ -1,0 +1,57 @@
+.class final Lcom/switfpass/pay/utils/p;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field private synthetic a:Lcom/switfpass/pay/utils/o;
+
+.field private final synthetic b:Ljava/lang/Object;
+
+
+# direct methods
+.method constructor <init>(Lcom/switfpass/pay/utils/o;Ljava/lang/Object;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/switfpass/pay/utils/p;->a:Lcom/switfpass/pay/utils/o;
+
+    iput-object p2, p0, Lcom/switfpass/pay/utils/p;->b:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 3
+
+    iget-object v0, p0, Lcom/switfpass/pay/utils/p;->a:Lcom/switfpass/pay/utils/o;
+
+    invoke-static {v0}, Lcom/switfpass/pay/utils/o;->a(Lcom/switfpass/pay/utils/o;)Lcom/switfpass/pay/utils/d0;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/switfpass/pay/utils/d0;->g(Lcom/switfpass/pay/utils/d0;)Landroid/app/Activity;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/switfpass/pay/utils/p;->b:Ljava/lang/Object;
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
+    return-void
+.end method

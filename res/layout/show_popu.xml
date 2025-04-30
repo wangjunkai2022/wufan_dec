@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ff000000" android:layout_width="@dimen/wdp1048" android:layout_height="@dimen/wdp78"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_horn" android:background="@drawable/horn" android:layout_width="@dimen/wdp34" android:layout_height="@dimen/wdp28" android:layout_marginLeft="@dimen/wdp31" android:layout_marginTop="@dimen/wdp25" android:layout_marginBottom="@dimen/wdp25" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:id="@id/tv_show_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp5" android:text="在这里获取他人分享的存档，或管理自己的分享的存档" android:layout_toRightOf="@id/iv_horn" android:layout_alignBottom="@id/ll_show_title" android:layout_toEndOf="@id/iv_horn" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff2681fb" android:id="@id/tv_know" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp21" android:layout_marginRight="@dimen/wdp2" android:text="我知道了" android:layout_toLeftOf="@id/ll_show_title" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_show_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp21" android:layout_marginRight="@dimen/wdp36" android:layout_marginBottom="@dimen/wdp20" android:layout_alignParentRight="true">
+            <TextView android:textSize="@dimen/wdp26" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(" />
+            <TextView android:textSize="@dimen/wdp26" android:textColor="#ff666666" android:id="@id/tv_show_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3s" />
+            <TextView android:textSize="@dimen/wdp26" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=")" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

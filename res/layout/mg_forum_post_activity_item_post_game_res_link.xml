@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/mg_forum_post_item_padding" android:paddingRight="@dimen/mg_forum_post_item_padding" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <RelativeLayout android:id="@id/relateLayoutApp" android:background="#fffbfbfb" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <view android:id="@id/mgListviewItemIcon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/main_normal_icon" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" class="com.facebook.drawee.view.SimpleDraweeView" />
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_list_margin" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/app_list_margin" android:layout_marginBottom="5.0dip" android:layout_toLeftOf="@id/rLayoutRight" android:layout_toRightOf="@id/mgListviewItemIcon" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/wdp28" android:id="@id/mgListviewItemAppname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="纪念碑谷破解版" android:singleLine="true" style="@style/TextViewStyle_12sp_black" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="30.0dip" android:maxWidth="@dimen/detail_appname_layout_magin_l">
+                <TextView android:id="@id/appSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/my_game_appsizemagin_t" android:text="1" android:layout_weight="1.0" style="@style/TextViewStyle_10sp" />
+                <TextView android:id="@id/loding_info" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/my_game_lodingtextmagin_t" android:layout_weight="0.0" style="@style/TextViewStyle_10sp" />
+            </LinearLayout>
+            <ProgressBar android:id="@id/progressBarZip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/my_game_progress_h" android:progress="0" style="@style/progress_zip_style" />
+            <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/my_game_progress_h" android:progress="0" style="@style/progress_style" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/tipsLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+            <TextView android:id="@id/mgListviewItemDescribe" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="" android:singleLine="true" android:layout_alignParentLeft="true" style="@style/TextViewStyle_10sp" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rLayoutRight" android:layout_width="wrap_content" android:layout_height="72.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <RelativeLayout android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <Button android:textSize="11.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/mgListviewItemInstall" android:background="@android:color/transparent" android:focusable="false" android:focusableInTouchMode="true" android:layout_marginBottom="4.0dip" android:text="下载游戏" android:singleLine="true" style="@style/DownloadTextStyle" />
+                <TextView android:textSize="@dimen/wdp18" android:textColor="@color/money_text_color" android:id="@id/moneyText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp3" android:text="TextView" android:layout_below="@id/mgListviewItemInstall" android:layout_centerInParent="true" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffa8a8a8" android:id="@id/mgListviewItemSize" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-8.0dip" android:text="5M" android:layout_alignBottom="@id/mgListviewItemInstall" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:id="@id/line" android:visibility="gone" android:layout_alignBottom="@id/rLayoutRight" style="@style/TextViewStyle_line_H" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/loding_layout_include" />
+    <include layout="@layout/failed_layout_include" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/iv_nome" android:background="@color/color_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/wdp198">
+                <ImageView android:background="@drawable/arena_no_play" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp15" android:text="暂无小游戏" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/mPtrFrame" android:layout_width="fill_parent" android:layout_height="fill_parent" app:ptr_header_style="DropBounce">
+        <com.join.android.app.component.xrecyclerview.XQuickRecyclerView android:id="@id/xrv_list" android:paddingLeft="@dimen/wdp10" android:paddingRight="@dimen/wdp10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.join.mgps.ptr.PtrClassicFrameLayout>
+</RelativeLayout>

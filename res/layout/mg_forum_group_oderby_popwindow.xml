@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/mg_f_group_order_bg" android:layout_width="126.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RadioButton android:textColor="@color/forum_order_selector" android:gravity="center|right" android:id="@id/latestPost" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:button="@drawable/mg_group_order_selector" android:text="最新发帖" android:drawablePadding="12.0dip" android:layout_weight="1.0" />
+        <View android:background="@color/white" android:layout_width="96.0dip" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <RadioButton android:enabled="true" android:textColor="@color/forum_order_selector" android:gravity="center|right" android:id="@id/latestComment" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:checked="true" android:button="@drawable/mg_group_order_selector" android:text="最新回复" android:drawablePadding="12.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

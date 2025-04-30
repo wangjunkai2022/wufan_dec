@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/exit_layout" style="@style/AlertLLStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/alert_head_view" />
+    <TextView android:textSize="16.0sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tv_dialog_content" android:layout_margin="20.0dip" android:text="@string/cancel_confirm" style="@style/WrapContentStyle" />
+    <include layout="@layout/alert_foot_view" style="@style/AlertFootInclude" />
+</LinearLayout>

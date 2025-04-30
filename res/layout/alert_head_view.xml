@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/MatchParentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:textColor="@color/merchant_listing_name_color" android:layout_gravity="center_horizontal" android:id="@id/tv_dialog_title" android:layout_margin="20.0dip" style="@style/WrapContentStyle" />
+    <ImageView android:id="@id/iv_dialog_icon" android:src="@drawable/dialog_split" style="@style/MatchParentStyle" />
+</LinearLayout>

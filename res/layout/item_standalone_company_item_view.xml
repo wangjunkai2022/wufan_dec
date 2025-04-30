@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/wdp10" android:paddingTop="@dimen/wdp20" android:paddingRight="@dimen/wdp10" android:paddingBottom="@dimen/wdp60" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fressco="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/standAloneLeftVi" android:layout_width="@dimen/wdp20" android:layout_height="@dimen/wdp20" />
+    <RelativeLayout android:id="@id/standAloneCompanyRootRl" android:background="@drawable/company_item_bg" android:paddingTop="@dimen/wdp10" android:layout_width="@dimen/wdp140" android:layout_height="@dimen/wdp162">
+        <TextView android:textSize="@dimen/wdp21" android:textColor="#ff4a4a4a" android:gravity="center" android:id="@id/standAloneCompanyTv" android:layout_width="@dimen/wdp110" android:layout_height="wrap_content" android:text="刀塔传奇" android:singleLine="true" android:layout_centerHorizontal="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/standAloneCompanyIv" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp100" android:layout_marginTop="@dimen/wdp2" android:src="@drawable/main_normal_icon" android:layout_below="@id/standAloneCompanyTv" android:layout_centerHorizontal="true" fressco:failureImage="@drawable/main_normal_icon" fressco:failureImageScaleType="fitXY" fressco:placeholderImage="@drawable/main_normal_icon" fressco:placeholderImageScaleType="fitXY" fressco:roundWithOverlayColor="#ffd8d8d8" fressco:roundedCornerRadius="@dimen/wdp5" fressco:roundingBorderColor="#ffd8d8d8" fressco:roundingBorderWidth="0.0px" />
+    </RelativeLayout>
+    <View android:id="@id/standAloneRightVi" android:visibility="gone" android:layout_width="@dimen/wdp20" android:layout_height="@dimen/wdp20" />
+</LinearLayout>

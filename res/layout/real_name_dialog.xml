@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:background="@drawable/shape_bg_r12_fff" android:paddingBottom="@dimen/wdp55" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/wdp660" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_top" android:layout_width="@dimen/wdp660" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.papa91.arc.widget.htmltext.HtmlTextView android:textSize="@dimen/wdp32" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="@dimen/wdp113" android:layout_marginTop="@dimen/wdp10" android:text="网络游戏实名登记" />
+            </RelativeLayout>
+            <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" android:layout_weight="1.0">
+                <com.papa91.arc.widget.htmltext.HtmlTextView android:textSize="@dimen/wdp24" android:textColor="#ff989899" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="根据国家新闻出版署《关于防止未成年沉迷网络游戏的通知》未实名用户登录时长、充值将受到限制" android:lineSpacingExtra="@dimen/wdp2" />
+            </ScrollView>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp80" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp32" android:layout_marginRight="@dimen/wdp30">
+                <EditText android:textSize="@dimen/wdp26" android:textColor="#ff000000" android:textColorHint="#ff989899" android:id="@id/et_name" android:background="@drawable/shape_bg_r12_f5f9fa_selector" android:paddingLeft="@dimen/wdp28" android:paddingRight="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="请输入真实姓名" android:singleLine="true" android:imeOptions="actionNext" />
+                <ImageView android:id="@id/iv_delete_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp30" android:src="@drawable/ic_input_clear_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp80" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp32" android:layout_marginRight="@dimen/wdp30">
+                <EditText android:textSize="@dimen/wdp26" android:textColor="#ff000000" android:textColorHint="#ff989899" android:id="@id/et_code" android:background="@drawable/shape_bg_r12_f5f9fa_selector" android:paddingLeft="@dimen/wdp28" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="请输入真实身份证号" android:singleLine="true" android:imeOptions="actionDone" />
+                <ImageView android:id="@id/iv_delete_code" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp30" android:src="@drawable/ic_input_clear_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <Button android:textSize="@dimen/wdp30" android:textColor="#ffffffff" android:id="@id/btn_center" android:background="@drawable/shape_btn_r12_574aef_selector" android:layout_width="fill_parent" android:layout_height="@dimen/wdp80" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp32" android:layout_marginRight="@dimen/wdp30" android:text="确认" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bottomGift" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp24" android:layout_marginRight="@dimen/wdp30" android:layout_below="@id/ll_top">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_gift_realname" />
+            <com.papa91.arc.widget.htmltext.HtmlTextView android:textSize="@dimen/wdp26" android:textColor="#ff3c43e7" android:id="@id/giftMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="根据国家新闻出版" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_close" android:background="@drawable/btn_close_grey" android:visibility="gone" android:layout_width="@dimen/wdp36" android:layout_height="@dimen/wdp36" android:layout_marginTop="@dimen/wdp31" android:layout_marginRight="@dimen/wdp32" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

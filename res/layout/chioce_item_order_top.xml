@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_choice_item_top_radius" android:paddingLeft="@dimen/wdp36" android:paddingTop="@dimen/wdp34" android:paddingRight="@dimen/wdp31" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/choice_item_divider_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="@dimen/wdp39" android:layout_height="@dimen/wdp43" android:src="@drawable/icon_newgame_order" />
+    <TextView android:textSize="@dimen/wdp32" android:textColor="#ff262626" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="新游预约 " android:layout_weight="1.0" android:layout_toRightOf="@id/icon" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff108ee9" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:text="更多预约" />
+        <ImageView android:id="@id/arrow" android:layout_width="4.0dip" android:layout_height="8.0dip" android:src="@drawable/back_icon_1" android:scaleType="fitXY" />
+    </LinearLayout>
+</LinearLayout>

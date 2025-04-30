@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/commentAllRootLl" android:paddingLeft="@dimen/wdp16" android:paddingRight="@dimen/wdp16" android:paddingBottom="@dimen/wdp22" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <EditText android:textSize="@dimen/wdp26" android:textColor="#ffffffff" android:textColorHint="#ff82888e" android:id="@id/et_content" android:background="@drawable/shape_introduction_comment_input_2c3142" android:paddingLeft="@dimen/wdp18" android:paddingTop="@dimen/wdp12" android:paddingRight="@dimen/wdp12" android:paddingBottom="@dimen/wdp12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="请输入评论内容" android:maxLines="1" android:lines="1" android:singleLine="true" android:layout_centerVertical="true" />
+        <View android:background="#ff545d7d" android:layout_width="@dimen/wdp2" android:layout_height="@dimen/wdp20" android:layout_marginLeft="@dimen/wdp9" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/wdp26" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_commit" android:background="@drawable/btn_introduction_comment_commit_selector" android:layout_width="@dimen/wdp112" android:layout_height="@dimen/wdp62" android:layout_marginLeft="@dimen/wdp16" android:text="发送" />
+</LinearLayout>

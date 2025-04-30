@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/main" android:background="@drawable/gamelist_hongren_item" android:layout_width="@dimen/wdp208" android:layout_height="@dimen/wdp296" android:layout_marginLeft="@dimen/wdp20"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/userIcon" android:layout_width="@dimen/wdp78" android:layout_height="@dimen/wdp78" app:roundAsCircle="true" />
+    <TextView android:textSize="@dimen/wdp28" android:textColor="#ff3b3b3b" android:gravity="center" android:id="@id/userName" android:layout_width="@dimen/wdp208" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp28" android:text="暴力天津粗大汉" android:lines="1" />
+    <TextView android:textSize="@dimen/wdp20" android:textColor="#ff0473ff" android:id="@id/userTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp8" android:text="暴力天津粗大汉" />
+    <TextView android:textSize="@dimen/wdp22" android:textColor="#ffa8a8a8" android:id="@id/folloNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp12" android:text="暴力天津粗大汉" android:drawableRight="@drawable/gamelist_ic_more" android:drawablePadding="@dimen/wdp8" />
+</LinearLayout>

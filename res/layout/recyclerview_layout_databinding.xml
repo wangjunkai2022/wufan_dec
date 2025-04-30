@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/recyclerview_layout_databinding_0" android:paddingTop="@dimen/wdp23" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.join.android.app.component.xrecyclerview.XRecyclerView android:id="@id/recycleView" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="LinearLayoutManager" />
+    <include layout="@layout/bindding_load_layout_include" />
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@drawable/bg_toast_game_room" android:layout_width="273.0dip" android:layout_height="54.0dip" android:alpha="0.7"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_toast_info" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="长时间没有准备，你已被移出房间" />
+</LinearLayout>

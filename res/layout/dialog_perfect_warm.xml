@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/wdp668" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_content" android:background="@drawable/bg_perfect_warm_v" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/wdp30" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_title" android:paddingTop="@dimen/wdp32" android:paddingBottom="@dimen/wdp28" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="温馨提示" android:singleLine="true" />
+            <com.papa91.arc.widget.htmltext.HtmlTextView android:textSize="@dimen/wdp28" android:textColor="#ff202020" android:gravity="center_vertical" android:id="@id/tv_warm" android:paddingLeft="@dimen/wdp42" android:paddingRight="@dimen/wdp42" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="游客模式体验时长不得超过1小时" android:minLines="3" android:layout_weight="1.0" android:lineSpacingExtra="@dimen/wdp6" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp76" android:layout_marginTop="@dimen/wdp38" android:layout_marginBottom="@dimen/wdp46">
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_left" android:background="@drawable/btn_r19_d2d2d2_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp17" android:minWidth="@dimen/wdp250" android:text="按钮1" />
+                <TextView android:textSize="@dimen/wdp30" android:textColor="#ff232323" android:gravity="center" android:id="@id/btn_center" android:background="@drawable/btn_r19_fbd408_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/wdp250" android:text="按钮2" />
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ff232323" android:gravity="center" android:id="@id/btn_right" android:background="@drawable/btn_r19_fbd408_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp17" android:minWidth="@dimen/wdp250" android:text="按钮3" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/iv_close" android:padding="@dimen/wdp20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp3" android:src="@drawable/btn_close_grey" android:layout_alignTop="@id/ll_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

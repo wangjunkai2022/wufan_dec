@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#85000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_mod_download" android:paddingLeft="@dimen/wdp44" android:paddingRight="@dimen/wdp44" android:layout_width="@dimen/wdp526" android:layout_height="@dimen/wdp358">
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_mod_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="启动标准版需安装游戏至本地" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_mod_download" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/wdp32" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_mod_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp67" android:text="下载中" />
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp22">
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ffc1d0dd" android:id="@id/tv_mod_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0M/0M" />
+                <ProgressBar android:id="@id/pb_mod_progress" android:layout_width="fill_parent" android:layout_height="@dimen/wdp10" android:layout_marginTop="@dimen/wdp12" android:progress="0" android:progressDrawable="@drawable/progress_mod_drawable" android:layout_centerInParent="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp68">
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ffc1d0dd" android:gravity="center" android:id="@id/tv_mod_opt_left" android:background="@drawable/btn_mod_close" android:layout_width="@dimen/wdp194" android:layout_height="@dimen/wdp68" android:text="取消" />
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_mod_opt_right" android:background="@drawable/btn_mod_install" android:layout_width="@dimen/wdp194" android:layout_height="@dimen/wdp68" android:layout_marginLeft="@dimen/wdp50" android:text="立即安装" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

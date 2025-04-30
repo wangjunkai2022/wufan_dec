@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_root" android:background="@drawable/bg_type_h" android:paddingLeft="@dimen/wdp16" android:layout_width="@dimen/wdp290" android:layout_height="@dimen/wdp80" android:layout_marginTop="@dimen/wdp26">
+        <ImageView android:id="@id/iv_icon" android:layout_width="@dimen/wdp26" android:layout_height="@dimen/wdp26" android:layout_marginRight="@dimen/wdp8" android:src="@drawable/ic_slot_store_n" />
+        <RelativeLayout android:layout_width="@dimen/wdp124" android:layout_height="@dimen/wdp44">
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ff000000" android:id="@id/tv_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的存档" android:includeFontPadding="false" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_dot" android:visibility="gone" android:layout_width="@dimen/wdp10" android:layout_height="@dimen/wdp10" android:src="@drawable/red_dot" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/iv_arrow" android:layout_width="@dimen/wdp13" android:layout_height="@dimen/wdp20" android:layout_marginRight="@dimen/wdp14" android:src="@drawable/ic_slot_arrow_right" />
+    </LinearLayout>
+</RelativeLayout>

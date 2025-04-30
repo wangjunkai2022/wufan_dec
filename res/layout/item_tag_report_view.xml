@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_tag" android:background="@drawable/shape_f7f7f7_r_6" android:paddingLeft="@dimen/wdp16" android:paddingRight="@dimen/wdp16" android:layout_width="wrap_content" android:layout_height="@dimen/wdp48" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff555555" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标签" />
+    </LinearLayout>
+</LinearLayout>

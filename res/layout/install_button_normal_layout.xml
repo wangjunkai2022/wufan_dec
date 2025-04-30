@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/detail_simple_installbutn_textsize" android:textColor="#ffffffff" android:gravity="center" android:id="@id/instalButtomButn" android:background="@drawable/installbutn_big_normal" android:visibility="visible" android:layout_width="@dimen/wdp120" android:layout_height="@dimen/wdp52" android:text="@string/download_status_download" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/wdp18" android:textColor="@color/money_text_color" android:id="@id/moneyText" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@id/instalButtomButn" android:layout_centerInParent="true" />
+</LinearLayout>

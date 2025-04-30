@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line_h" android:visibility="visible" style="@style/TextViewGameDetailStyle_line_H" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp30">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="#ff434343" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_weight="1.0" style="@style/progress_style" />
+                <TextView android:textSize="14.0dip" android:textColor="#fffb8718" android:id="@id/percent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="#ff737373" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:maxLines="2" android:singleLine="true" />
+        </LinearLayout>
+        <Button android:textColor="#ffffb673" android:id="@id/getGift" android:background="@drawable/recom_maincolor_butn" android:focusable="false" android:layout_width="50.0dip" android:layout_height="25.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="20.0dip" android:text="领取" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+</LinearLayout>

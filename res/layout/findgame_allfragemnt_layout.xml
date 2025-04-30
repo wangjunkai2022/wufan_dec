@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/ll_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.join.android.app.component.xrecyclerview.XRecyclerView android:id="@id/recycleView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.join.mgps.ptr.PtrClassicFrameLayout>
+    <include android:id="@id/loadingLayoutMain" layout="@layout/loding_layout_include" />
+    <include android:id="@id/failedLayoutMain" layout="@layout/failed_layout_include" />
+</androidx.constraintlayout.widget.ConstraintLayout>

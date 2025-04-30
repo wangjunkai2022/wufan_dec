@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/imgsRoot" android:background="@color/white" android:paddingLeft="@dimen/mg_forum_post_item_padding" android:paddingTop="3.0dip" android:paddingRight="@dimen/mg_forum_post_item_padding" android:paddingBottom="3.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/spaceT" android:layout_width="wrap_content" android:layout_height="5.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/imgsMain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/spaceT">
+        <view android:id="@id/img_m_1" android:layout_width="100.0dip" android:layout_height="100.0dip" fresco:actualImageScaleType="centerCrop" fresco:placeholderImage="@drawable/main_normal_icon" fresco:placeholderImageScaleType="centerCrop" class="com.facebook.drawee.view.SimpleDraweeView" />
+        <view android:id="@id/img_m_2" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/img_m_1" fresco:actualImageScaleType="centerCrop" fresco:placeholderImage="@drawable/main_normal_icon" fresco:placeholderImageScaleType="centerCrop" class="com.facebook.drawee.view.SimpleDraweeView" />
+        <view android:id="@id/img_m_3" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="6.0dip" android:adjustViewBounds="false" android:layout_toRightOf="@id/img_m_2" fresco:actualImageScaleType="centerCrop" fresco:placeholderImage="@drawable/main_normal_icon" fresco:placeholderImageScaleType="centerCrop" class="com.facebook.drawee.view.SimpleDraweeView" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/images_count" android:background="#b2000000" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="共0张" android:layout_alignRight="@id/imgsMain" android:layout_alignBottom="@id/imgsMain" />
+</RelativeLayout>

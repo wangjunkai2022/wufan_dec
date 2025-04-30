@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/wdp85" layout="@layout/dialog_setting_header" />
+    <View android:background="@drawable/divider_8dp" android:layout_width="fill_parent" android:layout_height="@dimen/wdp8" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_slog_body" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/lv_type" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="@dimen/wdp378" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:overScrollMode="never" />
+        <ListView android:id="@id/lv_slot" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp42" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="@dimen/wdp16" android:overScrollMode="never" />
+        <ListView android:id="@id/lv_auto_slot" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp42" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="@dimen/wdp16" android:overScrollMode="never" />
+    </LinearLayout>
+</LinearLayout>

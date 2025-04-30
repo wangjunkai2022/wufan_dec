@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/fragment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:id="@id/mainCover" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/statuHVIew" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+    <include layout="@layout/loding_layout_include" />
+    <include layout="@layout/failed_layout_include" />
+    <RelativeLayout android:id="@id/titleTransfer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp96" android:layout_toRightOf="@id/title_bar_layout" android:layout_below="@id/statuHVIew" android:layout_toEndOf="@id/title_bar_layout">
+        <ImageView android:id="@id/iv_back" android:layout_width="@dimen/wdp56" android:layout_height="@dimen/wdp56" android:layout_marginLeft="@dimen/wdp30" android:src="@drawable/icon_black_bg_back" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

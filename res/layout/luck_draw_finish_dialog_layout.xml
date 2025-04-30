@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/luck_finish_dialog_back" android:paddingBottom="@dimen/wdp89" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp28" android:layout_marginRight="@dimen/wdp28">
+        <ImageView android:id="@id/closed" android:padding="@dimen/wdp30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_close" android:layout_alignParentRight="true" android:onClick="onClickClosed" />
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff000000" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp72" android:text="恭喜您获得" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ffff4343" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:text="20000铜板" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/luck" android:padding="@dimen/wdp30" android:layout_width="@dimen/wdp202" android:layout_height="@dimen/wdp202" android:layout_marginTop="@dimen/wdp33" android:src="@drawable/icon" android:layout_below="@id/sub_title" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/ok" android:background="@drawable/luck_draw_okbutn" android:layout_width="fill_parent" android:layout_height="@dimen/wdp90" android:layout_marginLeft="@dimen/wdp107" android:layout_marginTop="@dimen/wdp63" android:layout_marginRight="@dimen/wdp107" android:text="确认" android:layout_below="@id/luck" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

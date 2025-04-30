@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/wdp144"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/rl_image" android:background="#800a1521" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/wdp140">
+            <ImageView android:id="@id/iv_nor" android:background="@drawable/rcy_nor" android:layout_width="@dimen/wdp30" android:layout_height="@dimen/wdp30" android:layout_marginLeft="@dimen/wdp28" android:layout_marginTop="@dimen/wdp55" />
+            <ImageView android:id="@id/iv_select" android:background="@drawable/rcy_sele" android:visibility="gone" android:layout_width="@dimen/wdp30" android:layout_height="@dimen/wdp30" android:layout_marginLeft="@dimen/wdp28" android:layout_marginTop="@dimen/wdp55" />
+        </RelativeLayout>
+        <com.join.mgps.customview.ClouldItemView android:id="@id/coulditem" android:background="#800a1521" android:layout_width="fill_parent" android:layout_height="@dimen/wdp140" android:layout_marginBottom="@dimen/wdp4" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/expand_root_fl" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|center|right" android:orientation="horizontal" android:id="@id/expand_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/expand_iv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_expand_grey" android:scaleType="fitXY" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/expand_tv" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="展开" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/expand_helper_tv" android:visibility="invisible" android:layout_width="0.5dip" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/expand_content_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

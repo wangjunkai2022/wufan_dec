@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_default_background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/actionbarLayout" layout="@layout/topbar_left_title_layout" />
+    <view android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/actionbarLayout" class="com.join.mgps.customview.ForumLoadingView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/mPtrFrame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.join.mgps.customview.XListView4NewGame android:id="@id/listView" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+            </com.join.mgps.ptr.PtrClassicFrameLayout>
+        </LinearLayout>
+    </view>
+</RelativeLayout>

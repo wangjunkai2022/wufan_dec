@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/game_detail_mod_cloud_list_layout_databinding_0" android:paddingTop="@dimen/wdp23" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <include android:id="@id/layoutStatus" layout="@layout/bindding_load_layout_include" />
+    </androidx.core.widget.NestedScrollView>
+    <com.join.android.app.component.xrecyclerview.XRecyclerView android:id="@id/recycleView" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="LinearLayoutManager" />
+</RelativeLayout>

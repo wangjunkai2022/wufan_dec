@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/rl_reply" android:background="@drawable/communuty_replt_bg" android:paddingLeft="@dimen/wdp14" android:paddingTop="@dimen/wdp14" android:paddingRight="@dimen/wdp18" android:paddingBottom="@dimen/wdp14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp118" android:layout_marginTop="@dimen/wdp18" android:layout_marginRight="@dimen/wdp49">
+        <TextView android:textSize="@dimen/wdp28" android:ellipsize="end" android:id="@id/reply_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="屌丝oddie: 你还得了你电话一安静低分局计算机" android:maxLines="2" />
+    </RelativeLayout>
+</RelativeLayout>

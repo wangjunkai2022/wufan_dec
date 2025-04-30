@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorCommunityline" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_title" android:background="@color/color_white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97">
+        <LinearLayout android:id="@id/ll_finsh" android:layout_width="@dimen/wdp65" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/back_icon" android:layout_width="@dimen/wdp18" android:layout_height="@dimen/wdp33" android:layout_marginLeft="@dimen/wdp40" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff262626" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp270" android:text="点赞" />
+    </LinearLayout>
+    <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/myswip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.join.mgps.customview.XListView2 android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+    </com.join.mgps.ptr.PtrClassicFrameLayout>
+    <include layout="@layout/loding_layout_include" />
+    <include layout="@layout/failed_layout_include" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/iv_nome" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:background="@drawable/arena_no_play" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp15" android:text="暂无消息" />
+    </LinearLayout>
+</LinearLayout>

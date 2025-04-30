@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/wdp28" android:paddingRight="@dimen/wdp28" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/choice_item_divider_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp30" android:textStyle="bold" android:textColor="#ff4a4a4a" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2017年12月27日" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/wdp30" android:textStyle="bold" android:textColor="#ff4a4a4a" android:id="@id/week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="星期五" />
+</LinearLayout>

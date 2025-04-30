@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/textView31" android:background="@color/colorCommunityline" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+    <TextView android:textSize="@dimen/wdp28" android:textColor="#ff4a4a4a" android:id="@id/tv_title" android:layout_width="@dimen/wdp654" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="我这只是一个简单的实验。" android:layout_below="@id/textView31" android:layout_alignLeft="@id/relativeLayout3" android:lineSpacingExtra="@dimen/wdp15" android:layout_alignStart="@id/relativeLayout3" />
+    <RelativeLayout android:id="@id/relativeLayout3" android:layout_width="@dimen/wdp654" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp35" android:layout_marginTop="@dimen/wdp27" android:layout_marginRight="@dimen/wdp31" android:layout_marginBottom="@dimen/wdp33" android:layout_below="@id/tv_title">
+        <TextView android:textSize="@dimen/wdp22" android:textColor="#ffa8a8a8" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp1" android:text="12:36" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#fff47500" android:id="@id/showDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看详情" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

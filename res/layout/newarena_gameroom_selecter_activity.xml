@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/new_arena_roomselecter_back" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp18">
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@drawable/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp26" android:layout_marginBottom="@dimen/wdp26" android:text="请选择游戏" />
+        <ImageView android:id="@id/close" android:padding="@dimen/wdp27" android:layout_width="wrap_content" android:layout_height="@dimen/wdp97" android:src="@drawable/btn_close_white" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:background="@drawable/newarena_selecter_layout_background" android:layout_width="@dimen/wdp226" android:layout_height="fill_parent" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerViewGamelist" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp37" android:layout_marginRight="@dimen/wdp37" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

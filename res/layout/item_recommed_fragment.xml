@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_showtitle_bc" android:background="#800a1521" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp64" android:layout_marginBottom="@dimen/wdp4">
+        <ImageView android:id="@id/iv_redbroadcast" android:background="@drawable/redbroadcast" android:layout_width="@dimen/wdp28" android:layout_height="@dimen/wdp23" android:layout_marginLeft="@dimen/wdp23" android:layout_marginTop="@dimen/wdp21" android:layout_marginBottom="@dimen/wdp20" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_showtitle_bc" android:layout_width="@dimen/wdp500" android:layout_height="@dimen/wdp33" android:layout_marginLeft="@dimen/wdp15" android:layout_marginTop="@dimen/wdp17" android:layout_marginBottom="@dimen/wdp14" android:text="NO.21 云存档幼稚作者名单有如下" android:maxLines="1" android:layout_toRightOf="@id/iv_redbroadcast" />
+        <LinearLayout android:id="@id/ll_lookdetail" android:layout_width="@dimen/wdp96" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp28" android:layout_alignParentRight="true">
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff3ca4fd" android:layout_width="@dimen/wdp96" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp17" android:layout_marginRight="@dimen/wdp28" android:layout_marginBottom="@dimen/wdp14" android:text="查看详情" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/myswip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/wdp198" android:layout_weight="1.0">
+        <com.join.mgps.customview.XListView2 android:id="@id/rcy_recommed" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:divider="@null" android:dividerHeight="0.0dip" />
+    </com.join.mgps.ptr.PtrClassicFrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_nodata" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/noarchive" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp14" android:layout_marginTop="@dimen/wdp5">
+            <TextView android:textSize="@dimen/wdp30" android:textStyle="bold" android:textColor="#ffb9c2cc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无存档!" />
+            <TextView android:textSize="@dimen/wdp30" android:textColor="#ff697074" android:id="@id/tv_show_nodata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请先从本地备份" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/loding_layout_include" />
+    <include layout="@layout/failed_layout_include" />
+</LinearLayout>

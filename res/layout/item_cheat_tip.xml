@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/border_cheat_tip" android:layout_width="fill_parent" android:layout_height="@dimen/wdp80">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp18" android:layout_marginRight="@dimen/wdp90" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/name" android:layout_width="@dimen/wdp274" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff64a1c5" android:id="@id/tv_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+        </LinearLayout>
+        <TextView android:textColor="#ff17be61" android:gravity="center" android:id="@id/switchBtn" android:background="@drawable/cheat_tip_switch_bg" android:layout_width="@dimen/wdp84" android:layout_height="@dimen/wdp40" android:singleLine="true" android:layout_marginEnd="@dimen/wdp18" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginEnd="@dimen/wdp18" app:layout_goneMarginRight="@dimen/wdp18" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

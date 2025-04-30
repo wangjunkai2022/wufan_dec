@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titleLayout" layout="@layout/topbar_title_center_layout" />
+    <com.join.mgps.customview.SlidingTabLayout6 android:id="@id/tabLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97" app:pstsDividerPadding="@dimen/wdp69" app:pstsIndicatorColor="#ffff8554" app:pstsIndicatorHeight="@dimen/wdp6" app:pstsTabPaddingLeftRight="@dimen/wdp25" app:stabTextSelectedColor="@color/black" app:stextColor="#ff000000" app:stextSelectedSize="@dimen/wdp36" app:stextSize="@dimen/wdp28" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/rootLl" android:background="@drawable/dialog_vip_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34.0dip" android:layout_marginBottom="17.5dip" android:src="@drawable/dialog_vip_icon" />
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@id/dialogAdImg" android:layout_width="389.0dip" android:layout_height="135.5dip" android:layout_marginTop="23.0dip" android:layout_marginBottom="12.5dip" fresco:failureImage="@drawable/dialog_vip_icon" fresco:failureImageScaleType="fitCenter" fresco:placeholderImage="@drawable/dialog_vip_icon" fresco:placeholderImageScaleType="fitCenter" fresco:roundedCornerRadius="9.0dip" />
+        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ff94d7ff" android:gravity="center" android:id="@id/emusVipContentTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="观看视频，即可畅玩游戏" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.5dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff94d7ff" android:gravity="center" android:id="@id/emusVipCancelTv" android:background="@drawable/dialog_vip_left_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.5dip" android:layout_marginRight="8.5dip" android:text="会员免广告" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ff94d7ff" android:gravity="center" android:id="@id/emusVipOkTv" android:background="@drawable/dialog_vip_right_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="观看" />
+                <RelativeLayout android:id="@id/flag" android:background="@drawable/img_sy_none" android:layout_width="51.0dip" android:layout_height="27.0dip">
+                    <com.papa91.view.LeanTextView android:textSize="6.0dip" android:textColor="#ff043960" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="剩余0次" fresco:degree="-30" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/v_add_space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp28" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_slot_item" android:paddingTop="@dimen/wdp8" android:paddingBottom="@dimen/wdp8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_content" android:background="@drawable/bg_slot_auto" android:layout_width="@dimen/wdp183" android:layout_height="@dimen/wdp109" android:layout_marginStart="@dimen/wdp16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16s" />
+            <TextView android:textSize="@dimen/wdp22" android:textColor="#ff000000" android:id="@id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp2" android:text="后自动存档" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff67c1f5" android:id="@id/tv_auto_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp15" android:text="最多保存5个存档，超过覆盖" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/ll_content" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textColor="#ff17be61" android:gravity="center" android:id="@id/tv_switchBtn" android:background="@drawable/switch_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/wdp52" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

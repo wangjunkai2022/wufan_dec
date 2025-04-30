@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linearLayoutApp" android:background="@drawable/listview_download" android:layout_width="fill_parent" android:layout_height="@dimen/wdp158">
+        <RelativeLayout android:layout_width="@dimen/wdp120" android:layout_height="@dimen/wdp120" android:layout_marginLeft="@dimen/app_list_margin">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img" android:layout_width="@dimen/wdp110" android:layout_height="@dimen/wdp110" android:src="@drawable/main_normal_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/notOpen" android:visibility="gone" android:layout_width="@dimen/wdp20" android:layout_height="@dimen/wdp20" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/mygame_big_round" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp24" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/giftPackageSwitch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/game_gifts_switch" />
+                <TextView android:textStyle="bold" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/TextViewStyle_14sp_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp6" android:layout_marginBottom="@dimen/wdp6">
+                <LinearLayout android:orientation="horizontal" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:id="@id/appInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="textinfo" android:singleLine="true" style="@style/TextViewStyle_10sp" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rLayoutRight" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/app_list_margin" android:layout_marginRight="@dimen/recom_bout_magin_l" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:gravity="center" android:id="@id/mgListviewItemInstall" android:focusable="false" android:focusableInTouchMode="true" android:layout_weight="0.0" android:layout_centerVertical="true" style="@style/DownloadTextStyle" />
+        </RelativeLayout>
+        <ImageView android:id="@id/itemMoreIv" android:paddingLeft="@dimen/wdp18" android:paddingRight="@dimen/wdp28" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp8" android:src="@drawable/btn_moment" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/more_layout" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/my_game_more_h" android:layout_marginLeft="@dimen/my_game_itemmagin_other" android:layout_marginRight="@dimen/my_game_itemmagin_other">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/addtoDesk" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/main_butn_textsize" android:textColor="#ffdcdcdc" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="详情" android:drawablePadding="@dimen/my_game_itemmagin_other" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/dellGame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/main_butn_textsize" android:textColor="#ffdcdcdc" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="删除游戏" android:drawablePadding="@dimen/my_game_itemmagin_other" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/line" android:layout_alignBottom="@id/rLayoutRight" style="@style/TextViewStyle_line_H" />
+</LinearLayout>

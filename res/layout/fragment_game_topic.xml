@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fragment_game_topic" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/mPtrFrame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.join.mgps.customview.XListView2 android:id="@id/listView" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="none" android:fadingEdge="none" android:clickable="true" android:longClickable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" />
+    </com.join.mgps.ptr.PtrClassicFrameLayout>
+</LinearLayout>

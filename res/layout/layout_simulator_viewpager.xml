@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp22"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.join.mgps.customview.RecyclerviewViewpager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="@dimen/wdp270" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.join.mgps.customview.CirclePageIndicator android:layout_gravity="bottom|center" android:id="@id/indicator" android:padding="6.0dip" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fillColor="#ff3ba5ff" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/viewpager" app:pageColor="#ffdedede" app:strokeColor="#00000000" />
+</androidx.constraintlayout.widget.ConstraintLayout>

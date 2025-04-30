@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_top" android:layout_width="@dimen/wdp180" android:layout_height="@dimen/wdp314">
+            <View android:id="@id/mDefaultBg" android:background="@drawable/newarena_room_positionback" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10" android:layout_centerHorizontal="true">
+                <TextView android:textSize="@dimen/wdp22" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_p" android:paddingLeft="@dimen/wdp2" android:layout_width="@dimen/wdp37" android:layout_height="@dimen/wdp37" android:text="1P" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:id="@id/borderView" android:background="@drawable/mg_proficiency_level_special_guest_bg" android:visibility="visible" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp100" android:layout_marginTop="@dimen/wdp68" android:layout_centerHorizontal="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_bg" android:layout_width="@dimen/wdp96" android:layout_height="@dimen/wdp96" android:layout_marginTop="@dimen/wdp70" android:scaleType="fitXY" android:layout_centerHorizontal="true" app:roundAsCircle="true" />
+            <ImageView android:id="@id/iv_haveReady" android:background="@drawable/newarena_round_alph_back" android:layout_width="@dimen/wdp96" android:layout_height="@dimen/wdp96" android:layout_marginTop="@dimen/wdp70" android:src="@drawable/icon_choice_1" android:layout_centerHorizontal="true" />
+            <com.join.mgps.customview.VipView android:id="@id/vipView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/iv_bg" android:layout_alignRight="@id/iv_bg" />
+            <TextView android:textSize="@dimen/wdp24" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/tv_nick_name" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_marginLeft="@dimen/wdp20" android:layout_marginTop="@dimen/wdp12" android:layout_marginRight="@dimen/wdp20" android:text="星辰" android:lines="1" android:layout_below="@id/iv_bg" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_name" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="星辰" android:layout_below="@id/tv_nick_name" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_state" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/iv_state" android:layout_width="@dimen/wdp65" android:layout_height="@dimen/wdp65" android:layout_marginTop="@dimen/wdp40" android:src="@drawable/new_arena_locked" />
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#fffefffe" android:gravity="center" android:id="@id/tv_state" android:background="@drawable/newarena_yuezhan_back" android:paddingLeft="@dimen/wdp25" android:paddingTop="@dimen/wdp5" android:paddingRight="@dimen/wdp25" android:paddingBottom="@dimen/wdp5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp86" android:text="约战" android:layout_below="@id/tv_name" android:layout_centerHorizontal="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_out_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp6" android:layout_below="@id/tv_name" android:layout_centerHorizontal="true">
+                <TextView android:textSize="8.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/iv_out_device" android:background="#ff686868" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="11.0dip" android:text="外设" />
+                <TextView android:textSize="8.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/iv_pc_device" android:layout_width="wrap_content" android:layout_height="11.0dip" android:text="PC" />
+                <TextView android:textSize="@dimen/wdp18" android:textColor="#ff32ed29" android:id="@id/tv_delay_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="23ms" />
+            </LinearLayout>
+            <ImageView android:id="@id/ivProficiencyLevel" android:background="@drawable/mg_proficiency_level_trainee" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-10.0dip" android:layout_alignBottom="@id/iv_bg" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97">
+        <ImageView android:id="@id/back" android:paddingTop="@dimen/wdp34" android:paddingBottom="@dimen/wdp34" android:layout_width="@dimen/wdp97" android:layout_height="fill_parent" android:src="@drawable/back_icon" android:layout_weight="0.0" />
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff262626" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="真实截图" android:layout_weight="1.0" />
+        <TextView android:textStyle="bold" android:textColor="@color/main_yello_color" android:gravity="center" android:id="@id/upload" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp30" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="上传" android:layout_weight="0.0" />
+    </LinearLayout>
+    <View style="@style/TextViewStyle_line_H" />
+    <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.join.mgps.activity.screenshot.SlidingTabLayoutScreenShort android:id="@id/tableLayout" android:paddingLeft="@dimen/wdp38" android:paddingRight="@dimen/wdp38" android:layout_width="wrap_content" android:layout_height="@dimen/wdp60" android:layout_marginTop="@dimen/wdp31" android:layout_marginBottom="@dimen/wdp30" app:tl_tab_padding="@dimen/wdp20" app:tl_textBold="@integer/blod" app:tl_textSelectColor="@color/white" app:tl_textUnselectColor="#ff848484" app:tl_textsize="@dimen/wdp24" />
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

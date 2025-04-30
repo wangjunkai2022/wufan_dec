@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/wdp8" android:paddingBottom="@dimen/wdp8" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageView81" android:background="@drawable/ic_r_privilege" android:layout_width="@dimen/wdp20" android:layout_height="@dimen/wdp20" android:scaleType="fitXY" android:layout_marginStart="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/wdp20" android:textColor="@color/white" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="一键技能" android:singleLine="true" android:layout_marginStart="@dimen/wdp8" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/imageView81" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

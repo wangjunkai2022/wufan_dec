@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/actionbarLayout" android:visibility="gone" layout="@layout/mg_forum_title_layout" />
+    <view android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.join.mgps.customview.ForumLoadingView">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/mPtrFrame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.join.mgps.customview.XListView2 android:id="@id/forum_posts_list" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="none" android:fadingEdge="none" android:clickable="true" android:longClickable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" />
+            </com.join.mgps.ptr.PtrClassicFrameLayout>
+            <FrameLayout android:id="@id/videoContainer" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@id/videoLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/video_layout" />
+            </FrameLayout>
+        </RelativeLayout>
+        <View android:layout_gravity="bottom" android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+    </view>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/papa_title_back" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_alignParentBottom="true" style="@style/TextViewStyle_line_Main" />
+    <ToggleButton android:textSize="@dimen/bottom_size" android:textColor="@color/grid_text" android:gravity="center|left" android:id="@id/toggleButtonRom" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/my_game_butnmagin_l" android:textOn="筛选" android:textOff="筛选" android:text="筛选" android:drawableLeft="@drawable/classify_list" android:drawablePadding="8.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/grid_text" android:id="@id/backTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/my_game_butnmagin_l" android:text="筛选" android:singleLine="true" android:drawableLeft="@drawable/back_icon" android:drawablePadding="@dimen/dp51" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center|right" android:id="@id/searchImage" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginRight="56.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_image" />
+    </LinearLayout>
+    <ToggleButton android:textSize="@dimen/bottom_size" android:textColor="@color/grid_text" android:gravity="center|right" android:id="@id/toggleButton" android:background="@color/transparent" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="48.0dip" android:textOn="分类" android:textOff="分类" android:text="分类" android:drawableRight="@drawable/filter_checkbox_button" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/bottom_size" android:textColor="@color/grid_text" android:id="@id/romTypeTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+</RelativeLayout>

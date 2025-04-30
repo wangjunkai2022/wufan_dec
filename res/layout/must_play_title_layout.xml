@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/titleline" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/section_follow" android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:id="@id/textView" android:background="@drawable/papa_yelow_side" android:layout_width="3.0dip" android:layout_height="20.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/papatextcolor" android:gravity="center_vertical" android:id="@id/titleName" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="好玩推荐" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

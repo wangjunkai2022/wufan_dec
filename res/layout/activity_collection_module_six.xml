@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/module_six_rl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/loding_layout_include" />
+        <include layout="@layout/failed_layout_include" />
+        <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/mPtrFrame" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.join.mgps.customview.XListView2 android:id="@id/breakListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" android:layout_alignParentTop="true" />
+        </com.join.mgps.ptr.PtrClassicFrameLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/moduleSixTitleRl" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/back_image_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/icon_black_bg_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:paddingRight="@dimen/titile_normal_search_download_img_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/title_normal_search_img_rl" android:visibility="visible" android:layout_marginRight="@dimen/wdp10" android:src="@drawable/gamedetial_search_image" style="@style/title_normal_search_download_img_style" />
+                <RelativeLayout android:gravity="center|right" android:id="@id/downLayout" android:layout_width="@dimen/wdp60" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp20" android:layout_toLeftOf="@id/shareTwo" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/download_bg" android:visibility="visible" android:layout_width="@dimen/wdp50" android:layout_height="@dimen/wdp50" android:src="@drawable/download_bg" android:layout_alignParentRight="false" android:layout_centerVertical="true" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/downloadLayout" android:layout_width="@dimen/wdp52" android:layout_height="@dimen/wdp52" android:layout_centerVertical="true">
+                        <RelativeLayout android:layout_width="@dimen/wdp30" android:layout_height="wrap_content">
+                            <com.join.mgps.customview.ScrollTextViewLayout android:layout_gravity="center_horizontal" android:id="@id/scroll_text_layout" android:layout_width="@dimen/wdp30" android:layout_height="@dimen/wdp35" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                                <TextView android:textSize="14.0sp" android:textColor="#ff3a85e2" android:gravity="bottom|center" android:layout_gravity="center_horizontal" android:id="@id/scroll_text" android:paddingTop="4.0dip" android:paddingBottom="2.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableBottom="@drawable/papa_download_butn" android:drawablePadding="4.0dip" />
+                            </com.join.mgps.customview.ScrollTextViewLayout>
+                            <ImageView android:id="@id/hasNewFinishedGameImage" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="1.0dip" android:src="@drawable/mygame_litle_round" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:id="@id/downloadLine" android:layout_width="@dimen/wdp30" android:layout_height="wrap_content" android:src="@drawable/line_white_detail_bg" />
+                            <ImageView android:id="@id/imageLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_loading_item" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="8.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/biground" android:background="@drawable/mygame_big_round" android:visibility="invisible" android:layout_width="@dimen/wdp12" android:layout_height="@dimen/wdp12" android:layout_marginTop="@dimen/wdp1" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <include android:visibility="gone" layout="@layout/topbar_left_title_layout" />
+    </FrameLayout>
+</RelativeLayout>

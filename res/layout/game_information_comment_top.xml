@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="6.0dip" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/textView9" android:background="@drawable/papa_yelow_side" android:layout_width="3.0dip" android:layout_height="20.0dip" android:layout_marginRight="6.0dip" android:layout_weight="0.0" />
+    <TextView android:id="@id/xx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评论" style="@style/TextViewStyle_14sp" />
+    <TextView android:textColor="#ff424242" android:id="@id/comment_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="1.0dip" android:text="0条" style="@style/TextViewStyle_10sp" />
+    <TextView android:id="@id/textView3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <TextView android:textColor="#ff7ea7e7" android:gravity="center" android:id="@id/more" android:layout_width="50.0dip" android:layout_height="34.0dip" android:text="更多" android:layout_weight="0.0" style="@style/TextViewStyle_12sp" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/wdp218" android:layout_height="@dimen/wdp254"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:id="@id/cover" android:layout_width="fill_parent" android:layout_height="@dimen/wdp147" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:riv_border_color="@color/mg_forum_avatar_round_stroke_color" app:riv_border_width="@dimen/mg_forum_avatar_round_stroke_width" app:riv_corner_radius="@dimen/mg_forum_avatar_round_width" app:riv_oval="false" class="com.facebook.drawee.view.SimpleDraweeView"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/shape_choice_item_bottom_radius1" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <TextView android:textSize="@dimen/wdp34" android:textColor="#ff3b3b3b" android:ellipsize="end" android:gravity="center" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="街机" android:singleLine="true" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ffa8a8a8" android:ellipsize="end" android:gravity="center" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="120款" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

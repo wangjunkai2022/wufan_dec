@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/classify_bg_selector" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgIconCategory" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/classify_title" android:textColor="@color/main_appname_color" android:gravity="center_horizontal" android:id="@id/textViewCategory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:singleLine="true" android:layout_toRightOf="@id/imgIconCategory" android:layout_centerVertical="true" />
+    <Button android:gravity="center" android:id="@id/checkButton" android:background="@drawable/classify_choice_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

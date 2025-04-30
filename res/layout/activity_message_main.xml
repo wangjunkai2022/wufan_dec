@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97">
+        <com.flyco.tablayout.SlidingTabLayout android:id="@id/tableLayout" android:layout_width="wrap_content" android:layout_height="@dimen/wdp97" android:layout_centerHorizontal="true" app:tl_indicator_color="@color/main_yello_color" app:tl_indicator_height="@dimen/wdp4" app:tl_indicator_width="@dimen/wdp76" app:tl_textSelectColor="@color/main_yello_color" app:tl_textUnselectColor="#ff262626" app:tl_textsize="@dimen/wdp32" />
+        <ImageView android:id="@id/back" android:paddingTop="@dimen/wdp32" android:paddingBottom="@dimen/wdp32" android:layout_width="@dimen/wdp97" android:layout_height="@dimen/wdp97" android:src="@drawable/back_icon" />
+        <ImageView android:id="@id/setting" android:paddingTop="@dimen/wdp32" android:paddingBottom="@dimen/wdp32" android:layout_width="@dimen/wdp97" android:layout_height="@dimen/wdp97" android:src="@drawable/message_setting" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/round_conner_listitem_back_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp26" android:layout_marginRight="@dimen/wdp26">
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/tip_title" android:layout_width="fill_parent" android:layout_height="@dimen/wdp115" android:text="用户服务协议和隐私政策概要" />
+        <ScrollView android:id="@id/dialog_app_update_sv" android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="@dimen/wdp680" android:minHeight="@dimen/wdp400">
+            <WebView android:id="@id/info" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" android:layout_marginBottom="@dimen/wdp50" />
+        </ScrollView>
+        <View android:background="#ffefeff4" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp99">
+            <Button android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/dialog_button_cancel" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="不同意" android:layout_weight="1.0" />
+            <View android:background="#ffefeff4" android:layout_width="@dimen/wdp1" android:layout_height="wrap_content" />
+            <Button android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/app_main_color" android:gravity="center" android:id="@id/dialog_button_ok" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="同意" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

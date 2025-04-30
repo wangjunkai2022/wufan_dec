@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/forum_post_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/mg_forum_item_divider" />
+    <include layout="@layout/mg_forum_post_activity_item_post_subject" />
+</LinearLayout>

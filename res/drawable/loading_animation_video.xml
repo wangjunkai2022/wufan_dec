@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="20" android:drawable="@drawable/videoloding_0" />
+    <item android:duration="20" android:drawable="@drawable/videoloding_1" />
+    <item android:duration="20" android:drawable="@drawable/videoloding_3" />
+    <item android:duration="20" android:drawable="@drawable/videoloding_4" />
+    <item android:duration="20" android:drawable="@drawable/videoloding_5" />
+    <item android:duration="20" android:drawable="@drawable/videoloding_6" />
+    <item android:duration="20" android:drawable="@drawable/videoloding_7" />
+    <item android:duration="20" android:drawable="@drawable/videoloding_8" />
+    <item android:duration="20" android:drawable="@drawable/videoloding_9" />
+    <item android:duration="20" android:drawable="@drawable/videoloding_10" />
+    <item android:duration="20" android:drawable="@drawable/videoloding_11" />
+    <item android:duration="20" android:drawable="@drawable/videoloding_12" />
+    <item android:duration="20" android:drawable="@drawable/videoloding_13" />
+    <item android:duration="20" android:drawable="@drawable/videoloding_14" />
+    <item android:duration="20" android:drawable="@drawable/videoloding_15" />
+    <item android:duration="20" android:drawable="@drawable/videoloding_16" />
+    <item android:duration="20" android:drawable="@drawable/videoloding_17" />
+</animation-list>

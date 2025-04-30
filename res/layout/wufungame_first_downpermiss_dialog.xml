@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainxxx" android:background="@drawable/alph80" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/main" android:background="@drawable/round_conner_back_24" android:paddingLeft="@dimen/wdp60" android:paddingRight="@dimen/wdp60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/wdp30" android:layout_marginTop="@dimen/wdp185" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff424242" android:gravity="center_vertical" android:id="@id/gameName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp45" android:text="下载游戏需允许存储权限" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img" android:padding="@dimen/wdp2" android:layout_width="@dimen/wdp430" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp47" android:scaleType="fitXY" app:placeholderImage="@drawable/downfirstgide" app:placeholderImageScaleType="fitXY" app:viewAspectRatio="1.84" />
+        <TextView android:textSize="@dimen/wdp30" android:textColor="#ffffffff" android:gravity="center" android:id="@id/startButn" android:background="@drawable/mg_progress_high_speed_btn_bg" android:layout_width="fill_parent" android:layout_height="@dimen/wdp78" android:layout_marginTop="@dimen/wdp46" android:text="去开启" />
+        <TextView android:id="@id/settingInfo" android:paddingTop="@dimen/wdp30" android:paddingBottom="@dimen/wdp30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置教程" />
+    </LinearLayout>
+    <ImageView android:id="@id/close" android:padding="@dimen/wdp30" android:layout_width="@dimen/wdp90" android:layout_height="@dimen/wdp90" android:src="@drawable/btn_close" android:layout_alignTop="@id/main" android:layout_alignRight="@id/main" />
+</RelativeLayout>

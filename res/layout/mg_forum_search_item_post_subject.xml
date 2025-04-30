@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/forum_post_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/mg_forum_item_divider" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" style="@style/TextViewStyle_line_H" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/subject_parent" android:background="@color/white" android:paddingLeft="@dimen/wdp30" android:paddingTop="@dimen/wdp36" android:paddingRight="@dimen/wdp30" android:paddingBottom="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/forum_post_best" android:background="@drawable/best_tips" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginRight="6.0dip" android:text="精" />
+        <TextView android:textSize="@dimen/wdp30" android:textStyle="bold" android:textColor="#ff3b3b3b" android:textColorLink="@color/mg_forum_tag_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/forum_post_subject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="false" android:lineSpacingMultiplier="1.2" />
+    </LinearLayout>
+</LinearLayout>

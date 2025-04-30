@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/dialog_white_23_bg" android:layout_width="@dimen/wdp720" android:layout_height="@dimen/wdp482" android:layout_centerInParent="true">
+        <ImageView android:id="@id/shortcutCloseIv" android:padding="@dimen/wdp30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_close" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/wdp34" android:textStyle="bold" android:textColor="@color/black" android:id="@id/tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp73" android:layout_marginTop="@dimen/wdp57" android:text="已尝试添加到桌面" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp73" android:layout_marginTop="@dimen/wdp10" android:text="如桌面未出现图标，请开启以下权限：" android:layout_below="@id/tv1" />
+        <RelativeLayout android:id="@id/rl1" android:background="@drawable/stroke_grey_radio17_butn" android:paddingLeft="@dimen/wdp30" android:paddingTop="@dimen/wdp16" android:paddingBottom="@dimen/wdp15" android:layout_width="@dimen/wdp612" android:layout_height="@dimen/wdp112" android:layout_marginTop="@dimen/wdp57" android:layout_below="@id/tv1" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ff4a4a4a" android:id="@id/tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="桌面快捷方式" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp8" android:text="添加桌面快捷方式" android:layout_below="@id/tv2" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp18" android:layout_marginRight="@dimen/wdp50" android:src="@drawable/persiom_img" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/wdp32" android:textColor="@color/color_white" android:gravity="center" android:id="@id/shortcutCreateTv" android:background="@drawable/select_oringe_17_bg" android:layout_width="@dimen/wdp334" android:layout_height="@dimen/wdp72" android:layout_marginTop="@dimen/wdp65" android:text="去开启权限" android:layout_below="@id/rl1" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/iv1" android:layout_width="@dimen/wdp334" android:layout_height="@dimen/wdp40" android:src="@drawable/bg_shadow" android:layout_below="@id/shortcutCreateTv" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

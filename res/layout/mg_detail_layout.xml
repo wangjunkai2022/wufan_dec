@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/detail_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <View android:background="@color/detail_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            <com.join.mgps.customview.SlidingTabDetailLayout android:id="@id/slidingTabLayout" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.join.mgps.customview.MGViewpagerV4 android:id="@id/viewpagerV4" android:background="@android:color/transparent" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

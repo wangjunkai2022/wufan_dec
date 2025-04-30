@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval" android:useLevel="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#7d000000" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/login_over_img" android:left="@dimen/wdp44" android:top="@dimen/wdp44" android:right="@dimen/wdp44" android:bottom="@dimen/wdp44" />
+</layer-list>

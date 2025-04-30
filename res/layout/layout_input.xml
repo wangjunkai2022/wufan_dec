@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/wdp526" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp120" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:background="@drawable/newarena_bg_input_border_top" android:paddingLeft="@dimen/wdp36" android:layout_width="fill_parent" android:layout_height="@dimen/wdp65" />
+                <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_title" android:background="@drawable/newarena_titleblack" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp36" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请输入房间号" android:singleLine="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/newarena_bg_input_border_bottom" android:paddingTop="@dimen/wdp37" android:paddingBottom="@dimen/wdp37" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.join.mgps.customview.input.InputView_Num android:id="@id/MyPwdInput_inputpwd" android:layout_width="wrap_content" android:layout_height="@dimen/wdp68" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/iv_close" android:layout_width="@dimen/wdp90" android:layout_height="@dimen/wdp65" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close2" />
+        </LinearLayout>
+    </RelativeLayout>
+    <GridView android:id="@id/MyPwdInput_list" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="@dimen/wdp350" android:listSelector="@null" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="1.0px" android:verticalSpacing="1.0px" android:numColumns="3" android:layout_alignParentBottom="true" />
+</RelativeLayout>

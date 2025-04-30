@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/game_main_new_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/simdw" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/wdp27">
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/wdp205" android:layout_height="fill_parent">
+            <LinearLayout android:id="@id/archive_back" android:layout_width="@dimen/wdp205" android:layout_height="@dimen/wdp50" android:layout_marginTop="@dimen/wdp15">
+                <ImageView android:background="@drawable/archive_back" android:layout_width="@dimen/wdp57" android:layout_height="@dimen/wdp25" android:layout_marginLeft="@dimen/wdp23" android:layout_marginTop="@dimen/wdp15" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/rl_myarchive" android:background="#99a1a1a1" android:layout_width="@dimen/wdp205" android:layout_height="@dimen/wdp96" android:layout_marginTop="@dimen/wdp26">
+                <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/tv_myarchive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp23" android:layout_marginTop="@dimen/wdp14" android:text="我的存档" />
+                <TextView android:textSize="@dimen/wdp22" android:textColor="#ffa5a5a5" android:id="@id/tv_myarchive_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp25" android:text="" android:layout_below="@id/tv_myarchive" />
+                <ImageView android:id="@id/iv_myarchive_open" android:background="@drawable/archive_up" android:layout_width="@dimen/wdp21" android:layout_height="@dimen/wdp15" android:layout_marginLeft="@dimen/wdp20" android:layout_marginTop="@dimen/wdp31" android:layout_toRightOf="@id/tv_myarchive" />
+            </RelativeLayout>
+            <RadioGroup android:id="@id/rg_myarchive" android:layout_width="@dimen/wdp205" android:layout_height="wrap_content">
+                <RadioButton android:textSize="@dimen/wdp26" android:textStyle="bold" android:textColor="#ffababab" android:gravity="center" android:id="@id/rb_local" android:background="@drawable/archive_select_local" android:layout_width="@dimen/wdp205" android:layout_height="@dimen/wdp66" android:layout_marginTop="@dimen/wdp2" android:button="@null" android:text="本地" />
+                <RadioButton android:textSize="@dimen/wdp26" android:textStyle="bold" android:textColor="#ffababab" android:gravity="center" android:id="@id/rb_colud" android:background="@drawable/archive_select_local" android:layout_width="@dimen/wdp205" android:layout_height="@dimen/wdp66" android:layout_marginTop="@dimen/wdp2" android:button="@null" android:text="云端" />
+            </RadioGroup>
+            <RelativeLayout android:id="@id/rl_shop" android:background="#99a1a1a1" android:layout_width="@dimen/wdp205" android:layout_height="@dimen/wdp96" android:layout_marginTop="@dimen/wdp2">
+                <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/myshop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp23" android:layout_marginTop="@dimen/wdp14" android:text="存档商店" />
+                <TextView android:textSize="@dimen/wdp22" android:textColor="#ffa5a5a5" android:id="@id/tv_shop_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp25" android:text="" android:layout_below="@id/myshop" />
+                <ImageView android:id="@id/iv_shop_open" android:background="@drawable/archive_up" android:layout_width="@dimen/wdp21" android:layout_height="@dimen/wdp15" android:layout_marginLeft="@dimen/wdp20" android:layout_marginTop="@dimen/wdp31" android:layout_toRightOf="@id/myshop" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="@dimen/wdp205" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="@dimen/wdp205" android:layout_height="wrap_content">
+                    <RadioGroup android:id="@id/rg_myshop" android:layout_width="@dimen/wdp205" android:layout_height="wrap_content">
+                        <RadioButton android:textSize="@dimen/wdp26" android:textStyle="bold" android:textColor="#ffababab" android:gravity="center" android:id="@id/rb_remoned" android:background="@drawable/archive_select_local" android:layout_width="@dimen/wdp205" android:layout_height="@dimen/wdp66" android:layout_marginTop="@dimen/wdp2" android:button="@null" android:text="推荐" />
+                        <RadioButton android:textSize="@dimen/wdp26" android:textStyle="bold" android:textColor="#ffababab" android:gravity="center" android:id="@id/rb_buy" android:background="@drawable/archive_select_local" android:layout_width="@dimen/wdp205" android:layout_height="@dimen/wdp66" android:layout_marginTop="@dimen/wdp2" android:button="@null" android:text="已购" />
+                    </RadioGroup>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="@dimen/wdp205" android:layout_height="wrap_content">
+                    <TextView android:id="@id/tv_red" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="@dimen/wdp100" android:layout_marginTop="@dimen/wdp70" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_manage" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp66">
+                <ImageView android:background="@drawable/manage" android:layout_width="@dimen/wdp20" android:layout_height="@dimen/wdp20" />
+                <TextView android:textSize="@dimen/wdp26" android:textColor="#ff565656" android:id="@id/tv_manage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp5" android:text="批量管理" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/frag" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:id="@id/butn" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="压缩文件" />
+    <Button android:id="@id/butn2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="解压缩Android/data文件" />
+    <Button android:id="@id/butn3" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="解压缩data/data文件" />
+    <Button android:id="@id/butn4" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="打开我的世界" />
+    <Button android:id="@id/butn5" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="创建新用户" />
+</LinearLayout>

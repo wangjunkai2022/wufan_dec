@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/mPtrFrame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.join.mgps.customview.XListView4NewGame android:id="@id/mListView" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" />
+        </com.join.mgps.ptr.PtrClassicFrameLayout>
+        <include layout="@layout/loding_layout_include" />
+        <include layout="@layout/failed_layout_include" />
+    </FrameLayout>
+</LinearLayout>

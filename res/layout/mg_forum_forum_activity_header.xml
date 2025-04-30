@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <view android:id="@id/forumTopAd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:src="@drawable/main_normal_icon" android:scaleType="fitXY" fresco:placeholderImage="@drawable/main_normal_icon" fresco:placeholderImageScaleType="fitXY" class="com.facebook.drawee.view.SimpleDraweeView" />
+    <include android:visibility="visible" layout="@layout/mg_forum_forum_activity_top" />
+    <View android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</LinearLayout>

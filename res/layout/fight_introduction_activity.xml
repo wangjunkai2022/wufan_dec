@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ap_help" android:scaleType="fitXY" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/btn_fight_help" android:layout_alignParentRight="true" />
+</RelativeLayout>

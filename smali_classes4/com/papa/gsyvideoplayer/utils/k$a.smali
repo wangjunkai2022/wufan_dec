@@ -1,0 +1,14 @@
+.class synthetic Lcom/papa/gsyvideoplayer/utils/k$a;
+.super Ljava/lang/Object;
+.source "NetInfoModule.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/papa/gsyvideoplayer/utils/k;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation

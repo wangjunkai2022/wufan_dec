@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/mg_forum_item_padding" android:paddingTop="10.0dip" android:paddingRight="@dimen/mg_forum_item_padding" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/icon" android:layout_width="34.0dip" android:layout_height="34.0dip" android:scaleType="centerCrop" fresco:actualImageScaleType="fitXY" fresco:placeholderImage="@drawable/main_normal_icon" fresco:placeholderImageScaleType="fitXY" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff262626" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_weight="1.0" />
+            <RelativeLayout android:id="@id/arrowParent" android:clickable="true" android:layout_width="30.0dip" android:layout_height="20.0dip" android:layout_marginLeft="8.0dip">
+                <ImageView android:id="@id/arrow" android:background="@drawable/mg_f_desc_arrow" android:layout_width="14.0dip" android:layout_height="8.0dip" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="14.0dip" android:textColor="#ff8a8a8a" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="..." android:layout_weight="1.0" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="31.0dip" android:layout_marginTop="13.0dip">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/memberLL" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img1" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="centerCrop" fresco:actualImageScaleType="fitXY" fresco:placeholderImage="@drawable/main_normal_icon" fresco:placeholderImageScaleType="fitXY" />
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img2" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="-6.0dip" android:scaleType="centerCrop" android:layout_toRightOf="@id/img1" fresco:actualImageScaleType="fitXY" fresco:placeholderImage="@drawable/main_normal_icon" fresco:placeholderImageScaleType="fitXY" />
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img3" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="-6.0dip" android:scaleType="centerCrop" android:layout_toRightOf="@id/img2" fresco:actualImageScaleType="fitXY" fresco:placeholderImage="@drawable/main_normal_icon" fresco:placeholderImageScaleType="fitXY" />
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img4" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="-6.0dip" android:scaleType="centerCrop" android:layout_toRightOf="@id/img3" fresco:actualImageScaleType="fitXY" fresco:placeholderImage="@drawable/main_normal_icon" fresco:placeholderImageScaleType="fitXY" />
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img5" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="-6.0dip" android:scaleType="centerCrop" android:layout_toRightOf="@id/img4" fresco:actualImageScaleType="fitXY" fresco:placeholderImage="@drawable/main_normal_icon" fresco:placeholderImageScaleType="fitXY" />
+                </RelativeLayout>
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="0" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff4a4a4a" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="成员" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:src="@drawable/more_arrow_right" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/forum_follow_selector" android:gravity="center" android:layout_gravity="center|right" android:id="@id/follow" android:background="@drawable/mg_f_follow_selector" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="加入小组" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAlignment="center" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.join.mgps.customview.WrapContentListView android:id="@id/wrapListView" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="none" android:fadingEdge="none" android:clickable="true" android:longClickable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0px" android:layout_marginBottom="1.0px" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="1.0px" />
+    <View android:layout_width="fill_parent" android:layout_height="5.0dip" />
+</merge>

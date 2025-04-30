@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.join.mgps.customview.KeyboardListenLayout android:background="@color/activity_default_background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_forum_posts_title" layout="@layout/mg_forum_title_layout" />
+    <view android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_forum_posts_title" class="com.join.mgps.customview.ForumLoadingView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.join.mgps.customview.XListView android:id="@id/mg_forum_profile_message_list" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+            <include android:id="@id/layout_chat_cell_container" layout="@layout/include_chat_bottom_bar" />
+        </LinearLayout>
+    </view>
+</com.join.mgps.customview.KeyboardListenLayout>

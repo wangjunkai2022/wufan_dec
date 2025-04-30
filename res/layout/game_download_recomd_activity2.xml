@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/main" android:background="@drawable/alph" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlwaysCollapsed|scroll">
+        <TextView android:id="@id/table1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:id="@id/table2" android:background="@drawable/shape_item_top_radius2" android:layout_width="fill_parent" android:layout_height="@dimen/wdp20" android:layout_above="@id/speedLayout" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/speedLayout" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/icon" android:layout_width="@dimen/wdp130" android:layout_height="@dimen/wdp130" android:layout_marginTop="@dimen/wdp30" />
+            <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="@color/black" android:id="@id/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp22" android:text="下载中，加速后速度可提升" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/downloadAcc" android:background="@drawable/mg_progress_high_speed_btn_bg" android:layout_width="fill_parent" android:layout_height="@dimen/wdp78" android:layout_marginLeft="@dimen/wdp55" android:layout_marginTop="@dimen/wdp23" android:layout_marginRight="@dimen/wdp55">
+                <ImageView android:id="@id/imageView56" android:background="@drawable/ic_video_m" android:visibility="invisible" android:layout_width="1.0px" android:layout_height="0.0dip" android:layout_marginRight="@dimen/wdp16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="h,1:1" app:layout_constraintEnd_toStartOf="@id/textView81" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:gravity="center" android:id="@id/seetext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="看视频加速" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/imageView56" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff666666" android:gravity="center|left" android:id="@id/downNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp55" android:layout_marginTop="@dimen/wdp24" android:layout_marginRight="@dimen/wdp55" android:layout_marginBottom="@dimen/wdp37" android:text="今日剩余可加速：1 次" android:drawableLeft="@drawable/downspeed_light" />
+            <View android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+        </LinearLayout>
+        <ImageView android:id="@id/close2" android:padding="@dimen/wdp30" android:visibility="visible" android:layout_width="@dimen/wdp84" android:layout_height="@dimen/wdp84" android:src="@drawable/btn_close" android:layout_weight="0.0" android:layout_alignTop="@id/table2" android:layout_alignRight="@id/table2" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="#ff868686" android:id="@id/appType" android:paddingLeft="@dimen/wdp7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="街机" />
+    <TextView android:textSize="10.0sp" android:textColor="#ff868686" android:id="@id/appdownCount" android:paddingLeft="@dimen/wdp7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="策略" android:drawableLeft="@drawable/dot_tip" android:drawablePadding="@dimen/wdp7" />
+    <TextView android:textSize="10.0sp" android:textColor="#ff868686" android:gravity="center" android:id="@id/appsize" android:paddingLeft="@dimen/wdp7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/wdp48" android:text="6M" android:drawableLeft="@drawable/dot_tip" android:drawablePadding="@dimen/wdp7" />
+    <TextView android:textSize="10.0sp" android:textColor="#ff868686" android:id="@id/tongban" android:paddingLeft="@dimen/wdp7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5铜板" android:drawableLeft="@drawable/dot_tip" android:drawablePadding="@dimen/wdp7" />
+    <TextView android:textSize="10.0sp" android:textColor="#ff868686" android:id="@id/pingfen" android:paddingLeft="@dimen/wdp7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9.5" android:drawableLeft="@drawable/dot_tip" android:drawablePadding="@dimen/wdp7" />
+</LinearLayout>

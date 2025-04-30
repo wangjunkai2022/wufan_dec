@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_head" android:paddingLeft="@dimen/wdp26" android:paddingRight="@dimen/wdp26" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rv_list_type" android:layout_width="0.0dip" android:layout_height="@dimen/wdp96" android:layout_weight="1.0" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/wdp26" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff3392ff" android:gravity="center" android:id="@id/tv_draft" android:background="@drawable/shape_rect_3392ff_r4_stroke" android:layout_width="@dimen/wdp68" android:layout_height="@dimen/wdp42" android:text="投稿" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ll_head" />
+    <include layout="@layout/loding_layout_include" />
+    <include layout="@layout/failed_layout_include" />
+</RelativeLayout>

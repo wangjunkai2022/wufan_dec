@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linearLayoutApp" android:background="@drawable/listview_download" android:layout_width="fill_parent" android:layout_height="82.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="64.0dip" android:layout_marginLeft="@dimen/app_list_margin">
+            <ImageView android:id="@id/isSelector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/account_my_game_del_bg" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img" android:layout_width="@dimen/game_icon_size" android:layout_height="@dimen/game_icon_size" android:src="@drawable/main_normal_icon" android:scaleType="fitXY" android:layout_toRightOf="@id/isSelector" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/notOpen" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/mygame_big_round" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/giftPackageSwitch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/game_gifts_switch" />
+                <TextView android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/TextViewStyle_14sp_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:id="@id/appInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="textinfo" android:singleLine="true" style="@style/TextViewStyle_10sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

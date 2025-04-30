@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/yd_rl_body" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/yd_iv_logo" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="40.0dip" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+    <EditText android:enabled="false" android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center_horizontal" android:id="@id/yd_et_number" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:text="152****7777" android:hint="脱敏手机号" android:layout_centerHorizontal="true" android:inputType="number" android:autofillHints="脱敏手机号" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff989ba4" android:id="@id/yd_tv_brand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="180.0dip" android:text="中国电信提供认证服务" android:layout_centerHorizontal="true" />
+    <com.netease.nis.quicklogin.view.FastClickButton android:textSize="15.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/yd_btn_oauth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="43.0dip" android:text="本机号码一键登录" android:layout_below="@id/yd_et_number" android:layout_centerHorizontal="true" android:textAllCaps="false" />
+</RelativeLayout>

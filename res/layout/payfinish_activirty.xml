@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:background="@drawable/round_conner_listitem_back_15" android:layout_width="@dimen/wdp586" android:layout_height="@dimen/wdp586">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/top" android:layout_width="fill_parent" android:layout_height="@dimen/wdp440">
+            <ImageView android:layout_width="@dimen/wdp142" android:layout_height="@dimen/wdp142" android:src="@drawable/pay_finish_image" />
+            <TextView android:textSize="@dimen/wdp40" android:textColor="#ff3b3b3b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp25" android:text="支付成功" />
+            <TextView android:textSize="@dimen/wdp30" android:textColor="#ff3b3b3b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp58" android:text="感谢你对游戏的支持" />
+        </LinearLayout>
+        <View android:layout_below="@id/top" style="@style/TextViewStyle_line_H" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/wdp65" android:paddingRight="@dimen/wdp65" android:layout_width="fill_parent" android:layout_height="@dimen/wdp145" android:layout_below="@id/top">
+            <TextView android:textSize="@dimen/wdp32" android:textColor="@color/white" android:gravity="center" android:id="@id/downButn" android:background="@drawable/detial_installbutn_normal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp78" android:text="立即下载" />
+        </LinearLayout>
+        <ImageView android:id="@id/closed" android:padding="@dimen/wdp10" android:layout_width="@dimen/wdp44" android:layout_height="@dimen/wdp44" android:layout_marginTop="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" android:src="@drawable/payfinish_close" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

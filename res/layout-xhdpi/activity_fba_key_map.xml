@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/activity_key_map_head_include" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/layout_emu_kay_map_common" />
+        <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="22.0sp" android:id="@id/button5" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Button" />
+                    <TextView android:textSize="15.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="22.0sp" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Button" />
+                    <TextView android:textSize="15.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="22.0sp" android:id="@id/f" android:tag="FBA_KEY_F" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_f" />
+                    <TextView android:textSize="15.0sp" android:id="@id/l2_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="22.0sp" android:id="@id/e" android:tag="FBA_KEY_E" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_e" />
+                    <TextView android:textSize="15.0sp" android:id="@id/l1_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="22.0sp" android:id="@id/button" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Button" />
+                    <TextView android:textSize="15.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="22.0sp" android:id="@id/cd" android:tag="FBA_KEY_CD" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_cd" />
+                    <TextView android:textSize="15.0sp" android:id="@id/r2_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="22.0sp" android:id="@id/d" android:tag="FBA_KEY_D" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_d" />
+                    <TextView android:textSize="15.0sp" android:id="@id/d_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="22.0sp" android:id="@id/c" android:tag="FBA_KEY_C" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_c" />
+                    <TextView android:textSize="15.0sp" android:id="@id/c_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="22.0sp" android:id="@id/abc" android:tag="FBA_KEY_ABC" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_abc" />
+                    <TextView android:textSize="15.0sp" android:id="@id/add_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="22.0sp" android:id="@id/ab" android:tag="FBA_KEY_AB" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_ab" />
+                    <TextView android:textSize="15.0sp" android:id="@id/r1_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="22.0sp" android:id="@id/b" android:tag="FBA_KEY_B" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_b" />
+                    <TextView android:textSize="15.0sp" android:id="@id/b_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="22.0sp" android:id="@id/a" android:tag="FBA_KEY_A" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_a" />
+                    <TextView android:textSize="15.0sp" android:id="@id/a_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+</LinearLayout>

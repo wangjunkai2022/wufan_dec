@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_choice_item_top_radius" android:paddingLeft="@dimen/wdp31" android:paddingTop="@dimen/wdp31" android:paddingRight="@dimen/wdp31" android:paddingBottom="@dimen/wdp4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/choice_item_divider_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="@dimen/wdp39" android:layout_height="@dimen/wdp44" android:src="@drawable/icon_choice_special" />
+    <TextView android:textSize="@dimen/wdp32" android:textColor="#ff262626" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="精选专题" />
+</LinearLayout>

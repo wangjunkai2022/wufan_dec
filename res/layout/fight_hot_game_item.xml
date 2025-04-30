@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/fightLayoutLeft" android:layout_width="fill_parent" android:layout_height="99.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="3.0dip" android:layout_weight="1.0">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/fightImgLeft" android:layout_width="fill_parent" android:layout_height="93.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/main_normal_icon" android:scaleType="fitXY" />
+        <ImageView android:id="@id/fightIconLeft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/fight_tag" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/fightLayoutRight" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="99.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="6.0dip" android:layout_weight="1.0">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/fightImgRight" android:layout_width="fill_parent" android:layout_height="93.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/main_normal_icon" android:scaleType="fitXY" />
+        <ImageView android:id="@id/fightIconRight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/fight_tag" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_simulator_tip_header" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp32" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_title" android:layout_width="@dimen/wdp236" android:layout_height="fill_parent" android:text="温馨提示" />
+    <ImageView android:id="@id/iv_close" android:padding="@dimen/wdp5" android:layout_width="@dimen/wdp36" android:layout_height="@dimen/wdp36" android:layout_marginRight="@dimen/wdp18" android:src="@drawable/ic_tip_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

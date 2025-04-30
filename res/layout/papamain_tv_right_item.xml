@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/wdp90">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/icon" android:layout_width="@dimen/wdp46" android:layout_height="@dimen/wdp46" android:layout_marginLeft="@dimen/wdp14" android:layout_marginRight="@dimen/wdp11" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff3b3b3b" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Text" android:singleLine="true" android:layout_toRightOf="@id/icon" />
+        <TextView android:textSize="@dimen/wdp20" android:textColor="#ff686868" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Text" android:layout_toRightOf="@id/icon" android:layout_below="@id/title" />
+    </RelativeLayout>
+</LinearLayout>

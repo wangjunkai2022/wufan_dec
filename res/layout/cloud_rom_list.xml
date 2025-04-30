@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relativeLayout" android:background="@drawable/papa_title_back" android:layout_width="fill_parent" android:layout_height="50.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@id/backImage" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/back_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/grid_text" android:id="@id/titleText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="本地存档" android:layout_toRightOf="@id/backImage" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/app_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="游戏详情" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ListView android:layout_gravity="center_horizontal" android:id="@id/listview" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#ff808080" android:dividerHeight="0.30000007dip" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/mg_forum_post_item_padding" android:paddingRight="@dimen/mg_forum_post_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center|left" android:layout_gravity="center|left" android:orientation="horizontal" android:id="@id/forum_name_parent" android:paddingTop="10.0dip" android:paddingRight="@dimen/mg_forum_post_item_padding" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <view android:id="@id/avatar" android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@drawable/main_normal_icon" android:scaleType="centerCrop" app:border_color="@color/mg_forum_avatar_round_stroke_color" app:border_width="@dimen/mg_forum_avatar_round_stroke_width" app:placeholderImage="@drawable/main_normal_icon" app:riv_border_color="@color/mg_forum_avatar_round_stroke_color" app:riv_border_width="@dimen/mg_forum_avatar_round_stroke_width" app:riv_corner_radius="@dimen/mg_forum_avatar_round_width" app:riv_oval="false" class="com.facebook.drawee.view.SimpleDraweeView" />
+            <TextView android:textSize="12.0dip" android:textColor="#ffa8a8a8" android:ellipsize="end" android:id="@id/hostName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="8.0dip" android:singleLine="true" />
+            <ImageView android:id="@id/indicator" android:layout_width="13.0dip" android:layout_height="11.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/mg_location" />
+            <TextView android:textSize="12.0dip" android:textColor="#ffa8a8a8" android:gravity="center_vertical" android:id="@id/groupName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|right" android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:id="@id/imageView10" android:layout_width="13.0dip" android:layout_height="11.0dip" android:src="@drawable/look" />
+                <TextView android:textSize="12.0dip" android:textColor="#ffa9a9a9" android:id="@id/forum_post_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="0" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/forum_post_praise_parent" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip">
+                <ImageView android:id="@id/forum_post_praise_icon" android:layout_width="17.0dip" android:layout_height="11.0dip" android:src="@drawable/unlike" android:scaleType="centerInside" />
+                <TextView android:textSize="12.0dip" android:textColor="#ffa9a9a9" android:id="@id/likeCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="0" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="18.0dip">
+                <ImageView android:id="@id/imageView9" android:layout_width="13.0dip" android:layout_height="11.0dip" android:layout_marginBottom="-1.0dip" android:src="@drawable/comment" />
+                <TextView android:textSize="12.0dip" android:textColor="#ffa9a9a9" android:id="@id/commentCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="0" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+</LinearLayout>

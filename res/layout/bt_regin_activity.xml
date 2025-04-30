@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/bt_regin_activity_0" android:background="#fff7f8f9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/back_image" android:tag="binding_1" android:paddingTop="@dimen/wdp28" android:paddingBottom="@dimen/wdp28" android:visibility="visible" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp97" android:src="@drawable/back_icon" android:layout_centerVertical="true" />
+        <TextView android:gravity="center" android:id="@id/title_textview" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/back_image" android:layout_centerVertical="true" style="@style/TextViewStyle_18sp" />
+    </RelativeLayout>
+    <com.join.android.app.component.xrecyclerview.XRecyclerView android:id="@id/recycleView" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="LinearLayoutManager" />
+    <include layout="@layout/bindding_load_layout_include" />
+</LinearLayout>

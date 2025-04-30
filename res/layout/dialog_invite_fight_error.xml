@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:background="@drawable/net_match2_dialog_error_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="14.0sp" android:textColor="@color/net_invite_btn_cancel" android:id="@id/cancel" android:background="@drawable/fight_btn_common_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" />
+        <Button android:textSize="14.0sp" android:textColor="@color/net_invite_btn_ok" android:id="@id/rebuild" android:background="@drawable/fight_btn_common_bg_yellow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:text="重新创建" />
+    </LinearLayout>
+</LinearLayout>

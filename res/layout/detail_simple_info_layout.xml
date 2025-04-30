@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/detail_tips_layout_h">
+            <TextView android:textSize="@dimen/detail_tips_textsize" android:textColor="#ff636363" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_tips_magin_l" android:text="标签" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tipsLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <com.join.mgps.customview.ObservableWebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip" />
+    </LinearLayout>
+</LinearLayout>

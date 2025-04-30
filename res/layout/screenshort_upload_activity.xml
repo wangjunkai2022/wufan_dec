@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97">
+        <ImageView android:id="@id/back" android:paddingLeft="@dimen/wdp40" android:paddingRight="@dimen/wdp40" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/back_icon" />
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff262626" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上传截图" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="@color/main_yello_color" android:gravity="center" android:id="@id/finishButn" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp30" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="完成" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View style="@style/TextViewStyle_line_H" />
+    <TextView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp30" />
+    <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingBottom="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.join.mgps.activity.screenshot.SlidingTabLayoutScreenShort android:id="@id/selecter" android:background="@color/white" android:paddingLeft="@dimen/wdp38" android:paddingRight="@dimen/wdp38" android:layout_width="wrap_content" android:layout_height="@dimen/wdp56" fresco:tl_tab_padding="@dimen/wdp20" fresco:tl_textBold="@integer/blod" fresco:tl_textSelectColor="@color/white" fresco:tl_textUnselectColor="#ff848484" fresco:tl_textsize="@dimen/wdp24" />
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View style="@style/TextViewStyle_line_H" />
+    <EditText android:textSize="@dimen/wdp28" android:textColor="@color/main_appname_color" android:textColorHint="#ff999999" android:gravity="top" android:id="@id/commitMessage" android:background="@color/white" android:paddingLeft="@dimen/wdp51" android:paddingTop="@dimen/wdp39" android:paddingRight="@dimen/wdp51" android:layout_width="fill_parent" android:layout_height="@dimen/wdp196" android:hint="针对游戏截图说点你的见解..." />
+    <View android:layout_marginLeft="@dimen/wdp51" android:layout_marginRight="@dimen/wdp51" style="@style/TextViewStyle_line_H" />
+    <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/wdp51" android:layout_width="fill_parent" android:layout_height="@dimen/wdp196">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/imgUpload" android:layout_width="@dimen/wdp138" android:layout_height="@dimen/wdp138" fresco:placeholderImage="@drawable/start_backups_image" fresco:placeholderImageScaleType="fitCenter" />
+    </LinearLayout>
+</LinearLayout>

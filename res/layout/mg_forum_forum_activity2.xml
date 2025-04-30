@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_default_background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/actionbarLayout" layout="@layout/mg_forum_title_layout" />
+    <view android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.join.mgps.customview.ForumLoadingView">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/mPtrFrame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.join.mgps.customview.XListView2 android:id="@id/listView" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+            </com.join.mgps.ptr.PtrClassicFrameLayout>
+            <FrameLayout android:id="@id/videoContainer" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@id/videoLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/video_layout" />
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/refresh" android:background="@drawable/forum_refresh_bg" android:visibility="gone" android:clickable="true" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/refreshImg" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/forum_refresh" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <view android:id="@id/tabHover" android:background="#ffffffff" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/mg_forum_forum_activity_sliding_tab_height" class="com.join.mgps.customview.SlidingTabForumLayout"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </RelativeLayout>
+    </view>
+    <View android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+</LinearLayout>

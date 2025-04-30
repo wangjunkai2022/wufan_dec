@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp26" android:textColor="#ffc1d0dd" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_name" android:background="@drawable/bg_mod_cheat_item" android:paddingLeft="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="@dimen/wdp100" android:singleLine="true" android:maxLength="10" />
+</LinearLayout>

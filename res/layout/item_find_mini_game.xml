@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:cardCornerRadius="@dimen/wdp8" fresco:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/relateLayoutApp" android:background="@drawable/listview_download" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp440">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/sdv_image" android:layout_width="fill_parent" android:layout_height="@dimen/wdp440" android:src="@drawable/main_normal_icon" fresco:failureImage="@drawable/main_normal_icon" fresco:failureImageScaleType="fitXY" fresco:placeholderImage="@drawable/main_normal_icon" fresco:placeholderImageScaleType="fitXY" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottom_container" android:background="#ff994558" android:paddingLeft="@dimen/wdp12" android:paddingRight="@dimen/wdp12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerVertical="true">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp12">
+                    <ImageView android:id="@id/giftPackageSwich" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp5" android:src="@drawable/game_gifts_switch" />
+                    <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/mgListviewItemAppname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/wdp22" android:textColor="#ff2681fb" android:ellipsize="end" android:id="@id/adText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp27" android:text="广告" android:singleLine="true" android:layout_weight="1.0" />
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp50">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp7">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_star_yellow" />
+                        <TextView android:textSize="@dimen/wdp18" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tv_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp6" android:singleLine="true" />
+                        <TextView android:textSize="@dimen/wdp18" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp6" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp4" android:layout_marginRight="@dimen/wdp20">
+                        <TextView android:id="@id/appSize" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/my_game_appsizemagin_t" android:text="1" android:layout_weight="1.0" style="@style/TextViewStyle_10sp" />
+                        <TextView android:id="@id/loding_info" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/my_game_lodingtextmagin_t" android:layout_weight="0.0" style="@style/TextViewStyle_10sp" />
+                    </LinearLayout>
+                    <ProgressBar android:id="@id/progressBarZip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/my_game_progress_h" android:layout_marginTop="@dimen/wdp6" android:maxWidth="@dimen/wdp180" android:progress="0" style="@style/progress_zip_style" />
+                    <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/my_game_progress_h" android:layout_marginTop="@dimen/wdp6" android:maxWidth="@dimen/wdp180" android:progress="0" style="@style/progress_style" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/rLayoutRight" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp12">
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ffffffff" android:gravity="center" android:id="@id/mgListviewItemInstall" android:background="@drawable/recom_white_butn" android:paddingLeft="@dimen/wdp16" android:paddingTop="@dimen/wdp5" android:paddingRight="@dimen/wdp16" android:paddingBottom="@dimen/wdp5" android:focusable="false" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/wdp80" android:minHeight="@dimen/wdp44" android:text="打开" android:layout_weight="0.0" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/wdp18" android:textColor="@color/money_text_color" android:id="@id/moneyText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp3" android:text="TextView" android:layout_below="@id/mgListviewItemInstall" android:layout_centerInParent="true" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/pb_loading" android:visibility="gone" android:layout_width="@dimen/wdp30" android:layout_height="@dimen/wdp30" android:indeterminateDrawable="@drawable/loding_progress_blue" android:indeterminateDuration="1000" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/wdp44" android:paddingRight="@dimen/wdp40" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp136">
+        <TextView android:textSize="@dimen/wdp52" android:textStyle="bold" android:textColor="#ff181818" android:gravity="bottom" android:id="@id/week" android:paddingBottom="@dimen/wdp10" android:layout_width="fill_parent" android:layout_height="@dimen/wdp136" android:text="xxxxxx" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/wdp35" android:textColor="#ff818990" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp30" android:text="TextView" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

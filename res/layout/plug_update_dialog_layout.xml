@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/center_transparent_half" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/round_conner_listitem_back_15" android:paddingLeft="@dimen/wdp53" android:paddingTop="@dimen/wdp45" android:paddingRight="@dimen/wdp53" android:paddingBottom="@dimen/wdp45" android:layout_width="@dimen/wdp606" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/wdp34" android:textColor="#ff3b3b3b" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="插件有更新" />
+        <TextView android:textSize="@dimen/wdp30" android:textColor="#ff686868" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp30" android:text="支持新功能" />
+        <CheckBox android:textColor="#ff8a8a8a" android:gravity="center_vertical" android:id="@id/checkbox" android:paddingTop="@dimen/wdp25" android:paddingBottom="@dimen/wdp25" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp25" android:checked="false" android:button="@drawable/round_checkbox_selector" android:text="不再提示" android:drawablePadding="@dimen/wdp10" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:background="@drawable/bg_input_border_bottom" android:paddingTop="@dimen/wdp17" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:layout_below="@id/images">
+            <Button android:textSize="@dimen/wdp28" android:textColor="@android:color/white" android:gravity="center" android:id="@id/dialog_button_cancle" android:background="#fff37500" android:layout_width="wrap_content" android:layout_height="@dimen/wdp74" android:layout_marginRight="@dimen/wdp30" android:text="启动游戏" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/wdp28" android:textColor="@android:color/white" android:gravity="center" android:id="@id/dialog_button_ok" android:background="#ff3ca4fd" android:layout_width="wrap_content" android:layout_height="@dimen/wdp74" android:layout_marginLeft="@dimen/wdp30" android:text="立即更新" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

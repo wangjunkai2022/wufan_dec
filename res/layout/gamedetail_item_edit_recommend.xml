@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/layoutTop" android:background="#00000000" android:visibility="gone" style="@style/TextViewStyle_line_H" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_container" android:background="#fffafafa" android:padding="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/wdp20">
+        <LinearLayout android:orientation="horizontal" android:id="@id/backLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff262626" android:gravity="center_vertical" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp14" android:text="编辑推荐" android:layout_weight="1.0" android:textIsSelectable="false" style="@style/TextViewStyle_16sp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/look_other" android:paddingRight="@dimen/wdp36" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0">
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#fff47500" android:id="@id/moreText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多" style="@style/TextViewStyle_14sp" />
+                <ImageView android:id="@id/imageView5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="10.0dip" android:src="@drawable/arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.join.mgps.customview.ExpandLayout android:orientation="vertical" android:id="@id/el_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:collapseIconResId="@drawable/ic_collapse_grey" app:contentTextColor="#ff555555" app:contentTextSize="@dimen/wdp28" app:expandIconResId="@drawable/ic_expand_grey" app:expandStyle="ICON" app:lineSpacingExtra="1.0dip" app:lineSpacingMultiplier="1.2" app:maxLines="2" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff555555" android:id="@id/tv_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="1.0dip" android:lineSpacingMultiplier="1.2" />
+    </LinearLayout>
+    <View android:id="@id/line_h" android:visibility="gone" android:layout_marginLeft="@dimen/dp24" android:layout_marginRight="@dimen/dp24" style="@style/TextViewStyle_line_H" />
+</LinearLayout>

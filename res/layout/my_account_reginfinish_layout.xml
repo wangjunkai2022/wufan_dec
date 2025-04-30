@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_default_background" android:focusable="true" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/papa_title_back" android:layout_width="fill_parent" android:layout_height="48.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="18.0sp" android:textColor="@color/grid_text" android:id="@id/title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注册成功" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include layout="@layout/loding_layout_include" />
+    <include layout="@layout/failed_layout_include" />
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.join.mgps.customview.MyGridView android:id="@id/chooseGridView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="4" />
+            <Button android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/reginFinish" android:background="@drawable/account_butn_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="35.0dip" android:layout_marginRight="20.0dip" android:text="我选好了，进入悟饭" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

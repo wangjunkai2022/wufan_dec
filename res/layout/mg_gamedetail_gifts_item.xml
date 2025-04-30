@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutContent" android:background="@drawable/listview_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp24" android:layout_marginRight="@dimen/dp24">
+        <View android:id="@id/itemLine" style="@style/TextViewGameDetailStyle_line_H" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/giftIcon" android:layout_width="@dimen/game_icon_size" android:layout_height="@dimen/game_icon_size" android:layout_marginLeft="@dimen/dp24" android:src="@drawable/main_normal_icon" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="@dimen/game_icon_size" android:layout_marginLeft="@dimen/app_list_margin" android:layout_toLeftOf="@id/rightButnLayout" android:layout_toRightOf="@id/giftIcon" android:layout_centerVertical="true">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="17.0dip">
+                    <ImageView android:id="@id/giftPackageSwich" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/game_gifts_switch" />
+                    <TextView android:textSize="13.0dip" android:textColor="#ff353535" android:id="@id/giftName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="纪念碑谷破解版" android:singleLine="true" style="@style/TextViewStyle_14sp_black" />
+                    <TextView android:textSize="13.0dip" android:textColor="#ff353535" android:id="@id/giftSurplusTitle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="剩余数量:" style="@style/TextViewStyle_13sp" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="#fff47500" android:id="@id/giftSurplus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff3b3b3b" android:id="@id/giftCount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff737373" android:id="@id/giftContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="2" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rightButnLayout" android:layout_width="wrap_content" android:layout_height="82.0dip" android:layout_marginLeft="@dimen/collection_margin" android:layout_marginRight="@dimen/app_list_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textColor="@color/app_main_color" android:gravity="center" android:id="@id/getGiftTextView" android:background="@drawable/recom_maincolor_butn" android:focusable="false" android:focusableInTouchMode="true" android:text="领取" android:layout_weight="0.0" android:layout_centerVertical="true" style="@style/DownloadTextStyle" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

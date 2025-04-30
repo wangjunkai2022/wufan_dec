@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/alph80" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/main" android:background="@drawable/round_conner_back_24" android:paddingLeft="@dimen/wdp60" android:paddingRight="@dimen/wdp60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/wdp30" android:layout_marginTop="@dimen/wdp185" android:layout_alignParentBottom="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/icon" android:layout_width="@dimen/wdp134" android:layout_height="@dimen/wdp134" android:layout_marginTop="@dimen/wdp69" />
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff3b3b3b" android:id="@id/gameName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp30" android:text="王国保卫战：复仇" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff4e4e4e" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp18" android:text="安装失败：请确认下方几项是否正常后重新安装" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp58" android:minHeight="@dimen/wdp380">
+            <LinearLayout android:orientation="vertical" android:id="@id/moreSelecter" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+        <TextView android:textSize="@dimen/wdp30" android:textColor="#ffffffff" android:gravity="center" android:id="@id/startButn" android:background="@drawable/wufungame_dialog_butn_selecter" android:layout_width="@dimen/wdp446" android:layout_height="@dimen/wdp88" android:layout_marginTop="@dimen/wdp50" android:text="立即安装" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llReUnzip" android:background="@drawable/wufungame_dialog_butn_selecter" android:visibility="gone" android:layout_width="@dimen/wdp446" android:layout_height="@dimen/wdp88">
+            <TextView android:textSize="@dimen/wdp30" android:textColor="@color/white" android:gravity="center" android:id="@id/tvReDownload" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="重新下载" android:layout_weight="1.0" />
+            <View android:background="#ffabc0ff" android:layout_width="@dimen/wdp2" android:layout_height="@dimen/wdp28" />
+            <TextView android:textSize="@dimen/wdp30" android:textColor="@color/white" android:gravity="center" android:id="@id/tvReUnzip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="重新解压" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff5580ff" android:id="@id/goH5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp24" android:layout_marginBottom="@dimen/wdp46" android:text="问题反馈" />
+    </LinearLayout>
+    <ImageView android:id="@id/close" android:padding="@dimen/wdp30" android:layout_width="@dimen/wdp90" android:layout_height="@dimen/wdp90" android:src="@drawable/btn_close" android:layout_alignTop="@id/main" android:layout_alignRight="@id/main" />
+</RelativeLayout>

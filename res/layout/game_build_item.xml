@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fressco="http://schemas.android.com/apk/res-auto">
+    <View android:background="#ffefeff4" android:layout_width="fill_parent" android:layout_height="@dimen/wdp10" />
+    <RelativeLayout android:id="@id/rl_content" android:layout_width="fill_parent" android:layout_height="@dimen/wdp150">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/smv_icon" android:layout_width="@dimen/wdp90" android:layout_height="@dimen/wdp90" android:layout_marginLeft="@dimen/wdp20" android:layout_marginTop="@dimen/wdp30" android:layout_marginBottom="@dimen/wdp30" fressco:actualImageResource="@drawable/main_normal_icon" fressco:roundedCornerRadius="@dimen/wdp8" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff3b3b3b" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp38" android:text="皇室战争" android:layout_toRightOf="@id/smv_icon" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:id="@id/tv_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:text="1款" android:layout_toRightOf="@id/smv_icon" android:layout_below="@id/tv_title" />
+    </RelativeLayout>
+</LinearLayout>

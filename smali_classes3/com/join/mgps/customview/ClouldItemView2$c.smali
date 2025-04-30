@@ -1,0 +1,110 @@
+.class Lcom/join/mgps/customview/ClouldItemView2$c;
+.super Ljava/lang/Object;
+.source "ClouldItemView2.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/join/mgps/customview/ClouldItemView2;->setData(Ljava/lang/String;Lcom/join/mgps/dto/CloudListDataBean;IIZZLcom/join/mgps/listener/c;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Z
+
+.field final synthetic b:I
+
+.field final synthetic c:I
+
+.field final synthetic d:Lcom/join/mgps/customview/ClouldItemView2;
+
+
+# direct methods
+.method constructor <init>(Lcom/join/mgps/customview/ClouldItemView2;ZII)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/join/mgps/customview/ClouldItemView2$c;->d:Lcom/join/mgps/customview/ClouldItemView2;
+
+    iput-boolean p2, p0, Lcom/join/mgps/customview/ClouldItemView2$c;->a:Z
+
+    iput p3, p0, Lcom/join/mgps/customview/ClouldItemView2$c;->b:I
+
+    iput p4, p0, Lcom/join/mgps/customview/ClouldItemView2$c;->c:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 2
+
+    .line 1
+    iget-boolean p1, p0, Lcom/join/mgps/customview/ClouldItemView2$c;->a:Z
+
+    if-nez p1, :cond_3
+
+    .line 2
+    iget p1, p0, Lcom/join/mgps/customview/ClouldItemView2$c;->b:I
+
+    const/4 v0, 0x1
+
+    if-eq p1, v0, :cond_2
+
+    const/4 v0, 0x2
+
+    if-ne p1, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x3
+
+    const/4 v1, 0x4
+
+    if-ne p1, v0, :cond_1
+
+    .line 3
+    iget p1, p0, Lcom/join/mgps/customview/ClouldItemView2$c;->c:I
+
+    if-ne p1, v1, :cond_3
+
+    .line 4
+    iget-object p1, p0, Lcom/join/mgps/customview/ClouldItemView2$c;->d:Lcom/join/mgps/customview/ClouldItemView2;
+
+    invoke-virtual {p1}, Lcom/join/mgps/customview/ClouldItemView2;->f()V
+
+    goto :goto_1
+
+    :cond_1
+    if-ne p1, v1, :cond_3
+
+    .line 5
+    iget-object p1, p0, Lcom/join/mgps/customview/ClouldItemView2$c;->d:Lcom/join/mgps/customview/ClouldItemView2;
+
+    invoke-virtual {p1}, Lcom/join/mgps/customview/ClouldItemView2;->f()V
+
+    goto :goto_1
+
+    .line 6
+    :cond_2
+    :goto_0
+    iget-object p1, p0, Lcom/join/mgps/customview/ClouldItemView2$c;->d:Lcom/join/mgps/customview/ClouldItemView2;
+
+    invoke-virtual {p1}, Lcom/join/mgps/customview/ClouldItemView2;->f()V
+
+    :cond_3
+    :goto_1
+    return-void
+.end method

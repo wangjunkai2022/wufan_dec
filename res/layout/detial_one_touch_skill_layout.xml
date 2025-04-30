@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingTop="@dimen/wdp10" android:paddingBottom="@dimen/wdp10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.join.mgps.customview.SlidingTabLayoutGameDetail android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:pstsIndicatorColor="@color/transparent" app:pstsIndicatorHeight="5.0dip" app:pstsUnderlineColor="@color/transparent" app:pstsUnderlineHeight="1.0dip" />
+    <com.join.mgps.customview.MViewpagerV4 android:id="@id/viewPager" android:background="@drawable/bg_img_black" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/wdp401" android:layout_marginLeft="@dimen/wdp8" android:layout_marginRight="@dimen/wdp8" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+</LinearLayout>

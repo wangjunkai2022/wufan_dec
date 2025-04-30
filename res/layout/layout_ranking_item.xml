@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/relateLayoutApp" android:background="@drawable/listview_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp38" android:textColor="#ff494949" android:gravity="center" android:id="@id/tvNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100" android:layout_centerVertical="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/mgListviewItemIcon" android:layout_width="@dimen/wdp110" android:layout_height="@dimen/wdp110" android:layout_marginLeft="12.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/main_normal_icon" android:scaleType="centerCrop" android:layout_toRightOf="@id/tvNumber" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp24" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_toLeftOf="@id/rLayoutRight" android:layout_toRightOf="@id/mgListviewItemIcon" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/giftPackageSwich" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/game_gifts_switch" />
+            <TextView android:textStyle="bold" android:id="@id/mgListviewItemAppname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="纪念碑谷破解版" style="@style/TextViewStyle_14sp_black" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="30.0dip">
+            <TextView android:id="@id/appSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/my_game_appsizemagin_t" android:text="1" android:layout_weight="1.0" style="@style/TextViewStyle_10sp" />
+            <TextView android:id="@id/loding_info" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/my_game_lodingtextmagin_t" android:layout_weight="0.0" style="@style/TextViewStyle_10sp" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/progressBarZip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/my_game_progress_h" android:progress="0" style="@style/progress_zip_style" />
+        <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/my_game_progress_h" android:progress="0" style="@style/progress_style" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/tipsLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" />
+        <TextView android:id="@id/mgListviewItemDescribe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="" android:singleLine="true" android:layout_alignParentLeft="true" style="@style/TextViewStyle_10sp" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rLayoutRight" android:layout_width="wrap_content" android:layout_height="@dimen/wdp158" android:layout_marginLeft="@dimen/app_list_margin" android:layout_marginRight="@dimen/app_list_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:gravity="center" android:id="@id/mgListviewItemInstall" android:focusable="false" android:focusableInTouchMode="true" android:layout_weight="0.0" android:layout_centerVertical="true" style="@style/DownloadTextStyle" />
+        <TextView android:textSize="@dimen/wdp18" android:textColor="@color/money_text_color" android:id="@id/moneyText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp3" android:text="TextView" android:layout_below="@id/mgListviewItemInstall" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

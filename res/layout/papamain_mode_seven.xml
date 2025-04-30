@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/gamebroadcastTop" android:paddingLeft="@dimen/wdp24" android:paddingTop="11.0dip" android:paddingBottom="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/gameLayout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp21" android:baselineAligned="false" android:layout_weight="1.0">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/gamebroadcastTopImage1" android:layout_width="fill_parent" android:layout_height="@dimen/wdp210" android:scaleType="fitXY" />
+            <TextView android:textSize="@dimen/wdp22" android:textStyle="bold" android:textColor="#ff3b3b3b" android:id="@id/appdescribe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp15" android:text="New Text" android:lines="2" android:singleLine="false" />
+            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp23">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/gameIcon" android:layout_width="@dimen/wdp49" android:layout_height="@dimen/wdp49" android:layout_marginRight="@dimen/wdp14" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/wdp22" android:textColor="#ff3b3b3b" android:id="@id/appname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:text="纪念碑谷破解版" android:layout_toRightOf="@id/gameIcon" android:layout_alignTop="@id/gameIcon" style="@style/TextViewStyle_14sp_black" />
+                <TextView android:textSize="@dimen/wdp22" android:textColor="#ff8a8a8a" android:id="@id/appSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-2.0dip" android:text="50M" android:layout_toRightOf="@id/gameIcon" android:layout_alignBottom="@id/gameIcon" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rLayoutRight" android:paddingBottom="@dimen/wdp26" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/wdp132" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:gravity="center" android:id="@id/itemInstall" android:focusable="false" android:focusableInTouchMode="true" android:layout_marginTop="@dimen/wdp26" android:layout_weight="0.0" style="@style/DownloadTextStyle" />
+                <TextView android:textSize="@dimen/wdp18" android:textColor="@color/money_text_color" android:id="@id/moneyText1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@id/itemInstall" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/gameLayout2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp21" android:layout_weight="1.0">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/gamebroadcastTopImage2" android:layout_width="fill_parent" android:layout_height="@dimen/wdp210" android:scaleType="fitXY" />
+            <TextView android:textSize="@dimen/wdp22" android:textStyle="bold" android:textColor="#ff3b3b3b" android:id="@id/appdescribe2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp15" android:text="New Text" android:lines="2" android:singleLine="false" />
+            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp23">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/gameIcon2" android:layout_width="@dimen/wdp49" android:layout_height="@dimen/wdp49" android:layout_marginRight="@dimen/wdp14" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/wdp22" android:textColor="#ff3b3b3b" android:id="@id/appname2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:text="纪念碑谷破解版" android:layout_toRightOf="@id/gameIcon2" android:layout_alignTop="@id/gameIcon2" style="@style/TextViewStyle_14sp_black" />
+                <TextView android:textSize="@dimen/wdp22" android:textColor="#ff8a8a8a" android:id="@id/appSize2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-2.0dip" android:text="50M" android:layout_toRightOf="@id/gameIcon2" android:layout_alignBottom="@id/gameIcon2" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rLayoutRight2" android:paddingBottom="@dimen/wdp26" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/wdp132" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:gravity="center" android:id="@id/itemInstall2" android:focusable="false" android:focusableInTouchMode="true" android:layout_marginTop="@dimen/wdp26" android:layout_weight="0.0" android:layout_centerVertical="false" style="@style/DownloadTextStyle" />
+                <TextView android:textSize="@dimen/wdp18" android:textColor="@color/money_text_color" android:id="@id/moneyText2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@id/itemInstall2" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/gameLayout3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp21" android:layout_weight="1.0">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/gamebroadcastTopImage3" android:layout_width="fill_parent" android:layout_height="@dimen/wdp210" android:scaleType="fitXY" />
+            <TextView android:textSize="@dimen/wdp22" android:textStyle="bold" android:textColor="#ff3b3b3b" android:id="@id/appdescribe3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp15" android:text="New Text" android:lines="2" android:singleLine="false" />
+            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp23">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/gameIcon3" android:layout_width="@dimen/wdp49" android:layout_height="@dimen/wdp49" android:layout_marginRight="@dimen/wdp14" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/wdp22" android:textColor="#ff3b3b3b" android:id="@id/appname3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:text="纪念碑谷破解版" android:layout_toRightOf="@id/gameIcon3" android:layout_alignTop="@id/gameIcon3" style="@style/TextViewStyle_14sp_black" />
+                <TextView android:textSize="@dimen/wdp22" android:textColor="#ff8a8a8a" android:id="@id/appSize3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-2.0dip" android:text="50M" android:layout_toRightOf="@id/gameIcon3" android:layout_alignBottom="@id/gameIcon3" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rLayoutRight3" android:paddingBottom="@dimen/wdp26" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/wdp132" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:gravity="center" android:id="@id/itemInstall3" android:focusable="false" android:focusableInTouchMode="true" android:layout_marginTop="@dimen/wdp26" android:layout_weight="0.0" android:layout_centerVertical="false" style="@style/DownloadTextStyle" />
+                <TextView android:textSize="@dimen/wdp18" android:textColor="@color/money_text_color" android:id="@id/moneyText3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@id/itemInstall3" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

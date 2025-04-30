@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/emptyGiftPackageLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="200.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/emptyGiftPackage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/papa_loading_null" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff908f8f" android:gravity="center" android:id="@id/textview_gift_get" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/mygift_recommend" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <View android:layout_alignParentBottom="true" style="@style/TextViewStyle_line_H" />
+    </RelativeLayout>
+</LinearLayout>

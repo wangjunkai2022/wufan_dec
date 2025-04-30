@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/wdp8">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_icon" android:background="@drawable/bg_gameinfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" app:actualImageScaleType="centerCrop" app:viewAspectRatio="0.82" />
+        <View android:background="@drawable/arena_item_textback" android:layout_width="fill_parent" android:layout_height="@dimen/wdp45" android:layout_alignBottom="@id/iv_icon" />
+        <TextView android:textSize="@dimen/wdp34" android:textStyle="bold" android:textColor="#ffff9f31" android:id="@id/tv_roomCounts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="324" android:layout_alignBottom="@id/iv_icon" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/wdp20" android:textColor="#ffffffff" android:gravity="center" android:id="@id/romeName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp3" android:text="房" android:layout_toRightOf="@id/tv_roomCounts" android:layout_alignTop="@id/tv_roomCounts" android:layout_alignBottom="@id/tv_roomCounts" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_gameName" android:background="@drawable/arena_butn_normal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp42" android:text="拳皇97" android:lines="1" android:layout_below="@id/iv_icon" />
+    </RelativeLayout>
+    <View android:id="@id/cover" android:background="@drawable/arena_item_strokwfqmx_back_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/main" android:layout_alignTop="@id/main" android:layout_alignRight="@id/main" android:layout_alignBottom="@id/main" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+package com.mob.tools;
+
+import com.mob.MobSDK;
+import com.mob.commons.o;
+import com.mob.tools.log.NLog;
+import com.mob.tools.proguard.EverythingKeeper;
+/* loaded from: classes4.dex */
+public class MobLog implements EverythingKeeper {
+    public static synchronized NLog getInstance() {
+        NLog nLog;
+        synchronized (MobLog.class) {
+            nLog = NLog.getInstance("MobSDK", MobSDK.SDK_VERSION_CODE, o.a("009l4ecfcel'd'ececedfg"));
+        }
+        return nLog;
+    }
+}

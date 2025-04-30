@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/listview_download" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="79.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/icon" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="14.0dip" android:src="@drawable/main_normal_icon" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_list_margin" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0sp" android:textColor="#ff3b3b3b" android:id="@id/appName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="纪念碑谷破解版" android:singleLine="true" style="@style/TextViewStyle_14sp_black" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/tipsLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="5.0dip" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff8a8a8a" android:id="@id/appDesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="" android:singleLine="true" android:layout_alignParentLeft="true" style="@style/TextViewStyle_10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/line" android:visibility="visible" android:layout_alignParentBottom="true" style="@style/TextViewStyle_line_H" />
+</RelativeLayout>

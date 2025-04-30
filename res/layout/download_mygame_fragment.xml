@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/topTip" android:background="#fffc3f5e" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="32.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/toptipText" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="提示：长按游戏可删除或卸载" android:singleLine="true" android:layout_weight="1.0" android:layout_below="@id/textView5" />
+        <ImageView android:id="@id/topTipClose" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/title_tip_close" android:scaleType="center" android:layout_weight="0.0" />
+    </LinearLayout>
+    <ListView android:id="@id/downloadListView" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="1.0dip" android:listSelector="@color/transparent" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" android:layout_below="@id/topTip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/noneLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="120.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0sp" android:textColor="#ff908f8f" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="还没有下载游戏哦~" />
+        <ImageView android:id="@id/lodingBackImage" android:background="#ffcdcdcd" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="100.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="100.0dip" android:layout_marginBottom="11.0dip" />
+        <Button android:gravity="center" android:id="@id/setNetwork" android:layout_width="wrap_content" android:text="@string/have_a_look" style="@style/ButtonStyle12_Text" />
+    </LinearLayout>
+</RelativeLayout>

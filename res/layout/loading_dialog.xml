@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:background="@color/black_half" android:layout_width="200.0dip" android:layout_height="60.0dip" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@id/mg_loading" android:layout_width="@dimen/threemonkey_w" android:layout_height="@dimen/threemonkey_h" android:src="@drawable/loding_progress_image" />
+    </LinearLayout>
+</RelativeLayout>

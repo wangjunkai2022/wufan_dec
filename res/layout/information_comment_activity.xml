@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.join.mgps.customview.KeyboardListenLayout android:id="@id/main" android:background="@color/activity_default_background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_forum_posts_title" layout="@layout/mg_forum_title_layout" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/main_appname_color" android:gravity="center" android:id="@id/noMessage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="还没有评论哟" />
+    <FrameLayout android:id="@id/layout_forum_posts_main" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_forum_posts_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/mPtrFrame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignParentTop="true">
+                <com.join.mgps.customview.XListView2 android:id="@id/mg_forum_post_comment_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="#ffdddddd" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+            </com.join.mgps.ptr.PtrClassicFrameLayout>
+            <include layout="@layout/include_chat_bottom_bar" />
+        </LinearLayout>
+    </FrameLayout>
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_forum_posts_title" layout="@layout/loding_layout_include" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_forum_posts_title" layout="@layout/failed_layout_include" />
+</com.join.mgps.customview.KeyboardListenLayout>

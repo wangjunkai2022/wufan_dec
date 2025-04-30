@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff7f8f9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewFlipper android:id="@id/topLineView" android:background="#fffaeb7a" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="34.0dip" android:inAnimation="@android:anim/fade_in" android:outAnimation="@android:anim/fade_out" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/top_ad_viewpager_outer" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/topLineView">
+            <com.join.mgps.customview.LoopViewPager android:id="@id/top_ad_viewpager" android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="720:480" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View android:background="@drawable/home_discover_halfalph_back" android:layout_width="fill_parent" android:layout_height="@dimen/wdp100" />
+        <FrameLayout android:id="@id/onlyOne" android:layout_width="fill_parent" android:layout_height="@dimen/wdp248" />
+        <LinearLayout android:gravity="bottom|center" android:layout_gravity="bottom|center|right" android:orientation="horizontal" android:id="@id/point_group" android:background="@drawable/papmain_banner_indecator_back" android:layout_width="fill_parent" android:layout_height="@dimen/wdp27" android:layout_alignBottom="@id/top_ad_viewpager_outer" android:layout_centerHorizontal="true" />
+        <com.join.mgps.customview.CirclePageIndicator android:layout_gravity="bottom|center|right" android:id="@id/indecater" android:focusableInTouchMode="false" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/my_game_itemmagin_other" android:layout_alignBottom="@id/top_ad_viewpager_outer" android:layout_centerHorizontal="true" app:fillColor="#ffd96e0b" app:pageColor="#7f000000" app:strokeColor="#26000000" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/table1" android:background="#fff7f8f9" android:paddingLeft="-5.0dip" android:paddingTop="@dimen/wdp35" android:paddingRight="-5.0dip" android:paddingBottom="@dimen/wdp17" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_ad_viewpager_outer" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/table2" android:background="#fff7f8f9" android:paddingLeft="-5.0dip" android:paddingTop="@dimen/wdp17" android:paddingRight="-5.0dip" android:paddingBottom="@dimen/wdp35" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/table1" />
+        <View android:background="#fff7f8f9" android:visibility="gone" android:layout_alignBottom="@id/table2" style="@style/TextViewStyle_line_H" />
+    </RelativeLayout>
+</LinearLayout>

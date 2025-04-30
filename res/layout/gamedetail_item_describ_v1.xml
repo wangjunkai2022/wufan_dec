@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/wdp20" android:paddingRight="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.join.mgps.customview.ExpandLayout android:orientation="vertical" android:id="@id/el_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:collapseIconResId="@drawable/ic_collapse_grey" app:contentTextColor="#ff4a4a4a" app:contentTextSize="@dimen/wdp28" app:expandIconResId="@drawable/ic_expand_grey" app:expandStyle="ICON" app:lineSpacingExtra="1.0dip" app:lineSpacingMultiplier="1.2" app:maxLines="4" />
+    </RelativeLayout>
+</LinearLayout>

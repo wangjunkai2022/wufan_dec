@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/layout1" android:background="@drawable/white_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/appIcon1" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/main_normal_icon" />
+        <TextView android:textColor="#ff8a8a8a" android:gravity="center" android:id="@id/appName1" android:layout_width="55.0dip" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="街头霸王" android:singleLine="true" style="@style/TextViewStyle_10sp" />
+        <TextView android:gravity="center" android:id="@id/appButn1" android:layout_marginTop="4.0dip" android:layout_marginBottom="1.0dip" android:scaleType="fitEnd" style="@style/DownloadImageButnSmallStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/layout2" android:background="@drawable/white_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/appIcon2" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/main_normal_icon" />
+        <TextView android:textColor="#ff8a8a8a" android:gravity="center" android:id="@id/appName2" android:layout_width="55.0dip" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="街头霸王" android:singleLine="true" style="@style/TextViewStyle_10sp" />
+        <TextView android:gravity="center" android:id="@id/appButn2" android:layout_marginTop="4.0dip" android:layout_marginBottom="1.0dip" android:scaleType="fitEnd" style="@style/DownloadImageButnSmallStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/layout3" android:background="@drawable/white_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/appIcon3" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/main_normal_icon" />
+        <TextView android:textColor="#ff8a8a8a" android:gravity="center" android:id="@id/appName3" android:layout_width="55.0dip" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="街头霸王" android:singleLine="true" style="@style/TextViewStyle_10sp" />
+        <TextView android:gravity="center" android:id="@id/appButn3" android:layout_marginTop="4.0dip" android:layout_marginBottom="1.0dip" android:scaleType="fitEnd" style="@style/DownloadImageButnSmallStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/layout4" android:background="@drawable/white_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/appIcon4" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/main_normal_icon" />
+        <TextView android:textColor="#ff8a8a8a" android:gravity="center" android:id="@id/appName4" android:layout_width="55.0dip" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="街头霸王" android:singleLine="true" style="@style/TextViewStyle_10sp" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/appButn4" android:layout_marginTop="4.0dip" android:layout_marginBottom="1.0dip" android:scaleType="fitEnd" style="@style/DownloadImageButnSmallStyle" />
+    </LinearLayout>
+</LinearLayout>

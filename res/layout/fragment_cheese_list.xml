@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/main_appsize_color_main" android:gravity="center" android:id="@id/noData" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="150.0dip" android:text="你还没有关注任何主播哦 " />
+    <com.join.android.app.component.xrecyclerview.XRecyclerView android:id="@id/listView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" />
+</RelativeLayout>

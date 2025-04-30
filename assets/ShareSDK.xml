@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+<SinaWeibo SortId="5" AppKey="852578407" AppSecret="1cddad1894d95dbccb88c7068bca2a23" ShareByAppClient="true" RedirectUrl="http://www.sina.com" />
+<TencentWeibo Enable="false" />
+<Douban Enable="false" />
+<QZone SortId="4" AppId="1106214717" AppKey="MpOKttSNt8q3tF5P" ShareByAppClient="true" />
+<Renren Enable="false" />
+<KaiXin Enable="false" />
+<Facebook Enable="false" />
+<Twitter Enable="false" />
+<Evernote Enable="false" />
+<FourSquare Enable="false" />
+<GooglePlus Enable="false" />
+<Instagram Enable="false" />
+<LinkedIn Enable="false" />
+<Tumblr Enable="false" />
+<Email Enable="false" />
+<ShortMessage Enable="false" />
+<Wechat SortId="1" AppId="wxf04635c4c318fe2d" AppSecret="8e21d75298829047b830ac5034b7073c" />
+<WechatMoments SortId="2" AppId="wxf04635c4c318fe2d" AppSecret="8e21d75298829047b830ac5034b7073c" />
+<QQ SortId="3" AppId="1106214717" AppKey="MpOKttSNt8q3tF5P" ShareByAppClient="true" />
+<Instapaper Enable="false" />
+<Pocket Enable="false" />
+<YouDao Enable="false" />
+<Pinterest Enable="false" />
+<Flickr Enable="false" />
+<Dropbox Enable="false" />
+<VKontakte Enable="false" />
+<WechatFavorite Enable="false" />
+<Yixin Enable="false" />
+<YixinMoments Enable="false" />
+<Mingdao Enable="false" />
+<Line Enable="false" />
+<WhatsApp Enable="false" />
+<KakaoTalk Enable="false" />
+<KakaoStory Enable="false" />
+<FacebookMessenger Enable="false" />
+<Alipay Enable="false" />
+<AlipayMoments Enable="false" />
+<Dingding Enable="false" />
+<Youtube Enable="false" />
+<Meipai Enable="false" />
+<Telegram Enable="false" />
+<Cmcc Enable="false" />
+<Reddit Enable="false" />
+<Telecom Enable="false" />
+<Accountkit Enable="false" />
+<Douyin Enable="false" />
+<Wework Enable="false" />
+<HWAccount Enable="false" />
+<Oasis Enable="false" />
+<XMAccount Enable="false" />
+<SnapChat Enable="false" />
+<Kuaishou Enable="false" />
+<Littleredbook Enable="false" />
+<Watermelonvideo Enable="false" />
+<Tiktok Enable="false" />
+<Taptap Enable="false" />
+</DevInfor>

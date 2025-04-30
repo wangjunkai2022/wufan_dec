@@ -1,0 +1,2338 @@
+#
+# generated on 2021/09/26 08:09:46
+#
+# --table-start--
+dataClass=com.github.snowdream.android.app.downloader.DownloadTask
+tableName=downloadtask
+# --table-fields-start--
+# --field-start--
+fieldName=id
+canBeNull=false
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=gift_package_switch
+# --field-end--
+# --field-start--
+fieldName=mimeType
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=path
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=size
+# --field-end--
+# --field-start--
+fieldName=lock_sp
+# --field-end--
+# --field-start--
+fieldName=unzip_size
+# --field-end--
+# --field-start--
+fieldName=showSize
+# --field-end--
+# --field-start--
+fieldName=startTime
+# --field-end--
+# --field-start--
+fieldName=status
+# --field-end--
+# --field-start--
+fieldName=finishTime
+# --field-end--
+# --field-start--
+fieldName=type
+# --field-end--
+# --field-start--
+fieldName=url
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=gameZipPath
+# --field-end--
+# --field-start--
+fieldName=showName
+# --field-end--
+# --field-start--
+fieldName=dtype
+# --field-end--
+# --field-start--
+fieldName=packageName
+# --field-end--
+# --field-start--
+fieldName=tips
+# --field-end--
+# --field-start--
+fieldName=portraitURL
+# --field-end--
+# --field-start--
+fieldName=crc_link_type_val
+# --field-end--
+# --field-start--
+fieldName=ver
+# --field-end--
+# --field-start--
+fieldName=ver_name
+# --field-end--
+# --field-start--
+fieldName=starNumber
+# --field-end--
+# --field-start--
+fieldName=romType
+# --field-end--
+# --field-start--
+fieldName=isOpen
+# --field-end--
+# --field-start--
+fieldName=isFightOpen
+# --field-end--
+# --field-start--
+fieldName=describe
+# --field-end--
+# --field-start--
+fieldName=showType
+# --field-end--
+# --field-start--
+fieldName=single_game_mod_info
+# --field-end--
+# --field-start--
+fieldName=fileType
+# --field-end--
+# --field-start--
+fieldName=cfg_ver_name
+# --field-end--
+# --field-start--
+fieldName=cfg_ver
+# --field-end--
+# --field-start--
+fieldName=cfg_down_url
+# --field-end--
+# --field-start--
+fieldName=downloadType
+# --field-end--
+# --field-start--
+fieldName=screenshot_pic
+# --field-end--
+# --field-start--
+fieldName=openTime
+# --field-end--
+# --field-start--
+fieldName=currentSize
+# --field-end--
+# --field-start--
+fieldName=actual_size
+# --field-end--
+# --field-start--
+fieldName=keyword
+# --field-end--
+# --field-start--
+fieldName=fight_screenshot_pic
+# --field-end--
+# --field-start--
+fieldName=plugin_num
+# --field-end--
+# --field-start--
+fieldName=is_network
+# --field-end--
+# --field-start--
+fieldName=source_ver_name
+# --field-end--
+# --field-start--
+fieldName=source_ver
+# --field-end--
+# --field-start--
+fieldName=source_down_url
+# --field-end--
+# --field-start--
+fieldName=source_down_path
+# --field-end--
+# --field-start--
+fieldName=plugin_screenshot
+# --field-end--
+# --field-start--
+fieldName=plugin_area
+# --field-end--
+# --field-start--
+fieldName=plugin_area_val
+# --field-end--
+# --field-start--
+fieldName=is_fight
+# --field-end--
+# --field-start--
+fieldName=fight_type
+# --field-end--
+# --field-start--
+fieldName=fight_fun
+# --field-end--
+# --field-start--
+fieldName=duration
+# --field-end--
+# --field-start--
+fieldName=interrupt
+# --field-end--
+# --field-start--
+fieldName=ext1
+# --field-end--
+# --field-start--
+fieldName=zipCost
+# --field-end--
+# --field-start--
+fieldName=game_info_tpl_type
+# --field-end--
+# --field-start--
+fieldName=sync_memory
+# --field-end--
+# --field-start--
+fieldName=startDownloadTime
+# --field-end--
+# --field-start--
+fieldName=progress
+# --field-end--
+# --field-start--
+fieldName=_from
+# --field-end--
+# --field-start--
+fieldName=_from_type
+# --field-end--
+# --field-start--
+fieldName=game_info_top_pic
+# --field-end--
+# --field-start--
+fieldName=sp_tpl_two_position
+# --field-end--
+# --field-start--
+fieldName=down_count
+# --field-end--
+# --field-start--
+fieldName=sp_tag_info_s
+# --field-end--
+# --field-start--
+fieldName=score
+# --field-end--
+# --field-start--
+fieldName=pay_game_amount
+# --field-end--
+# --field-start--
+fieldName=down_status
+# --field-end--
+# --field-start--
+fieldName=down_type
+# --field-end--
+# --field-start--
+fieldName=allow_start_up_ad
+# --field-end--
+# --field-start--
+fieldName=is_boot_commented
+# --field-end--
+# --field-start--
+fieldName=resource_url_remote
+# --field-end--
+# --field-start--
+fieldName=resource_path
+# --field-end--
+# --field-start--
+fieldName=res_actual_size
+# --field-end--
+# --field-start--
+fieldName=res_currentSize
+# --field-end--
+# --field-start--
+fieldName=ext
+# --field-end--
+# --field-start--
+fieldName=mod_info
+# --field-end--
+# --field-start--
+fieldName=task_down_type
+# --field-end--
+# --field-start--
+fieldName=ref_crc_sign_id
+# --field-end--
+# --field-start--
+fieldName=install_type
+# --field-end--
+# --field-start--
+fieldName=game_run_state
+# --field-end--
+# --field-start--
+fieldName=ad_info_str
+# --field-end--
+# --field-start--
+fieldName=ad_info_switch
+# --field-end--
+# --field-start--
+fieldName=vm_device_switch
+# --field-end--
+# --field-start--
+fieldName=cost_type
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.android.app.common.db.tables.Account
+tableName=account
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+indexName=account_name_idx
+# --field-end--
+# --field-start--
+fieldName=orders
+foreignCollection=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.android.app.common.db.tables.Chapter
+tableName=chapter
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=chapterId
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=chapterDuration
+# --field-end--
+# --field-start--
+fieldName=learnedTime
+# --field-end--
+# --field-start--
+fieldName=bookmark
+# --field-end--
+# --field-start--
+fieldName=filesize
+# --field-end--
+# --field-start--
+fieldName=playUrl
+# --field-end--
+# --field-start--
+fieldName=downloadUrl
+# --field-end--
+# --field-start--
+fieldName=validUntil
+# --field-end--
+# --field-start--
+fieldName=leftDays
+# --field-end--
+# --field-start--
+fieldName=localCourse
+columnName=localcourse_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --field-start--
+fieldName=parent
+columnName=parent_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.android.app.common.db.tables.Course
+tableName=course
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=lastLearn
+# --field-end--
+# --field-start--
+fieldName=learningTimes
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=totalDuration
+# --field-end--
+# --field-start--
+fieldName=courseId
+# --field-end--
+# --field-start--
+fieldName=courseHour
+# --field-end--
+# --field-start--
+fieldName=url
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.android.app.common.db.tables.Live
+tableName=live
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=liveId
+indexName=live_liveId_idx
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=createTime
+# --field-end--
+# --field-start--
+fieldName=author
+# --field-end--
+# --field-start--
+fieldName=url
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.android.app.common.db.tables.LocalCourse
+tableName=localcourse
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=learningTimes
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=courseId
+# --field-end--
+# --field-start--
+fieldName=url
+# --field-end--
+# --field-start--
+fieldName=chapters
+foreignCollection=true
+foreignCollectionEager=true
+# --field-end--
+# --field-start--
+fieldName=references
+foreignCollection=true
+foreignCollectionEager=true
+# --field-end--
+# --field-start--
+fieldName=branch
+# --field-end--
+# --field-start--
+fieldName=createTime
+# --field-end--
+# --field-start--
+fieldName=courseHour
+# --field-end--
+# --field-start--
+fieldName=validUntil
+# --field-end--
+# --field-start--
+fieldName=description
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.android.app.common.db.tables.Notice
+tableName=notice
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=content
+# --field-end--
+# --field-start--
+fieldName=createTime
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=noticeId
+# --field-end--
+# --field-start--
+fieldName=validUntil
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.android.app.common.db.tables.Order
+tableName=t_order
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=date
+# --field-end--
+# --field-start--
+fieldName=account
+columnName=account_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.android.app.common.db.tables.Reference
+tableName=reference
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=referenceId
+indexName=reference_referenceId_idx
+# --field-end--
+# --field-start--
+fieldName=title
+indexName=reference_title_idx
+# --field-end--
+# --field-start--
+fieldName=fileSize
+indexName=reference_fileSize_idx
+# --field-end--
+# --field-start--
+fieldName=type
+indexName=reference_type_idx
+# --field-end--
+# --field-start--
+fieldName=url
+indexName=reference_url_idx
+# --field-end--
+# --field-start--
+fieldName=localCourse
+columnName=localcourse_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.android.app.common.db.tables.ResourceShare
+tableName=resource_share
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=fileSize
+# --field-end--
+# --field-start--
+fieldName=rsId
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=type
+# --field-end--
+# --field-start--
+fieldName=url
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.AppBeanMainTable
+tableName=appbeanmaintable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=link_type
+# --field-end--
+# --field-start--
+fieldName=link_type_val
+# --field-end--
+# --field-start--
+fieldName=crc_link_type_val
+# --field-end--
+# --field-start--
+fieldName=jump_type
+# --field-end--
+# --field-start--
+fieldName=game_info
+columnName=appbean
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --field-start--
+fieldName=tpl_type
+# --field-end--
+# --field-start--
+fieldName=butnShowTypr
+# --field-end--
+# --field-start--
+fieldName=recomDatabeanTable
+columnName=recom
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.AppBeanTable
+tableName=appbeantable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=crc_sign_id
+# --field-end--
+# --field-start--
+fieldName=game_name
+# --field-end--
+# --field-start--
+fieldName=ico_remote
+# --field-end--
+# --field-start--
+fieldName=packageName
+# --field-end--
+# --field-start--
+fieldName=appSize
+# --field-end--
+# --field-start--
+fieldName=tag_info
+foreignCollection=true
+# --field-end--
+# --field-start--
+fieldName=down_url_remote
+# --field-end--
+# --field-start--
+fieldName=info
+# --field-end--
+# --field-start--
+fieldName=ver
+# --field-end--
+# --field-start--
+fieldName=ver_name
+# --field-end--
+# --field-start--
+fieldName=cfg_down_url
+# --field-end--
+# --field-start--
+fieldName=cfg_ver
+# --field-end--
+# --field-start--
+fieldName=cfg_ver_name
+# --field-end--
+# --field-start--
+fieldName=screenshot_pic
+# --field-end--
+# --field-start--
+fieldName=butnShowType
+# --field-end--
+# --field-start--
+fieldName=downloadType
+# --field-end--
+# --field-start--
+fieldName=plugin_num
+# --field-end--
+# --field-start--
+fieldName=is_world
+# --field-end--
+# --field-start--
+fieldName=is_network
+# --field-end--
+# --field-start--
+fieldName=source_ver_name
+# --field-end--
+# --field-start--
+fieldName=source_ver
+# --field-end--
+# --field-start--
+fieldName=source_down_url
+# --field-end--
+# --field-start--
+fieldName=plugin_screenshot
+# --field-end--
+# --field-start--
+fieldName=forum_switch
+# --field-end--
+# --field-start--
+fieldName=forum_id
+# --field-end--
+# --field-start--
+fieldName=world_shop
+# --field-end--
+# --field-start--
+fieldName=world_area
+# --field-end--
+# --field-start--
+fieldName=is_fight
+# --field-end--
+# --field-start--
+fieldName=fight_type
+# --field-end--
+# --field-start--
+fieldName=fight_fun
+# --field-end--
+# --field-start--
+fieldName=plugin_lowest_ver_name
+# --field-end--
+# --field-start--
+fieldName=plugin_lowest_ver
+# --field-end--
+# --field-start--
+fieldName=rom_lowest_ver
+# --field-end--
+# --field-start--
+fieldName=source_lowest_ver
+# --field-end--
+# --field-start--
+fieldName=cfg_lowest_ver
+# --field-end--
+# --field-start--
+fieldName=game_info_tpl_type
+# --field-end--
+# --field-start--
+fieldName=company_name
+# --field-end--
+# --field-start--
+fieldName=cdn_down_switch
+# --field-end--
+# --field-start--
+fieldName=other_down_switch
+# --field-end--
+# --field-start--
+fieldName=tp_down_url
+foreignCollection=true
+# --field-end--
+# --field-start--
+fieldName=game_info_top_pic
+# --field-end--
+# --field-start--
+fieldName=papa_explain
+# --field-end--
+# --field-start--
+fieldName=edit_recommend
+# --field-end--
+# --field-start--
+fieldName=sync_memory
+# --field-end--
+# --field-start--
+fieldName=gift_package_switch
+# --field-end--
+# --field-start--
+fieldName=down_status
+# --field-end--
+# --field-start--
+fieldName=appBeanMainTable
+columnName=appbeanmain
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.AppMoreBeanTable
+tableName=appmorebeantable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=link_type
+# --field-end--
+# --field-start--
+fieldName=link_type_val
+# --field-end--
+# --field-start--
+fieldName=tpl_type
+# --field-end--
+# --field-start--
+fieldName=crc_link_type_val
+# --field-end--
+# --field-start--
+fieldName=jump_type
+# --field-end--
+# --field-start--
+fieldName=is_more
+# --field-end--
+# --field-start--
+fieldName=recomDatabeanTable
+columnName=recom
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.AppTimeDataTable
+tableName=apptimedatatable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=packageName
+# --field-end--
+# --field-start--
+fieldName=appName
+# --field-end--
+# --field-start--
+fieldName=gameId
+# --field-end--
+# --field-start--
+fieldName=atartTime
+# --field-end--
+# --field-start--
+fieldName=endTime
+# --field-end--
+# --field-start--
+fieldName=timeLength
+# --field-end--
+# --field-start--
+fieldName=isUped
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.BannerAndTablesTable
+tableName=bannerandtablestable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=pic_remote
+# --field-end--
+# --field-start--
+fieldName=link_type
+# --field-end--
+# --field-start--
+fieldName=jump_type
+# --field-end--
+# --field-start--
+fieldName=link_type_val
+# --field-end--
+# --field-start--
+fieldName=tpl_type
+# --field-end--
+# --field-start--
+fieldName=crc_link_type_val
+# --field-end--
+# --field-start--
+fieldName=game_info_tpl_type
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.CacheTable
+tableName=cachetable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=uid
+# --field-end--
+# --field-start--
+fieldName=gameId
+# --field-end--
+# --field-start--
+fieldName=extra1
+# --field-end--
+# --field-start--
+fieldName=extra2
+# --field-end--
+# --field-start--
+fieldName=data
+# --field-end--
+# --field-start--
+fieldName=type
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.CategoryRecordTable
+tableName=categoryrecordtable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=ico_remote
+# --field-end--
+# --field-start--
+fieldName=show_index
+# --field-end--
+# --field-start--
+fieldName=game_num
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.CloudArchiveTable
+tableName=cloudarchivetable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=uid
+# --field-end--
+# --field-start--
+fieldName=gameId
+# --field-end--
+# --field-start--
+fieldName=archiveType
+# --field-end--
+# --field-start--
+fieldName=archiveFolder
+# --field-end--
+# --field-start--
+fieldName=mainArchiveLocalPath2
+# --field-end--
+# --field-start--
+fieldName=archiveFiles
+# --field-end--
+# --field-start--
+fieldName=archiveZipPath
+# --field-end--
+# --field-start--
+fieldName=packageName
+# --field-end--
+# --field-start--
+fieldName=archiveName
+# --field-end--
+# --field-start--
+fieldName=archiveScreenShort
+# --field-end--
+# --field-start--
+fieldName=archiveId
+# --field-end--
+# --field-start--
+fieldName=archiveDataJson
+# --field-end--
+# --field-start--
+fieldName=userId
+# --field-end--
+# --field-start--
+fieldName=isFirstRun
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.CloudBackupsDataTable
+tableName=cloudbackupsdatatable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=gameId
+# --field-end--
+# --field-start--
+fieldName=filePath
+# --field-end--
+# --field-start--
+fieldName=hasRecoverd
+# --field-end--
+# --field-start--
+fieldName=downFinish
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.CloudDownRecoderTable
+tableName=clouddownrecodertable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=gameId
+# --field-end--
+# --field-start--
+fieldName=filePath
+# --field-end--
+# --field-start--
+fieldName=fileName
+# --field-end--
+# --field-start--
+fieldName=md5
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.DownloadFileTable
+tableName=downloadfiletable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=tag
+# --field-end--
+# --field-start--
+fieldName=url
+# --field-end--
+# --field-start--
+fieldName=basePath
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=absolutePath
+# --field-end--
+# --field-start--
+fieldName=gameZipPath
+# --field-end--
+# --field-start--
+fieldName=totalSize
+# --field-end--
+# --field-start--
+fieldName=completeSize
+# --field-end--
+# --field-start--
+fieldName=downloading
+# --field-end--
+# --field-start--
+fieldName=showName
+# --field-end--
+# --field-start--
+fieldName=createTime
+# --field-end--
+# --field-start--
+fieldName=dtype
+# --field-end--
+# --field-start--
+fieldName=finished
+# --field-end--
+# --field-start--
+fieldName=fileType
+# --field-end--
+# --field-start--
+fieldName=finishTime
+# --field-end--
+# --field-start--
+fieldName=packageName
+# --field-end--
+# --field-start--
+fieldName=tips
+# --field-end--
+# --field-start--
+fieldName=portraitURL
+# --field-end--
+# --field-start--
+fieldName=percentage
+# --field-end--
+# --field-start--
+fieldName=isAutoPause
+# --field-end--
+# --field-start--
+fieldName=crc_link_type_val
+# --field-end--
+# --field-start--
+fieldName=ver
+# --field-end--
+# --field-start--
+fieldName=ver_name
+# --field-end--
+# --field-start--
+fieldName=gid
+# --field-end--
+# --field-start--
+fieldName=starNumber
+# --field-end--
+# --field-start--
+fieldName=romType
+# --field-end--
+# --field-start--
+fieldName=isOpen
+# --field-end--
+# --field-start--
+fieldName=describe
+# --field-end--
+# --field-start--
+fieldName=showType
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.DownloadHistoryTable
+tableName=downloadhistorytable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=create_time
+# --field-end--
+# --field-start--
+fieldName=crc_link_type_val
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.DownloadUrlTable
+tableName=downloadurltable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=down_source_name
+# --field-end--
+# --field-start--
+fieldName=down_source_url
+# --field-end--
+# --field-start--
+fieldName=type
+# --field-end--
+# --field-start--
+fieldName=is_confirm
+# --field-end--
+# --field-start--
+fieldName=appBeanTable
+columnName=appbean
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=warMatchAndLocalTable
+columnName=warMatchAndLocalTable
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.DownlodTaskCopyTable
+tableName=downlodtaskcopytable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=gameId
+# --field-end--
+# --field-start--
+fieldName=downloadTask
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.EMUApkArenaTable
+tableName=emuapkarenatable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=apk_name
+# --field-end--
+# --field-start--
+fieldName=logo
+# --field-end--
+# --field-start--
+fieldName=package_name
+# --field-end--
+# --field-start--
+fieldName=launch_name
+# --field-end--
+# --field-start--
+fieldName=team_info
+# --field-end--
+# --field-start--
+fieldName=ver_info
+# --field-end--
+# --field-start--
+fieldName=down_url
+# --field-end--
+# --field-start--
+fieldName=size
+# --field-end--
+# --field-start--
+fieldName=release_date
+# --field-end--
+# --field-start--
+fieldName=ver
+# --field-end--
+# --field-start--
+fieldName=ver_compatible
+# --field-end--
+# --field-start--
+fieldName=tag_id
+# --field-end--
+# --field-start--
+fieldName=apkPath
+# --field-end--
+# --field-start--
+fieldName=downloadFinish
+# --field-end--
+# --field-start--
+fieldName=down_type
+# --field-end--
+# --field-start--
+fieldName=remark
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.EMUApkTable
+tableName=emuapktable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=apk_name
+# --field-end--
+# --field-start--
+fieldName=logo
+# --field-end--
+# --field-start--
+fieldName=package_name
+# --field-end--
+# --field-start--
+fieldName=launch_name
+# --field-end--
+# --field-start--
+fieldName=team_info
+# --field-end--
+# --field-start--
+fieldName=ver_info
+# --field-end--
+# --field-start--
+fieldName=down_url
+# --field-end--
+# --field-start--
+fieldName=size
+# --field-end--
+# --field-start--
+fieldName=release_date
+# --field-end--
+# --field-start--
+fieldName=ver
+# --field-end--
+# --field-start--
+fieldName=ver_compatible
+# --field-end--
+# --field-start--
+fieldName=tag_id
+# --field-end--
+# --field-start--
+fieldName=apkPath
+# --field-end--
+# --field-start--
+fieldName=downloadFinish
+# --field-end--
+# --field-start--
+fieldName=down_type
+# --field-end--
+# --field-start--
+fieldName=remark
+# --field-end--
+# --field-start--
+fieldName=notUpdateversion
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.EMUUpdateTable
+tableName=emuupdatetable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=ver_name
+# --field-end--
+# --field-start--
+fieldName=ver
+# --field-end--
+# --field-start--
+fieldName=plugin_lowest_ver_name
+# --field-end--
+# --field-start--
+fieldName=plugin_lowest_ver
+# --field-end--
+# --field-start--
+fieldName=crc_sign_id
+# --field-end--
+# --field-start--
+fieldName=down_url_remote
+# --field-end--
+# --field-start--
+fieldName=cfg_ver_name
+# --field-end--
+# --field-start--
+fieldName=cfg_ver
+# --field-end--
+# --field-start--
+fieldName=cfg_down_url
+# --field-end--
+# --field-start--
+fieldName=source_ver_name
+# --field-end--
+# --field-start--
+fieldName=source_ver
+# --field-end--
+# --field-start--
+fieldName=source_down_url
+# --field-end--
+# --field-start--
+fieldName=screenshot_pic
+# --field-end--
+# --field-start--
+fieldName=rom_lowest_ver
+# --field-end--
+# --field-start--
+fieldName=source_lowest_ver
+# --field-end--
+# --field-start--
+fieldName=cfg_lowest_ver
+# --field-end--
+# --field-start--
+fieldName=is_world
+# --field-end--
+# --field-start--
+fieldName=is_network
+# --field-end--
+# --field-start--
+fieldName=plugin_screenshot
+# --field-end--
+# --field-start--
+fieldName=forum_switch
+# --field-end--
+# --field-start--
+fieldName=forum_id
+# --field-end--
+# --field-start--
+fieldName=world_shop
+# --field-end--
+# --field-start--
+fieldName=world_area
+# --field-end--
+# --field-start--
+fieldName=is_fight
+# --field-end--
+# --field-start--
+fieldName=fight_type
+# --field-end--
+# --field-start--
+fieldName=fight_fun
+# --field-end--
+# --field-start--
+fieldName=lock_sp
+# --field-end--
+# --field-start--
+fieldName=down_type
+# --field-end--
+# --field-start--
+fieldName=remark
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.FightMainTable
+tableName=fightmaintable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=label
+# --field-end--
+# --field-start--
+fieldName=pic_remote
+# --field-end--
+# --field-start--
+fieldName=ico_remote
+# --field-end--
+# --field-start--
+fieldName=title_type
+# --field-end--
+# --field-start--
+fieldName=margin
+# --field-end--
+# --field-start--
+fieldName=sub_title
+# --field-end--
+# --field-start--
+fieldName=model_type
+# --field-end--
+# --field-start--
+fieldName=link_type
+# --field-end--
+# --field-start--
+fieldName=link_type_val
+# --field-end--
+# --field-start--
+fieldName=crc_link_type_val
+# --field-end--
+# --field-start--
+fieldName=jump_type
+# --field-end--
+# --field-start--
+fieldName=is_more
+# --field-end--
+# --field-start--
+fieldName=tpl_type
+# --field-end--
+# --field-start--
+fieldName=pay_game_amount
+# --field-end--
+# --field-start--
+fieldName=down_status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.ForumSearchRecordTable
+tableName=forumsearchrecordtable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=create_time
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.ForumTable
+tableName=forumtable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=type
+# --field-end--
+# --field-start--
+fieldName=args1
+# --field-end--
+# --field-start--
+fieldName=args2
+# --field-end--
+# --field-start--
+fieldName=time
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.GameMainTable
+tableName=gamemaintable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=gameid
+# --field-end--
+# --field-start--
+fieldName=game_main_data
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.GamePaiWeiUpTaskTable
+tableName=gamepaiweiuptasktable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=playId
+# --field-end--
+# --field-start--
+fieldName=gameId
+# --field-end--
+# --field-start--
+fieldName=userId
+# --field-end--
+# --field-start--
+fieldName=numPlayers
+# --field-end--
+# --field-start--
+fieldName=filePath
+# --field-end--
+# --field-start--
+fieldName=isUped
+# --field-end--
+# --field-start--
+fieldName=playTime
+# --field-end--
+# --field-start--
+fieldName=cost_coin
+# --field-end--
+# --field-start--
+fieldName=role_id
+# --field-end--
+# --field-start--
+fieldName=rank_auto_upload
+# --field-end--
+# --field-end--
+# --field-start--
+fieldName=rank_play_time
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.H5GameAccountDataTable
+tableName=h5gameaccountdatatable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=appkey
+# --field-end--
+# --field-start--
+fieldName=account_data
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.HandShankTable
+tableName=handshanktable
+# --table-fields-start--
+# --field-start--
+fieldName=address
+id=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=time
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.HeadPortraitTable
+tableName=headportraittable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=head_portrait_pic
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.InformatonPointTable
+tableName=informatonpointtable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=action
+# --field-end--
+# --field-start--
+fieldName=contentId
+# --field-end--
+# --field-start--
+fieldName=deviceId
+# --field-end--
+# --field-start--
+fieldName=itemId
+# --field-end--
+# --field-start--
+fieldName=sceneId
+# --field-end--
+# --field-start--
+fieldName=userId
+# --field-end--
+# --field-start--
+fieldName=duration
+# --field-end--
+# --field-start--
+fieldName=addTime
+# --field-end--
+# --field-start--
+fieldName=state
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.JoystickTable
+tableName=joysticktable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=mac
+# --field-end--
+# --field-start--
+fieldName=type
+# --field-end--
+# --field-start--
+fieldName=time
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.JPushRecordTable
+tableName=jpushrecordtable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=content
+# --field-end--
+# --field-start--
+fieldName=create_time
+# --field-end--
+# --field-start--
+fieldName=push_time
+# --field-end--
+# --field-start--
+fieldName=retention_time
+# --field-end--
+# --field-start--
+fieldName=link_type
+# --field-end--
+# --field-start--
+fieldName=link_type_val
+# --field-end--
+# --field-start--
+fieldName=crc_link_type_val
+# --field-end--
+# --field-start--
+fieldName=tpl_type
+# --field-end--
+# --field-start--
+fieldName=jump_type
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.LatestGameFileTable
+tableName=latestgamefiletable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=tag
+# --field-end--
+# --field-start--
+fieldName=url
+# --field-end--
+# --field-start--
+fieldName=basePath
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=absolutePath
+# --field-end--
+# --field-start--
+fieldName=gameZipPath
+# --field-end--
+# --field-start--
+fieldName=totalSize
+# --field-end--
+# --field-start--
+fieldName=completeSize
+# --field-end--
+# --field-start--
+fieldName=downloading
+# --field-end--
+# --field-start--
+fieldName=showName
+# --field-end--
+# --field-start--
+fieldName=createTime
+# --field-end--
+# --field-start--
+fieldName=dtype
+# --field-end--
+# --field-start--
+fieldName=finished
+# --field-end--
+# --field-start--
+fieldName=fileType
+# --field-end--
+# --field-start--
+fieldName=finishTime
+# --field-end--
+# --field-start--
+fieldName=packageName
+# --field-end--
+# --field-start--
+fieldName=tips
+# --field-end--
+# --field-start--
+fieldName=portraitURL
+# --field-end--
+# --field-start--
+fieldName=percentage
+# --field-end--
+# --field-start--
+fieldName=isAutoPause
+# --field-end--
+# --field-start--
+fieldName=crc_link_type_val
+# --field-end--
+# --field-start--
+fieldName=ver
+# --field-end--
+# --field-start--
+fieldName=ver_name
+# --field-end--
+# --field-start--
+fieldName=gid
+# --field-end--
+# --field-start--
+fieldName=starNumber
+# --field-end--
+# --field-start--
+fieldName=romType
+# --field-end--
+# --field-start--
+fieldName=isOpen
+# --field-end--
+# --field-start--
+fieldName=describe
+# --field-end--
+# --field-start--
+fieldName=showType
+# --field-end--
+# --field-start--
+fieldName=screenshot_pic
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.ModleBeanTable
+tableName=modlebeantable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=title_type
+# --field-end--
+# --field-start--
+fieldName=label
+# --field-end--
+# --field-start--
+fieldName=pic_remote
+# --field-end--
+# --field-start--
+fieldName=ico_remote
+# --field-end--
+# --field-start--
+fieldName=sub_title
+# --field-end--
+# --field-start--
+fieldName=online
+# --field-end--
+# --field-start--
+fieldName=recomDatabeanTable
+columnName=recom
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.PAPARecentlyTable
+tableName=paparecentlytable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=crc_sign_id
+# --field-end--
+# --field-start--
+fieldName=game_name
+# --field-end--
+# --field-start--
+fieldName=screenshot_pic
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.PlayGameTimeTable
+tableName=playgametimetable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=uId
+# --field-end--
+# --field-start--
+fieldName=gameId
+# --field-end--
+# --field-start--
+fieldName=gamePlayTotalTime
+# --field-end--
+# --field-start--
+fieldName=gamePlayRecentlyTime
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.PurchasedListTable
+tableName=purchasedlisttable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=crc_sign_id
+# --field-end--
+# --field-start--
+fieldName=game_name
+# --field-end--
+# --field-start--
+fieldName=down_status
+# --field-end--
+# --field-start--
+fieldName=pay_game_amount
+# --field-end--
+# --field-start--
+fieldName=game_app_key
+# --field-end--
+# --field-start--
+fieldName=game_id
+# --field-end--
+# --field-start--
+fieldName=appBeanMainTable
+columnName=appbeanmain
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.RecomDatabeanTable
+tableName=recomdatabeantable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=dataFrom
+# --field-end--
+# --field-start--
+fieldName=main
+columnName=modletable
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --field-start--
+fieldName=sub
+foreignCollection=true
+# --field-end--
+# --field-start--
+fieldName=more
+foreignCollection=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.RewardBananaTable
+tableName=rewardbananatable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=type
+# --field-end--
+# --field-start--
+fieldName=amount
+# --field-end--
+# --field-start--
+fieldName=times
+defaultValue=1
+# --field-end--
+# --field-start--
+fieldName=uid
+# --field-end--
+# --field-start--
+fieldName=tourist
+# --field-end--
+# --field-start--
+fieldName=gameId
+# --field-end--
+# --field-start--
+fieldName=uniqueId
+# --field-end--
+# --field-start--
+fieldName=timestamp
+# --field-end--
+# --field-start--
+fieldName=status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.SearchRecordTable
+tableName=searchrecordtable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=create_time
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.ShowViewDataBeanTable
+tableName=showviewdatabeantable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=strategy_id
+# --field-end--
+# --field-start--
+fieldName=strategy_name
+# --field-end--
+# --field-start--
+fieldName=up_times
+# --field-end--
+# --field-start--
+fieldName=pic_addr
+# --field-end--
+# --field-start--
+fieldName=begin_times
+# --field-end--
+# --field-start--
+fieldName=end_times
+# --field-end--
+# --field-start--
+fieldName=is_default
+# --field-end--
+# --field-start--
+fieldName=imagePath
+# --field-end--
+# --field-start--
+fieldName=tag_show
+# --field-end--
+# --field-start--
+fieldName=jump_info
+# --field-end--
+# --field-start--
+fieldName=show_time
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.StatisticTable
+tableName=statistictable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=type
+# --field-end--
+# --field-start--
+fieldName=args1
+# --field-end--
+# --field-start--
+fieldName=args2
+# --field-end--
+# --field-start--
+fieldName=time
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.TipBeanTable
+tableName=tipbeantable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=color
+# --field-end--
+# --field-start--
+fieldName=tagId
+# --field-end--
+# --field-start--
+fieldName=appBeanTable
+columnName=appbean
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.TokenTable
+tableName=token_table
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=uid
+# --field-end--
+# --field-start--
+fieldName=token
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.UserPurchaseInfo
+tableName=user_purchase_info_table
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=uid
+columnName=uid
+# --field-end--
+# --field-start--
+fieldName=gameId
+columnName=game_id
+# --field-end--
+# --field-start--
+fieldName=isOpenSp
+columnName=is_open_sp
+# --field-end--
+# --field-start--
+fieldName=spExpireTime
+columnName=sp_expire_time
+# --field-end--
+# --field-start--
+fieldName=isOpenCheat
+columnName=is_open_cheat
+# --field-end--
+# --field-start--
+fieldName=cheatExpireTime
+columnName=cheat_expire_time
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.WarMatchAndLocalTable
+tableName=warmatchandlocaltable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=crc_link_type_val
+# --field-end--
+# --field-start--
+fieldName=showName
+# --field-end--
+# --field-start--
+fieldName=fight_screenshot_pic
+# --field-end--
+# --field-start--
+fieldName=warType
+# --field-end--
+# --field-start--
+fieldName=game_name
+# --field-end--
+# --field-start--
+fieldName=ico_remote
+# --field-end--
+# --field-start--
+fieldName=packageName
+# --field-end--
+# --field-start--
+fieldName=appSize
+# --field-end--
+# --field-start--
+fieldName=tips
+# --field-end--
+# --field-start--
+fieldName=down_url_remote
+# --field-end--
+# --field-start--
+fieldName=info
+# --field-end--
+# --field-start--
+fieldName=lock_sp
+# --field-end--
+# --field-start--
+fieldName=unzip_size
+# --field-end--
+# --field-start--
+fieldName=ver
+# --field-end--
+# --field-start--
+fieldName=ver_name
+# --field-end--
+# --field-start--
+fieldName=plugin_num
+# --field-end--
+# --field-start--
+fieldName=is_world
+# --field-end--
+# --field-start--
+fieldName=is_network
+# --field-end--
+# --field-start--
+fieldName=source_ver_name
+# --field-end--
+# --field-start--
+fieldName=source_ver
+# --field-end--
+# --field-start--
+fieldName=source_down_url
+# --field-end--
+# --field-start--
+fieldName=plugin_screenshot
+# --field-end--
+# --field-start--
+fieldName=forum_switch
+# --field-end--
+# --field-start--
+fieldName=forum_id
+# --field-end--
+# --field-start--
+fieldName=world_shop
+# --field-end--
+# --field-start--
+fieldName=world_area
+# --field-end--
+# --field-start--
+fieldName=is_fight
+# --field-end--
+# --field-start--
+fieldName=fight_type
+# --field-end--
+# --field-start--
+fieldName=fight_fun
+# --field-end--
+# --field-start--
+fieldName=plugin_lowest_ver_name
+# --field-end--
+# --field-start--
+fieldName=plugin_lowest_ver
+# --field-end--
+# --field-start--
+fieldName=cfg_ver_name
+# --field-end--
+# --field-start--
+fieldName=cfg_ver
+# --field-end--
+# --field-start--
+fieldName=cfg_down_url
+# --field-end--
+# --field-start--
+fieldName=screenshot_pic
+# --field-end--
+# --field-start--
+fieldName=tp_down_url
+foreignCollection=true
+# --field-end--
+# --field-start--
+fieldName=other_down_switch
+# --field-end--
+# --field-start--
+fieldName=cdn_down_switch
+# --field-end--
+# --field-start--
+fieldName=game_info_tpl_type
+# --field-end--
+# --field-start--
+fieldName=pic_remote
+# --field-end--
+# --field-start--
+fieldName=main_title
+# --field-end--
+# --field-start--
+fieldName=main_sub_title
+# --field-end--
+# --field-start--
+fieldName=sync_memory
+# --field-end--
+# --field-start--
+fieldName=gift_package_switch
+# --field-end--
+# --field-start--
+fieldName=pay_game_amount
+# --field-end--
+# --field-start--
+fieldName=down_status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.join.mgps.db.tables.VideoWatchLogTable
+tableName=videowatchlogtable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=userId
+# --field-end--
+# --field-start--
+fieldName=sdkType
+# --field-end--
+# --field-start--
+fieldName=sceneType
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

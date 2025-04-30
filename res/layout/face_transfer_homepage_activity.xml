@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/face_transfer_homepage_title" layout="@layout/topbar_left_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/face_transfer_homepage_title">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <RelativeLayout android:id="@id/face_transfer_declare_rlayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/face_transfer_mid_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="112.0dip" android:src="@drawable/face_transfer_change" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/face_transfer_right_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="92.0dip" android:src="@drawable/face_transfer_phone2" android:scaleType="centerCrop" android:layout_toRightOf="@id/face_transfer_mid_img" />
+                <ImageView android:id="@id/face_transfer_left_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="21.0dip" android:src="@drawable/face_transfer_phone2" android:scaleType="centerCrop" android:layout_toLeftOf="@id/face_transfer_mid_img" android:layout_alignTop="@id/face_transfer_right_img" android:layout_marginEnd="21.0dip" android:layout_toStartOf="@id/face_transfer_mid_img" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff262626" android:id="@id/face_transfer_declare_txt" android:layout_marginTop="40.0dip" android:text="@string/face_transfer_declare2" android:layout_below="@id/face_transfer_left_img" android:layout_centerHorizontal="true" style="@style/face_transfer_declare_text_style" />
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff262626" android:id="@id/face_transfer_declare_txt_bottom" android:layout_marginTop="6.0dip" android:text="@string/face_transfer_declare3" android:layout_below="@id/face_transfer_declare_txt" android:layout_centerHorizontal="true" style="@style/face_transfer_declare_text_style" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <RelativeLayout android:id="@id/face_transfer_rel_create_hotspot" android:background="#ff3ca4fd" android:clickable="true" android:layout_width="231.0dip" android:layout_height="48.0dip">
+                <ImageView android:id="@id/face_transfer_img_create_hotspot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="46.0dip" android:src="@drawable/face_transfer_phone_little" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0sp" android:textColor="#ffadd9ff" android:id="@id/face_transfer_text_phone1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/_1" android:layout_toRightOf="@id/face_transfer_img_create_hotspot" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/face_transfer_text_create_hotspot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/face_transfer_create_hotspot" android:layout_toRightOf="@id/face_transfer_text_phone1" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/face_transfer_rel_join_hotspot" android:background="#ff3ca4fd" android:clickable="true" android:layout_width="231.0dip" android:layout_height="48.0dip" android:layout_marginTop="20.0dip">
+                <ImageView android:id="@id/face_transfer_img_join_hotspot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="46.0dip" android:src="@drawable/face_transfer_phone_little" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0sp" android:textColor="#ffadd9ff" android:id="@id/face_transfer_text_phone2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/_2" android:layout_toRightOf="@id/face_transfer_img_join_hotspot" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/face_transfer_text_join_hotspot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/face_transfer_join_hotspot" android:layout_toRightOf="@id/face_transfer_text_phone2" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/blue_game_transfer" android:id="@id/nopapaTip" android:paddingTop="23.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_transfer_declare1" android:layout_below="@id/face_transfer_rel_join_hotspot" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

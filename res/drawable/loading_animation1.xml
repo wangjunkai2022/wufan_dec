@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/xiala_1" />
+    <item android:duration="100" android:drawable="@drawable/xiala_2" />
+    <item android:duration="100" android:drawable="@drawable/xiala_3" />
+    <item android:duration="100" android:drawable="@drawable/xiala_4" />
+    <item android:duration="100" android:drawable="@drawable/xiala_5" />
+</animation-list>

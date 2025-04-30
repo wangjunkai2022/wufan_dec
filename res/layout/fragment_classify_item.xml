@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/dynamic_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/onlin_icon" android:layout_width="@dimen/wdp70" android:layout_height="@dimen/wdp70" android:layout_margin="12.0dip" android:src="@drawable/onlin_icon" android:scaleType="fitXY" app:placeholderImage="@drawable/onlin_icon" app:placeholderImageScaleType="fitXY" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/nameParent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/onlin_icon" android:layout_alignTop="@id/onlin_icon">
+        <TextView android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/TextViewStyle_14sp_black" />
+        <TextView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" style="@style/TextViewStyle_classify_number" />
+    </LinearLayout>
+    <TextView android:ellipsize="end" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@id/onlin_icon" android:layout_alignBottom="@id/onlin_icon" style="@style/TextViewStyle_12sp_classify_gay" />
+    <TextView android:id="@id/onlin_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_alignParentRight="true" style="@style/TextViewStyle_classify_number" />
+    <TextView android:textSize="12.0sp" android:id="@id/onlin_number_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/TextViewStyle_classify_number" />
+</RelativeLayout>

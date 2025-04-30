@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/bt_viewpager_layout_0" android:paddingTop="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.join.mgps.customview.BtReginSlidinTablayout android:id="@id/tabLayout" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="@dimen/wdp42" app:mytl_indicator_color="#00ff8902" app:mytl_indicator_corner_radius="@dimen/wdp4" app:mytl_indicator_margin_left="@dimen/wdp12" app:mytl_indicator_margin_right="@dimen/wdp12" app:mytl_indicator_style="BLOCK2" app:mytl_tab_padding="@dimen/wdp14" app:mytl_textSelectColor="@color/white" app:mytl_textUnselectColor="#ff999999" app:mytl_textsize="@dimen/wdp24" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>

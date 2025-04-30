@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/mod_choice_archive_dialog_0" android:background="#a6000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/main" android:background="@drawable/round_conner_back_24" android:paddingBottom="@dimen/wdp50" android:layout_width="@dimen/wdp612" android:layout_height="wrap_content" android:minHeight="@dimen/wdp358" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/wdp32" android:textColor="@color/black" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp52" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+    <ImageView android:id="@id/closed" android:tag="binding_3" android:padding="@dimen/wdp33" android:layout_width="@dimen/wdp94" android:layout_height="@dimen/wdp94" android:src="@drawable/btn_close" app:layout_constraintRight_toRightOf="@id/main" app:layout_constraintTop_toTopOf="@id/main" />
+</androidx.constraintlayout.widget.ConstraintLayout>

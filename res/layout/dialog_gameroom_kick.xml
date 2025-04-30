@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="286.0dip" android:layout_height="160.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:background="@drawable/newarena_bg_input_border_top" android:paddingLeft="@dimen/wdp36" android:layout_width="fill_parent" android:layout_height="@dimen/wdp65" />
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_position" android:background="@drawable/newarena_titleblack" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp36" android:layout_width="@dimen/wdp236" android:layout_height="wrap_content" android:text="提示" android:singleLine="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/newarena_bg_input_border_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tv_position">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_tip" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff686868" android:id="@id/tv_kickinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:text="房间人数已满\n你已被踢出房间" android:lineSpacingExtra="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/iv_close" android:layout_width="@dimen/wdp90" android:layout_height="@dimen/wdp65" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close2" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

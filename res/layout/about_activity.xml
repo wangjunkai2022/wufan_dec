@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_default_background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar_layout" layout="@layout/topbar_left_title_layout" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/icon" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff5e5e5e" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/app_name" />
+            <RelativeLayout android:id="@id/papaLayout" android:background="@drawable/dynamic_list_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="40.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/set_item_magin_L_R" android:text="悟饭公众号" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="wufangame" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/TextViewStyle_12sp_notsingle" />
+            </RelativeLayout>
+            <View android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:id="@id/papaNetLayout" android:background="@drawable/dynamic_list_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="悟饭官网" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+                <ImageView android:id="@id/arrowImageAbout" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/dynamic_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:id="@id/papaWeibo" android:background="@drawable/dynamic_list_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/set_item_magin_L_R" android:text="悟饭微博" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+                <ImageView android:id="@id/imageView" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/dynamic_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:id="@id/papaStatementLayout" android:background="@drawable/dynamic_list_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="40.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="免责声明" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+                <ImageView android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/dynamic_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp50">
+                <TextView android:textColor="@color/blue" android:id="@id/yszc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp15" android:text="隐私政策" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="·" />
+                <TextView android:textColor="@color/blue" android:id="@id/syxy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp15" android:layout_marginRight="@dimen/wdp15" android:text="用户使用协议" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="·" />
+                <TextView android:textColor="@color/blue" android:id="@id/mzsm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp15" android:text="免责声明" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

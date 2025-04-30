@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/account_back_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/account_title_include" />
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/lLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:id="@id/accoutTitle" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="昵称" style="@style/TextViewStyle_12sp" />
+                <EditText android:textSize="14.0dip" android:textColorHint="#ffa8a8a8" android:id="@id/userName" android:background="@drawable/account_edittext" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="4.0dip" android:hint="输入您的大名，1-12位" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+                <TextView android:id="@id/textView3" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="手机" style="@style/TextViewStyle_12sp" />
+                <EditText android:textSize="14.0dip" android:textColorHint="#ffa8a8a8" android:id="@id/telPhone" android:background="@drawable/account_edittext" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="4.0dip" android:hint="输入手机号，限大陆" android:singleLine="true" android:phoneNumber="true" android:inputType="number" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+                <TextView android:id="@id/forget" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="密码" style="@style/TextViewStyle_12sp" />
+                <EditText android:textSize="14.0dip" android:textColorHint="#ffa8a8a8" android:id="@id/password" android:background="@drawable/account_edittext" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="4.0dip" android:hint="输入密码，6-16位" android:password="true" android:singleLine="true" android:inputType="textPassword" />
+            </LinearLayout>
+            <Button android:enabled="false" android:textSize="18.0dip" android:textColor="@color/white" android:id="@id/reginButton" android:background="@drawable/account_butn_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="35.0dip" android:text="注册" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/agreeCheckBox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="打发时间到了开发商的防水堵漏f" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/llRecent" android:background="#fff5f5f5" android:paddingTop="@dimen/wdp14" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlwaysCollapsed|scroll">
+                <TextView android:textSize="17.0sp" android:textColor="#ff3b3b3b" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="10.0dip" android:text="近期大作" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ad" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/main_normal_icon" android:scaleType="centerCrop" app:actualImageScaleType="centerCrop" app:failureImage="@drawable/main_normal_icon" app:failureImageScaleType="centerCrop" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="centerCrop" app:viewAspectRatio="2.4" />
+                <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/black" android:id="@id/guessliketext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp24" android:layout_marginBottom="@dimen/wdp30" android:text="猜你喜欢" android:layout_weight="1.0" style="@style/TextViewStyle_12sp_notsingle" />
+                <com.join.mgps.customview.FlowLayout android:gravity="left" android:id="@id/guessLickFlow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" android:numColumns="3" />
+            </LinearLayout>
+            <LinearLayout android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@id/tabLayout" android:layout_width="wrap_content" android:layout_height="@dimen/wdp100" app:tabIndicatorColor="@color/black_alpha" app:tabIndicatorHeight="0.0dip" app:tabMode="scrollable" app:tabRippleColor="@android:color/transparent" app:tabSelectedTextColor="@color/black" app:tabTextColor="#ff535353" />
+            </LinearLayout>
+            <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="@dimen/wdp850" android:layout_marginBottom="@dimen/wdp40" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/llHotSearch" android:background="@color/white" android:paddingLeft="@dimen/search_padding" android:paddingRight="@dimen/search_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff3b3b3b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp23" android:layout_marginBottom="@dimen/wdp23" android:text="今日热搜" />
+        <com.join.mgps.customview.WrapContentGridView android:gravity="center" android:id="@id/wrapGridView" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:horizontalSpacing="@dimen/wdp20" android:verticalSpacing="@dimen/wdp20" android:stretchMode="columnWidth" android:numColumns="2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/llHotTag" android:background="@color/white" android:paddingLeft="@dimen/search_padding" android:paddingRight="@dimen/search_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <TextView android:textSize="17.0sp" android:textColor="#ff3b3b3b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:text="近期热门标签" />
+        <com.join.mgps.customview.FlowLayout android:gravity="center" android:orientation="vertical" android:id="@id/flowLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" android:stretchMode="columnWidth" android:numColumns="2"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llCategories" android:background="@color/white" android:paddingTop="@dimen/wdp28" android:paddingBottom="@dimen/wdp28" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/singleGameRanking" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_djb" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff333333" android:gravity="center|top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:text="单机榜" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/emulatorGameRanking" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_game" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff333333" android:gravity="center|top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:text="模拟器榜" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/onlineGameRanking" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_wy" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff333333" android:gravity="center|top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:text="网游榜" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/allGameRanking" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/imageView48" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fl" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff333333" android:gravity="center|top" android:id="@id/textView38" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:text="全部分类" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/llGameList" android:background="@color/white" android:paddingLeft="@dimen/search_padding" android:paddingRight="@dimen/search_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff3b3b3b" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp28" android:layout_marginBottom="10.0dip" android:text="精选游戏单" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/refreshGameList" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <ImageView android:id="@id/ivRefresh" android:background="@drawable/ic_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:textColor="#ffa8a8a8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="换一批" android:layout_toRightOf="@id/ivRefresh" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.join.mgps.customview.WrapContentGridView android:gravity="center" android:id="@id/gameListGrid" android:background="@color/transparent" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" android:listSelector="@color/transparent" android:horizontalSpacing="6.0dip" android:verticalSpacing="4.0dip" android:stretchMode="columnWidth" android:numColumns="3" />
+    </LinearLayout>
+</RelativeLayout>

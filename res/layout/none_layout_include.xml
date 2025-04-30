@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading_none" android:paddingBottom="60.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/common_bar_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/noneReloadImage" android:layout_width="69.0dip" android:layout_height="45.0dip" android:src="@drawable/sorrow" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff908f8f" android:id="@id/noneMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="未找到该类游戏" />
+    <ImageView android:id="@id/lodingBackImage" android:background="#ffcdcdcd" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="80.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="80.0dip" android:layout_marginBottom="11.0dip" />
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/setAll" android:layout_width="wrap_content" android:text="@string/have_a_look" style="@style/ButtonStyle12_Text" />
+</LinearLayout>

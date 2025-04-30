@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/simulator_encyclopedia_ll" android:background="@color/white" android:paddingLeft="@dimen/app_list_margin" android:paddingRight="@dimen/app_list_margin" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fressco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/simulator_encyclopedia_iv" android:layout_width="104.0dip" android:layout_height="68.0dip" android:src="@drawable/main_normal_icon" android:scaleType="centerCrop" fressco:failureImage="@drawable/main_normal_icon" fressco:failureImageScaleType="fitXY" fressco:placeholderImage="@drawable/main_normal_icon" fressco:placeholderImageScaleType="fitXY" fressco:roundWithOverlayColor="#ffffffff" fressco:roundingBorderColor="#ffd8d8d8" fressco:roundingBorderWidth="1.0px" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginLeft="@dimen/app_list_margin">
+        <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff3b3b3b" android:id="@id/simulator_encyclopedia_title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff686868" android:ellipsize="end" android:id="@id/simulator_encyclopedia_label_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="2" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/actionbarLayout" layout="@layout/mg_forum_title_layout" />
+    <com.join.mgps.customview.CopyTextViewNew android:id="@id/forum_post_message" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/mg_forum_post_item_padding" />
+</LinearLayout>

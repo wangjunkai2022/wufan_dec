@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp452">
+        <LinearLayout android:orientation="vertical" android:id="@id/goLive" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="55.0">
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ff3b3b3b" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp18" android:layout_marginTop="@dimen/wdp26" android:text="New Text" android:lines="2" android:singleLine="false" />
+            <TextView android:textSize="@dimen/wdp22" android:textColor="#ff686868" android:id="@id/subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp18" android:text="New Text" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/papamain_paptv_roundbutn" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp30" android:layout_width="wrap_content" android:layout_height="@dimen/wdp40" android:layout_marginLeft="@dimen/wdp18" android:layout_marginTop="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp20">
+                <TextView android:textSize="@dimen/wdp26" android:textColor="#fff47500" android:id="@id/textView64" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp30" android:text="看直播" />
+                <ImageView android:id="@id/imageView34" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voucher_more" />
+            </LinearLayout>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/picImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp20" android:layout_marginRight="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp20" />
+        </LinearLayout>
+        <View style="@style/TextViewStyle_line_V" />
+        <LinearLayout android:orientation="vertical" android:id="@id/tvLiveListLayout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="45.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#ff29313f" app:cardCornerRadius="@dimen/wdp8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sdv_image" android:layout_width="fill_parent" android:layout_height="wrap_content" app:placeholderImageScaleType="fitXY" app:viewAspectRatio="1.84" />
+        <TextView android:textSize="@dimen/wdp18" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_time" android:background="@drawable/shape_rect_1e2530_r5_a70_solid" android:paddingLeft="@dimen/wdp6" android:paddingRight="@dimen/wdp6" android:layout_width="wrap_content" android:layout_height="@dimen/wdp32" android:layout_marginRight="@dimen/wdp2" android:layout_marginBottom="@dimen/wdp2" android:minWidth="@dimen/wdp66" android:layout_alignRight="@id/sdv_image" android:layout_alignBottom="@id/sdv_image" />
+        <TextView android:textSize="@dimen/wdp18" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_pic_num" android:background="@drawable/shape_rect_1e2530_r5_a70_solid" android:layout_width="wrap_content" android:layout_height="@dimen/wdp32" android:layout_marginLeft="@dimen/wdp2" android:layout_marginTop="@dimen/wdp2" android:minWidth="@dimen/wdp66" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tv_title" android:background="#ff29313f" android:paddingLeft="@dimen/wdp8" android:paddingTop="@dimen/wdp7" android:paddingRight="@dimen/wdp8" android:paddingBottom="@dimen/wdp7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" android:layout_below="@id/sdv_image" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/discoveryTopRl" android:background="@drawable/discovery_top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/statubar" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+        <RelativeLayout android:paddingBottom="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/wdp96" android:layout_marginLeft="10.0dip" android:text="  对战大厅" android:drawableLeft="@drawable/discovery_fight" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/discoverySearchIv" android:padding="@dimen/wdp30" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp96" android:src="@drawable/search_image_white" />
+            <GridView android:id="@id/discoveryTopGv" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp120" android:listSelector="@android:color/transparent" android:horizontalSpacing="10.0dip" android:numColumns="4" />
+            <RelativeLayout android:id="@id/toFightRl" android:clickable="true" android:layout_width="@dimen/wdp180" android:layout_height="@dimen/wdp62" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:layout_below="@id/discoveryTopGv" android:layout_centerHorizontal="true">
+                <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_tofight" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="进入大厅 " android:drawableRight="@drawable/discovery_in_ic" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/discoveryCommunityLl" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff3b3b3b" android:layout_width="fill_parent" android:layout_height="22.5dip" android:layout_marginBottom="10.0dip" android:text="  社区" android:drawableLeft="@drawable/discovery_zone_ic" android:layout_weight="1.0" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#fff37500" android:gravity="center" android:id="@id/toCommunityTx" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="22.5dip" android:layout_marginBottom="5.0dip" android:text="进入社区  " android:drawableRight="@drawable/discovery_oringe_ic" />
+    </LinearLayout>
+    <com.join.mgps.customview.MyGridView android:id="@id/discoveryBottomGv" android:background="@color/white" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:horizontalSpacing="10.0dip" android:numColumns="2" />
+    <LinearLayout android:gravity="center" android:id="@id/toCommunityLl" android:background="@drawable/listview_download" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="42.5dip">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#fff37500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="进入社区  " android:drawableRight="@drawable/discovery_oringe_ic" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff3b3b3b" android:layout_width="fill_parent" android:layout_height="22.5dip" android:layout_marginBottom="10.0dip" android:text="  悟饭头条" android:drawableLeft="@drawable/discovery_info_ic" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

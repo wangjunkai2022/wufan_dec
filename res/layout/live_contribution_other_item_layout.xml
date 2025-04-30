@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0dip" android:textColor="#ff545454" android:id="@id/numberText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_centerVertical="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/userIcon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="30.0dip" android:layout_toRightOf="@id/numberText" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/userIcon">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0dip" android:textColor="#ff545454" android:id="@id/userName" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.join.mgps.customview.VipView android:id="@id/svip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="10.0dip" android:textColor="#ff555555" android:id="@id/contribution" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:layout_alignParentBottom="true" style="@style/TextViewStyle_line_H" />
+</RelativeLayout>

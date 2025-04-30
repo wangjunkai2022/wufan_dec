@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@drawable/alphhaf" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/round_conner_listitem_back_15" android:layout_width="@dimen/wdp576" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp83" android:src="@drawable/down_game_vip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/wdp34" android:textStyle="bold" android:textColor="#ff4a4a4a" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp24" android:text="加速提示" android:layout_below="@id/icon" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff686868" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp60" android:layout_marginTop="@dimen/wdp67" android:layout_marginRight="@dimen/wdp60" android:text=" 你当前下载的文件过大，为减少等待，建议开通会员下载" android:lines="2" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/wdp34" android:textColor="@color/white" android:gravity="center" android:id="@id/openH5" android:background="@drawable/downlarge_game_dialog_butn" android:layout_width="fill_parent" android:layout_height="@dimen/wdp83" android:layout_marginLeft="@dimen/wdp60" android:layout_marginTop="@dimen/wdp121" android:layout_marginRight="@dimen/wdp60" android:layout_marginBottom="@dimen/wdp70" android:text="开通会员" android:layout_below="@id/content" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/closed" android:padding="@dimen/wdp23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/posting_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient android:startColor="#ff2576a7" android:endColor="#ff424e7c" android:angle="0.0" />
+            <corners android:topLeftRadius="@dimen/wdp20" android:bottomRightRadius="@dimen/wdp20" />
+            <stroke android:width="@dimen/wdp6" android:color="#29b7e8ff" />
+            <size android:height="@dimen/wdp214" android:width="@dimen/wdp408" />
+        </shape>
+    </item>
+</layer-list>

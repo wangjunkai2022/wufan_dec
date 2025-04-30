@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/round_conner_back_24" android:layout_width="@dimen/wdp586" android:layout_height="@dimen/wdp416" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp326" android:layout_weight="0.0">
+        <ImageView android:id="@id/dialog_title_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="@color/black" android:id="@id/dialog_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/wdp65" android:layout_marginRight="20.0dip" android:text="温馨提示" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff797982" android:id="@id/dialog_content" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp53" android:layout_marginTop="@dimen/wdp36" android:layout_marginRight="@dimen/wdp53" android:text="该游戏在安卓10.0版本中可能存在闪退、显示效果不佳、运行不流畅等现象" android:layout_below="@id/dialog_title" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/closed" android:padding="@dimen/wdp28" android:layout_width="@dimen/wdp105" android:layout_height="@dimen/wdp105" android:src="@drawable/close_normal" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/bluetooth_line_textcolor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llBtn" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_weight="1.0">
+        <Button android:textSize="@dimen/wdp28" android:textColor="@color/white" android:gravity="center" android:id="@id/dialog_button_close" android:background="@drawable/exitdialog_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" android:layout_alignParentLeft="false" />
+        <Button android:textSize="@dimen/wdp28" android:textColor="#ff888888" android:gravity="center" android:id="@id/dialog_button_keep" android:background="@drawable/exitdialog_again_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="仍要下载" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llBtnIKnow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_weight="1.0">
+        <Button android:textSize="@dimen/wdp28" android:textColor="@color/white" android:gravity="center" android:id="@id/dialog_button_i_know" android:background="@drawable/exitdialog_i_konw_selecotr" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="我知道了" android:layout_weight="1.0" android:layout_alignParentLeft="false" />
+    </LinearLayout>
+</LinearLayout>

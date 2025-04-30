@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/nowwufun_item_topback" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/now_wufun_todaynew_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30">
+        <TextView android:textSize="@dimen/wdp62" android:textStyle="bold" android:textColor="#ff181818" android:gravity="center_vertical" android:id="@id/titleText" android:paddingLeft="@dimen/wdp34" android:layout_width="fill_parent" android:layout_height="@dimen/wdp146" android:text="每日发现" />
+    </LinearLayout>
+</LinearLayout>

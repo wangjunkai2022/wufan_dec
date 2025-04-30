@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="15.0dip" android:textColor="#ff474747" android:id="@id/phoneType" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="#ff7e7e7e" android:id="@id/upTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/phoneType" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff7e7e7e" android:id="@id/handOrAuto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自动备份" android:layout_alignTop="@id/upTime" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/arrow_right" android:layout_weight="0.0" />
+</LinearLayout>

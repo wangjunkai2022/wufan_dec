@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fragment_my_game" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topbar_title_center_layout" />
+    <com.join.mgps.customview.TabPageIndicator android:id="@id/pageIndicator" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="38.0dip" />
+    <View android:id="@id/lineTop" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/mViewpagerV4" android:background="@android:color/transparent" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

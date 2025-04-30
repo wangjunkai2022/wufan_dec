@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/instalButtomButn" android:visibility="visible" android:text="@string/download_status_download" android:layout_weight="1.0" style="@style/DownloadTextStyle" />
+    <TextView android:textSize="@dimen/wdp18" android:textColor="@color/money_text_color" android:id="@id/moneyText" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@id/instalButtomButn" android:layout_centerInParent="true" />
+</LinearLayout>

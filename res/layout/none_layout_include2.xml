@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading_none" android:paddingBottom="60.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/common_bar_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/noneReloadImage" android:layout_width="@dimen/wdp86" android:layout_height="@dimen/wdp106" android:src="@drawable/arena_no_play" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff908f8f" android:id="@id/noneMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="没有符合条件的游戏" />
+</LinearLayout>

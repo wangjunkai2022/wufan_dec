@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:tag="layout/bt_video_item_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/mustplay_back" android:paddingLeft="@dimen/wdp13" android:paddingTop="@dimen/wdp15" android:paddingRight="@dimen/wdp13" android:paddingBottom="@dimen/wdp15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp17" android:layout_marginRight="@dimen/wdp17">
+        <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.join.kotlin.domain.widget.CornersLinearLayout android:id="@id/video" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:conner_top_left="@dimen/wdp24" app:conner_top_right="@dimen/wdp24" app:layout_constraintTop_toTopOf="parent">
+                <include layout="@layout/video_dbs_layout" />
+            </com.join.kotlin.domain.widget.CornersLinearLayout>
+            <LinearLayout android:id="@id/tag" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/video">
+                <TextView android:textSize="@dimen/wdp20" android:textColor="#ffff5900" android:orientation="horizontal" android:tag="binding_2" android:background="@drawable/bt_regin_message_tag" android:paddingLeft="@dimen/wdp8" android:paddingTop="@dimen/wdp1" android:paddingRight="@dimen/wdp8" android:paddingBottom="@dimen/wdp1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp28" android:layout_marginTop="@dimen/wdp22" android:layout_marginRight="@dimen/wdp28" />
+            </LinearLayout>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/icon" android:tag="binding_3" android:layout_width="@dimen/wdp86" android:layout_height="@dimen/wdp86" android:layout_marginLeft="@dimen/wdp26" android:layout_marginTop="@dimen/wdp16" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/tag" />
+            <TextView android:textSize="@dimen/wdp32" android:textColor="@color/black" android:ellipsize="end" android:id="@id/gameName" android:tag="binding_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp25" android:layout_marginTop="@dimen/wdp3" android:singleLine="true" app:layout_constraintLeft_toRightOf="@id/icon" app:layout_constraintRight_toLeftOf="@id/downloadView" app:layout_constraintTop_toTopOf="@id/icon" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:id="@id/message" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp25" android:layout_marginTop="@dimen/wdp3" android:layout_marginBottom="@dimen/wdp3" app:layout_constraintBottom_toBottomOf="@id/icon" app:layout_constraintLeft_toRightOf="@id/icon" />
+            <com.join.mgps.customview.DownloadViewStroke android:id="@id/downloadView" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp30" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/search_list_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llHotSearch1" android:background="@color/white" android:paddingLeft="@dimen/search_padding" android:paddingRight="@dimen/search_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:textColor="#ff3b3b3b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="10.0dip" android:text="搜索历史" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linearLayout" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:id="@id/textView" android:background="@drawable/papa_yelow_side" android:layout_width="3.0dip" android:layout_height="20.0dip" />
+        <TextView android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="搜索历史" android:layout_weight="1.0" style="@style/TextViewStyle_14sp" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/noHistory" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/search_padding" android:text="没有历史记录" style="@style/TextViewStyle_12sp_notsingle" />
+            <com.join.mgps.customview.NoScrollListView android:id="@id/historyListView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/line_bg" android:dividerHeight="1.0px" />
+            <View android:id="@id/line" android:background="@color/line_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/historyListView" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/clearLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_below="@id/line">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="15.0dip" android:src="@drawable/delete" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/clear_history" style="@style/TextViewStyle_12sp_notsingle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

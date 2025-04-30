@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/unbind_thridpart_activity_0" android:background="#fff7f8f9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="#fff7f8f9" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/back_image" android:tag="binding_1" android:paddingTop="@dimen/wdp28" android:paddingBottom="@dimen/wdp28" android:visibility="visible" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp97" android:src="@drawable/back_icon" android:layout_centerVertical="true" />
+        <TextView android:gravity="center" android:id="@id/title_textview" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" style="@style/TextViewStyle_18sp" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff4c4b5f" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff4c4b5f" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp42" android:text="短信验证通过后，才能解除绑定" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff4c4b5f" android:gravity="center_vertical" android:tag="binding_4" android:background="@drawable/stroke_grey_radio4_butn" android:paddingLeft="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="@dimen/wdp111" android:layout_marginTop="@dimen/wdp52" />
+        <RelativeLayout android:background="@drawable/stroke_grey_radio4_butn" android:layout_width="fill_parent" android:layout_height="@dimen/wdp75" android:layout_marginTop="@dimen/wdp52">
+            <EditText android:textSize="@dimen/wdp28" android:textColor="#ff4c4b5f" android:gravity="center_vertical" android:tag="binding_5" android:background="@drawable/alph" android:paddingLeft="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="@dimen/wdp75" android:hint="请输入手机验证码" android:maxLength="6" android:inputType="number" />
+            <TextView android:gravity="center" android:tag="binding_6" android:paddingLeft="@dimen/wdp20" android:paddingRight="@dimen/wdp20" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/wdp32" android:textColor="@color/white" android:gravity="center" android:id="@id/okButn" android:tag="binding_7" android:background="@drawable/round_mainyello_butn_selecter" android:layout_width="fill_parent" android:layout_height="@dimen/wdp76" android:layout_marginLeft="@dimen/wdp70" android:layout_marginTop="@dimen/wdp110" android:layout_marginRight="@dimen/wdp70" />
+    </LinearLayout>
+</LinearLayout>

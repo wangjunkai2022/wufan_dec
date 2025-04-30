@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/relateLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip">
+        <view android:id="@id/commitItemIv" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/main_normal_icon" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" app:riv_border_color="@color/mg_forum_avatar_round_stroke_color" app:riv_border_width="@dimen/mg_forum_avatar_round_stroke_width" app:riv_corner_radius="@dimen/mg_forum_avatar_round_width" app:riv_oval="false" class="com.facebook.drawee.view.SimpleDraweeView" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/commitItemIv" android:layout_alignParentTop="true">
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0dip" android:textColor="@color/forum_nickname_color" android:id="@id/CommitItemName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/CommitItemTime" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="10.0dip" android:textColor="#ffa9a9a9" android:id="@id/CommitItemTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="今天" android:singleLine="true" android:layout_toLeftOf="@id/downloadapp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="12.0dip" android:textColor="#ff555555" android:id="@id/CommitItemContext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" android:layout_toLeftOf="@id/downloadapp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/relateLayout" />
+</RelativeLayout>

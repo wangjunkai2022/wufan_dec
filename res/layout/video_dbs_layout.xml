@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/video_dbs_layout_0" android:layout_width="fill_parent" android:layout_height="@dimen/wdp369"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/videoContner" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="@dimen/wdp369" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/bannerView" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="@dimen/wdp369" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/loading" android:visibility="invisible" android:layout_width="@dimen/wdp64" android:layout_height="@dimen/wdp64" android:src="@drawable/video_loding_gif" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

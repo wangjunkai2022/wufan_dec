@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/ll_root" android:background="#75000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_one_key_title" android:layout_width="@dimen/wdp582" android:layout_height="@dimen/wdp86">
+        <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:paddingLeft="@dimen/wdp27" android:layout_width="fill_parent" android:layout_height="@dimen/wdp86" android:text="选择快捷按键" />
+        <ImageView android:id="@id/iv_close" android:padding="@dimen/wdp5" android:layout_width="@dimen/wdp36" android:layout_height="@dimen/wdp36" android:layout_marginRight="@dimen/wdp27" android:src="@drawable/ic_close_x" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ff1e2025" android:layout_width="@dimen/wdp582" android:layout_height="fill_parent">
+        <ListView android:id="@id/lv_list" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="@dimen/wdp582" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:overScrollMode="never" />
+    </LinearLayout>
+</LinearLayout>

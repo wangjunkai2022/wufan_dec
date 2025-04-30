@@ -1,0 +1,241 @@
+.class Lcom/join/mgps/activity/MGGameDetailActivity$k;
+.super Landroid/os/Handler;
+.source "MGGameDetailActivity.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/join/mgps/activity/MGGameDetailActivity;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/join/mgps/activity/MGGameDetailActivity;
+
+
+# direct methods
+.method constructor <init>(Lcom/join/mgps/activity/MGGameDetailActivity;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/join/mgps/activity/MGGameDetailActivity$k;->a:Lcom/join/mgps/activity/MGGameDetailActivity;
+
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lcom/join/mgps/activity/MGGameDetailActivity$k;->a:Lcom/join/mgps/activity/MGGameDetailActivity;
+
+    invoke-virtual {v0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/join/mgps/Util/AccountUtil_;->getInstance_(Landroid/content/Context;)Lcom/join/mgps/Util/AccountUtil_;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/join/mgps/Util/b;->getAccountData()Lcom/join/mgps/dto/AccountBean;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/join/mgps/activity/MGGameDetailActivity;->H0(Lcom/join/mgps/activity/MGGameDetailActivity;Lcom/join/mgps/dto/AccountBean;)Lcom/join/mgps/dto/AccountBean;
+
+    .line 2
+    iget v0, p1, Landroid/os/Message;->what:I
+
+    const/4 v1, 0x1
+
+    if-eq v0, v1, :cond_3
+
+    const/4 v1, 0x2
+
+    if-eq v0, v1, :cond_2
+
+    const/4 v1, 0x3
+
+    if-eq v0, v1, :cond_1
+
+    const/4 v1, 0x4
+
+    if-eq v0, v1, :cond_0
+
+    goto/16 :goto_0
+
+    .line 3
+    :cond_0
+    invoke-static {}, Lcom/join/mgps/Util/IntentUtil;->getInstance()Lcom/join/mgps/Util/IntentUtil;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/join/mgps/activity/MGGameDetailActivity$k;->a:Lcom/join/mgps/activity/MGGameDetailActivity;
+
+    invoke-static {v1}, Lcom/join/mgps/activity/MGGameDetailActivity;->I0(Lcom/join/mgps/activity/MGGameDetailActivity;)Landroid/app/Activity;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/join/mgps/Util/IntentUtil;->goLoginNetGame(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_4
+
+    .line 4
+    iget-object v0, p0, Lcom/join/mgps/activity/MGGameDetailActivity$k;->a:Lcom/join/mgps/activity/MGGameDetailActivity;
+
+    invoke-static {v0}, Lcom/join/mgps/activity/MGGameDetailActivity;->I0(Lcom/join/mgps/activity/MGGameDetailActivity;)Landroid/app/Activity;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/join/mgps/Util/a0;->c0(Landroid/content/Context;)Lcom/join/mgps/Util/a0;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/join/mgps/activity/MGGameDetailActivity$k;->a:Lcom/join/mgps/activity/MGGameDetailActivity;
+
+    invoke-static {v2}, Lcom/join/mgps/activity/MGGameDetailActivity;->I0(Lcom/join/mgps/activity/MGGameDetailActivity;)Landroid/app/Activity;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lcom/join/mgps/Util/z;->x(Landroid/content/Context;)Lcom/join/mgps/dialog/x0;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/join/mgps/activity/MGGameDetailActivity;->L0(Lcom/join/mgps/activity/MGGameDetailActivity;Lcom/join/mgps/dialog/x0;)Lcom/join/mgps/dialog/x0;
+
+    .line 5
+    iget-object v0, p0, Lcom/join/mgps/activity/MGGameDetailActivity$k;->a:Lcom/join/mgps/activity/MGGameDetailActivity;
+
+    invoke-static {v0}, Lcom/join/mgps/activity/MGGameDetailActivity;->K0(Lcom/join/mgps/activity/MGGameDetailActivity;)Lcom/join/mgps/dialog/x0;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+
+    .line 6
+    iget-object v0, p0, Lcom/join/mgps/activity/MGGameDetailActivity$k;->a:Lcom/join/mgps/activity/MGGameDetailActivity;
+
+    iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast p1, Lcom/join/mgps/dto/GameVoucherBean;
+
+    invoke-virtual {v0, p1}, Lcom/join/mgps/activity/MGGameDetailActivity;->l1(Lcom/join/mgps/dto/GameVoucherBean;)V
+
+    goto :goto_0
+
+    .line 7
+    :cond_1
+    invoke-static {}, Lcom/join/mgps/Util/IntentUtil;->getInstance()Lcom/join/mgps/Util/IntentUtil;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/join/mgps/activity/MGGameDetailActivity$k;->a:Lcom/join/mgps/activity/MGGameDetailActivity;
+
+    invoke-static {v1}, Lcom/join/mgps/activity/MGGameDetailActivity;->I0(Lcom/join/mgps/activity/MGGameDetailActivity;)Landroid/app/Activity;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/join/mgps/Util/IntentUtil;->goLoginNetGame(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_4
+
+    .line 8
+    iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast p1, Lcom/join/mgps/dto/GiftPackageDataInfoBean;
+
+    .line 9
+    iget-object v0, p0, Lcom/join/mgps/activity/MGGameDetailActivity$k;->a:Lcom/join/mgps/activity/MGGameDetailActivity;
+
+    invoke-virtual {p1}, Lcom/join/mgps/dto/GiftPackageDataInfoBean;->getGift_package_type()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/join/mgps/activity/MGGameDetailActivity;->J0(Lcom/join/mgps/activity/MGGameDetailActivity;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    .line 10
+    iget-object v0, p0, Lcom/join/mgps/activity/MGGameDetailActivity$k;->a:Lcom/join/mgps/activity/MGGameDetailActivity;
+
+    invoke-virtual {v0, p1}, Lcom/join/mgps/activity/MGGameDetailActivity;->i1(Lcom/join/mgps/dto/GiftPackageDataInfoBean;)V
+
+    goto :goto_0
+
+    .line 11
+    :cond_2
+    invoke-static {}, Lcom/join/mgps/Util/IntentUtil;->getInstance()Lcom/join/mgps/Util/IntentUtil;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/join/mgps/activity/MGGameDetailActivity$k;->a:Lcom/join/mgps/activity/MGGameDetailActivity;
+
+    invoke-static {v1}, Lcom/join/mgps/activity/MGGameDetailActivity;->I0(Lcom/join/mgps/activity/MGGameDetailActivity;)Landroid/app/Activity;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/join/mgps/Util/IntentUtil;->goLoginNetGame(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_4
+
+    .line 12
+    iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast p1, Lcom/join/mgps/dto/GiftPackageDataInfoBean;
+
+    .line 13
+    iget-object v0, p0, Lcom/join/mgps/activity/MGGameDetailActivity$k;->a:Lcom/join/mgps/activity/MGGameDetailActivity;
+
+    invoke-virtual {v0, p1}, Lcom/join/mgps/activity/MGGameDetailActivity;->r2(Lcom/join/mgps/dto/GiftPackageDataInfoBean;)V
+
+    goto :goto_0
+
+    .line 14
+    :cond_3
+    invoke-static {}, Lcom/join/mgps/Util/IntentUtil;->getInstance()Lcom/join/mgps/Util/IntentUtil;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/join/mgps/activity/MGGameDetailActivity$k;->a:Lcom/join/mgps/activity/MGGameDetailActivity;
+
+    invoke-static {v1}, Lcom/join/mgps/activity/MGGameDetailActivity;->I0(Lcom/join/mgps/activity/MGGameDetailActivity;)Landroid/app/Activity;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/join/mgps/Util/IntentUtil;->goLoginInteractive(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_4
+
+    .line 15
+    iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast p1, Lcom/join/mgps/dto/InformationCommentBean;
+
+    .line 16
+    iget-object v0, p0, Lcom/join/mgps/activity/MGGameDetailActivity$k;->a:Lcom/join/mgps/activity/MGGameDetailActivity;
+
+    invoke-virtual {v0, p1}, Lcom/join/mgps/activity/MGGameDetailActivity;->A1(Lcom/join/mgps/dto/InformationCommentBean;)V
+
+    :cond_4
+    :goto_0
+    return-void
+.end method

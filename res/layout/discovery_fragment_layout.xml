@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/mPtrFrame" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/appbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/colltoobar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentScrim="@color/white" app:layout_scrollFlags="exitUntilCollapsed|scroll|snap" app:scrimAnimationDuration="1" app:title="">
+                <ImageView android:id="@id/topImag" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:layout_collapseMode="parallax" app:layout_collapseParallaxMultiplier="0.8" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_collapseMode="parallax" app:layout_collapseParallaxMultiplier="1.0">
+                    <include layout="@layout/part_discovery_header" />
+                </LinearLayout>
+                <TextView android:id="@id/topBack" android:background="@color/black_80_alpha" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp83" app:layout_collapseMode="pin" app:layout_collapseParallaxMultiplier="0.5" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.join.mgps.customview.ViewPagerSlide android:id="@id/viewpager" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <androidx.core.widget.NestedScrollView android:id="@id/bottomNull" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <TextView android:id="@id/nulltext" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.core.widget.NestedScrollView>
+        <View app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/TextViewStyle_line_H" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.flyco.tablayout.SlidingTabLayout android:id="@id/tableLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp83" app:tl_indicator_color="@color/main_yello_color" app:tl_indicator_height="@dimen/wdp4" app:tl_indicator_width_equal_title="true" app:tl_tab_padding="@dimen/wdp24" app:tl_textBold="BOTH" app:tl_textSelectColor="@color/main_yello_color" app:tl_textUnselectColor="#ff686868" app:tl_textsize="@dimen/wdp26" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loding_layout_include" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/failed_layout_include" />
+</RelativeLayout>

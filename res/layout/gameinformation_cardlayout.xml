@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/gameCardLayout" android:paddingBottom="@dimen/wdp14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30">
+        <TextView android:id="@id/textView69" android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp71" android:layout_alignTop="@id/cardIcon" android:layout_alignBottom="@id/textView70" android:layout_alignParentTop="false" android:layout_alignParentBottom="false" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/cardIcon" android:layout_width="@dimen/wdp122" android:layout_height="@dimen/wdp122" android:layout_marginTop="@dimen/wdp14" android:layout_marginBottom="@dimen/wdp14" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/wdp30" android:id="@id/cardAppname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp14" android:text="appname" android:layout_below="@id/cardIcon" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/cardDownNumber" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/cardAppname">
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff3d3c3c" android:id="@id/cardDownNumberText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Text" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:id="@id/cardAppSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Text" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:id="@id/cardInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp54" android:layout_marginTop="@dimen/wdp14" android:layout_marginRight="@dimen/wdp54" android:text="New Text" android:layout_below="@id/cardDownNumber" android:layout_centerHorizontal="true" />
+        <Button android:textSize="@dimen/wdp26" android:textColor="@android:color/white" android:gravity="center" android:id="@id/cardDownButn" android:background="@drawable/download_green_butn" android:layout_width="@dimen/wdp137" android:layout_height="@dimen/wdp53" android:layout_marginTop="@dimen/wdp14" android:text="@string/download_status_download" android:layout_below="@id/cardInfo" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/wdp18" android:textColor="@color/money_text_color" android:id="@id/moneyText" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp3" android:text="TextView" android:layout_below="@id/cardDownButn" android:layout_centerInParent="true" />
+        <TextView android:id="@id/textView70" android:layout_width="wrap_content" android:layout_height="@dimen/wdp10" android:layout_below="@id/moneyText" />
+    </RelativeLayout>
+</LinearLayout>

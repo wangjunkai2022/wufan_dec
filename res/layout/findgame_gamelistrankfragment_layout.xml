@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.join.mgps.customview.SlidingTabLayout6 android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="@dimen/wdp79" app:layout_constraintTop_toTopOf="parent" app:pstsIndicatorColor="#ffff8554" app:pstsIndicatorHeight="@dimen/wdp4" app:pstsTabPaddingLeftRight="@dimen/wdp25" app:stextColor="#ff666666" app:stextSelectedSize="@dimen/wdp28" app:stextSize="@dimen/wdp24" app:tabTextSelectedColor="#ffff8554" />
+    <View app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/tabLayout" style="@style/TextViewStyle_line_H" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

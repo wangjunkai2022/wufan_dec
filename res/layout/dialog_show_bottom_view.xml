@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/wdp34" android:textColor="#ff3ca4fd" android:gravity="center" android:id="@id/showAddShortcutTv" android:background="@drawable/listview_download" android:layout_width="fill_parent" android:layout_height="@dimen/wdp92" android:text="添加到桌面" />
+        <View android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" android:layout_marginLeft="@dimen/wdp26" android:layout_marginRight="@dimen/wdp26" />
+        <TextView android:textSize="@dimen/wdp34" android:textColor="#ffaaaaaa" android:gravity="center" android:id="@id/showGameDetailTv" android:background="@drawable/listview_download" android:layout_width="fill_parent" android:layout_height="@dimen/wdp92" android:text="游戏详情" />
+        <View android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" android:layout_marginLeft="@dimen/wdp26" android:layout_marginRight="@dimen/wdp26" />
+        <TextView android:textSize="@dimen/wdp34" android:textColor="#ffaaaaaa" android:gravity="center" android:id="@id/showDeleteGameTv" android:background="@drawable/listview_download" android:layout_width="fill_parent" android:layout_height="@dimen/wdp92" android:text="删除" />
+    </LinearLayout>
+</RelativeLayout>

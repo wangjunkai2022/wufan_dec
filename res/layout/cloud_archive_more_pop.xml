@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="@dimen/wdp136" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/trangleTop" android:background="@drawable/trangle" android:layout_width="@dimen/wdp18" android:layout_height="@dimen/wdp12" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/main" android:background="@drawable/cloud_conner_back_5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff232a36" android:gravity="center" android:id="@id/deleteCloud" android:layout_width="@dimen/wdp136" android:layout_height="@dimen/wdp80" android:text="删除" />
+        <View android:background="#ffe9e9e9" android:layout_width="@dimen/wdp96" android:layout_height="@dimen/wdp1" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff232a36" android:gravity="center" android:id="@id/reDownload" android:layout_width="@dimen/wdp136" android:layout_height="@dimen/wdp80" android:text="重新下载" />
+    </LinearLayout>
+    <View android:id="@id/trangleBottom" android:background="@drawable/trangle_bottom" android:visibility="gone" android:layout_width="@dimen/wdp18" android:layout_height="@dimen/wdp12" />
+</LinearLayout>

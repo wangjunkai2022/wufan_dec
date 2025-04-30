@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:id="@id/cover" android:layout_width="fill_parent" android:layout_height="@dimen/wdp295" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:riv_border_color="@color/mg_forum_avatar_round_stroke_color" app:riv_border_width="@dimen/mg_forum_avatar_round_stroke_width" app:riv_oval="false" class="com.facebook.drawee.view.SimpleDraweeView"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/myAccountUnSuccess" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="110.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:padding="10.0dip" android:layout_width="@dimen/account_center_usericon_size" android:layout_height="@dimen/account_center_usericon_size" android:layout_marginTop="10.0dip" android:src="@drawable/unloginstatus" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/account_center_usericon_size">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/login_butn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <TextView android:textSize="14.0sp" android:textColor="#ff3a85e2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录/注册" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_alignParentBottom="true">
+                <TextView android:textSize="14.0sp" android:textColor="#ff404040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注册送铜板" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff404040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="" android:drawableLeft="@drawable/pb_icon" android:drawablePadding="3.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/myAccountSuccess" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="110.0dip">
+        <RelativeLayout android:id="@id/userModify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+            <ImageView android:id="@id/userIcon" android:padding="10.0dip" android:layout_width="@dimen/account_center_usericon_size" android:layout_height="@dimen/account_center_usericon_size" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <ImageView android:padding="7.0dip" android:layout_width="@dimen/account_center_usericon_size" android:layout_height="@dimen/account_center_usericon_size" android:layout_marginTop="10.0dip" android:src="@drawable/account_image_icon_back" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <RelativeLayout android:padding="7.0dip" android:layout_width="@dimen/account_center_usericon_size" android:layout_height="@dimen/account_center_usericon_size" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/setUser" android:background="@drawable/set_user_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginBottom="9.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="26.0dip" android:layout_marginBottom="24.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_alignParentLeft="true">
+                <TextView android:gravity="center" android:id="@id/accountName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/TextViewStyle_18sp" />
+                <ImageView android:id="@id/genderText" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/account_center_man" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/levelTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+                <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/papabiNumber" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="0铜板" android:drawableLeft="@drawable/pb_icon" android:drawablePadding="@dimen/dynamic_drawable_padding" style="@style/TextViewStyle_12sp" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff4f94fb" android:gravity="center" android:id="@id/papaGonglue" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:text="铜板攻略" android:drawableLeft="@drawable/account_pabigonglue_butn_selector" android:drawablePadding="@dimen/dynamic_drawable_padding" />
+            </LinearLayout>
+            <ImageView android:id="@id/arrowImage" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/dynamic_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

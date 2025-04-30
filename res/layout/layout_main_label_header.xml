@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:background="#ffffffff" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp21">
+        <ImageView android:id="@id/iv_close_send_posting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_send_posting" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_label_icon" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textColor="#ff262626" android:id="@id/tv_label_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10" android:layout_marginBottom="@dimen/wdp10" android:text="\#拳皇吧" />
+    <View android:layout_alignParentBottom="true" style="@style/TextViewStyle_line_H" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff8a8a8a" android:gravity="center" android:id="@id/tv_label_introduction" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/wdp78" android:text="由逆天小组彩集" android:singleLine="true" />
+    <View android:id="@id/line" android:layout_alignParentBottom="true" style="@style/TextViewStyle_line_H" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp88">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_label_property" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_label_administrator_avatar" android:layout_width="@dimen/wdp40" android:layout_height="@dimen/wdp40" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff3b3b3b" android:id="@id/tv_label_administrator_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:text="编" />
+            <View android:background="@drawable/bg_circle_a8a8a8" android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginLeft="6.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffa8a8a8" android:id="@id/tv_posts_counts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rl_sort" android:clickable="true" android:layout_width="44.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:background="@drawable/ic_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/rl_mid" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="@dimen/wdp9" />
+    <RelativeLayout android:id="@id/rl_posts_filter" android:layout_width="fill_parent" android:layout_height="@dimen/wdp80">
+        <TextView android:textSize="14.0sp" android:textColor="#ff686868" android:id="@id/tv_posts_filter_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="显示“小组名”内容" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_posts_filter_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/icon_switch_yellow_open" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/rl_last" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="@dimen/wdp9" />
+</LinearLayout>

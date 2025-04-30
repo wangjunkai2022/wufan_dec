@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/loding_layout_include" />
+    <include layout="@layout/failed_layout_include" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutMain" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/title_bar_layout" layout="@layout/topbar_filter_title_layout" />
+        <com.join.mgps.customview.SlidingTabLayout android:id="@id/mSlidingTabLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="38.0dip" app:pstsIndicatorColor="#ff00ff00" app:pstsIndicatorHeight="5.0dip" app:pstsUnderlineColor="#ffff00ff" app:pstsUnderlineHeight="1.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.join.mgps.customview.MViewpagerV4 android:id="@id/mViewpagerV4" android:background="@android:color/transparent" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" />
+            <View android:id="@id/lineTop" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+            <View android:id="@id/viewBg" android:background="@color/dialog_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

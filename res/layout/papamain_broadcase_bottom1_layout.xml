@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/TextViewStyle_line_H" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/gamebroadcastbottom1" android:paddingTop="@dimen/wdp24" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/gamebroadcastbottom1Image" android:layout_width="@dimen/wdp208" android:layout_height="@dimen/wdp136" android:layout_marginLeft="@dimen/wdp24" android:layout_marginRight="@dimen/wdp24" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingRight="@dimen/wdp24" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff3b3b3b" android:id="@id/gamebroadcastbottom1Text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="长姿势" android:singleLine="true" android:textIsSelectable="false" style="@style/TextViewStyle_14sp" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff686868" android:id="@id/gamebroadcastbottom1Text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10" android:text="拳皇和超人到底与多厉害" android:maxLines="2" android:singleLine="false" style="@style/TextViewStyle_12sp_notsingle" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/gameLayout" android:layout_width="fill_parent" android:layout_height="@dimen/wdp109">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/gameIcon" android:layout_width="@dimen/wdp49" android:layout_height="@dimen/wdp49" android:layout_marginLeft="@dimen/wdp28" android:layout_marginRight="@dimen/wdp28" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/wdp24" android:textStyle="bold" android:textColor="#ff3b3b3b" android:id="@id/appname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:text="纪念碑谷破解版" android:layout_toLeftOf="@id/rLayoutRight" android:layout_toRightOf="@id/gameIcon" android:layout_alignTop="@id/gameIcon" style="@style/TextViewStyle_14sp_black" />
+        <TextView android:textSize="@dimen/wdp22" android:textColor="#ff8a8a8a" android:id="@id/appSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-2.0dip" android:text="50M" android:layout_toRightOf="@id/gameIcon" android:layout_alignBottom="@id/gameIcon" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rLayoutRight" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/collection_margin" android:layout_marginRight="@dimen/app_list_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:gravity="center" android:id="@id/itemInstall" android:focusable="false" android:focusableInTouchMode="true" android:layout_weight="0.0" android:layout_centerVertical="true" style="@style/DownloadTextStyle" />
+            <TextView android:textSize="@dimen/wdp18" android:textColor="@color/money_text_color" android:id="@id/moneyText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp3" android:text="TextView" android:layout_below="@id/itemInstall" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:id="@id/emptyView" android:layout_width="fill_parent" android:layout_height="@dimen/wdp30" />
+</LinearLayout>

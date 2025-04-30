@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_game_detail_bt_ranking_tag" android:paddingLeft="@dimen/wdp12" android:paddingTop="@dimen/wdp4" android:paddingRight="@dimen/wdp8" android:paddingBottom="@dimen/wdp4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp6" android:src="@drawable/ic_game_detail_bt_ranking" />
+        <TextView android:textSize="@dimen/wdp23" android:textColor="#ff4e3e38" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="悟饭热门游戏榜第1名" android:singleLine="true" />
+        <ImageView android:id="@id/iv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp7" android:src="@drawable/ic_game_detail_bt_ranking_more" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <view android:id="@id/itemImg" android:layout_width="@dimen/mg_forum_item_topic_item_width" android:layout_height="@dimen/mg_forum_item_topic_item_height" android:src="@drawable/rect_normal_icon" android:scaleType="fitXY" android:adjustViewBounds="true" app:riv_border_color="@color/transparent" app:riv_border_width="0.0dip" app:riv_corner_radius="@dimen/mg_forum_avatar_round_width" app:riv_oval="false" class="com.facebook.drawee.view.SimpleDraweeView" />
+</LinearLayout>

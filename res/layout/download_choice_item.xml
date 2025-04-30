@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/localPathLayout" android:background="@drawable/listview_download" android:layout_width="fill_parent" android:layout_height="54.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#ff323232" android:gravity="center" android:id="@id/downUrlName" android:layout_width="wrap_content" android:layout_height="54.0dip" android:layout_marginLeft="17.0dip" android:text="普通下载" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/down_url_image" android:layout_toLeftOf="@id/downUrlName" android:layout_centerVertical="true" />
+    <TextView android:id="@id/textView" android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0dip" android:text="New Text" android:layout_alignParentTop="true" android:layout_alignParentBottom="false" />
+</RelativeLayout>

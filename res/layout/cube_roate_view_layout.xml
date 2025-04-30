@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.join.mgps.customview.CubeRotateView android:id="@id/cubeView" android:layout_width="fill_parent" android:layout_height="@dimen/wdp160">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/foreground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/date" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="slakdjasljasld jasd jksa" />
+        </RelativeLayout>
+    </com.join.mgps.customview.CubeRotateView>
+</LinearLayout>

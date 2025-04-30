@@ -1,0 +1,7 @@
+package com.mob.mcl;
+
+import com.mob.tools.proguard.EverythingKeeper;
+/* loaded from: classes4.dex */
+public interface BusinessMessageListener extends EverythingKeeper {
+    void messageReceived(int i2, String str, String str2);
+}

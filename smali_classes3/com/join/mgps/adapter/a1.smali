@@ -1,0 +1,269 @@
+.class public Lcom/join/mgps/adapter/a1;
+.super Landroid/widget/BaseAdapter;
+.source "GameDetailImageAdapter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/join/mgps/adapter/a1$b;
+    }
+.end annotation
+
+
+# instance fields
+.field private a:Landroid/content/Context;
+
+.field private b:Landroid/view/LayoutInflater;
+
+.field private c:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/join/mgps/activity/screenshot/ScreenshotGamedetialBean;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/join/mgps/adapter/a1;->c:Ljava/util/List;
+
+    .line 3
+    iput-object p1, p0, Lcom/join/mgps/adapter/a1;->a:Landroid/content/Context;
+
+    .line 4
+    invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/join/mgps/adapter/a1;->b:Landroid/view/LayoutInflater;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Ljava/util/List;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Ljava/util/List<",
+            "Lcom/join/mgps/activity/screenshot/ScreenshotGamedetialBean;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 5
+    invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
+
+    .line 6
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/join/mgps/adapter/a1;->c:Ljava/util/List;
+
+    .line 7
+    iput-object p1, p0, Lcom/join/mgps/adapter/a1;->a:Landroid/content/Context;
+
+    .line 8
+    invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/join/mgps/adapter/a1;->b:Landroid/view/LayoutInflater;
+
+    .line 9
+    iput-object p2, p0, Lcom/join/mgps/adapter/a1;->c:Ljava/util/List;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/join/mgps/activity/screenshot/ScreenshotGamedetialBean;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/join/mgps/adapter/a1;->c:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method public getCount()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/join/mgps/adapter/a1;->c:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getItem(I)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public getItemId(I)J
+    .locals 2
+
+    int-to-long v0, p1
+
+    return-wide v0
+.end method
+
+.method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    .locals 3
+
+    if-nez p2, :cond_0
+
+    .line 1
+    iget-object p2, p0, Lcom/join/mgps/adapter/a1;->b:Landroid/view/LayoutInflater;
+
+    const p3, 0x7f0c023e
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p2, p3, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+
+    move-result-object p2
+
+    .line 2
+    new-instance p3, Lcom/join/mgps/adapter/a1$b;
+
+    invoke-direct {p3, p0, v0}, Lcom/join/mgps/adapter/a1$b;-><init>(Lcom/join/mgps/adapter/a1;Lcom/join/mgps/adapter/a1$a;)V
+
+    const v0, 0x7f090b51
+
+    .line 3
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p3, Lcom/join/mgps/adapter/a1$b;->b:Landroid/widget/TextView;
+
+    const v0, 0x7f0906f2
+
+    .line 4
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/facebook/drawee/view/SimpleDraweeView;
+
+    iput-object v0, p3, Lcom/join/mgps/adapter/a1$b;->a:Lcom/facebook/drawee/view/SimpleDraweeView;
+
+    const v0, 0x7f09100f
+
+    .line 5
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p3, Lcom/join/mgps/adapter/a1$b;->c:Landroid/widget/TextView;
+
+    .line 6
+    invoke-virtual {p2, p3}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object p3
+
+    check-cast p3, Lcom/join/mgps/adapter/a1$b;
+
+    .line 8
+    :goto_0
+    iget-object v0, p0, Lcom/join/mgps/adapter/a1;->c:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/join/mgps/activity/screenshot/ScreenshotGamedetialBean;
+
+    .line 9
+    iget-object v0, p3, Lcom/join/mgps/adapter/a1$b;->c:Landroid/widget/TextView;
+
+    invoke-virtual {p1}, Lcom/join/mgps/activity/screenshot/ScreenshotGamedetialBean;->getTitle()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 10
+    iget-object v0, p3, Lcom/join/mgps/adapter/a1$b;->b:Landroid/widget/TextView;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {p1}, Lcom/join/mgps/activity/screenshot/ScreenshotGamedetialBean;->getCount()I
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, ""
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 11
+    iget-object p3, p3, Lcom/join/mgps/adapter/a1$b;->a:Lcom/facebook/drawee/view/SimpleDraweeView;
+
+    const v0, 0x7f080a74
+
+    invoke-virtual {p1}, Lcom/join/mgps/activity/screenshot/ScreenshotGamedetialBean;->getPic()Ljava/lang/String;
+
+    move-result-object p1
+
+    sget-object v1, Lcom/facebook/drawee/drawable/r$c;->g:Lcom/facebook/drawee/drawable/r$c;
+
+    invoke-static {p3, v0, p1, v1}, Lcom/join/android/app/common/utils/MyImageLoader;->e(Lcom/facebook/drawee/view/SimpleDraweeView;ILjava/lang/String;Lcom/facebook/drawee/drawable/r$c;)V
+
+    return-object p2
+.end method

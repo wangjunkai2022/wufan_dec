@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.join.mgps.customview.ForumLoadingView">
+        <com.join.mgps.customview.XListView2 android:id="@id/listview" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+    </view>
+    <View android:id="@id/titleStatubar" android:background="#fca6a6a6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp60" />
+    <RelativeLayout android:id="@id/t" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/actionbarLayout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/mg_forum_title_layout_actionbar_height">
+            <ImageView android:id="@id/back_image" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:visibility="visible" android:layout_width="42.0dip" android:layout_height="45.0dip" android:src="@drawable/back_icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/wdp32" android:textColor="#ff32343e" android:gravity="center" android:id="@id/setting3" android:layout_width="wrap_content" android:layout_height="@dimen/wdp100" android:layout_marginRight="@dimen/wdp30" android:text="编辑" android:drawableLeft="@drawable/edit_icon_black" android:drawablePadding="@dimen/wdp10" android:layout_alignParentRight="true" />
+            <View android:layout_alignParentBottom="true" style="@style/TextViewStyle_line_H" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/newTitle" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/back" android:padding="@dimen/wdp20" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp100" android:src="@drawable/icon_black_bg_back" />
+            <TextView android:textSize="@dimen/wdp32" android:textColor="@color/white" android:gravity="center" android:id="@id/setting2" android:layout_width="wrap_content" android:layout_height="@dimen/wdp100" android:layout_marginRight="@dimen/wdp30" android:text="编辑" android:drawableLeft="@drawable/edit_icon" android:drawablePadding="@dimen/wdp10" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

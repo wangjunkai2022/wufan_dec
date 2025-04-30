@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gameworld_grade_item_text_chengjiu">12.0sp</dimen>
+    <dimen name="gameworld_grade_item_width_chengjiu">60.0dip</dimen>
+    <dimen name="gameworld_grade_item_width_duanwei">110.0dip</dimen>
+    <dimen name="gameworld_grade_width_chengjiu">60.0dip</dimen>
+    <dimen name="gameworld_grade_width_duanwei">130.0dip</dimen>
+    <dimen name="my_papa_point">5.0dip</dimen>
+    <dimen name="role_length">90.0sp</dimen>
+</resources>

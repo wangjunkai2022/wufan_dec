@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top_lay" layout="@layout/topbar_title_layout" />
+    <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/mPtrFrame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.join.mgps.customview.XListView2 android:id="@id/fightListView" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" android:layout_alignParentTop="true" />
+    </com.join.mgps.ptr.PtrClassicFrameLayout>
+</LinearLayout>

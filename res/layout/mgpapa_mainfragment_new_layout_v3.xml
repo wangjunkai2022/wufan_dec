@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/home_back" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/title" android:background="#fff47500" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp96">
+        <ImageView android:id="@id/imageView2" android:background="@drawable/line_white_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/wdp96" android:layout_marginRight="@dimen/wdp117" android:layout_marginBottom="7.0dip" android:layout_alignParentBottom="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp96" android:layout_centerVertical="true">
+            <ImageView android:id="@id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/papa_search_white2_icon" />
+            <TextView android:textSize="14.0dip" android:textColor="#ffffe3ca" android:id="@id/searchContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/search_content_default" />
+        </LinearLayout>
+        <TextView android:id="@id/searchBack" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="60.0dip" android:layout_marginRight="@dimen/wdp117" />
+    </RelativeLayout>
+    <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/mPtrFrame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" fab:elevation="0.0dip">
+                <FrameLayout android:id="@id/flTitleSearch" android:paddingTop="@dimen/wdp62" android:layout_width="fill_parent" android:layout_height="wrap_content" fab:layout_scrollFlags="enterAlways|scroll">
+                    <FrameLayout android:background="@drawable/shape_bg_home_search" android:layout_width="fill_parent" android:layout_height="@dimen/wdp70" android:layout_marginLeft="@dimen/wdp20" android:layout_marginRight="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp15">
+                        <ViewFlipper android:gravity="center_vertical" android:id="@id/tvSearchHint" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inAnimation="@anim/slide_in_topline" android:outAnimation="@anim/slide_out_topline" android:flipInterval="4000" android:layout_marginStart="@dimen/wdp28" android:layout_marginEnd="@dimen/wdp90" />
+                        <ImageView android:layout_gravity="end" android:id="@id/ivSearchIcon" android:padding="@dimen/wdp23" android:layout_width="@dimen/wdp70" android:layout_height="fill_parent" android:src="@drawable/search_image_black" android:layout_marginEnd="@dimen/wdp5" />
+                    </FrameLayout>
+                </FrameLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <com.join.android.app.component.xrecyclerview.XRecyclerView2 android:id="@id/listview" android:background="@drawable/home_back" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" android:overScrollMode="never" fab:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.join.mgps.ptr.PtrClassicFrameLayout>
+    <TextView android:background="@drawable/papa_title_shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/title" />
+    <include layout="@layout/loding_layout_include" />
+    <include layout="@layout/failed_layout_include" />
+    <ImageView android:id="@id/movetoTop" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/movetop_butn_selector" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <FrameLayout android:layout_width="@dimen/wdp181" android:layout_height="@dimen/wdp136" android:layout_marginBottom="@dimen/wdp145" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivFloatad" android:visibility="visible" android:longClickable="false" android:layout_width="@dimen/wdp136" android:layout_height="@dimen/wdp136" android:layout_marginRight="@dimen/wdp45" android:scaleType="fitCenter" android:maxWidth="68.0dip" android:maxHeight="68.0dip" />
+    </FrameLayout>
+    <com.melnykov.fab.FloatingActionButton android:id="@id/coinFloatad" android:padding="0.0dip" android:visibility="gone" android:layout_width="@dimen/wdp106" android:layout_height="@dimen/wdp106" android:layout_marginRight="@dimen/wdp45" android:layout_marginBottom="@dimen/wdp45" android:src="@drawable/main_normal_icon" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" fab:fabSize="normal" fab:fab_colorNormal="@color/transparent" fab:fab_colorPressed="@color/transparent" fab:fab_colorRipple="@color/transparent" fab:fab_type="normal" fab:paddingEnd="0.0dip" fab:paddingStart="0.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/updateNotice" android:background="#7f000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="32.0dip" android:text="首页内容有更新" android:layout_below="@id/title" />
+    <View android:id="@id/statubar" android:background="#ffc8c8c8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+    <RelativeLayout android:id="@id/titleSearch" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp96" android:layout_below="@id/statubar">
+        <include android:layout_width="fill_parent" android:layout_height="31.0dip" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:layout_centerVertical="true" layout="@layout/choice_title_search_bar" />
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="57.0dip" android:layout_marginRight="57.0dip" />
+    </RelativeLayout>
+    <ImageView android:id="@id/search" android:visibility="gone" android:layout_width="@dimen/wdp130" android:layout_height="@dimen/wdp60" android:layout_marginLeft="@dimen/wdp20" android:layout_marginTop="@dimen/wdp20" android:src="@drawable/home_search_back" android:drawableLeft="@drawable/search_image_black" />
+</RelativeLayout>

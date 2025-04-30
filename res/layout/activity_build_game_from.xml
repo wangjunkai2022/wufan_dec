@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffefeff4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_title" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp100">
+        <RelativeLayout android:id="@id/iv_back" android:layout_width="@dimen/wdp67" android:layout_height="fill_parent">
+            <ImageView android:background="@drawable/back_icon" android:layout_width="@dimen/wdp17" android:layout_height="@dimen/wdp26" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp40" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:layout_marginTop="@dimen/wdp32" android:text="创建游戏单" android:layout_toRightOf="@id/iv_back" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#fff37500" android:gravity="center" android:id="@id/tv_finish" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp20" android:text="完成" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:id="@id/view_line" android:background="#ffefeff4" android:layout_width="fill_parent" android:layout_height="@dimen/wdp11" android:layout_below="@id/rl_title" />
+    <EditText android:textSize="@dimen/wdp28" android:textColor="#ffb1b1b1" android:id="@id/ed_game" android:background="@color/white" android:paddingLeft="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="@dimen/wdp85" android:hint="填写标题，优秀的标题值得更多人关注（12字内）" android:layout_below="@id/view_line" />
+</RelativeLayout>

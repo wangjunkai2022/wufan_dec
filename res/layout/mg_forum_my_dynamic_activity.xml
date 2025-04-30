@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/actionbarLayout" layout="@layout/mg_forum_title_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/dynamic_my_fragment" />
+        <FrameLayout android:id="@id/videoContainer" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/videoLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/video_layout" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

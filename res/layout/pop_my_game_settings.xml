@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListView android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/wdp32" android:textColor="#ff4c4b5f" android:gravity="center" android:id="@id/settings" android:paddingTop="@dimen/wdp24" android:paddingBottom="@dimen/wdp24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp26" android:layout_marginRight="@dimen/wdp26" android:text="下载设置" />
+    <View android:layout_width="fill_parent" android:layout_marginLeft="@dimen/wdp26" android:layout_marginRight="@dimen/wdp26" style="@style/TextViewStyle_line_H" />
+    <TextView android:textSize="@dimen/wdp32" android:textColor="#ff4c4b5f" android:gravity="center" android:id="@id/scan" android:paddingTop="@dimen/wdp24" android:paddingBottom="@dimen/wdp24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp26" android:layout_marginRight="@dimen/wdp26" android:text="本地检测" />
+    <View android:layout_width="fill_parent" android:layout_marginLeft="@dimen/wdp26" android:layout_marginRight="@dimen/wdp26" style="@style/TextViewStyle_line_H" />
+    <TextView android:textSize="@dimen/wdp32" android:textColor="#ff4c4b5f" android:gravity="center" android:id="@id/cancel" android:paddingTop="@dimen/wdp24" android:paddingBottom="@dimen/wdp24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp26" android:layout_marginRight="@dimen/wdp26" android:text="取消" />
+</LinearLayout>

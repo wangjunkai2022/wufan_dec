@@ -1,0 +1,38 @@
+.class public Lcom/join/mgps/dto/DetialMoreGameInfo;
+.super Lcom/join/mgps/dto/CollectionBeanSub;
+.source "DetialMoreGameInfo.java"
+
+
+# instance fields
+.field private gift_package_count:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/join/mgps/dto/CollectionBeanSub;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getGift_package_count()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/join/mgps/dto/DetialMoreGameInfo;->gift_package_count:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public setGift_package_count(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/join/mgps/dto/DetialMoreGameInfo;->gift_package_count:Ljava/lang/String;
+
+    return-void
+.end method

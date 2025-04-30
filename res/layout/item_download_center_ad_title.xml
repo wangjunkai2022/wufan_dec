@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line" style="@style/TextViewStyle_line_H_big" />
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp104">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp100" android:layout_marginTop="@dimen/wdp22" android:layout_marginRight="@dimen/wdp100" android:layout_marginBottom="@dimen/wdp22" android:layout_weight="1.0" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/icon" android:visibility="gone" android:layout_width="@dimen/wdp40" android:layout_height="20.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/papatv_icon" android:layout_weight="0.0" />
+                <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff3b3b3b" android:gravity="center_vertical" android:id="@id/titleText" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="猜你喜欢" style="@style/TextViewStyle_14sp" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff686868" android:id="@id/subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Text" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/look_other" android:paddingRight="11.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/wdp104" android:layout_weight="0.0" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textColor="@color/app_blue_color" android:id="@id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp14" android:text="全部" style="@style/TextViewStyle_12sp" />
+            <ImageView android:id="@id/imageView5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/papa_classify_ranking_more" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View style="@style/TextViewStyle_line_H" />
+</LinearLayout>

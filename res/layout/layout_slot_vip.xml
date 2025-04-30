@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_open_vip" android:layout_width="fill_parent" android:layout_height="@dimen/wdp136" android:layout_marginTop="@dimen/wdp20">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ffd1eeff" android:paddingLeft="@dimen/wdp48" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开通会员，尊享3大存档特权" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/wdp36" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10">
+                <View android:background="@drawable/ic_slot_dot" android:layout_width="@dimen/wdp4" android:layout_height="@dimen/wdp4" />
+                <ImageView android:layout_width="@dimen/wdp36" android:layout_height="@dimen/wdp36" android:layout_marginLeft="@dimen/wdp8" android:src="@drawable/ic_slot_limit" />
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ffa8dfff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="存档上限+10" />
+                <View android:background="@drawable/ic_slot_dot" android:layout_width="@dimen/wdp4" android:layout_height="@dimen/wdp4" android:layout_marginLeft="@dimen/wdp8" />
+                <ImageView android:layout_width="@dimen/wdp36" android:layout_height="@dimen/wdp36" android:layout_marginLeft="@dimen/wdp8" android:src="@drawable/ic_slot_auto" />
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ffa8dfff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自动存档" />
+                <View android:background="@drawable/ic_slot_dot" android:layout_width="@dimen/wdp4" android:layout_height="@dimen/wdp4" android:layout_marginLeft="@dimen/wdp8" />
+                <ImageView android:layout_width="@dimen/wdp36" android:layout_height="@dimen/wdp36" android:layout_marginLeft="@dimen/wdp8" android:src="@drawable/ic_slot_free" />
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ffa8dfff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="免费云存档" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ffa05e08" android:gravity="center" android:id="@id/tv_open_vip" android:background="@drawable/bg_btn_open_vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp60" />
+    </LinearLayout>
+</LinearLayout>

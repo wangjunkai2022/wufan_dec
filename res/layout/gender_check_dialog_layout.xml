@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="320.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/textView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/manLayout" android:layout_width="fill_parent" android:layout_height="55.0dip">
+                <ImageView android:id="@id/imageView" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="20.0dip" android:src="@drawable/account_center_man" android:layout_weight="0.0" />
+                <TextView android:textSize="14.0dip" android:textColor="#ffb8b8b8" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="直男" android:layout_weight="1.0" />
+                <CheckBox android:enabled="true" android:id="@id/manCheckbox" android:clickable="false" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginLeft="18.0dip" android:layout_marginRight="20.0dip" android:checked="true" android:button="@drawable/downpath_show_selector" android:layout_weight="0.0" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <TextView android:id="@id/textView3" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/girlLayout" android:layout_width="fill_parent" android:layout_height="55.0dip">
+                <ImageView android:id="@id/imageView2" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="20.0dip" android:src="@drawable/account_center_giler" android:layout_weight="0.0" />
+                <TextView android:textSize="14.0dip" android:textColor="#ffb8b8b8" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="妹子" android:layout_weight="1.0" />
+                <CheckBox android:enabled="true" android:id="@id/girlCheckbox" android:clickable="false" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginLeft="18.0dip" android:layout_marginRight="20.0dip" android:button="@drawable/downpath_show_selector" android:layout_weight="0.0" android:layout_centerVertical="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

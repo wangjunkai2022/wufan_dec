@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="286.0dip" android:layout_height="230.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:background="@drawable/newarena_bg_input_border_top" android:paddingLeft="@dimen/wdp36" android:layout_width="fill_parent" android:layout_height="@dimen/wdp65" />
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_top" android:background="@drawable/newarena_titleblack" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp36" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已为您生成约战口令" android:singleLine="true" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/newarena_bg_input_border_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tv_top">
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_pwd_info" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="19.0dip" android:layout_marginRight="19.0dip" android:text="复制这条口令，打开 [emoj]悟饭游戏厅[emoj]" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ffa05e08" android:gravity="center" android:id="@id/btn_copy" android:background="@drawable/bg_btn_border_blue_four" android:layout_width="fill_parent" android:layout_height="37.0dip" android:layout_marginLeft="19.0dip" android:layout_marginRight="19.0dip" android:layout_marginBottom="22.0dip" android:text="去粘贴" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/iv_close" android:layout_width="@dimen/wdp90" android:layout_height="@dimen/wdp65" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close2" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/subTabList" android:background="#ffffffff" android:paddingTop="@dimen/wdp26" android:layout_width="fill_parent" android:layout_height="@dimen/wdp90" android:paddingStart="@dimen/wdp20" app:layout_constraintBottom_toTopOf="@id/viewpager" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.join.mgps.customview.NoScrollViewPager android:id="@id/viewpager" android:layout_width="0.0dip" android:layout_height="0.0dip" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/subTabList" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-10.0dip" android:layout_below="@id/paiwei_title_rl">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/paiwei_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="5.8">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/wdp25" android:paddingRight="@dimen/wdp25" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp15">
+                <ImageView android:layout_width="38.0dip" android:layout_height="12.5dip" android:src="@drawable/paihangbang" />
+                <View android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/select_rolo_ll" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/sp33" android:textColor="#ff116076" android:gravity="right" android:id="@id/select_rolo_tx" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80.0dip" android:text="全部角色" />
+                    <ImageView android:id="@id/select_rolo_iv" android:visibility="invisible" android:layout_width="11.0dip" android:layout_height="11.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/rank_down_ic" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/paiwei_null_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="暂无排行" />
+                <ListView android:id="@id/paiwei_listview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" />
+                <ListView android:id="@id/select_rolo_listview" android:background="@color/forum_posts_func_pressed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:listSelector="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ff030f10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.2">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="6.0" xmlns:app="http://schemas.android.com/apk/res-auto">
+                <com.join.mgps.customview.AutoScrollViewPager android:id="@id/paiwei_ad_viewpager" android:padding="0.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <view android:id="@id/paiwei_ad_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/main_normal_icon" android:scaleType="fitXY" app:riv_oval="false" class="com.facebook.drawee.view.SimpleDraweeView" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/paiwei_right_bg" android:layout_alignParentBottom="true" />
+                <LinearLayout android:orientation="vertical" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/paiwei_optimum_word" />
+                    <RelativeLayout android:gravity="center" android:id="@id/info_rl" android:background="@drawable/paiwei_optimum_bg" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="334.39844dip" android:layout_height="72.5dip" android:layout_marginTop="5.0dip">
+                        <TextView android:textSize="13.0sp" android:textColor="#ff156d84" android:id="@id/paiwei_info_tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="通关时间: " />
+                        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:id="@id/paiwei_start_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无数据" android:layout_toRightOf="@id/paiwei_info_tv1" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="32.0dip" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                            <TextView android:textSize="13.0sp" android:textColor="#ff156d84" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="排行: " />
+                            <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:id="@id/paiwei_info_tv4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第 " />
+                            <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:id="@id/paiwei_start_order_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无数据" />
+                            <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:id="@id/paiwei_info_tv2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 名" />
+                        </LinearLayout>
+                        <TextView android:textSize="13.0sp" android:textColor="#ff156d84" android:id="@id/paiwei_info_tv3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="角色名称: " android:layout_below="@id/paiwei_info_tv1" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:id="@id/paiwei_start_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="暂无数据" android:layout_toRightOf="@id/paiwei_info_tv3" android:layout_below="@id/paiwei_info_tv1" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="32.0dip" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/paiwei_info_tv1" android:layout_alignParentRight="true">
+                            <TextView android:textSize="13.0sp" android:textColor="#ff156d84" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消耗: " />
+                            <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:id="@id/paiwei_cion_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无数据" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <Button android:gravity="center" android:id="@id/paiwei_start_bt" android:background="@drawable/paiwei_start_selector" android:layout_width="335.0dip" android:layout_height="44.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/paiwei_title_rl" android:background="@drawable/paiwei_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:paddingTop="20.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.2">
+                <TextView android:textSize="13.0sp" android:textColor="#ffd8d8d8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="排行榜" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.8" />
+        </LinearLayout>
+        <ImageView android:id="@id/paiwei_back_iv" android:layout_width="50.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/paiwei_title_logo" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/paiwei_help_ib" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/paiwei_help_selector" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

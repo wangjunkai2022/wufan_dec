@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto">
+    <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/mPtrFrame" android:layout_width="fill_parent" android:layout_height="fill_parent" ptr:ptr_header_style="Classical">
+        <com.join.android.app.component.xrecyclerview.XRecyclerView android:id="@id/mListView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:fadeScrollbars="false" android:overScrollMode="never" />
+    </com.join.mgps.ptr.PtrClassicFrameLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/noData" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="暂无游戏房间" android:layout_centerInParent="true" />
+</RelativeLayout>

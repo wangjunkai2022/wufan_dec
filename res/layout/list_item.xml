@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_gameform" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp132"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fressco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_img" android:layout_width="@dimen/wdp80" android:layout_height="@dimen/wdp80" android:layout_marginTop="@dimen/wdp31" android:layout_marginBottom="@dimen/wdp21" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff262626" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp21" android:layout_marginTop="@dimen/wdp31" android:text="shajsd" android:layout_toRightOf="@id/iv_img" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:id="@id/tv_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp21" android:layout_marginTop="@dimen/wdp5" android:text="4款" android:layout_toRightOf="@id/iv_img" android:layout_below="@id/tv_title" />
+        <ImageView android:id="@id/iv_coll" android:background="@drawable/follow_none_image" android:layout_width="@dimen/wdp30" android:layout_height="@dimen/wdp28" android:layout_marginRight="@dimen/wdp50" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="#ffd8d8d8" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

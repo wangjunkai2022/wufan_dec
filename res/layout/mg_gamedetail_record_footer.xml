@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/commentFooterLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp24" android:layout_marginRight="@dimen/dp24">
+        <TextView android:gravity="center" android:id="@id/showAllCommit" android:background="@drawable/show_all_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp24" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/dp24" android:text="查看全部评论" android:layout_centerHorizontal="true" style="@style/TextViewStyleGameDetail_14sp" />
+        <TextView android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/showAllCommit" />
+    </RelativeLayout>
+</LinearLayout>

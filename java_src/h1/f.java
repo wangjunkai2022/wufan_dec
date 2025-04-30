@@ -1,0 +1,13 @@
+package h1;
+
+import android.animation.Animator;
+import android.animation.ObjectAnimator;
+import android.view.View;
+/* compiled from: SlideInRightAnimation.java */
+/* loaded from: classes3.dex */
+public class f implements b {
+    @Override // h1.b
+    public Animator[] a(View view) {
+        return new Animator[]{ObjectAnimator.ofFloat(view, "translationX", view.getRootView().getWidth(), 0.0f)};
+    }
+}

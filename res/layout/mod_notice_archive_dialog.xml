@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/mod_notice_archive_dialog_0" android:background="#a6000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/main" android:background="@drawable/mod_dialog_back" android:layout_width="@dimen/wdp790" android:layout_height="wrap_content" android:minHeight="@dimen/wdp358" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ffffffff" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp42" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ffc1d0dd" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="@dimen/wdp140" android:layout_marginLeft="@dimen/wdp84" android:layout_marginTop="@dimen/wdp36" android:layout_marginRight="@dimen/wdp84" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp54" android:layout_marginBottom="@dimen/wdp100">
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ffc1d0dd" android:gravity="center" android:id="@id/okButn" android:tag="binding_3" android:background="@drawable/mod_butn_back" android:layout_width="@dimen/wdp260" android:layout_height="@dimen/wdp68" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/closed" android:tag="binding_4" android:padding="@dimen/wdp39" android:layout_width="@dimen/wdp107" android:layout_height="@dimen/wdp107" android:src="@drawable/btn_close" app:layout_constraintRight_toRightOf="@id/main" app:layout_constraintTop_toTopOf="@id/main" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <size android:height="@dimen/wdp116" android:width="@dimen/wdp164" />
+            <solid android:color="#003c4563" />
+        </shape>
+    </item>
+    <item android:left="@dimen/wdp31" android:top="@dimen/wdp115" android:right="@dimen/wdp31">
+        <shape>
+            <size android:height="@dimen/wdp1" android:width="@dimen/wdp164" />
+            <solid android:color="#ff3c4563" />
+        </shape>
+    </item>
+</layer-list>

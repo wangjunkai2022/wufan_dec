@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/root" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.join.mgps.customview.SlidingTabLayout6 android:id="@id/tabLayout" android:paddingBottom="@dimen/wdp13" android:layout_width="fill_parent" android:layout_height="@dimen/wdp60" app:layout_constraintTop_toTopOf="parent" app:pstsDividerPadding="@dimen/wdp69" app:pstsIndicatorColor="#ffffa81d" app:pstsIndicatorHeight="@dimen/wdp6" app:pstsTabPaddingLeftRight="@dimen/wdp25" app:stabTextSelectedColor="@color/black" app:stextColor="#ff000000" app:stextSelectedSize="@dimen/wdp32" app:stextSize="@dimen/wdp28" />
+    <com.join.mgps.customview.RecyclerviewViewpager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="@dimen/wdp420" android:layout_marginTop="@dimen/wdp10" app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/moreLayout" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp30" android:paddingBottom="@dimen/wdp13" android:layout_width="wrap_content" android:layout_height="@dimen/wdp60" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ffa8a8a8" android:gravity="center" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部" android:layout_marginEnd="@dimen/wdp8" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/wdp18" android:layout_height="@dimen/wdp18" android:src="@drawable/more_arrow_right" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

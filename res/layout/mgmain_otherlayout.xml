@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/mg_mian_fragmentlayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/wdp100" android:layout_weight="1.0" android:layout_alignParentLeft="false" android:layout_alignParentBottom="false" />
+        <RelativeLayout android:id="@id/mainTop" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <include android:id="@id/actionbarLayout" layout="@layout/mg_forum_title_layout" />
+        </RelativeLayout>
+        <include layout="@layout/download_title_layout" />
+        <include android:visibility="gone" layout="@layout/top_user_icon_title_layout" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/coinFloatad" android:padding="0.0dip" android:visibility="visible" android:layout_width="@dimen/wdp106" android:layout_height="@dimen/wdp106" android:layout_marginRight="@dimen/wdp45" android:layout_marginBottom="@dimen/wdp120" android:src="@drawable/main_normal_icon" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

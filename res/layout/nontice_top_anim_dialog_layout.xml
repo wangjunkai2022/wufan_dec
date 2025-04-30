@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp32" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/nonticeText" android:background="#ff3ca4fd" android:paddingLeft="@dimen/wdp40" android:layout_width="fill_parent" android:layout_height="@dimen/wdp145" android:text="TextView" android:maxLines="1" />
+    <RelativeLayout android:id="@id/dialogLayout" android:layout_width="@dimen/wdp571" android:layout_height="@dimen/wdp425" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_position" android:background="@drawable/dialog_main_top_bg" android:layout_width="fill_parent" android:layout_height="39.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="13.0dip" android:text="提示" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_input_border_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="13.0dip" android:layout_below="@id/tv_position">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/wdp186" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/wdp30" android:textColor="#ff686868" android:gravity="center_vertical" android:id="@id/dialog_content" android:paddingLeft="19.0dip" android:paddingRight="19.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#fff32f2f" android:id="@id/sub_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp7" android:text="TextView" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:background="@drawable/bg_input_border_bottom" android:paddingLeft="@dimen/wdp40" android:paddingRight="@dimen/wdp40" android:paddingBottom="@dimen/wdp40" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:layout_weight="0.0">
+                <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/dialog_button_ok" android:background="@drawable/dialog_main_button_blue" android:layout_width="wrap_content" android:layout_height="@dimen/wdp74" android:layout_marginLeft="@dimen/wdp15" android:text="登录" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center|right|top" android:orientation="vertical" android:id="@id/iv_close" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

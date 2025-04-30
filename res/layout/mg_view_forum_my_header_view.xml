@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/llPost" android:background="@drawable/dynamic_list_bg" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/messageImage" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/mg_forum_icon_post" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="帖子" android:layout_toRightOf="@id/messageImage" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+            <ImageView android:id="@id/arrowImage" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/dynamic_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/unreadMessageCountBadge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_toLeftOf="@id/arrowImage" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/llComment" android:background="@drawable/dynamic_list_bg" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/commitImage" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/mg_forum_icon_comment" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:id="@id/itemTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评论" android:layout_toRightOf="@id/commitImage" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+            <ImageView android:id="@id/arrowImageCommit" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/dynamic_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <view android:id="@id/cover" android:background="@drawable/shape_choice_item_middle" android:paddingLeft="@dimen/wdp20" android:paddingTop="@dimen/wdp30" android:paddingRight="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="@dimen/wdp286" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:riv_border_color="@color/mg_forum_avatar_round_stroke_color" app:riv_border_width="@dimen/mg_forum_avatar_round_stroke_width" app:riv_corner_radius="@dimen/mg_forum_avatar_round_width" app:riv_oval="false" class="com.facebook.drawee.view.SimpleDraweeView"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/bt_tag_recycview_layout_0" android:background="@color/white" android:paddingTop="@dimen/wdp12" android:paddingBottom="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="@dimen/wdp94" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

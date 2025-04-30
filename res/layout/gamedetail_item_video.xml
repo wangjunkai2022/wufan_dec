@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/videolayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/nullView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp100" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_book_bg" android:background="#ff3e3c3c" android:layout_width="fill_parent" android:layout_height="@dimen/wdp400" android:scaleType="centerCrop" app:layout_collapseMode="parallax" app:layout_collapseParallaxMultiplier="0.5" app:placeholderImage="@drawable/banner_normal_icon" app:placeholderImageScaleType="fitXY" />
+    <com.join.android.app.component.video.StandardVideoView android:id="@id/videoPlayer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp400" android:scaleType="centerCrop" />
+</RelativeLayout>

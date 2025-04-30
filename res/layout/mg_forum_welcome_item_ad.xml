@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/dividerTop" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/mg_forum_post_item_padding" android:paddingRight="@dimen/mg_forum_post_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/mg_forum_post_subject_text_size" android:textColor="#ff3b3b3b" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/sectionTitle" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="主标题" android:singleLine="true" android:lineSpacingMultiplier="1.2" />
+                <TextView android:textSize="@dimen/mg_forum_post_message_text_size" android:textColor="#ff3b3b3b" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/sectionSubTitle" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="副标题" android:maxLines="2" android:lineSpacingMultiplier="1.2" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/forumExtFunc" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="30.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="false" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:id="@id/moreFunc" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/cross" android:layout_alignParentTop="false" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="#fff0f0f0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0px" />
+        <RelativeLayout android:paddingLeft="@dimen/mg_forum_post_item_padding" android:paddingRight="@dimen/mg_forum_post_item_padding" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TableLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableRow android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <view android:id="@id/img_1" android:layout_width="fill_parent" android:layout_height="78.0dip" android:src="@drawable/main_normal_icon" android:scaleType="fitXY" class="com.facebook.drawee.view.SimpleDraweeView" />
+                    <view android:id="@id/img_2" android:layout_width="fill_parent" android:layout_height="78.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/main_normal_icon" android:scaleType="fitXY" class="com.facebook.drawee.view.SimpleDraweeView" />
+                    <view android:id="@id/img_3" android:layout_width="fill_parent" android:layout_height="78.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/main_normal_icon" android:scaleType="fitXY" class="com.facebook.drawee.view.SimpleDraweeView" />
+                </TableRow>
+            </TableLayout>
+            <TextView android:textSize="11.0sp" android:textColor="#ffc5c5c5" android:background="@drawable/baidu_ad_sponsor_back" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:text="赞助" android:layout_alignRight="@id/content" android:layout_alignBottom="@id/content" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

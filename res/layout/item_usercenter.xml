@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/emptyDivider" android:background="@color/activity_default_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="9.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="@dimen/wdp135">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="@dimen/wdp84" android:layout_height="@dimen/wdp68">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_module_icon" android:layout_width="@dimen/wdp52" android:layout_height="@dimen/wdp52" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/wdp15" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/messageBadge" android:background="@drawable/text_round_yes_bg" android:layout_width="wrap_content" android:layout_height="@dimen/wdp23" android:minWidth="@dimen/wdp23" android:text="8" android:layout_alignTop="@id/iv_module_icon" android:layout_alignRight="@id/iv_module_icon" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="@dimen/wdp84" android:layout_height="@dimen/wdp68" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff686868" android:id="@id/tv_module_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="饭票红包" />
+        <TextView android:textSize="11.0sp" android:textColor="#fff94242" android:id="@id/tv_module_doings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="首充送30%红包" />
+    </LinearLayout>
+</LinearLayout>

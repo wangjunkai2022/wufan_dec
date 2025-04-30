@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/bannerLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/topImage" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:orientation="vertical" android:id="@id/videoContner" android:layout_width="fill_parent" android:layout_height="@dimen/wdp400" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/bannerView" android:layout_width="fill_parent" android:layout_height="@dimen/wdp400" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/loading" android:visibility="invisible" android:layout_width="@dimen/wdp64" android:layout_height="@dimen/wdp64" android:src="@drawable/video_loding_gif" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp356">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/gameIcon" android:layout_width="@dimen/wdp120" android:layout_height="@dimen/wdp120" android:layout_marginLeft="@dimen/wdp24" android:layout_marginRight="@dimen/wdp20" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/wdp34" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/appname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="纪念碑谷破解版" android:layout_toRightOf="@id/gameIcon" style="@style/TextViewStyle_14sp_black" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/aaa" android:layout_width="fill_parent" android:layout_height="@dimen/wdp114" android:layout_below="@id/topImage">
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff686868" android:id="@id/describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp164" android:layout_marginTop="@dimen/wdp19" android:text="50" android:maxLines="2" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rLayoutRight" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/wdp158" android:layout_marginLeft="@dimen/collection_margin" android:layout_marginRight="@dimen/app_list_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:gravity="center" android:id="@id/itemInstall" android:focusable="false" android:focusableInTouchMode="true" android:layout_width="@dimen/wdp135" android:layout_height="@dimen/wdp54" android:layout_weight="0.0" android:layout_centerVertical="true" style="@style/DownloadTextStyle" />
+            <TextView android:textSize="@dimen/wdp18" android:textColor="@color/money_text_color" android:id="@id/moneyText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp3" android:text="TextView" android:layout_below="@id/itemInstall" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:layout_alignBottom="@id/aaa" style="@style/TextViewStyle_line_H" />
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:gravity="center" android:id="@id/globalData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="游戏公共数据" />
+            <Button android:gravity="center" android:id="@id/userInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="个人信息" />
+            <Button android:gravity="center" android:id="@id/trophyList" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="奖杯榜数据" />
+            <Button android:gravity="center" android:id="@id/worship" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="膜拜" />
+            <Button android:gravity="center" android:id="@id/messageList" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户消息列表" />
+            <Button android:gravity="center" android:id="@id/readMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="读取用户消息" />
+            <Button android:gravity="center" android:id="@id/sendSMS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送手机验证码" />
+            <Button android:gravity="center" android:id="@id/verifySMS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="验证手机验证码" />
+            <Button android:gravity="center" android:id="@id/login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录" />
+            <Button android:gravity="center" android:id="@id/register" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注册" />
+            <Button android:gravity="center" android:id="@id/logout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退出" />
+            <Button android:gravity="center" android:id="@id/find_mobile_pass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="短信找回密码" />
+            <Button android:gravity="center" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看用户详细信息" />
+            <Button android:gravity="center" android:id="@id/modifyUserInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更新用户信息" />
+            <Button android:gravity="center" android:id="@id/getCheckToken" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="验证token是否有效" />
+            <Button android:gravity="center" android:id="@id/thirdWayLogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第三方登录" />
+            <Button android:gravity="center" android:id="@id/lastWorshipMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取最近的膜拜消息" />
+            <Button android:gravity="center" android:id="@id/battleStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否恶意退出" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

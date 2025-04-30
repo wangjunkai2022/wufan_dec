@@ -1,0 +1,70 @@
+.class public Lcom/android/internal/content/NativeLibraryHelper;
+.super Ljava/lang/Object;
+.source "NativeLibraryHelper.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/android/internal/content/NativeLibraryHelper$Handle;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static copyNativeBinaries(Lcom/android/internal/content/NativeLibraryHelper$Handle;Ljava/io/File;Ljava/lang/String;)I
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "handle",
+            "sharedLibraryDir",
+            "abi"
+        }
+    .end annotation
+
+    .line 1
+    new-instance p0, Ljava/lang/RuntimeException;
+
+    const-string p1, "Stub!"
+
+    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static findSupportedAbi(Lcom/android/internal/content/NativeLibraryHelper$Handle;[Ljava/lang/String;)I
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "handle",
+            "supportedAbis"
+        }
+    .end annotation
+
+    .line 1
+    new-instance p0, Ljava/lang/RuntimeException;
+
+    const-string p1, "Stub!"
+
+    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method

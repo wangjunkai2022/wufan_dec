@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_introduction_report_angle_top_right" />
+    <com.join.kotlin.domain.widget.CornersLinearLayout android:layout_width="@dimen/wdp175" android:layout_height="@dimen/wdp81" app:conner_bottom_left="@dimen/wdp4" app:conner_bottom_right="@dimen/wdp4" app:conner_top_left="@dimen/wdp4">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffffffff" android:layout_width="@dimen/wdp175" android:layout_height="@dimen/wdp81">
+            <ImageView android:background="#ffd8d8d8" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/wdp48" android:layout_marginRight="@dimen/wdp47" />
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ff232a36" android:gravity="center" android:id="@id/tv_pop_report" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="举报" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.join.kotlin.domain.widget.CornersLinearLayout>
+</LinearLayout>

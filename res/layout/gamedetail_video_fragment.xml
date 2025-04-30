@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/coverback" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.join.mgps.activity.gamedetail.FulllScreenVideoView android:id="@id/videoView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/cover" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:paddingBottom="@dimen/wdp170" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/playIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gamedetail_video_playicon" android:layout_centerInParent="true" />
+        </LinearLayout>
+        <TextView android:id="@id/coverText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp100" />
+    </RelativeLayout>
+    <View android:id="@id/statuHVIew" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+    <View android:background="@drawable/gamedetail_video_top" android:layout_width="fill_parent" android:layout_height="@dimen/wdp176" />
+    <RelativeLayout android:id="@id/titleTransfer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp96" android:layout_toRightOf="@id/title_bar_layout" android:layout_below="@id/statuHVIew" android:layout_toEndOf="@id/title_bar_layout">
+        <ImageView android:id="@id/iv_back" android:layout_width="@dimen/wdp56" android:layout_height="@dimen/wdp56" android:layout_marginLeft="@dimen/wdp30" android:src="@drawable/icon_black_bg_back" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/sound" android:layout_width="@dimen/wdp56" android:layout_height="@dimen/wdp56" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp23" android:src="@drawable/gamedetail_video_nosound" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/gamedetail_video_bottom" android:paddingLeft="@dimen/wdp40" android:paddingTop="@dimen/wdp50" android:paddingRight="@dimen/wdp40" android:paddingBottom="@dimen/wdp56" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/gameInfoLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp30">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/icon" android:layout_width="@dimen/wdp128" android:layout_height="@dimen/wdp128" android:layout_marginRight="@dimen/wdp20" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/wdp128" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="@color/white" android:id="@id/gameName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="拳皇" />
+                <TextView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:ellipsize="end" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp5" android:text="拳皇 " android:lines="2" />
+                <TextView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:id="@id/tag" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="拳皇" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="@dimen/wdp78" android:baselineAligned="false" android:layout_weight="0.0">
+            <RelativeLayout android:id="@id/instalbutnLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/wdp32" android:textColor="#ffffffff" android:gravity="center" android:id="@id/instalButtomButn" android:background="@drawable/detial_simple_normal_selecter" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp78" android:text="" android:layout_weight="1.0" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/wdp18" android:textColor="@color/money_text_color" android:id="@id/moneyText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@id/instalButtomButn" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/progressbarLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ProgressBar android:id="@id/butnProgressBar" android:layout_width="fill_parent" android:layout_height="@dimen/wdp78" android:max="100" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/progress_butn_video_style_blue" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/progress_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                    <ImageView android:id="@id/butn_showdownload" android:layout_width="@dimen/detail_showdowloding_image_w_h" android:layout_height="@dimen/detail_showdowloding_image_w_h" android:src="@drawable/detail_comment_download_pause" />
+                    <TextView android:textSize="@dimen/wdp26" android:textColor="#ffffffff" android:id="@id/percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_starmagin_t" android:text="0%" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

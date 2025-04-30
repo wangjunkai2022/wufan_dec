@@ -1,0 +1,63 @@
+version: 2.9.3
+apkFileName: 4.9.9.6.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 19
+  targetSdkVersion: 26
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 340
+  versionName: 4.9.9.6
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  DebugProbesKt.bin: 8
+  androidannotations-api.properties: 8
+  androidsupportmultidexversion.txt: 8
+  com/androidquery/AQuery.java: 8
+  com/androidquery/AbstractAQuery.java: 8
+  com/androidquery/WebDialog.java: 8
+  com/androidquery/auth/AccountHandle.java: 8
+  com/androidquery/auth/BasicHandle.java: 8
+  com/androidquery/auth/FacebookHandle.java: 8
+  com/androidquery/auth/GoogleHandle.java: 8
+  com/androidquery/auth/TwitterHandle.java: 8
+  com/androidquery/callback/AbstractAjaxCallback.java: 8
+  com/androidquery/callback/AjaxCallback.java: 8
+  com/androidquery/callback/AjaxStatus.java: 8
+  com/androidquery/callback/BitmapAjaxCallback.java: 8
+  com/androidquery/callback/ImageOptions.java: 8
+  com/androidquery/callback/LocationAjaxCallback.java: 8
+  com/androidquery/callback/ProxyHandle.java: 8
+  com/androidquery/callback/Transformer.java: 8
+  com/androidquery/service/MarketService.java: 8
+  com/androidquery/util/AQUtility.java: 8
+  com/androidquery/util/BitmapCache.java: 8
+  com/androidquery/util/Common.java: 8
+  com/androidquery/util/Constants.java: 8
+  com/androidquery/util/PredefinedBAOS.java: 8
+  com/androidquery/util/Progress.java: 8
+  com/androidquery/util/RatioDrawable.java: 8
+  com/androidquery/util/WebImage.java: 8
+  com/androidquery/util/XmlDom.java: 8
+  com/androidquery/util/web_image.html: 8
+  com/j256/ormlite/android/LICENSE.txt: 8
+  com/j256/ormlite/android/README.txt: 8
+  com/j256/ormlite/core/LICENSE.txt: 8
+  com/j256/ormlite/core/README.txt: 8
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: 8
+  org/jsoup/nodes/entities-base.properties: 8
+  org/jsoup/nodes/entities-full.properties: 8
+doNotCompress:
+- resources.arsc
+- png
+- jpg
+- gif
+- mp3

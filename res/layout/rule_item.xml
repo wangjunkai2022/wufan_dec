@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:background="@drawable/rule_icon" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="#ff54b4b6" android:id="@id/txt_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="每赢一场奖励10个铜板" android:drawableLeft="@drawable/rule_icon_point" android:drawablePadding="5.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff54b4b6" android:id="@id/txt_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="优先为您匹配等级相近的用户" android:drawableLeft="@drawable/rule_icon_point" android:drawablePadding="5.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff54b4b6" android:id="@id/txt_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="单局最高+50经验" android:drawableLeft="@drawable/rule_icon_point" android:drawablePadding="5.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff54b4b6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:text="最高等级为50级" />
+    </LinearLayout>
+</FrameLayout>

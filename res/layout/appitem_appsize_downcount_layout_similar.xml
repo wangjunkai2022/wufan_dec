@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:id="@id/appType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="街机" />
+    <View android:layout_gravity="center_vertical" android:background="#ffd8d8d8" android:layout_width="@dimen/wdp1" android:layout_height="@dimen/wdp22" android:layout_marginLeft="@dimen/wdp12" android:layout_marginRight="@dimen/wdp12" />
+    <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:ellipsize="end" android:gravity="center" android:id="@id/appsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp6" android:text="6M" android:singleLine="true" />
+</LinearLayout>

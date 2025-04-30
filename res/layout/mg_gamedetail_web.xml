@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/backLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp24" android:layout_marginRight="@dimen/dp24">
+        <View android:id="@id/lineView" android:layout_alignParentTop="true" style="@style/TextViewGameDetailStyle_line_H" />
+        <TextView android:textSize="@dimen/dp39" android:textColor="#ffb5590c" android:id="@id/editRecommend" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp24" android:layout_marginRight="@dimen/dp24" android:text="小编推荐" android:layout_below="@id/lineView" />
+        <TextView android:textSize="@dimen/dp39" android:textColor="#ffb5590c" android:id="@id/htmlEditRecommend" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp24" android:layout_marginTop="@dimen/dp24" android:layout_marginRight="@dimen/dp24" android:layout_below="@id/editRecommend" android:lineSpacingExtra="1.0dip" />
+        <TextView android:textSize="@dimen/dp39" android:textColor="#ff616161" android:id="@id/gameDescribe" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp24" android:layout_marginTop="@dimen/dp24" android:layout_marginRight="@dimen/dp24" android:text="游戏介绍" android:layout_below="@id/htmlEditRecommend" />
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/sp24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp24" android:layout_marginRight="@dimen/dp24" android:layout_below="@id/gameDescribe">
+            <TextView android:textSize="@dimen/dp39" android:textColor="#ff616161" android:id="@id/htmlGameDescribeShort" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24" android:maxLines="2" android:lineSpacingExtra="1.0dip" />
+            <TextView android:textSize="@dimen/dp39" android:textColor="#ff616161" android:id="@id/htmlGameDescribe" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24" android:lineSpacingExtra="1.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff7a7a7a" android:gravity="right|clip_vertical" android:id="@id/textMore" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sp53" android:text="更多" android:drawableRight="@drawable/more_arrow" android:drawablePadding="4.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

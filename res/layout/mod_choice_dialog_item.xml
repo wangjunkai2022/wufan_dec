@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/archiveLayout" android:tag="layout/mod_choice_dialog_item_0" android:layout_width="fill_parent" android:layout_height="@dimen/wdp110" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff3b3b3b" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp24" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp24" />
+</LinearLayout>

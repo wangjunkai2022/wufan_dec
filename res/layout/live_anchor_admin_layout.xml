@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <include layout="@layout/mg_forum_title_layout" />
+        <RelativeLayout android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <TextView android:textSize="15.0dip" android:textColor="#fff47500" android:gravity="center" android:id="@id/save" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="保存" android:singleLine="true" android:drawablePadding="5.0dip" android:layout_centerVertical="true" style="@style/TextViewStyle_18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ListView android:id="@id/adminList" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:gravity="center" android:id="@id/noAdminTest" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="120.0dip" android:text="你还没有管理员哦" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/actionBar" class="com.join.mgps.customview.ForumLoadingView">
+        <com.join.mgps.customview.XListView2 android:id="@id/forum_posts_list" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="none" android:fadingEdge="none" android:clickable="true" android:longClickable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" android:layout_below="@id/common_bar_layout" />
+    </view>
+</RelativeLayout>

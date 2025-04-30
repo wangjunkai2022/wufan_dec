@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/paiwei_rule_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="339.0dip" android:minHeight="236.5dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/ad_title_tv" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:id="@id/ad_cancel_iv" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fight_dialog_cancel_ic" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ad_iv_icon" android:layout_width="fill_parent" android:layout_height="186.5dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:scaleType="centerCrop" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_newarena_list_item_back_selecter" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/waveView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp5" android:layout_marginRight="@dimen/wdp5" android:src="@drawable/newarena_wave_img" android:scaleType="fitXY" android:layout_alignTop="@id/tv_gameName" android:layout_alignBottom="@id/gamers" android:layout_alignParentBottom="true" android:alpha="0.5" />
+    <TextView android:textSize="@dimen/wdp24" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_gameName" android:background="@drawable/arena_title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/wdp47" android:layout_margin="@dimen/wdp5" android:layout_marginLeft="@dimen/wdp5" android:layout_marginTop="@dimen/wdp5" android:text="..." android:singleLine="true" android:layout_centerHorizontal="true" android:textAlignment="center" />
+    <ImageView android:id="@id/iv_lock" android:visibility="visible" android:layout_width="@dimen/wdp34" android:layout_height="@dimen/wdp34" android:layout_marginRight="@dimen/wdp20" android:src="@drawable/icon_lock_1" android:scaleType="center" android:layout_alignTop="@id/tv_gameName" android:layout_alignBottom="@id/tv_gameName" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/iv_vip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arena_vip_flag" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/gamers" android:paddingLeft="@dimen/wdp10" android:paddingRight="@dimen/wdp10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_below="@id/tv_gameName">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llP1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <include android:id="@id/p1" android:layout_width="@dimen/wdp86" android:layout_height="@dimen/wdp86" layout="@layout/item_room_list_p" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/nickNameP1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="…" android:maxEms="5" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llP2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <include android:id="@id/p2" android:layout_width="@dimen/wdp86" android:layout_height="@dimen/wdp86" android:layout_toRightOf="@id/p1" layout="@layout/item_room_list_p" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/nickNameP2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="…" android:maxEms="5" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llP3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <include android:id="@id/p3" android:layout_width="@dimen/wdp86" android:layout_height="@dimen/wdp86" android:layout_toRightOf="@id/p1" layout="@layout/item_room_list_p" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/nickNameP3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="…" android:maxEms="5" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="right" android:orientation="vertical" android:id="@id/llP4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <include android:id="@id/p4" android:layout_width="@dimen/wdp86" android:layout_height="@dimen/wdp86" android:layout_toRightOf="@id/p3" layout="@layout/item_room_list_p" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/nickNameP4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="…" android:maxEms="5" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp6" android:layout_below="@id/gamers">
+        <TextView android:textSize="9.0sp" android:textColor="#ff487389" android:id="@id/tv_id_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="房间号:" />
+        <TextView android:textSize="9.0sp" android:textColor="#ff487389" android:id="@id/tv_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_toRightOf="@id/tv_id_label" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp13" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/tv3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/icon_view_1" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ffc4c4c4" android:layout_gravity="center_vertical" android:id="@id/tv_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp12" android:text="0人" android:layout_centerVertical="true" />
+            <TextView android:textSize="9.0sp" android:textColor="#ffc4c4c4" android:id="@id/tvCopper" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp10" android:text="0铜板" />
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_time_1" />
+            <com.join.mgps.customview.CountDownerTextView android:textSize="@dimen/wdp20" android:textColor="#ffc4c4c4" android:layout_gravity="center_vertical" android:id="@id/tv_game_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp12" android:text="0分" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

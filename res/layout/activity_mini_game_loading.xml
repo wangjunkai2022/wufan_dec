@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff7f8f9" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/statubar" android:background="#ffe1d2c3" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+    <LinearLayout android:layout_gravity="right" android:id="@id/ll_back" android:background="@drawable/bg_c6c6c6_r29_stroke" android:paddingLeft="@dimen/wdp24" android:paddingTop="@dimen/wdp13" android:paddingRight="@dimen/wdp24" android:paddingBottom="@dimen/wdp13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp37" android:layout_marginRight="@dimen/wdp30">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_circle_black" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp7" android:text="后台加载" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sdv_image" android:layout_width="@dimen/wdp130" android:layout_height="@dimen/wdp130" android:layout_marginTop="@dimen/wdp281" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" />
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff3b3b3b" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/icon" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp16">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_check_orange" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff646566" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp5" android:text="即点即玩" />
+        </LinearLayout>
+        <com.join.mgps.customview.PictureHProgress android:id="@id/pb_progress" android:paddingLeft="@dimen/wdp80" android:paddingRight="@dimen/wdp80" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp80" android:layout_marginRight="@dimen/wdp80" app:hp_bg_color="#fff0f0f0" app:hp_circle_height="@dimen/wdp36" app:hp_color="#ffffcb5f" app:hp_height="@dimen/wdp16" app:hp_progress="0" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ffa8a8a8" android:gravity="center" android:id="@id/tv_loading_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp42" android:lineSpacingExtra="@dimen/wdp10" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ffa8a8a8" android:id="@id/tv_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ffa8a8a8" android:id="@id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp12" android:layout_marginBottom="@dimen/wdp51" android:text="取消加载" />
+    </LinearLayout>
+</LinearLayout>

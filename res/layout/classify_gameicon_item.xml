@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/recomGameImage" android:layout_width="@dimen/wdp120" android:layout_height="@dimen/wdp120" android:layout_marginLeft="@dimen/sp36" android:layout_marginRight="@dimen/sp36" android:src="@drawable/main_normal_icon" fresco:failureImage="@drawable/main_normal_icon" fresco:failureImageScaleType="fitXY" fresco:placeholderImage="@drawable/main_normal_icon" fresco:placeholderImageScaleType="fitXY" fresco:roundWithOverlayColor="#ffffffff" fresco:roundedCornerRadius="@dimen/wdp28" fresco:roundingBorderColor="#ffd8d8d8" fresco:roundingBorderWidth="1.0px" />
+    <TextView android:textSize="@dimen/wdp26" android:textColor="#ff3b3b3b" android:gravity="center" android:id="@id/recomGameTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp36" android:lines="1" />
+</LinearLayout>

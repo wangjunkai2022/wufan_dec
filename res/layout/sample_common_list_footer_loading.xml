@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/loading_progress" android:visibility="visible" android:layout_width="@dimen/recomlist_loding_image_h" android:layout_height="@dimen/recomlist_loding_image_h" android:max="100" android:indeterminateDrawable="@drawable/loding_progress" android:indeterminateDuration="1000" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</LinearLayout>

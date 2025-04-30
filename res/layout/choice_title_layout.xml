@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/titleName" android:layout_width="fill_parent" android:layout_height="@dimen/wdp100" android:layout_marginLeft="@dimen/wdp30" android:text="最新上线" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/wdp26" android:textColor="#ffa8a8a8" android:id="@id/more" android:padding="@dimen/wdp30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多" android:layout_weight="0.0" />
+</LinearLayout>

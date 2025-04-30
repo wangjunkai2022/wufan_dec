@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_fast_entrance" android:layout_width="fill_parent" android:layout_height="@dimen/wdp85">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/jingxuan" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:minWidth="@dimen/wdp116" android:layout_weight="1.0">
+            <ImageView android:visibility="gone" android:layout_width="23.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_recent_fight" android:scaleType="fitXY" />
+            <TextView android:textSize="@dimen/wdp32" android:textColor="#ffffc438" android:gravity="center" android:id="@id/tvJingxuan" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp4" android:text="精选" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="#ff67cbf0" android:id="@id/jingxuantext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff2f99c0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="房" />
+            </LinearLayout>
+            <TextView android:id="@id/jingxuanLine" android:background="@drawable/round_conner_back_2" android:layout_width="@dimen/wdp30" android:layout_height="@dimen/wdp4" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_latest" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:minWidth="@dimen/wdp116" android:layout_weight="1.0">
+            <ImageView android:visibility="gone" android:layout_width="23.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_recent_fight" android:scaleType="fitXY" />
+            <TextView android:textSize="@dimen/wdp32" android:textStyle="normal" android:textColor="#ff7b95a4" android:gravity="center" android:id="@id/tvNew" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp4" android:text="最新" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="#ff67cbf0" android:id="@id/latest_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff2f99c0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="房" />
+            </LinearLayout>
+            <TextView android:id="@id/newLine" android:background="@drawable/round_conner_back_2" android:visibility="invisible" android:layout_width="@dimen/wdp30" android:layout_height="@dimen/wdp4" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_jieji" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/wdp116" android:layout_weight="1.0">
+            <ImageView android:visibility="gone" android:layout_width="31.0dip" android:layout_height="19.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/icon_jieji_fight" />
+            <TextView android:textSize="@dimen/wdp32" android:textStyle="normal" android:textColor="#ff7b95a4" android:gravity="center" android:id="@id/tvGBA" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp4" android:text="街机" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="#ff67cbf0" android:id="@id/jieji_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff2f99c0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="房" />
+            </LinearLayout>
+            <TextView android:id="@id/gbaLine" android:background="@drawable/round_conner_back_2" android:visibility="invisible" android:layout_width="@dimen/wdp30" android:layout_height="@dimen/wdp4" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_fc" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/wdp116" android:layout_weight="1.0">
+            <ImageView android:visibility="gone" android:layout_width="31.0dip" android:layout_height="16.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/icon_fc_fight" />
+            <TextView android:textSize="@dimen/wdp32" android:textStyle="normal" android:textColor="#ff7b95a4" android:gravity="center" android:id="@id/tvFC" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp4" android:text="FC" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="#ff67cbf0" android:id="@id/fc_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff2f99c0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="房" />
+            </LinearLayout>
+            <TextView android:id="@id/fcLine" android:background="@drawable/round_conner_back_2" android:visibility="invisible" android:layout_width="@dimen/wdp30" android:layout_height="@dimen/wdp4" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_others" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/icon_other_fight" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff3b3b3b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="其他对战" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/event_root_rl" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="112.0dip" android:layout_marginBottom="5.0dip">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/event_entrance_bg" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerInParent="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ad_iv_icon" android:layout_width="150.0dip" android:layout_height="40.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-20.0dip" android:layout_marginRight="22.0dip" android:src="@drawable/event_entrance_line" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/event_gamename_tv" android:background="@drawable/event_entrance_word_one" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginTop="-22.5dip" />
+            <RelativeLayout android:gravity="center" android:background="@drawable/event_entrance_word_two" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="24.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/event_nike_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="14.0sp" android:textColor="#fff47500" android:gravity="center" android:id="@id/event_num_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0" android:layout_toRightOf="@id/event_nike_tv" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/event_num_after_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人" android:layout_toRightOf="@id/event_num_tv" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.join.mgps.customview.AutoScrollViewPager android:id="@id/ad_viewpager" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="126.0dip" />
+</LinearLayout>

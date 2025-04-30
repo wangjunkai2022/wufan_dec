@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="exclusive_tag_height">80.0dip</dimen>
+    <dimen name="fight_top_height">125.0dip</dimen>
+    <dimen name="mgRecomTitlHight">43.0dip</dimen>
+    <dimen name="net_fight_margin">180.0dip</dimen>
+    <dimen name="new_key_map_a2f_divide_h">3.0dip</dimen>
+    <dimen name="new_key_map_direction_divide_h">9.0dip</dimen>
+    <dimen name="new_key_map_f_divide_h">7.0dip</dimen>
+    <dimen name="new_key_map_margin_top">9.0dip</dimen>
+    <dimen name="new_key_map_sp_divide_h">5.0dip</dimen>
+    <dimen name="role_length">45.0sp</dimen>
+    <dimen name="slide_size">14.0sp</dimen>
+</resources>

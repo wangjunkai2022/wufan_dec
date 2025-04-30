@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp80"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ff003150" android:layout_width="fill_parent" android:layout_height="@dimen/wdp80">
+        <ImageView android:layout_width="@dimen/wdp36" android:layout_height="@dimen/wdp36" android:layout_marginLeft="@dimen/wdp20" android:src="@drawable/ic_fly" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ffaee1ff" android:ellipsize="none" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择需要的技能，开启后可以一键释放" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff55bffb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:text="全部开启" />
+        <TextView android:textColor="#ff17be61" android:gravity="center" android:id="@id/switchBtn" android:background="@drawable/switch_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginEnd="@dimen/wdp36" />
+    </LinearLayout>
+</LinearLayout>

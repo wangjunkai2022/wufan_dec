@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/activity_default_background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/mg_mian_fragmentlayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/wdp100" android:layout_weight="1.0" android:layout_alignParentLeft="false" android:layout_alignParentBottom="false" />
+        <RelativeLayout android:id="@id/mainTop" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <include android:id="@id/actionbarLayout" layout="@layout/mg_forum_title_layout" />
+        </RelativeLayout>
+        <include layout="@layout/download_title_layout" />
+        <include layout="@layout/top_user_icon_title_layout" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/bottom" android:background="@color/main_bg" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/wdp100" android:layout_weight="0.0" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mg_recom_tabselect" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:id="@id/home_tab_monkey_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/imageView36" android:background="@drawable/main_tab_home_back_selecter" android:layout_width="@dimen/wdp109" android:layout_height="@dimen/wdp100" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/home_tab_huojian_image" android:layout_width="@dimen/wdp61" android:layout_height="@dimen/wdp61" android:src="@drawable/papamain_tab_specified" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/home_tab_monkey_image" android:layout_width="@dimen/wdp61" android:layout_height="@dimen/wdp61" android:src="@drawable/papamain_tab_monkey" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/imageView38" android:background="@drawable/main_tab_home_back_top" android:layout_width="@dimen/wdp109" android:layout_height="@dimen/wdp100" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/home_tab_default_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/mg_recom_image" android:layout_width="@dimen/wdp60" android:layout_height="@dimen/wdp60" android:src="@drawable/mg_main_recomrettable_selected" />
+                    <TextView android:textSize="@dimen/main_detial_textsize" android:gravity="center" android:id="@id/mg_recom_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp6" android:text="首页" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/fightSelect" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/fightImage" android:layout_width="@dimen/wdp60" android:layout_height="@dimen/wdp60" android:src="@drawable/mg_fight_selectback_normal" />
+                <TextView android:textSize="@dimen/main_detial_textsize" android:gravity="center" android:id="@id/fightText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp6" android:text="对战" />
+            </LinearLayout>
+            <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/mg_chart_tabselect" android:background="#ff686868" android:layout_width="@dimen/wdp126" android:layout_height="fill_parent" android:layout_weight="0.0">
+                <TextView android:textSize="@dimen/main_detial_textsize" android:textColor="@android:color/white" android:gravity="center" android:id="@id/mg_chart_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp6" android:text="我的游戏" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/mg_chart_image" android:focusableInTouchMode="false" android:visibility="visible" android:layout_width="@dimen/wdp60" android:layout_height="@dimen/wdp60" android:src="@drawable/mg_main_chart_normal" android:layout_above="@id/mg_chart_text" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="8.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/bigCenterRound" android:background="@drawable/mygame_big_round" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="-11.0dip" android:layout_marginRight="-19.0dip" android:layout_alignTop="@id/mg_chart_image" android:layout_alignRight="@id/mg_chart_image" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/mg_emulator_tabselect" android:background="@android:color/white" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/mg_emulator_tabselect_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@id/mg_emulator_image" android:layout_width="@dimen/wdp60" android:layout_height="@dimen/wdp60" android:src="@drawable/mg_main_emulator_normal" />
+                    <TextView android:textSize="@dimen/main_detial_textsize" android:gravity="center" android:id="@id/mg_emulator_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp6" android:text="社区" />
+                </LinearLayout>
+                <TextView android:textSize="8.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/unreadMessageBadge" android:background="@drawable/mygame_big_round" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="-3.0dip" android:layout_marginRight="-7.0dip" android:layout_alignTop="@id/mg_emulator_tabselect_layout" android:layout_alignRight="@id/mg_emulator_tabselect_layout" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/mg_category_tabselect" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/mg_category_image" android:layout_width="@dimen/wdp60" android:layout_height="@dimen/wdp60" android:src="@drawable/mg_main_category_normal" />
+                <TextView android:textSize="@dimen/main_detial_textsize" android:gravity="center" android:id="@id/mg_category_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp6" android:text="个人" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/classify_tips" android:background="#77000000" android:visibility="visible" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/classify_tips_circle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp483" android:layout_marginRight="@dimen/wdp10" android:src="@drawable/classify_tips_circle" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/imageView39" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp532" android:layout_marginRight="@dimen/wdp120" android:src="@drawable/main_guid_text" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/classify_tips_ok" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp28" android:layout_marginRight="@dimen/wdp120" android:src="@drawable/classify_tips_ok" android:layout_below="@id/imageView39" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/coinFloatad" android:padding="0.0dip" android:visibility="visible" android:layout_width="@dimen/wdp106" android:layout_height="@dimen/wdp106" android:layout_marginRight="@dimen/wdp45" android:layout_marginBottom="@dimen/wdp290" android:src="@drawable/main_normal_icon" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="263.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/titleText" android:background="#ff3a85e2" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="设置下载位置" />
+        <LinearLayout android:orientation="vertical" android:id="@id/allpath" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@id/textView6" android:background="#ff969696" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="0.0" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff39393a" android:gravity="center" android:id="@id/cancletext" android:background="@drawable/listview_download" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+            <TextView android:id="@id/textView5" android:background="#ff969696" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="0.0" />
+            <TextView android:textSize="16.0sp" android:textColor="#fff47500" android:gravity="center" android:id="@id/ok" android:background="@drawable/listview_download" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="确定" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

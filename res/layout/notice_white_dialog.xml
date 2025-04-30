@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/notice_white_dialog_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/main" android:background="@drawable/round_conner_back_24" android:layout_width="@dimen/wdp604" android:layout_height="wrap_content" android:minHeight="@dimen/wdp358" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/black" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp42" />
+        <TextView android:textSize="@dimen/wdp30" android:textColor="#ff4a4a4a" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="@dimen/wdp123" android:layout_marginLeft="@dimen/wdp84" android:layout_marginTop="@dimen/wdp46" android:layout_marginRight="@dimen/wdp84" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp100">
+            <TextView android:textSize="@dimen/wdp32" android:textColor="@drawable/white" android:gravity="center" android:id="@id/okButn" android:tag="binding_3" android:background="@drawable/round_r_18_orange" android:layout_width="@dimen/wdp348" android:layout_height="@dimen/wdp82" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/closed" android:tag="binding_4" android:padding="@dimen/wdp39" android:layout_width="@dimen/wdp107" android:layout_height="@dimen/wdp107" android:src="@drawable/close_x_sniffer" app:layout_constraintRight_toRightOf="@id/main" app:layout_constraintTop_toTopOf="@id/main" />
+</androidx.constraintlayout.widget.ConstraintLayout>

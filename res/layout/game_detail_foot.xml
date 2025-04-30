@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fressco="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/wdp24" android:textColor="@color/gray_8" android:gravity="center" android:id="@id/bottom" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp77" android:text="已经是最后一个了" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_sub" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="@dimen/wdp104" android:layout_height="@dimen/wdp104" android:layout_marginTop="@dimen/wdp130">
+            <TextView android:background="@drawable/bg_tv_circle" android:layout_width="@dimen/wdp104" android:layout_height="@dimen/wdp104" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/smv_sub" android:layout_width="@dimen/wdp102" android:layout_height="@dimen/wdp102" fressco:roundAsCircle="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff686868" android:id="@id/tv_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp28" android:text="33人订阅，第一时间获取新动态" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_sub_sub" android:background="@drawable/game_detail_o" android:layout_width="@dimen/wdp187" android:layout_height="@dimen/wdp65" android:layout_marginTop="@dimen/wdp57" android:layout_marginBottom="@dimen/wdp129" android:text="订阅" />
+    </LinearLayout>
+</LinearLayout>

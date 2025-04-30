@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/loding_progress_dialogback_image" android:layout_width="135.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true">
+        <com.join.mgps.customview.CircleDownloadProgressBar android:id="@id/progressBar" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp100" app:cdp_gradientColor="false" app:cdp_inCircleColor="@color/grey" app:cdp_lineWidth="@dimen/wdp7" app:cdp_progressColor="@color/main_yello_color" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="请稍候..." />
+    </LinearLayout>
+</RelativeLayout>

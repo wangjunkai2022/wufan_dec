@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/wdp26" android:paddingTop="@dimen/wdp17" android:paddingRight="@dimen/wdp26" android:paddingBottom="@dimen/wdp28" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp86">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/userImg" android:layout_width="@dimen/wdp48" android:layout_height="@dimen/wdp48" fresco:roundAsCircle="true" />
+            <TextView android:textSize="@dimen/wdp26" android:textStyle="bold" android:textColor="#ff3b3b3b" android:id="@id/userName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:text="延期社团" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ffa8a8a8" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp18" android:text="08:00" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff575757" android:ellipsize="end" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp68" android:text="坑爹的游戏，电脑上完了10年的拳皇了居然太让人失望了期待了这名就真心怒了，预的游戏，电脑上完了10年的拳皇了居然太让人失望了，期待了这名就真心怒了预，预的游戏，电脑上完了10年的拳皇了居然太让人失望了，期待了这名" android:lineSpacingMultiplier="1.2" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp68" android:layout_marginTop="@dimen/wdp17">
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ffa8a8a8" android:id="@id/vidioTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp28" android:text="视频" android:drawableLeft="@drawable/discover_vidio_icon" android:drawablePadding="@dimen/wdp6" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ffa8a8a8" android:id="@id/imagTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="图片" android:drawableLeft="@drawable/discover_image_icon" android:drawablePadding="@dimen/wdp6" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_marginLeft="@dimen/wdp26" android:layout_marginRight="@dimen/wdp26" style="@style/TextViewStyle_line_H" />
+</LinearLayout>

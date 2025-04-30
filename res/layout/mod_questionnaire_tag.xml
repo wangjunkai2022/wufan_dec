@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/wdp28" android:textColor="@color/bg_questionnaire_tag" android:background="@drawable/bg_questionnaire_tag" android:paddingLeft="@dimen/wdp20" android:paddingTop="@dimen/wdp6" android:paddingRight="@dimen/wdp20" android:paddingBottom="@dimen/wdp6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="无法启动"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

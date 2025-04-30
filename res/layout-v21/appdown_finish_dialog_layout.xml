@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainx" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/main" android:background="@drawable/round_conner_back_8" android:paddingLeft="@dimen/wdp24" android:paddingTop="@dimen/wdp16" android:paddingRight="@dimen/wdp24" android:paddingBottom="@dimen/wdp16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp12" android:layout_marginTop="@dimen/wdp22" android:layout_marginRight="@dimen/wdp12" android:layout_marginBottom="@dimen/wdp20" android:layout_alignParentTop="true" android:elevation="@dimen/wdp8">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@id/icon" android:layout_width="@dimen/wdp110" android:layout_height="@dimen/wdp110" android:layout_marginRight="@dimen/wdp15" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/wdp26" android:textStyle="bold" android:textColor="#ff3b3b3b" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="正在初始化FC模拟器" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff666666" android:id="@id/info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp12" android:text="下载完成" android:layout_weight="1.0" style="@style/TextViewStyle_10sp" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff000000" android:gravity="center" android:id="@id/goMygame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp14" android:text="查看我的游戏>" android:layout_weight="1.0" style="@style/TextViewStyle_10sp" />
+        <ProgressBar android:id="@id/progressBarZip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp20" android:progress="50" />
+        <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp20" android:progress="0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp18">
+            <TextView android:textSize="@dimen/wdp22" android:textColor="#ff8a8a8a" android:id="@id/appSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/my_game_appsizemagin_t" android:layout_weight="1.0" style="@style/TextViewStyle_10sp" />
+            <TextView android:textSize="@dimen/wdp22" android:textColor="#ff8a8a8a" android:id="@id/lodingInfo" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/my_game_lodingtextmagin_t" android:layout_weight="0.0" style="@style/TextViewStyle_10sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <TextView android:textSize="@dimen/wdp26" android:textColor="@color/white" android:gravity="center" android:id="@id/ok" android:background="@drawable/plug_download_back_selecter" android:paddingLeft="@dimen/wdp20" android:paddingRight="@dimen/wdp20" android:layout_width="wrap_content" android:layout_height="@dimen/wdp64" android:text="开始游戏" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:gravity="center" android:id="@id/cancle" android:padding="@dimen/wdp30" android:visibility="gone" android:layout_width="@dimen/wdp90" android:layout_height="@dimen/wdp90" android:src="@drawable/btn_close" android:layout_weight="1.0" android:layout_alignParentRight="true" />
+</RelativeLayout>

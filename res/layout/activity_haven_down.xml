@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main" android:background="#77000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/topLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/showView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/layoutq" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:id="@id/back1" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp137" />
+            <TextView android:textSize="@dimen/wdp32" android:textColor="#ff333333" android:id="@id/title1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp56" android:layout_marginTop="@dimen/wdp47" android:layout_marginRight="@dimen/wdp56" android:text="应版权方要求，不提供该游戏下载" android:lines="1" />
+            <ImageView android:id="@id/closeImage1" android:padding="@dimen/wdp10" android:visibility="gone" android:layout_width="@dimen/wdp42" android:layout_height="@dimen/wdp42" android:layout_marginRight="@dimen/wdp28" android:src="@drawable/posting_close" android:layout_weight="1.0" android:layout_alignTop="@id/title1" android:layout_alignParentRight="true" android:layout_marginEnd="@dimen/wdp28" />
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutx" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/back1">
+                <View android:layout_marginBottom="@dimen/wdp20" style="@style/TextViewStyle_line_H" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:id="@id/downFrom" android:background="@drawable/detial_installbutn_normal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp78" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" android:layout_marginBottom="@dimen/wdp21" android:layout_weight="1.0">
+                        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/downFromText" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="去社区看看" android:drawableLeft="@drawable/goforum_icon" android:drawablePadding="@dimen/wdp10" />
+                    </LinearLayout>
+                    <TextView android:textColor="@color/main_yello_color" android:gravity="center" android:id="@id/goVow" android:background="@drawable/stroke_button_maincolor_selecter" android:layout_width="@dimen/wdp200" android:layout_height="@dimen/wdp78" android:layout_marginRight="@dimen/wdp30" android:layout_marginBottom="@dimen/wdp21" android:text="许愿" android:layout_weight="0.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/forumData" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp910">
+            <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/shape_snk_search_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp26" android:layout_marginTop="@dimen/wdp34" android:layout_marginRight="@dimen/wdp26" android:layout_marginBottom="@dimen/wdp12" android:minHeight="@dimen/wdp68">
+                <TextView android:id="@id/textView62" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp32" android:text="社区帖子" android:layout_marginStart="@dimen/wdp32" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <View android:id="@id/view6" android:background="#ffeeeeee" android:layout_width="@dimen/wdp2" android:layout_height="@dimen/wdp56" android:layout_marginLeft="@dimen/wdp29" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/textView62" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:id="@id/appName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp37" android:text="拳皇97风云再起" android:layout_marginStart="@dimen/wdp37" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/view6" app:layout_constraintTop_toTopOf="parent" />
+                <ImageView android:id="@id/imageView54" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp22" android:layout_marginEnd="@dimen/wdp22" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_find_big" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/wdp30" android:paddingBottom="@dimen/wdp33" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/wdp20" android:textColor="#ff777777" android:paddingLeft="@dimen/wdp48" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="以下内容由社区用户分享：" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#fff47500" android:gravity="center_vertical" android:id="@id/goforumTagList" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp48" android:text="查看更多" android:layout_weight="0.0" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycleView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

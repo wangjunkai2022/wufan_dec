@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/activity_key_map_head_include" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/handshank_set_tip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:gravity="center" android:id="@id/select" android:background="@drawable/handshank_set_skey_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_select" />
+                    <TextView android:textSize="15.0sp" android:id="@id/select_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_select" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+                    <Button android:gravity="center" android:id="@id/start" android:background="@drawable/handshank_set_skey_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_start" />
+                    <TextView android:textSize="15.0sp" android:id="@id/start_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_start" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/layout_emu_kay_map_common" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip">
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <Button android:textSize="22.0sp" android:gravity="center" android:id="@id/l1" android:tag="WSC_KEY_L1" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_y1" />
+                        <TextView android:textSize="15.0sp" android:id="@id/l1_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="L1" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <Button android:textSize="22.0sp" android:gravity="center" android:id="@id/l2" android:tag="WSC_KEY_L2" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_y2" />
+                        <TextView android:textSize="15.0sp" android:id="@id/l2_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="L2" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <Button android:textSize="22.0sp" android:gravity="center" android:id="@id/r1" android:tag="WSC_KEY_R1" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_y3" />
+                        <TextView android:textSize="15.0sp" android:id="@id/r1_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R1" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <Button android:textSize="22.0sp" android:gravity="center" android:id="@id/r2" android:tag="WSC_KEY_R2" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_y4" />
+                        <TextView android:textSize="15.0sp" android:id="@id/r2_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R2" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip">
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <Button android:textSize="22.0sp" android:gravity="center" android:id="@id/up" android:tag="WSC_KEY_UP" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_x1" />
+                        <TextView android:textSize="15.0sp" android:id="@id/up_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UP" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <Button android:textSize="22.0sp" android:gravity="center" android:id="@id/right" android:tag="WSC_KEY_RIGHT" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_x2" />
+                        <TextView android:textSize="15.0sp" android:id="@id/right_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RIGHT" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <Button android:textSize="22.0sp" android:gravity="center" android:id="@id/down" android:tag="WSC_KEY_DOWN" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_x3" />
+                        <TextView android:textSize="15.0sp" android:id="@id/down_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DOWN" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <Button android:textSize="22.0sp" android:gravity="center" android:id="@id/left" android:tag="WSC_KEY_LEFT" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_x4" />
+                        <TextView android:textSize="15.0sp" android:id="@id/left_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LEFT" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="22.0sp" android:gravity="center" android:id="@id/a" android:tag="WSC_KEY_A" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_a" />
+                    <TextView android:textSize="15.0sp" android:id="@id/a_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textSize="22.0sp" android:gravity="center" android:id="@id/b" android:tag="WSC_KEY_B" android:background="@drawable/handshank_set_key_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handshank_set_key_map_b" />
+                    <TextView android:textSize="15.0sp" android:id="@id/b_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+</LinearLayout>

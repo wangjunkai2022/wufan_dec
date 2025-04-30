@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp84"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/album_cover" android:layout_width="@dimen/wdp60" android:layout_height="@dimen/wdp60" android:layout_marginLeft="@dimen/wdp10" android:layout_marginTop="@dimen/wdp10" android:layout_marginBottom="@dimen/wdp10" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/wdp28" android:textColor="@color/black" android:id="@id/album_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp10" android:text="" android:layout_toRightOf="@id/album_cover" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff545454" android:id="@id/album_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" android:layout_toRightOf="@id/album_name" android:layout_centerVertical="true" />
+    <View android:layout_marginLeft="@dimen/wdp80" android:layout_marginRight="@dimen/wdp30" android:layout_alignParentBottom="true" style="@style/TextViewStyle_line_H" />
+</RelativeLayout>

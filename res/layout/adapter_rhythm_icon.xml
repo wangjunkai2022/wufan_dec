@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="48.0dip" android:layout_height="@dimen/rhythm_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/home_icon_bg" android:layout_width="48.0dip" android:layout_height="@dimen/rhythm_item_height">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="5.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

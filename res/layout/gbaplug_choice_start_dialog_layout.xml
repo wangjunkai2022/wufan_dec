@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/white_bg" android:layout_width="263.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/titleText" android:background="#ff3a85e2" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="请选择启动插件" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/showdialog" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="12.0dip" android:textColor="#ff8a8a8a" android:id="@id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="总是提示" android:layout_weight="1.0" />
+            <CheckBox android:id="@id/showdialogPlug" android:background="@drawable/downpath_show_selector" android:clickable="false" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="30.0dip" android:checked="true" android:button="@null" />
+        </LinearLayout>
+        <TextView android:id="@id/textView7" android:background="#ff969696" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_weight="0.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/newGBAOlug" android:background="@drawable/forum_dialog_btn_selector" android:layout_width="fill_parent" android:layout_height="63.0dip">
+            <ImageView android:id="@id/imageView" android:layout_width="52.0dip" android:layout_height="40.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/gbaicon_new" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0dip" android:textColor="#ff3c3c3c" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="增强版GBA" />
+                    <Button android:textSize="6.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/imageViewx" android:background="@drawable/new_tips" android:layout_width="22.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:text="NEW" />
+                </LinearLayout>
+                <TextView android:textSize="10.0dip" android:textColor="#ff8a8a8a" android:id="@id/textView8" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="(不支持老版本存档)" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:id="@id/textView6" android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_weight="0.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/oldGBAPlug" android:background="@drawable/forum_dialog_btn_selector" android:layout_width="fill_parent" android:layout_height="63.0dip">
+            <ImageView android:id="@id/imageView2" android:layout_width="52.0dip" android:layout_height="40.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/gbaicon_old" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff3c3c3c" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="普通版GBA" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:id="@id/textView3" android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_weight="0.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/why" android:background="@drawable/forum_dialog_btn_selector" android:layout_width="fill_parent" android:layout_height="38.0dip">
+            <ImageView android:id="@id/imageView3" android:visibility="visible" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="30.0dip" android:src="@drawable/handshank_tip_icon" />
+            <TextView android:textSize="10.0dip" android:textColor="#ff3a85e2" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="为什么有两个插件？" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

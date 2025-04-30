@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ff3a85e2" android:layout_width="fill_parent" android:layout_height="254.0dip">
+        <ImageView android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/white" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/recoverinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gameHistory" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="17.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:id="@id/gameHistoryinfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="备份游戏存档" android:layout_weight="1.0" />
+        <ImageView android:id="@id/gameHistoryFinishImage" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/dialog_find_icon" android:layout_weight="0.0" />
+        <ProgressBar android:id="@id/gameHistoryLoding" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginRight="15.0dip" android:indeterminateDrawable="@drawable/loding_progress" android:indeterminateDuration="1000" android:layout_weight="0.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gameList" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="1.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:id="@id/gameListInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="备份以下载游戏清单" android:layout_weight="1.0" />
+        <ImageView android:id="@id/gameListFinish" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/dialog_find_icon" android:layout_weight="0.0" />
+        <ProgressBar android:id="@id/gameListloding" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginRight="15.0dip" android:indeterminateDrawable="@drawable/loding_progress" android:indeterminateDuration="1000" android:layout_weight="0.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gamekey" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="1.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:id="@id/gamekeyinfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="备份手柄自定义按键方案" android:layout_weight="1.0" />
+        <ImageView android:id="@id/gamekeyFinish" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/dialog_find_icon" android:layout_weight="0.0" />
+        <ProgressBar android:id="@id/gamekeyLoding" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginRight="15.0dip" android:indeterminateDrawable="@drawable/loding_progress" android:indeterminateDuration="1000" android:layout_weight="0.0" />
+    </LinearLayout>
+</LinearLayout>

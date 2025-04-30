@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="286.0dip" android:layout_height="230.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:background="@drawable/newarena_bg_input_border_top" android:paddingLeft="@dimen/wdp36" android:layout_width="fill_parent" android:layout_height="@dimen/wdp65" />
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_top" android:background="@drawable/newarena_titleblack" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp36" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请设置挑战金" android:singleLine="true" />
+        <FrameLayout android:background="@drawable/bg_input_border_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tv_top">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_set_challenge_gold" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="13.0sp" android:textColor="#ff4a4a4a" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="精英场最低50铜板起" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginTop="26.0dip" android:layout_marginRight="19.0dip">
+                    <Button android:textSize="13.0sp" android:textColor="#ff3ca4fd" android:gravity="center" android:id="@id/btn_1" android:background="@drawable/bg_btn_border_blue_four_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="50\n铜板" android:layout_weight="1.0" />
+                    <Button android:textSize="13.0sp" android:textColor="#ff3ca4fd" android:gravity="center" android:id="@id/btn_2" android:background="@drawable/bg_btn_border_blue_four_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="100\n铜板" android:layout_weight="1.0" />
+                    <Button android:textSize="13.0sp" android:textColor="#ff3ca4fd" android:gravity="center" android:id="@id/btn_3" android:background="@drawable/bg_btn_border_blue_four_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="200\n铜板" android:layout_weight="1.0" />
+                    <Button android:textSize="13.0sp" android:textColor="#ff3ca4fd" android:gravity="center" android:id="@id/btn_4" android:background="@drawable/bg_btn_border_blue_four_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="500\n铜板" android:layout_weight="1.0" />
+                </LinearLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ffa8a8a8" android:id="@id/tv_current_copper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="你的账号铜板数：34789" />
+                <TextView android:textSize="13.0sp" android:textColor="#fff47500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="获胜一方将获得失败一方的挑战金！" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_info" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff4a4a4a" android:gravity="left" android:id="@id/tv_info_title_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="【三国战记】挑战金" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff3ca4fd" android:gravity="left" android:id="@id/tv_info_title_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="500铜板" />
+                <TextView android:textSize="14.0sp" android:textColor="#fff47500" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="挑战规则" />
+                <TextView android:textSize="12.0sp" android:textColor="#fff47500" android:id="@id/tv_info_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="1、进入游戏后扣除挑战金\n2、达到1000000分返还挑战金\n3、完整通关后有随机铜板奖励" android:lineSpacingExtra="5.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/iv_close" android:layout_width="@dimen/wdp90" android:layout_height="@dimen/wdp65" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close2" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

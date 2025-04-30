@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/mg_forum_welcome_item_hot_forum_header" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/mg_forum_post_item_padding" android:paddingRight="@dimen/mg_forum_post_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <view android:id="@id/list" android:background="@color/white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="@dimen/mg_forum_item_topic_height" android:cacheColorHint="#00000000" android:overScrollMode="never" app:hlv_dividerWidth="@dimen/mg_forum_item_topic_divider_width" class="it.sephiroth.android.library.widget.HListView" />
+    </LinearLayout>
+</LinearLayout>

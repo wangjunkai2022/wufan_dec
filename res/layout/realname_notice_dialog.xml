@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/main" android:background="@drawable/realname_background" android:layout_width="@dimen/wdp660" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/tip_title" android:paddingTop="@dimen/wdp32" android:paddingBottom="@dimen/wdp28" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="提示" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.papa91.arc.widget.htmltext.HtmlTextView android:textSize="@dimen/wdp28" android:textColor="#ff202020" android:gravity="center_vertical" android:id="@id/dialog_content" android:paddingLeft="@dimen/wdp42" android:paddingRight="@dimen/wdp42" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/wdp148" android:lineSpacingExtra="@dimen/wdp6" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:paddingLeft="@dimen/wdp70" android:paddingRight="@dimen/wdp70" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:paddingTop="@dimen/wdp42" android:paddingBottom="@dimen/wdp42" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+                <Button android:textSize="@dimen/wdp29" android:textColor="@color/white" android:id="@id/dialog_button_left" android:background="@drawable/bg_btn_border_gray_four_1" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="@dimen/wdp79" android:text="下次再说" android:layout_weight="1.0" />
+                <View android:id="@id/middle" android:layout_width="@dimen/wdp72" android:layout_height="1.0dip" />
+                <Button android:textSize="@dimen/wdp29" android:textColor="#ff232323" android:id="@id/dialog_button_right" android:background="@drawable/bg_btn_border_blue_color" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="@dimen/wdp79" android:maxWidth="@dimen/wdp486" android:text="登录" android:layout_weight="1.0" />
+            </LinearLayout>
+            <Button android:textSize="@dimen/wdp29" android:textColor="#ff232323" android:id="@id/dialog_button_center" android:background="@drawable/bg_btn_border_blue_color" android:visibility="invisible" android:layout_width="@dimen/wdp250" android:layout_height="@dimen/wdp79" android:maxWidth="@dimen/wdp486" android:text="我知道了" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/close" android:padding="@dimen/wdp20" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp3" android:src="@drawable/close_icon" android:layout_alignRight="@id/main" />
+</RelativeLayout>

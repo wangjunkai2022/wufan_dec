@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="166.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="15.0sp" android:textColor="#ff8a8a8a" android:gravity="center" android:id="@id/tv_papaku" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="从悟饭游戏库选择游戏" android:layout_weight="1.0" />
+        <View android:background="#ffd8d8d8" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff8a8a8a" android:gravity="center" android:id="@id/tv_collection" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="从我的收藏中选择游戏" android:layout_weight="1.0" />
+        <View android:background="#ffd8d8d8" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff8a8a8a" android:gravity="center" android:id="@id/tv_local" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="从本地游戏中选择游戏" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

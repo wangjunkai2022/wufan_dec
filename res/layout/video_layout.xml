@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:id="@id/video" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.join.android.app.component.video.MyVideoView" />
+    <view android:id="@id/cover" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/main_normal_icon" android:scaleType="fitXY" class="com.facebook.drawee.view.SimpleDraweeView" />
+    <include android:id="@id/loadingLayout" android:layout_width="@dimen/video_loading_size" android:layout_height="@dimen/video_loading_size" android:layout_centerInParent="true" layout="@layout/video_loading_progress" />
+    <ImageView android:id="@id/play" android:background="@drawable/mediacontroller_play_center" android:layout_width="@dimen/video_play_center_size" android:layout_height="@dimen/video_play_center_size" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/back" android:background="@drawable/detial_mini_backbutn_selecter" android:visibility="gone" android:layout_width="@dimen/video_back_size" android:layout_height="@dimen/video_back_size" android:layout_margin="8.0dip" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+</RelativeLayout>

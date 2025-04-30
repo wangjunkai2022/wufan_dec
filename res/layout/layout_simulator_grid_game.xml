@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/gameIcon" android:layout_width="@dimen/wdp120" android:layout_height="@dimen/wdp120" app:roundedCornerRadius="@dimen/wdp16" />
+    <TextView android:textSize="@dimen/wdp26" android:textColor="#ff303030" android:ellipsize="end" android:gravity="center" android:id="@id/gameName" android:layout_width="@dimen/wdp130" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp12" android:maxLines="1" />
+</LinearLayout>

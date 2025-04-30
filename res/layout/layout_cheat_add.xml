@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/v_add_space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp20" />
+        <TextView android:textSize="@dimen/wdp30" android:textColor="#ff67c1f5" android:gravity="center" android:id="@id/addCheat" android:background="@drawable/bg_open_vip" android:layout_width="fill_parent" android:layout_height="@dimen/wdp104" android:text="+ 添加作弊码" />
+    </LinearLayout>
+</LinearLayout>

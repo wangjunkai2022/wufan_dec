@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/v_add_space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp28" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="#ff092237" android:paddingTop="@dimen/wdp10" android:paddingBottom="@dimen/wdp10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:orientation="vertical" android:id="@id/iv_slot_new" android:layout_width="@dimen/wdp183" android:layout_height="@dimen/wdp103" android:src="@drawable/ic_slot_new_limit" android:layout_marginStart="@dimen/wdp16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/wdp30" android:textStyle="bold" android:textColor="#ff547b88" android:id="@id/tv_max_slot_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp16" android:text="存档数量已达上限，请开通会员" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/iv_slot_new" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

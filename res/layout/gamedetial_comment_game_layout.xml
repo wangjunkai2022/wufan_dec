@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp143"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/goCommit" android:background="@drawable/stroke_grey_radio10_butn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp51" android:layout_marginTop="@dimen/wdp28" android:layout_marginRight="@dimen/wdp51" android:layout_marginBottom="@dimen/wdp28" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/wdp29" android:textColor="#fff47500" android:gravity="center" android:id="@id/textMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点评这款游戏" />
+        <LinearLayout android:layout_gravity="center" android:id="@id/starlayout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/progressBar2" android:layout_width="@dimen/wdp24" android:layout_height="@dimen/wdp24" android:layout_marginLeft="@dimen/wdp24" android:layout_marginRight="@dimen/wdp9" android:src="@drawable/star_mini" android:layout_weight="0.0" />
+            <ImageView android:layout_width="@dimen/wdp24" android:layout_height="@dimen/wdp24" android:layout_marginRight="@dimen/wdp9" android:src="@drawable/star_mini" android:layout_weight="0.0" />
+            <ImageView android:layout_width="@dimen/wdp24" android:layout_height="@dimen/wdp24" android:layout_marginRight="@dimen/wdp9" android:src="@drawable/star_mini" android:layout_weight="0.0" />
+            <ImageView android:layout_width="@dimen/wdp24" android:layout_height="@dimen/wdp24" android:layout_marginRight="@dimen/wdp9" android:src="@drawable/star_mini" android:layout_weight="0.0" />
+            <ImageView android:layout_width="@dimen/wdp24" android:layout_height="@dimen/wdp24" android:src="@drawable/star_mini" android:layout_weight="0.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/layoutTop" android:layout_height="@dimen/wdp8" style="@style/TextViewStyle_line_detial" />
+    <View android:id="@id/layoutTop2" android:visibility="gone" style="@style/TextViewStyle_line_H" />
+</LinearLayout>

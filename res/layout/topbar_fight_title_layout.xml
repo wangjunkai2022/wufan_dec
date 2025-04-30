@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/papa_title_back" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res">
+    <com.join.mgps.customview.SlidingTabLayout android:id="@id/mSlidingTabLayout" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="100.0dip" android:layout_marginRight="100.0dip" android:layout_alignParentTop="true" app:pstsIndicatorColor="#ff00ff00" app:pstsIndicatorHeight="5.0dip" app:pstsUnderlineColor="#ffff00ff" app:pstsUnderlineHeight="1.0dip" />
+    <LinearLayout android:gravity="center|right" android:id="@id/searchImage" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginRight="56.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_image" />
+    </LinearLayout>
+    <ImageView android:id="@id/title_normal_search_img" android:layout_marginRight="@dimen/titile_normal_search_margin_right" android:src="@drawable/search_image" style="@style/title_normal_search_download_img_style" />
+    <ImageView android:id="@id/title_normal_download_img" android:layout_marginRight="@dimen/titile_normal_download_margin_right" android:src="@drawable/papa_download_selector" style="@style/title_normal_search_download_img_style" />
+    <View android:layout_alignParentBottom="true" style="@style/TextViewStyle_line_Main" />
+</RelativeLayout>

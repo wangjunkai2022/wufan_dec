@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextViewStyle_line_H">
+        <item name="android:background">#ffefeff4</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/wdp1</item>
+    </style>
+    <style name="TextViewStyle_line_V">
+        <item name="android:background">#fff0f0f0</item>
+        <item name="android:layout_width">1.0px</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+</resources>

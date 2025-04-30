@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/account_back_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/account_title_include" />
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="22.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff525252" android:id="@id/myAccountTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="当前绑定号码 :" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="14.0dip">
+                <EditText android:textSize="15.0sp" android:textColorHint="#ffa8a8a8" android:id="@id/inputPhone" android:background="@drawable/account_edittext" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="请输入新手机号" android:singleLine="true" />
+            </LinearLayout>
+            <Button android:textSize="18.0dip" android:textColor="@color/white" android:id="@id/insteadButn" android:background="@drawable/account_butn_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="22.0dip" android:text="确定更换" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

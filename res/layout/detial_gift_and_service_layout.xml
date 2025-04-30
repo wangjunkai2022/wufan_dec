@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/game_detail_item_back_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp24" android:layout_marginTop="@dimen/dp24" android:layout_marginRight="@dimen/dp24">
+        <LinearLayout android:orientation="vertical" android:id="@id/informationLayout" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.5">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/backLayout" android:layout_width="fill_parent" android:layout_height="@dimen/dp132">
+                <TextView android:id="@id/textView9" android:background="@drawable/papa_yelow_side" android:layout_width="3.0dip" android:layout_height="@dimen/dp45" android:layout_marginLeft="@dimen/dp24" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="0.0" />
+                <TextView android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/titleText" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="游戏礼包" android:layout_weight="1.0" style="@style/TextViewStyle_14sp" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/look_other" android:paddingRight="11.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0">
+                    <TextView android:textColor="#ff5e5e5e" android:id="@id/moreText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="更多" style="@style/TextViewStyle_12sp" />
+                    <ImageView android:id="@id/imageView5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="10.0dip" android:src="@drawable/arrow_right" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/giftIcon" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="9.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="9.0dip" android:layout_weight="0.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="9.0dip" android:layout_marginRight="9.0dip">
+                        <ImageView android:id="@id/imageView15" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/papa_gift" />
+                        <TextView android:textSize="13.0dip" android:textColor="#ff999999" android:id="@id/giftMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    </LinearLayout>
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="11.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/getGift" android:background="@drawable/download_maincolor_butn" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:text="领取" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:id="@id/line" android:background="#ff555555" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/giftLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/backLayout2" android:layout_width="fill_parent" android:layout_height="@dimen/dp132">
+                <TextView android:id="@id/textView92" android:background="@drawable/papa_yelow_side" android:layout_width="3.0dip" android:layout_height="@dimen/dp45" android:layout_marginLeft="@dimen/dp24" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="0.0" />
+                <TextView android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/titleText2" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="开服合服" android:layout_weight="1.0" style="@style/TextViewStyle_14sp" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/look_other2" android:paddingRight="11.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0">
+                    <TextView android:textColor="#ff5e5e5e" android:id="@id/moreText2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="更多" style="@style/TextViewStyle_12sp" />
+                    <ImageView android:id="@id/imageView52" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="10.0dip" android:src="@drawable/arrow_right" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/backLayout1" android:paddingLeft="12.0dip" android:paddingTop="3.0dip" android:paddingRight="12.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="33.0dip">
+                <TextView android:textSize="11.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/messageType1" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16.0dip" android:minWidth="33.0dip" android:layout_weight="0.0" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0dip" android:textColor="#ff999999" android:id="@id/time1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="0.0" />
+                <TextView android:textSize="13.0dip" android:textColor="#ff999999" android:id="@id/message1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/backLayout22" android:paddingLeft="12.0dip" android:paddingTop="3.0dip" android:paddingRight="12.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="33.0dip">
+                <TextView android:textSize="11.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/messageType2" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16.0dip" android:minWidth="33.0dip" android:layout_weight="0.0" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0dip" android:textColor="#ff999999" android:id="@id/time2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="0.0" />
+                <TextView android:textSize="13.0dip" android:textColor="#ff999999" android:id="@id/message2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

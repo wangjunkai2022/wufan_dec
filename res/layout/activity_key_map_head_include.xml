@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/relativeLayout" android:background="@drawable/papa_title_back" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/backImage" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/back_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="19.0dip" android:textColor="@color/grid_text" android:id="@id/titleText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="手柄按键设置" android:layout_toRightOf="@id/backImage" android:layout_centerVertical="true" />
+    <Button android:textColor="@color/white" android:gravity="center" android:id="@id/okButn" android:background="@drawable/handshank_blue_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="完成" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ButtonStyle14_HandShank_Text" />
+    <Button android:textColor="@drawable/button_font_style" android:gravity="center" android:id="@id/resetButn" android:background="@drawable/handshank_blue_border_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="恢复默认" android:layout_toLeftOf="@id/okButn" android:layout_centerVertical="true" style="@style/ButtonStyle14_HandShank_Text" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/itemGameRecommendRootLl" android:paddingBottom="@dimen/wdp15" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="#667d7d7d" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/itemGameRecommendIv" android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:failureImage="@drawable/main_normal_icon" fresco:failureImageScaleType="fitXY" fresco:placeholderImageScaleType="fitXY" fresco:roundedCornerRadius="0.0dip" fresco:viewAspectRatio="1.73" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/wdp24" android:textColor="#ffd7d7d7" android:gravity="center" android:id="@id/itemGameRecommendTx" android:background="#667d7d7d" android:padding="@dimen/wdp11" android:layout_width="fill_parent" android:layout_height="@dimen/wdp57" android:text="一件技能" android:singleLine="true" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:background="@color/handshank_dialog_top" android:layout_width="283.0dip" android:layout_height="86.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发现新的手柄" android:drawableLeft="@drawable/dialog_find_icon" android:drawablePadding="10.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:background="@color/white" android:layout_width="283.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_handshank_icon" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/handshank_title_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/name_tv" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <Button android:textSize="15.0sp" android:textColor="@color/main_bar_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/check_btn" android:background="@drawable/handshank_check_butn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="现在校验  手柄操作" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/handshank_dialog_text" android:layout_gravity="center_horizontal" android:id="@id/cancel_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="稍后再校验" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

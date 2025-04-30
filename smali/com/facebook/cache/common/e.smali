@@ -1,0 +1,52 @@
+.class public Lcom/facebook/cache/common/e;
+.super Lcom/facebook/cache/common/i;
+.source "DebuggingCacheKey.java"
+
+
+# instance fields
+.field private final b:Ljava/lang/Object;
+
+.field private final c:Landroid/net/Uri;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Object;Landroid/net/Uri;)V
+    .locals 0
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/facebook/cache/common/i;-><init>(Ljava/lang/String;)V
+
+    .line 2
+    iput-object p2, p0, Lcom/facebook/cache/common/e;->b:Ljava/lang/Object;
+
+    .line 3
+    iput-object p3, p0, Lcom/facebook/cache/common/e;->c:Landroid/net/Uri;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public c()Ljava/lang/Object;
+    .locals 1
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/facebook/cache/common/e;->b:Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method public d()Landroid/net/Uri;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/facebook/cache/common/e;->c:Landroid/net/Uri;
+
+    return-object v0
+.end method

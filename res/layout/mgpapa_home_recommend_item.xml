@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/wdp15" android:paddingRight="@dimen/wdp15" android:layout_width="@dimen/wdp165" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivGameIcon" android:layout_width="@dimen/wdp121" android:layout_height="@dimen/wdp121" app:roundedCornerRadius="@dimen/wdp16" />
+    <TextView android:textSize="@dimen/wdp26" android:textColor="#ff303030" android:ellipsize="end" android:id="@id/tvGameName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp8" android:maxLines="1" />
+    <FrameLayout android:id="@id/flBtn" android:background="@drawable/dialog_main_button_blue_stroke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp8" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/ivGamePic1">
+        <ProgressBar android:layout_gravity="center" android:id="@id/loading_progress" android:visibility="invisible" android:layout_width="@dimen/wdp30" android:layout_height="@dimen/wdp30" android:max="100" android:indeterminateDrawable="@drawable/loding_progress_blue" android:indeterminateDuration="1000" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="@color/white" android:gravity="center" android:id="@id/tvBtn" android:paddingLeft="@dimen/wdp8" android:paddingRight="@dimen/wdp8" android:layout_width="wrap_content" android:layout_height="@dimen/wdp44" android:minWidth="@dimen/wdp80" android:text="获取" />
+    </FrameLayout>
+</LinearLayout>

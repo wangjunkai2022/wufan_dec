@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@drawable/selector_newarena_list_item" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ll_room" android:background="@drawable/bg_gamelist_item_grame_1" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="12.0dip">
+        <ImageView android:id="@id/iv_lock" android:visibility="visible" android:layout_width="19.0dip" android:layout_height="23.0dip" android:src="@drawable/icon_lock" android:layout_centerInParent="true" />
+        <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:id="@id/tv_game_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1/4" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:id="@id/line_1" android:background="#ff5770ae" android:layout_width="1.0px" android:layout_height="22.0dip" android:layout_toRightOf="@id/ll_room" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:layout_toRightOf="@id/line_1">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textColor="#ffd5d5d5" android:id="@id/tv_gameName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拳皇" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0sp" android:textColor="#ffa8a8a8" android:id="@id/tv_forbidden" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/tv_gameName" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/ll_challenge_gold" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <ImageView android:layout_width="11.0dip" android:layout_height="11.0dip" android:src="@drawable/icon_coppers" android:layout_centerVertical="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="#fff47500" android:id="@id/tv_challenge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="5000" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/ll_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="9.0dip" android:layout_height="9.0dip" android:src="@drawable/icon_id" />
+                    <TextView android:textSize="10.0sp" android:textColor="#ffa8a8a8" android:layout_gravity="center_vertical" android:id="@id/tv_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_centerVertical="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_toRightOf="@id/ll_id" android:layout_centerVertical="true">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_time" android:layout_width="9.0dip" android:layout_height="9.0dip" android:src="@drawable/icon_time" />
+                    <com.join.mgps.customview.CountDownerTextView android:textSize="10.0sp" android:textColor="#ffa8a8a8" android:layout_gravity="center_vertical" android:id="@id/tv_game_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_centerVertical="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/ll_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_toRightOf="@id/ll_time" android:layout_centerVertical="true">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="9.0dip" android:layout_height="9.0dip" android:src="@drawable/icon_view" />
+                    <TextView android:textSize="10.0sp" android:textColor="#ffa8a8a8" android:layout_gravity="center_vertical" android:id="@id/tv_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_centerVertical="true" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_weight="1.0">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/avatar" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitXY" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:text="大屌丝" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/tv_chenghao" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                <ImageView android:id="@id/iv_vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_vip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

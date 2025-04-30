@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff4b4b4b" android:layout_width="@dimen/wdp196" android:layout_height="@dimen/wdp265"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/good" android:layout_width="@dimen/wdp196" android:layout_height="@dimen/wdp65" android:text="好评" />
+    <TextView android:background="#ff1d2d3e" android:layout_width="@dimen/wdp196" android:layout_height="@dimen/wdp1" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/introduce" android:layout_width="@dimen/wdp196" android:layout_height="@dimen/wdp65" android:text="与介绍不符" />
+    <TextView android:background="#ff1d2d3e" android:layout_width="@dimen/wdp196" android:layout_height="@dimen/wdp1" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/plagiarize" android:layout_width="@dimen/wdp196" android:layout_height="@dimen/wdp65" android:text="存档抄袭他人" />
+    <TextView android:background="#ff1d2d3e" android:layout_width="@dimen/wdp196" android:layout_height="@dimen/wdp1" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/delectarchive" android:layout_width="@dimen/wdp196" android:layout_height="@dimen/wdp65" android:text="删除存档" />
+</LinearLayout>

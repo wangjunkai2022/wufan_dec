@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingRight="@dimen/wdp30" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp5" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp90">
+            <ImageView android:layout_width="@dimen/wdp36" android:layout_height="@dimen/wdp36" android:src="@drawable/ic_cheat_fly_white" />
+            <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp11" android:text="增强模式金手指" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rv_cheat_type" android:layout_width="fill_parent" android:layout_height="@dimen/wdp90" fresco:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_cheat_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rv_cheat_type" fresco:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+            <include layout="@layout/loding_layout_include" />
+            <include layout="@layout/failed_layout_include" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

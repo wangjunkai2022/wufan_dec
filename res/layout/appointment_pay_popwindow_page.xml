@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/alphhaf" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/toot" android:background="@drawable/alphhaf" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_dismiss" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp98">
+            <EditText android:id="@id/edit" android:background="@drawable/edittext_reply_bg" android:focusable="true" android:layout_width="0.0dip" android:layout_height="@dimen/wdp72" android:layout_marginLeft="@dimen/wdp21" android:layout_marginRight="@dimen/wdp21" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/wdp30" android:textColor="#ff555555" android:gravity="center" android:id="@id/btn_confirm" android:background="@drawable/repltedit_reply_bg" android:layout_width="@dimen/wdp101" android:layout_height="@dimen/wdp72" android:layout_marginLeft="@dimen/wdp18" android:layout_marginRight="@dimen/wdp18" android:text="完成" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

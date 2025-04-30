@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/loding_background" android:layout_width="fill_parent" android:layout_height="@dimen/recomlist_loding_h">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mg_listviewpullimag" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffb89766" android:layout_gravity="right" android:id="@id/updated" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2014-12-12 12:12:12" />
+        </LinearLayout>
+        <TextView android:id="@id/noMore" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="« 到底了 »" android:layout_centerInParent="true" />
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/progerssbar" android:visibility="visible" android:layout_width="@dimen/recomlist_loding_image_h" android:layout_height="@dimen/recomlist_loding_image_h" android:max="100" android:indeterminateDrawable="@drawable/loding_progress" android:indeterminateDuration="1000" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+.class public final Lcom/papa91/mix/R$integer;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/papa91/mix/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "integer"
+.end annotation
+
+
+# static fields
+.field public static final abc_config_activityDefaultDur:I = 0x7f0a0000
+
+.field public static final abc_config_activityShortDur:I = 0x7f0a0001
+
+.field public static final cancel_button_image_alpha:I = 0x7f0a0006
+
+.field public static final config_tooltipAnimTime:I = 0x7f0a0007
+
+.field public static final status_bar_notification_info_maxnum:I = 0x7f0a0038
+
+.field public static final text_bold_both:I = 0x7f0a0039
+
+.field public static final text_bold_none:I = 0x7f0a003a
+
+.field public static final text_bold_when_select:I = 0x7f0a003b
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line_h" android:visibility="visible" style="@style/TextViewGameDetailStyle_line_H" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="12.0dip" android:paddingTop="@dimen/dp24" android:paddingRight="12.0dip" android:paddingBottom="@dimen/dp24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="33.0dip">
+        <TextView android:textSize="11.0dip" android:textColor="#ff29a4ff" android:id="@id/messageType" android:background="@drawable/stroke_blue_radio4_butn" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="33.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff2a2a2a" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp24" android:layout_marginRight="10.0dip" android:text="今日" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff2a2a2a" android:id="@id/dateMorning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp24" android:layout_marginRight="10.0dip" android:text="12：00" android:layout_weight="1.0" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff3b3b3b" android:id="@id/message" android:layout_width="@dimen/wdp250" android:layout_height="wrap_content" android:layout_weight="0.0" />
+    </LinearLayout>
+</LinearLayout>

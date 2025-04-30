@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchWrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@drawable/find_type_category_text_selector" android:gravity="center" android:id="@id/mTopCategoryNameTv" android:background="@drawable/find_tabtype_category_bg_selector" android:paddingTop="@dimen/wdp33" android:paddingBottom="@dimen/wdp33" style="@style/MatchWrap" />
+</LinearLayout>

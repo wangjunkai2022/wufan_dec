@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:paddingRight="@dimen/wdp23" android:paddingBottom="@dimen/wdp28" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/imageViewHPic" android:visibility="visible" android:layout_width="@dimen/wdp440" android:layout_height="@dimen/wdp268" android:src="@drawable/main_normal_icon" android:scaleType="fitXY" android:minWidth="141.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/round_conner_alph_back_100" android:paddingLeft="@dimen/wdp14" android:paddingRight="@dimen/wdp14" android:layout_width="wrap_content" android:layout_height="@dimen/wdp37" android:layout_marginRight="@dimen/wdp13" android:layout_marginBottom="@dimen/wdp12" android:layout_alignRight="@id/imageViewHPic" android:layout_alignBottom="@id/imageViewHPic">
+        <ImageView android:layout_width="@dimen/wdp17" android:layout_height="@dimen/wdp15" android:layout_marginRight="@dimen/wdp5" android:src="@drawable/littleimg" />
+        <TextView android:textSize="@dimen/wdp20" android:textColor="@color/white" android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="111" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8a8a8a" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp10" android:layout_marginTop="@dimen/wdp6" android:text="游戏主界面" android:layout_below="@id/imageViewHPic" />
+</RelativeLayout>

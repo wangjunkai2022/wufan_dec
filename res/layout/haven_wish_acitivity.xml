@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp100">
+        <ImageView android:id="@id/back" android:padding="@dimen/wdp35" android:layout_width="@dimen/wdp100" android:layout_height="fill_parent" android:src="@drawable/back_icon" />
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff262626" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发许愿" android:layout_centerInParent="true" />
+        <TextView android:textColor="@color/main_yello_color" android:gravity="center" android:id="@id/sennd" android:background="@drawable/stroke_button_maincolor_selecter" android:layout_width="@dimen/wdp120" android:layout_height="@dimen/wdp60" android:layout_marginRight="@dimen/wdp30" android:text="许愿" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View style="@style/TextViewStyle_line_H" />
+    <TextView android:textColor="#ff666666" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/wdp30" android:text="许愿后，请关注消息通知~" android:drawableLeft="@drawable/laba_black" android:drawablePadding="@dimen/wdp10" />
+    <EditText android:textSize="@dimen/wdp32" android:textColor="#ff999999" android:textColorHint="#ff999999" android:gravity="top" android:id="@id/edittext" android:background="@drawable/edittext_back" android:padding="@dimen/wdp15" android:layout_width="fill_parent" android:layout_height="@dimen/wdp300" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" android:hint="说出你的愿望，万一实现了呢" />
+</LinearLayout>

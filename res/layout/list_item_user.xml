@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp145"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fressco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_user" android:layout_width="fill_parent" android:layout_height="@dimen/wdp63" android:layout_marginTop="@dimen/wdp41" android:layout_marginBottom="@dimen/wdp40">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:background="@drawable/bg_tv_circle" android:layout_width="@dimen/wdp63" android:layout_height="@dimen/wdp63" android:layout_marginLeft="@dimen/wdp21" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/user_icon" android:layout_width="@dimen/wdp63" android:layout_height="@dimen/wdp63" android:layout_marginLeft="@dimen/wdp21" fressco:roundAsCircle="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff3b3b3b" android:id="@id/tv_username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:text="我不想红" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff686868" android:gravity="center" android:id="@id/tv_load" android:background="@drawable/tv_gamefrom_bg" android:layout_width="@dimen/wdp114" android:layout_height="@dimen/wdp42" android:text="" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff686868" android:gravity="center" android:id="@id/tv_size" android:background="@drawable/tv_gamefrom_bg" android:layout_width="@dimen/wdp84" android:layout_height="@dimen/wdp42" android:layout_marginLeft="@dimen/wdp10" android:layout_marginRight="@dimen/wdp20" android:text="" />
+    </LinearLayout>
+</LinearLayout>

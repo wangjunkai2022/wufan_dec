@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_similar_tag_r_5" android:paddingLeft="@dimen/wdp8" android:paddingTop="@dimen/wdp3" android:paddingRight="@dimen/wdp7" android:paddingBottom="@dimen/wdp2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp6" android:src="@drawable/ic_similar_game_rank" />
+        <TextView android:textSize="@dimen/wdp23" android:textColor="#ffe78747" android:id="@id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网游榜#12" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

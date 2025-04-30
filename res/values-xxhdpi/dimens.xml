@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="comment_game_progress_star_size">@dimen/wdp21</item>
+    <item type="dimen" name="forum_posts_activity_comment_message">@dimen/wdp30</item>
+    <item type="dimen" name="forum_posts_activity_comment_message_reply">@dimen/wdp28</item>
+    <item type="dimen" name="forum_posts_activity_message_size">@dimen/wdp32</item>
+    <item type="dimen" name="forum_posts_activity_subject_size">@dimen/wdp38</item>
+    <dimen name="mg_forum_item_count_text_size">12.0dip</dimen>
+    <item type="dimen" name="mg_forum_post_message_text_size">@dimen/wdp32</item>
+    <item type="dimen" name="mg_forum_post_subject_text_size">@dimen/wdp34</item>
+    <dimen name="new_key_map_a2f_divide_h">6.0dip</dimen>
+    <dimen name="new_key_map_btn_h">30.0dip</dimen>
+    <dimen name="new_key_map_btn_txt_size">14.0sp</dimen>
+    <dimen name="new_key_map_direction_divide_h">12.0dip</dimen>
+    <dimen name="new_key_map_f_divide_h">12.0dip</dimen>
+    <dimen name="new_key_map_label_txt_size">13.0sp</dimen>
+    <dimen name="new_key_map_margin_top">10.0dip</dimen>
+    <dimen name="new_key_map_sp_divide_h">10.0dip</dimen>
+    <item type="dimen" name="vip_fun_icon_size">@dimen/wdp55</item>
+    <item type="dimen" name="vip_fun_txt_size">@dimen/wdp22</item>
+</resources>

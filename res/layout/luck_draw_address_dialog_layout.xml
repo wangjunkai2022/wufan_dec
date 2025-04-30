@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@drawable/alph65" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/luck_address_dialog_back" android:paddingBottom="@dimen/wdp44" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp28" android:layout_marginRight="@dimen/wdp28">
+        <ImageView android:id="@id/closed" android:padding="@dimen/wdp30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_close" android:layout_alignParentRight="true" android:onClick="onClickClosed" />
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff000000" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp32" android:layout_marginBottom="@dimen/wdp12" android:text="填写收货地址" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/la" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/wdp26" android:textColor="#ff000000" android:layout_width="@dimen/wdp130" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:text="收货人：" />
+                <EditText android:textSize="@dimen/wdp26" android:textColor="#ff626262" android:textColorHint="#ff626262" android:id="@id/name" android:background="@drawable/alph" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97" android:layout_marginRight="@dimen/wdp30" android:hint="收货人姓名" android:singleLine="true" android:imeOptions="actionNext" />
+            </LinearLayout>
+            <View android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" style="@style/TextViewStyle_line_H" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/wdp26" android:textColor="#ff000000" android:layout_width="@dimen/wdp130" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:text="手机号：" />
+                <EditText android:textSize="@dimen/wdp26" android:textColor="#ff626262" android:textColorHint="#ff626262" android:id="@id/phoneNumber" android:background="@drawable/alph" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97" android:layout_marginRight="@dimen/wdp30" android:hint="收货人手机号" android:inputType="number" android:imeOptions="actionDone" />
+            </LinearLayout>
+            <View android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" style="@style/TextViewStyle_line_H" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/selectAddress" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/wdp26" android:textColor="#ff000000" android:layout_width="@dimen/wdp130" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:text="地区：" />
+                <TextView android:textSize="@dimen/wdp26" android:textColor="#ff626262" android:textColorHint="#ff626262" android:gravity="center_vertical" android:id="@id/address1" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97" android:layout_marginRight="@dimen/wdp30" android:hint="点击选择" android:layout_weight="1.0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp32" android:src="@drawable/more_arrow_right" />
+            </LinearLayout>
+            <View android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" style="@style/TextViewStyle_line_H" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/wdp26" android:textColor="#ff000000" android:layout_width="@dimen/wdp130" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:text="详细地址：" />
+                <EditText android:textSize="@dimen/wdp26" android:textColor="#ff626262" android:textColorHint="#ff626262" android:id="@id/address2" android:background="@drawable/alph" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97" android:layout_marginRight="@dimen/wdp30" android:hint="如街道、门牌号、小区、乡镇、村等" android:singleLine="true" android:imeOptions="actionDone" />
+            </LinearLayout>
+            <View android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" style="@style/TextViewStyle_line_H" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/ok" android:background="@drawable/luck_draw_okbutn" android:layout_width="fill_parent" android:layout_height="@dimen/wdp90" android:layout_marginLeft="@dimen/wdp107" android:layout_marginTop="@dimen/wdp63" android:layout_marginRight="@dimen/wdp107" android:text="确认" android:layout_below="@id/la" android:layout_centerHorizontal="true" android:onClick="onClickOk" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ffb6b6bf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp22" android:text="未提交收货地址默认为放弃领奖" android:layout_below="@id/ok" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

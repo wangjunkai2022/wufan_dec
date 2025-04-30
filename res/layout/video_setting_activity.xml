@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_default_background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar_layout" layout="@layout/topbar_left_title_layout" />
+    <TextView android:textColor="#99000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp10" android:text="视频播放" />
+    <RelativeLayout android:id="@id/videoAllNet" android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="任何网络下都自动播放" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+        <ImageView android:id="@id/videoAllNetSwitch" android:layout_width="wrap_content" android:layout_height="@dimen/wdp50" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/videoOnlyWifi" android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="仅在Wi-Fi下自动播放" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+        <ImageView android:id="@id/videoOnlyWifiSwitch" android:layout_width="wrap_content" android:layout_height="@dimen/wdp50" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/videoNotPlay" android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="不自动播放视频" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+        <ImageView android:id="@id/videoNotPlaySwitch" android:layout_width="wrap_content" android:layout_height="@dimen/wdp50" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textColor="#99000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp10" android:text="首页游戏" />
+    <RelativeLayout android:id="@id/homevideoAllNet" android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="任何网络下自动播放游戏推荐视频" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+        <ImageView android:id="@id/homevideoAllNetSwitch" android:layout_width="wrap_content" android:layout_height="@dimen/wdp50" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout> P <RelativeLayout android:id="@id/homevideoOnlyWifi" android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="仅在Wi-Fi下自动播放游戏推荐视频" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+        <ImageView android:id="@id/homevideoOnlyWifiSwitch" android:layout_width="wrap_content" android:layout_height="@dimen/wdp50" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/homevideoNotPlay" android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="不播放游戏推荐视频" android:layout_centerVertical="true" style="@style/TextViewStyle_16sp" />
+        <ImageView android:id="@id/homevideoNotPlaySwitch" android:layout_width="wrap_content" android:layout_height="@dimen/wdp50" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

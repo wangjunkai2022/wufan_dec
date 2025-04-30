@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_banner" android:layout_width="339.0dip" android:layout_height="125.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/arena_empty_icon" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_fast_entrance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip" />
+    </LinearLayout>
+    <include android:id="@id/loadingLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/layout_papa_loading" />
+</FrameLayout>

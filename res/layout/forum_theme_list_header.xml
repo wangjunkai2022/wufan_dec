@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/forum_native_category_search_height"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center" android:id="@id/category_layout" android:background="@drawable/forum_native_header_btn_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <View android:id="@id/category_rank_image_category" android:background="@drawable/ranking_icon_sort2" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/color_333333" android:id="@id/category_rank_text_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/default_category" />
+            <View android:id="@id/category_rank_arrow" android:background="@drawable/category_rank_arrow_selector" android:layout_width="9.0dip" android:layout_height="5.0dip" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+        <View android:background="@color/light_gray_floating" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:id="@id/search_layout" android:background="@drawable/forum_native_header_btn_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <View android:id="@id/search_view" android:background="@drawable/input_btn_search" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginLeft="15.0dip" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/color_333333" android:id="@id/search_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/main_page_search" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

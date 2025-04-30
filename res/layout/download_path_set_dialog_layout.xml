@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="263.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/textView" android:background="#ff3a85e2" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="下载位置" />
+    <RelativeLayout android:id="@id/localPathLayout" android:background="@drawable/listview_download" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:enabled="true" android:id="@id/checkBoxlocal" android:clickable="false" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="18.0dip" android:layout_marginRight="15.0dip" android:button="@drawable/downpath_show_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/linearLayout" android:paddingLeft="30.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/checkBoxlocal">
+            <TextView android:textSize="12.0sp" android:textColor="#ff3c3c3c" android:id="@id/localpath" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/checkBox" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff8a8a8a" android:id="@id/localsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_toRightOf="@id/checkBox" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="1.0px" android:text="New Text" style="@style/TextViewStyle_line_H" />
+    <RelativeLayout android:id="@id/sdPathLayout" android:background="@drawable/listview_download" android:paddingLeft="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:id="@id/checkBoxSd" android:clickable="false" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="18.0dip" android:layout_marginRight="15.0dip" android:button="@drawable/downpath_show_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/checkBoxSd">
+            <TextView android:textSize="12.0sp" android:textColor="#ff3c3c3c" android:id="@id/sdpath" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/checkBox" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff8a8a8a" android:id="@id/sdSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_toRightOf="@id/checkBox" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/noticelayout" android:background="@drawable/listview_download" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notice" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff9b9b9b" android:gravity="center|left" android:id="@id/changeSdkard" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="清除数据将会删除下载到SD卡的游戏文件 " android:lineSpacingMultiplier="1.2" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp80" />
+    <View android:id="@id/statubar" android:background="@drawable/alph" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/downloadLayout" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="@dimen/wdp96" android:layout_below="@id/statubar" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <RelativeLayout android:layout_width="56.0dip" android:layout_height="wrap_content">
+            <com.join.mgps.customview.ScrollTextViewLayout android:layout_gravity="center_horizontal" android:id="@id/scroll_text_layout" android:layout_width="56.0dip" android:layout_height="28.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                <TextView android:textSize="16.0dip" android:textColor="#ff3a85e2" android:gravity="bottom|center" android:layout_gravity="center_horizontal" android:id="@id/scroll_text" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:drawableBottom="@drawable/papa_download_selector" android:drawablePadding="4.0dip" />
+            </com.join.mgps.customview.ScrollTextViewLayout>
+            <ImageView android:id="@id/hasNewFinishedGameImage" android:visibility="visible" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/mygame_litle_round" android:layout_alignTop="@id/scroll_text_layout" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/downloadLine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_grey_bg" />
+            <ImageView android:id="@id/imageLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_loading_item" />
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="@dimen/dp70" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_below="@id/statubar" android:layout_alignParentRight="true">
+        <TextView android:textSize="8.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/biground" android:background="@drawable/mygame_big_round" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/newarena_fight_back" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/mg_mian_fragmentlayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/layoutBack" android:layout_width="57.0dip" android:layout_height="@dimen/wdp85">
+        <ImageView android:paddingLeft="@dimen/wdp30" android:paddingTop="@dimen/wdp25" android:paddingRight="@dimen/wdp20" android:paddingBottom="@dimen/wdp25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/game_main_new_back" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_others" android:visibility="gone" android:layout_width="57.0dip" android:layout_height="@dimen/wdp96" android:layout_alignParentRight="true" />
+    <FrameLayout android:id="@id/frameLayout" android:layout_width="@dimen/wdp422" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

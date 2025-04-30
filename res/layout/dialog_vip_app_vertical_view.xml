@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/rootLl" android:background="@drawable/img_app_vertival_bg" android:paddingBottom="@dimen/wdp51" android:layout_width="@dimen/wdp594" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp260" android:layout_centerHorizontal="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@id/mainDialogAdImg" android:layout_width="@dimen/wdp594" android:layout_height="@dimen/wdp336" fressco:actualImageScaleType="fitXY" fressco:failureImage="@drawable/img_main_vip" fressco:placeholderImage="@drawable/img_main_vip" fressco:roundBottomLeft="false" fressco:roundBottomRight="false" fressco:roundTopLeft="true" fressco:roundTopRight="true" fressco:roundedCornerRadius="@dimen/wdp25" xmlns:fressco="http://schemas.android.com/apk/res-auto" />
+        <TextView android:textSize="@dimen/wdp36" android:textColor="#ff282828" android:gravity="center" android:id="@id/mainDialogContenTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp29" android:text="观看广告 畅玩游戏" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp15">
+            <TextView android:textSize="@dimen/wdp26" android:textColor="#ffffffff" android:gravity="center" android:id="@id/mainDialogTopTv" android:background="@drawable/img_main_btn" android:visibility="gone" android:layout_width="@dimen/wdp429" android:layout_height="@dimen/wdp101" android:text="创建桌面图标" />
+            <TextView android:textSize="@dimen/wdp26" android:textColor="#ff44b8ff" android:gravity="center" android:id="@id/mainDialogCancelTv" android:background="@drawable/dialog_btn_bt" android:layout_width="@dimen/wdp409" android:layout_height="@dimen/wdp72" android:layout_marginTop="@dimen/wdp15" android:text="会员免广告" />
+            <TextView android:textSize="@dimen/wdp26" android:textColor="#ff44b8ff" android:gravity="center" android:id="@id/mainDialogOkIv" android:background="@drawable/dialog_btn_bt" android:layout_width="@dimen/wdp409" android:layout_height="@dimen/wdp72" android:layout_marginTop="@dimen/wdp28" android:text="观看" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

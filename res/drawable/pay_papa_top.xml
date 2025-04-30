@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/papa_top_selector" />
+    <item android:state_selected="false">
+        <shape>
+            <solid android:color="#fffef8ec" />
+            <stroke android:width="0.5dip" android:color="#ffccac97" />
+        </shape>
+    </item>
+</selector>

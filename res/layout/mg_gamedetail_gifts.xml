@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/sp30" android:paddingRight="@dimen/sp30" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/giftsLayout" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="@dimen/dp24" android:layout_marginRight="@dimen/dp24">
+        <View android:layout_alignParentTop="true" style="@style/TextViewGameDetailStyle_line_H" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/giftsImage" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="@dimen/dp24" android:layout_marginRight="@dimen/dp24" android:src="@drawable/game_gifts" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/giftsTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/arrowImage" android:layout_toRightOf="@id/giftsImage" android:layout_centerVertical="true" style="@style/TextViewStyleGameDetail_14sp" />
+        <ImageView android:id="@id/arrowImage" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="@dimen/dp24" android:layout_marginRight="@dimen/dp24" android:src="@drawable/dynamic_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/giftsCount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_toLeftOf="@id/arrowImage" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

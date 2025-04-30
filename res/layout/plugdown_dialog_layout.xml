@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/plugdown_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/wdp110" android:src="@drawable/plugdown_top" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp200" android:layout_marginRight="@dimen/wdp200" android:layout_marginBottom="@dimen/wdp45" android:layout_alignParentBottom="true" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/wdp22" android:textColor="#fff4f4f4" android:layout_gravity="center_horizontal" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/my_game_appsizemagin_t" android:layout_marginBottom="@dimen/wdp17" android:text="正在下载" style="@style/TextViewStyle_10sp" />
+        <ProgressBar android:id="@id/progressBarZip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp20" android:progress="50" style="@style/progress_style_cloud2" />
+        <ProgressBar android:id="@id/progressBar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp20" android:progress="0" style="@style/progress_style_cloud2" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayout2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp20">
+            <TextView android:textSize="@dimen/wdp22" android:textColor="#fff4f4f4" android:id="@id/appSize" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="正在下载" style="@style/TextViewStyle_10sp" />
+            <TextView android:textSize="@dimen/wdp22" android:textColor="#fff4f4f4" android:id="@id/lodingInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp19" android:text="正在下载" style="@style/TextViewStyle_10sp" />
+        </LinearLayout>
+        <LinearLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/wdp28" android:textColor="@color/main_yello_color" android:gravity="center" android:id="@id/ok" android:layout_width="fill_parent" android:layout_height="@dimen/wdp120" android:layout_marginLeft="@dimen/wdp60" android:text="去查看" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp169" android:layout_marginBottom="@dimen/wdp100" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/plug_down_img" />
+        <TextView android:textSize="@dimen/wdp50" android:textStyle="bold" android:textColor="#ff918c8c" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp9" android:text="FC模拟器" android:shadowColor="#ff000000" android:shadowDx="10.0" android:shadowDy="10.0" android:shadowRadius="10.0" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/wdp28" android:textStyle="italic" android:textColor="@color/white" android:gravity="center" android:id="@id/cancle" android:layout_width="wrap_content" android:layout_height="@dimen/wdp88" android:layout_marginLeft="@dimen/wdp39" android:layout_marginRight="@dimen/wdp60" android:layout_marginBottom="@dimen/wdp24" android:text="后台下载" android:drawableLeft="@drawable/game_main_new_back" android:drawablePadding="@dimen/wdp10" android:layout_weight="1.0" />
+</RelativeLayout>

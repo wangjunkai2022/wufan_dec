@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingBottom="@dimen/wdp220" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/viewImage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:actualImageScaleType="centerCrop" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffa37002" android:id="@id/textViewVersion" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:layout_marginBottom="44.0dip" android:text="V1.2beta" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.join.android.app.component.video.EmptyControlVideoView android:id="@id/video_player" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/bottomImag" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp220" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/imageView24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/wufun_splash_bottom" android:layout_centerInParent="true" />
+        <RelativeLayout android:textSize="@dimen/wdp22" android:textColor="#ffcfcfcf" android:gravity="center" android:id="@id/countdownLayout" android:padding="@dimen/wdp30" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp40" android:text="跳过" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/wdp22" android:textColor="#ffcfcfcf" android:gravity="center" android:id="@id/countdown" android:background="@drawable/splash_jump_back" android:visibility="visible" android:layout_width="@dimen/wdp118" android:layout_height="@dimen/wdp44" android:text="跳过" />
+            <TextView android:textSize="@dimen/wdp30" android:textColor="@color/white" android:gravity="center" android:id="@id/countdownVideo" android:background="@drawable/splash_jump_back_video" android:paddingLeft="@dimen/wdp30" android:paddingTop="@dimen/wdp12" android:paddingRight="@dimen/wdp30" android:paddingBottom="@dimen/wdp12" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳过" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

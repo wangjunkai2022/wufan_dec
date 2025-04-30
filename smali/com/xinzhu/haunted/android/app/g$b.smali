@@ -1,0 +1,994 @@
+.class public final Lcom/xinzhu/haunted/android/app/g$b;
+.super Ljava/lang/Object;
+.source "HtActivityThread.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/xinzhu/haunted/android/app/g;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+
+# static fields
+.field public static b:Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
+.end field
+
+.field private static c:Ljava/util/concurrent/atomic/AtomicReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/atomic/AtomicReference<",
+            "Ljava/lang/reflect/Field;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static d:Z
+
+.field private static e:Ljava/util/concurrent/atomic/AtomicReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/atomic/AtomicReference<",
+            "Ljava/lang/reflect/Field;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static f:Z
+
+.field private static g:Ljava/util/concurrent/atomic/AtomicReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/atomic/AtomicReference<",
+            "Ljava/lang/reflect/Field;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static h:Z
+
+.field private static i:Ljava/util/concurrent/atomic/AtomicReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/atomic/AtomicReference<",
+            "Ljava/lang/reflect/Field;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static j:Z
+
+.field private static k:Ljava/util/concurrent/atomic/AtomicReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/atomic/AtomicReference<",
+            "Ljava/lang/reflect/Field;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static l:Z
+
+
+# instance fields
+.field public a:Ljava/lang/Object;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    const-string v0, "android.app.ActivityThread$AppBindData"
+
+    .line 1
+    invoke-static {v0}, Lcom/xinzhu/haunted/d;->b(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/xinzhu/haunted/android/app/g$b;->b:Ljava/lang/Class;
+
+    .line 2
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    sput-object v0, Lcom/xinzhu/haunted/android/app/g$b;->c:Ljava/util/concurrent/atomic/AtomicReference;
+
+    const/4 v0, 0x0
+
+    .line 3
+    sput-boolean v0, Lcom/xinzhu/haunted/android/app/g$b;->d:Z
+
+    .line 4
+    new-instance v1, Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {v1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    sput-object v1, Lcom/xinzhu/haunted/android/app/g$b;->e:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 5
+    sput-boolean v0, Lcom/xinzhu/haunted/android/app/g$b;->f:Z
+
+    .line 6
+    new-instance v1, Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {v1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    sput-object v1, Lcom/xinzhu/haunted/android/app/g$b;->g:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 7
+    sput-boolean v0, Lcom/xinzhu/haunted/android/app/g$b;->h:Z
+
+    .line 8
+    new-instance v1, Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {v1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    sput-object v1, Lcom/xinzhu/haunted/android/app/g$b;->i:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 9
+    sput-boolean v0, Lcom/xinzhu/haunted/android/app/g$b;->j:Z
+
+    .line 10
+    new-instance v1, Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {v1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    sput-object v1, Lcom/xinzhu/haunted/android/app/g$b;->k:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 11
+    sput-boolean v0, Lcom/xinzhu/haunted/android/app/g$b;->l:Z
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "egoInstance"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lcom/xinzhu/haunted/android/app/g$b;->a:Ljava/lang/Object;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Z
+    .locals 6
+
+    .line 1
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->e:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    if-nez v0, :cond_2
+
+    .line 2
+    sget-boolean v0, Lcom/xinzhu/haunted/android/app/g$b;->f:Z
+
+    const/4 v2, 0x0
+
+    if-nez v0, :cond_1
+
+    .line 3
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->e:Ljava/util/concurrent/atomic/AtomicReference;
+
+    const/4 v3, 0x0
+
+    sget-object v4, Lcom/xinzhu/haunted/android/app/g$b;->b:Ljava/lang/Class;
+
+    const-string v5, "appInfo"
+
+    invoke-static {v4, v5}, Lcom/xinzhu/haunted/d;->f(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    move-result-object v4
+
+    invoke-virtual {v0, v3, v4}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 4
+    sput-boolean v1, Lcom/xinzhu/haunted/android/app/g$b;->f:Z
+
+    .line 5
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->e:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return v2
+
+    :cond_0
+    return v1
+
+    :cond_1
+    return v2
+
+    :cond_2
+    return v1
+.end method
+
+.method public b()Z
+    .locals 6
+
+    .line 1
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->g:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    if-nez v0, :cond_2
+
+    .line 2
+    sget-boolean v0, Lcom/xinzhu/haunted/android/app/g$b;->h:Z
+
+    const/4 v2, 0x0
+
+    if-nez v0, :cond_1
+
+    .line 3
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->g:Ljava/util/concurrent/atomic/AtomicReference;
+
+    const/4 v3, 0x0
+
+    sget-object v4, Lcom/xinzhu/haunted/android/app/g$b;->b:Ljava/lang/Class;
+
+    const-string v5, "info"
+
+    invoke-static {v4, v5}, Lcom/xinzhu/haunted/d;->f(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    move-result-object v4
+
+    invoke-virtual {v0, v3, v4}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 4
+    sput-boolean v1, Lcom/xinzhu/haunted/android/app/g$b;->h:Z
+
+    .line 5
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->g:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return v2
+
+    :cond_0
+    return v1
+
+    :cond_1
+    return v2
+
+    :cond_2
+    return v1
+.end method
+
+.method public c()Z
+    .locals 6
+
+    .line 1
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->c:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    if-nez v0, :cond_2
+
+    .line 2
+    sget-boolean v0, Lcom/xinzhu/haunted/android/app/g$b;->d:Z
+
+    const/4 v2, 0x0
+
+    if-nez v0, :cond_1
+
+    .line 3
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->c:Ljava/util/concurrent/atomic/AtomicReference;
+
+    const/4 v3, 0x0
+
+    sget-object v4, Lcom/xinzhu/haunted/android/app/g$b;->b:Ljava/lang/Class;
+
+    const-string v5, "instrumentationName"
+
+    invoke-static {v4, v5}, Lcom/xinzhu/haunted/d;->f(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    move-result-object v4
+
+    invoke-virtual {v0, v3, v4}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 4
+    sput-boolean v1, Lcom/xinzhu/haunted/android/app/g$b;->d:Z
+
+    .line 5
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->c:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return v2
+
+    :cond_0
+    return v1
+
+    :cond_1
+    return v2
+
+    :cond_2
+    return v1
+.end method
+
+.method public d()Z
+    .locals 6
+
+    .line 1
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->i:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    if-nez v0, :cond_2
+
+    .line 2
+    sget-boolean v0, Lcom/xinzhu/haunted/android/app/g$b;->j:Z
+
+    const/4 v2, 0x0
+
+    if-nez v0, :cond_1
+
+    .line 3
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->i:Ljava/util/concurrent/atomic/AtomicReference;
+
+    const/4 v3, 0x0
+
+    sget-object v4, Lcom/xinzhu/haunted/android/app/g$b;->b:Ljava/lang/Class;
+
+    const-string v5, "processName"
+
+    invoke-static {v4, v5}, Lcom/xinzhu/haunted/d;->f(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    move-result-object v4
+
+    invoke-virtual {v0, v3, v4}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 4
+    sput-boolean v1, Lcom/xinzhu/haunted/android/app/g$b;->j:Z
+
+    .line 5
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->i:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return v2
+
+    :cond_0
+    return v1
+
+    :cond_1
+    return v2
+
+    :cond_2
+    return v1
+.end method
+
+.method public e()Z
+    .locals 6
+
+    .line 1
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->k:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    if-nez v0, :cond_2
+
+    .line 2
+    sget-boolean v0, Lcom/xinzhu/haunted/android/app/g$b;->l:Z
+
+    const/4 v2, 0x0
+
+    if-nez v0, :cond_1
+
+    .line 3
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->k:Ljava/util/concurrent/atomic/AtomicReference;
+
+    const/4 v3, 0x0
+
+    sget-object v4, Lcom/xinzhu/haunted/android/app/g$b;->b:Ljava/lang/Class;
+
+    const-string v5, "providers"
+
+    invoke-static {v4, v5}, Lcom/xinzhu/haunted/d;->f(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    move-result-object v4
+
+    invoke-virtual {v0, v3, v4}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 4
+    sput-boolean v1, Lcom/xinzhu/haunted/android/app/g$b;->l:Z
+
+    .line 5
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->k:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return v2
+
+    :cond_0
+    return v1
+
+    :cond_1
+    return v2
+
+    :cond_2
+    return v1
+.end method
+
+.method public f()Landroid/content/pm/ApplicationInfo;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Lcom/xinzhu/haunted/android/app/g$b;->a()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return-object v1
+
+    .line 2
+    :cond_0
+    :try_start_0
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->e:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/reflect/Field;
+
+    iget-object v2, p0, Lcom/xinzhu/haunted/android/app/g$b;->a:Ljava/lang/Object;
+
+    invoke-virtual {v0, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/content/pm/ApplicationInfo;
+    :try_end_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+
+    return-object v1
+.end method
+
+.method public g()Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Lcom/xinzhu/haunted/android/app/g$b;->b()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return-object v1
+
+    .line 2
+    :cond_0
+    :try_start_0
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->g:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/reflect/Field;
+
+    iget-object v2, p0, Lcom/xinzhu/haunted/android/app/g$b;->a:Ljava/lang/Object;
+
+    invoke-virtual {v0, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+
+    return-object v1
+.end method
+
+.method public h()Landroid/content/ComponentName;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Lcom/xinzhu/haunted/android/app/g$b;->c()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return-object v1
+
+    .line 2
+    :cond_0
+    :try_start_0
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->c:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/reflect/Field;
+
+    iget-object v2, p0, Lcom/xinzhu/haunted/android/app/g$b;->a:Ljava/lang/Object;
+
+    invoke-virtual {v0, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/content/ComponentName;
+    :try_end_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+
+    return-object v1
+.end method
+
+.method public i()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Lcom/xinzhu/haunted/android/app/g$b;->d()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return-object v1
+
+    .line 2
+    :cond_0
+    :try_start_0
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->i:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/reflect/Field;
+
+    iget-object v2, p0, Lcom/xinzhu/haunted/android/app/g$b;->a:Ljava/lang/Object;
+
+    invoke-virtual {v0, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+    :try_end_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+
+    return-object v1
+.end method
+
+.method public j()Ljava/util/List;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Landroid/content/pm/ProviderInfo;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/xinzhu/haunted/android/app/g$b;->e()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return-object v1
+
+    .line 2
+    :cond_0
+    :try_start_0
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->k:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/reflect/Field;
+
+    iget-object v2, p0, Lcom/xinzhu/haunted/android/app/g$b;->a:Ljava/lang/Object;
+
+    invoke-virtual {v0, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/List;
+    :try_end_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+
+    return-object v1
+.end method
+
+.method public k(Landroid/content/pm/ApplicationInfo;)Z
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/xinzhu/haunted/android/app/g$b;->a()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    .line 2
+    :cond_0
+    :try_start_0
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->e:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/reflect/Field;
+
+    iget-object v2, p0, Lcom/xinzhu/haunted/android/app/g$b;->a:Ljava/lang/Object;
+
+    invoke-virtual {v0, v2, p1}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
+
+    const/4 p1, 0x1
+
+    return p1
+
+    :catch_0
+    move-exception p1
+
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+
+    return v1
+.end method
+
+.method public l(Ljava/lang/Object;)Z
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/xinzhu/haunted/android/app/g$b;->b()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    .line 2
+    :cond_0
+    :try_start_0
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->g:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/reflect/Field;
+
+    iget-object v2, p0, Lcom/xinzhu/haunted/android/app/g$b;->a:Ljava/lang/Object;
+
+    invoke-virtual {v0, v2, p1}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
+
+    const/4 p1, 0x1
+
+    return p1
+
+    :catch_0
+    move-exception p1
+
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+
+    return v1
+.end method
+
+.method public m(Landroid/content/ComponentName;)Z
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/xinzhu/haunted/android/app/g$b;->c()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    .line 2
+    :cond_0
+    :try_start_0
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->c:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/reflect/Field;
+
+    iget-object v2, p0, Lcom/xinzhu/haunted/android/app/g$b;->a:Ljava/lang/Object;
+
+    invoke-virtual {v0, v2, p1}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
+
+    const/4 p1, 0x1
+
+    return p1
+
+    :catch_0
+    move-exception p1
+
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+
+    return v1
+.end method
+
+.method public n(Ljava/lang/String;)Z
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/xinzhu/haunted/android/app/g$b;->d()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    .line 2
+    :cond_0
+    :try_start_0
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->i:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/reflect/Field;
+
+    iget-object v2, p0, Lcom/xinzhu/haunted/android/app/g$b;->a:Ljava/lang/Object;
+
+    invoke-virtual {v0, v2, p1}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
+
+    const/4 p1, 0x1
+
+    return p1
+
+    :catch_0
+    move-exception p1
+
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+
+    return v1
+.end method
+
+.method public o(Ljava/util/List;)Z
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Landroid/content/pm/ProviderInfo;",
+            ">;)Z"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/xinzhu/haunted/android/app/g$b;->e()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    .line 2
+    :cond_0
+    :try_start_0
+    sget-object v0, Lcom/xinzhu/haunted/android/app/g$b;->k:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/reflect/Field;
+
+    iget-object v2, p0, Lcom/xinzhu/haunted/android/app/g$b;->a:Ljava/lang/Object;
+
+    invoke-virtual {v0, v2, p1}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
+
+    const/4 p1, 0x1
+
+    return p1
+
+    :catch_0
+    move-exception p1
+
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+
+    return v1
+.end method

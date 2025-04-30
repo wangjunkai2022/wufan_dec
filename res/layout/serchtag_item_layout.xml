@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/wdp26" android:textColor="@drawable/search_text_color_selector" android:gravity="center" android:id="@id/tv_tab_title" android:background="@drawable/searchtag_item_selector" android:paddingLeft="@dimen/wdp13" android:paddingTop="@dimen/wdp5" android:paddingRight="@dimen/wdp13" android:paddingBottom="@dimen/wdp5" android:layout_width="wrap_content" android:layout_height="@dimen/wdp47" android:layout_marginLeft="@dimen/wdp5" android:layout_marginTop="@dimen/wdp6" android:layout_marginRight="@dimen/wdp5" android:layout_marginBottom="@dimen/wdp6"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

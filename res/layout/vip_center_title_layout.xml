@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingTop="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line" android:visibility="gone" style="@style/TextViewStyle_line_H_big" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="@dimen/wdp127" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:text="单机mod" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff3d95ff" android:gravity="center" android:id="@id/more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="查看更多" />
+    </LinearLayout>
+</RelativeLayout>

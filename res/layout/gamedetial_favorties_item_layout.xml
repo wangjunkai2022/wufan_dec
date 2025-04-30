@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/main" android:background="#fff2f2f2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/wdp480" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp88">
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ff3b3b3b" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="@color/main_yello_color" android:id="@id/number" android:background="@drawable/detial_round_back" android:paddingLeft="@dimen/wdp15" android:paddingRight="@dimen/wdp14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp20" android:layout_weight="0.0" />
+        </LinearLayout>
+        <View android:background="#ffd8d8d8" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/wdp20" android:layout_marginRight="@dimen/wdp20" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/layout1" android:paddingLeft="@dimen/wdp20" android:paddingTop="@dimen/wdp14" android:paddingRight="@dimen/wdp20" android:paddingBottom="@dimen/wdp14" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/appIcon1" android:layout_width="@dimen/wdp60" android:layout_height="@dimen/wdp60" android:layout_marginRight="@dimen/wdp20" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff3b3b3b" android:id="@id/appname1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/layout2" android:paddingLeft="@dimen/wdp20" android:paddingTop="@dimen/wdp14" android:paddingRight="@dimen/wdp20" android:paddingBottom="@dimen/wdp14" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/appIcon2" android:layout_width="@dimen/wdp60" android:layout_height="@dimen/wdp60" android:layout_marginRight="@dimen/wdp20" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff3b3b3b" android:id="@id/appname2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/layout3" android:paddingLeft="@dimen/wdp20" android:paddingTop="@dimen/wdp14" android:paddingRight="@dimen/wdp20" android:paddingBottom="@dimen/wdp14" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/appIcon3" android:layout_width="@dimen/wdp60" android:layout_height="@dimen/wdp60" android:layout_marginRight="@dimen/wdp20" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff3b3b3b" android:id="@id/appname3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:background="@color/white" android:layout_width="@dimen/wdp10" android:layout_height="fill_parent" />
+</LinearLayout>

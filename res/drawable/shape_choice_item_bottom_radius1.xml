@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="-2.0dip">
+        <shape android:shape="rectangle" android:useLevel="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners android:radius="4.0dip" />
+            <stroke android:width="@dimen/choice_item_line_width" android:color="@color/choice_stroke" />
+            <padding android:left="@dimen/choice_item_line_width" android:right="@dimen/choice_item_line_width" android:bottom="@dimen/choice_item_line_width" />
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+</layer-list>

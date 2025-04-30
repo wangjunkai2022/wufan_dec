@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/coupon_back" android:layout_width="fill_parent" android:layout_height="@dimen/wdp119" android:layout_margin="@dimen/wdp20" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_width="@dimen/wdp114" android:layout_height="@dimen/wdp78" android:layout_marginLeft="@dimen/wdp20" android:src="@drawable/bt_coupon" />
+        <TextView android:textSize="@dimen/wdp26" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp24" android:text="8张代金券可领取" android:layout_weight="1.0" />
+        <TextView android:textColor="#ffff8d15" android:gravity="center" android:id="@id/more" android:background="@drawable/stroke_orange_conner33_butn" android:layout_width="@dimen/wdp112" android:layout_height="@dimen/wdp52" android:layout_marginRight="@dimen/wdp22" android:text="查看" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

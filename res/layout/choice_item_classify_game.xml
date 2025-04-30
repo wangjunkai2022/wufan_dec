@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/wdp4" android:paddingBottom="@dimen/wdp45" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <view android:id="@id/icon" android:layout_width="@dimen/wdp120" android:layout_height="@dimen/wdp120" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:roundedCornerRadius="@dimen/mg_forum_avatar_round_width" class="com.facebook.drawee.view.SimpleDraweeView" />
+    <TextView android:textSize="@dimen/wdp26" android:textStyle="bold" android:textColor="#ff3b3b3b" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp14" android:text="三国战纪" android:maxEms="5" android:singleLine="true" />
+</LinearLayout>

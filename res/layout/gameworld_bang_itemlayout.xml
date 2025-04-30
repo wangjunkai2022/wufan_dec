@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/net_match_yx_info_head_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/userIcon" android:layout_width="38.0dip" android:layout_height="38.0dip" android:src="@drawable/head_icn" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/net_match_info_yx_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textColor="@color/net_invite_blue" android:id="@id/mingci" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/zhandouli" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/shenglv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/shengchang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

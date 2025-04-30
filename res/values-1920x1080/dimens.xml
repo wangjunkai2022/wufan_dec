@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="classify_margin">23.0dip</dimen>
+    <dimen name="exclusive_tag_height">75.0dip</dimen>
+    <dimen name="gameworld_grade_item_padding_chengjiu">5.0dip</dimen>
+    <dimen name="gameworld_grade_item_padding_duanwei">0.0dip</dimen>
+    <dimen name="gameworld_grade_item_text_wanjia">13.0sp</dimen>
+    <dimen name="gameworld_grade_item_width_chengjiu">90.0dip</dimen>
+    <dimen name="gameworld_grade_item_width_duanwei">120.0dip</dimen>
+    <dimen name="gameworld_grade_item_width_wanjia">110.0dip</dimen>
+    <dimen name="gameworld_grade_padding_wanjia">20.0dip</dimen>
+    <dimen name="gameworld_grade_textsize">13.0sp</dimen>
+    <dimen name="gameworld_grade_width_chengjiu">120.0dip</dimen>
+    <dimen name="gameworld_grade_width_duanwei">100.0dip</dimen>
+    <dimen name="gameworld_grade_width_paiming">120.0dip</dimen>
+    <dimen name="gameworld_grade_width_wanjia">140.0dip</dimen>
+    <dimen name="gameworld_role_item_margin">50.0dip</dimen>
+    <dimen name="mgRecomTitlHight">45.0dip</dimen>
+    <dimen name="net_fight_margin">175.0dip</dimen>
+    <dimen name="role_length">50.0sp</dimen>
+    <dimen name="trophy_length">50.0sp</dimen>
+    <dimen name="trophy_word_h">33.0dip</dimen>
+    <dimen name="trophy_word_w">107.0dip</dimen>
+</resources>

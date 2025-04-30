@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/main" android:background="@drawable/gamelist_comment_item" android:paddingLeft="@dimen/wdp23" android:paddingTop="@dimen/wdp13" android:paddingRight="@dimen/wdp13" android:layout_width="@dimen/wdp630" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp20">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/userIcon" android:layout_width="@dimen/wdp38" android:layout_height="@dimen/wdp38" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ffffffff" android:id="@id/userName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp12" android:text="南柯梦吗" />
+            <com.join.mgps.customview.MStarBar android:id="@id/comment_head_mstarBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp11" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="1.0dip" android:layout_below="@id/display" app:integerMark="true" app:starCount="5" app:starDistance="2.0dip" app:starEmpty="@drawable/star_empty" app:starFill="@drawable/star_full" app:starSize="10.0dip" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="@color/main_yello_color" android:id="@id/usertag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp12" android:text="作者的话" />
+        </LinearLayout>
+        <RelativeLayout android:paddingBottom="@dimen/wdp10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/wdp30">
+            <com.join.mgps.customview.GamelistExpandableTextView android:textSize="@dimen/wdp24" android:textColor="@color/white" android:ellipsize="end" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="这个游戏好玩这个游戏wwefwefefwefefwefwefwefwefwefwefwe" android:lineSpacingExtra="@dimen/wdp6" app:etv_EnableToggle="false" app:etv_ToExpandHintColor="#ff29dd9d" app:etv_ToShrinkHintColor="#ff29dd9d" app:etv_ToShrinkHintShow="true" style="@style/TextViewStyleGameDetail_14sp_notsingle" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff29dd9d" android:id="@id/more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="展开" android:layout_below="@id/content" android:layout_alignRight="@id/content" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

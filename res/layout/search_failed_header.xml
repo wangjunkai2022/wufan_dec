@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/searchHeaderLayout" android:background="@drawable/white_drawable" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/reloadingHeader" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginTop="35.0dip" android:src="@drawable/papa_loading_null" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff908f8f" android:id="@id/messageHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未搜索到相应游戏" />
+        <View android:layout_marginTop="35.0dip" style="@style/TextViewStyle_line_H" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/messageLayout" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:id="@id/textView" android:background="@drawable/papa_yelow_side" android:layout_width="3.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff3b3b3b" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="你可能会喜欢" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View style="@style/TextViewStyle_line_H" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp100"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fressco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="@dimen/wdp80" android:layout_marginTop="@dimen/wdp20">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/game_icon" android:layout_width="@dimen/wdp80" android:layout_height="@dimen/wdp80" android:layout_marginLeft="@dimen/wdp40" fressco:roundedCornerRadius="@dimen/wdp8" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff3b3b3b" android:id="@id/tv_gamenmae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:text="皇室战争" />
+    </LinearLayout>
+</LinearLayout>

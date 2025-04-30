@@ -1,0 +1,11 @@
+package com.bytedance.sdk.openadsdk;
+
+import android.content.Context;
+/* loaded from: classes2.dex */
+public interface TTDislikeController {
+    void onDislikeEvent(Context context, boolean z3);
+
+    void onDislikeSelected(FilterWord filterWord);
+
+    void openWebPage(Context context, boolean z3);
+}

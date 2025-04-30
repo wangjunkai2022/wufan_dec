@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListView android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_round_white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp36" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.914">
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff8a8a8a" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp32" android:layout_marginTop="@dimen/wdp30" android:text="请选择需要删除的版本" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <RelativeLayout android:id="@id/rl_mod" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp170">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/icon_mod" android:layout_width="@dimen/wdp110" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp32" android:layout_centerVertical="true" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:viewAspectRatio="1.0" />
+            <TextView android:textSize="@dimen/wdp32" android:textColor="#ff3b3b3b" android:id="@id/name_mod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:text="增强版" android:layout_toRightOf="@id/icon_mod" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_mod_check" android:layout_width="@dimen/wdp34" android:layout_height="@dimen/wdp34" android:layout_marginRight="@dimen/wdp36" android:src="@drawable/ic_mod_check_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:id="@id/v_line" android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_stand" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp170">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/icon" android:layout_width="@dimen/wdp110" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp32" android:layout_centerVertical="true" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:viewAspectRatio="1.0" />
+            <TextView android:textSize="@dimen/wdp32" android:textColor="#ff3b3b3b" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:text="标准版" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_stand_check" android:layout_width="@dimen/wdp34" android:layout_height="@dimen/wdp34" android:layout_marginRight="@dimen/wdp36" android:src="@drawable/ic_mod_check_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:id="@id/view5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp110">
+            <TextView android:textSize="@dimen/wdp30" android:textColor="#ffb6b6b6" android:gravity="center" android:id="@id/delete" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="删除" android:layout_weight="1.0" />
+            <View android:id="@id/view8" android:background="#ffcccccc" android:layout_height="@dimen/wdp54" android:layout_marginTop="@dimen/wdp28" android:layout_marginBottom="@dimen/wdp28" style="@style/TextViewStyle_line_V" />
+            <TextView android:textSize="@dimen/wdp30" android:textColor="#ff555555" android:gravity="center" android:id="@id/cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

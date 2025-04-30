@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_main" android:layout_width="@dimen/wdp526" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:background="@drawable/newarena_bg_input_border_top" android:paddingLeft="@dimen/wdp36" android:layout_width="fill_parent" android:layout_height="@dimen/wdp65" />
+            <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_top" android:background="@drawable/newarena_titleblack" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp36" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="即将关闭流畅模式" android:singleLine="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/newarena_bg_input_border_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="27.0dip" android:text="流畅模式下，按键无延迟，仅限2人对战开启。\n如需多人对战，请关闭流畅模式。" android:lineSpacingMultiplier="1.2" />
+            <Button android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ffa05e08" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btnOk" android:background="@drawable/bg_btn_border_blue_four" android:layout_width="200.0dip" android:layout_height="37.0dip" android:layout_marginTop="22.0dip" android:layout_marginBottom="22.0dip" android:text="确定关闭" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/iv_close" android:layout_width="@dimen/wdp90" android:layout_height="@dimen/wdp65" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close2" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/commentDetailTopLl" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/appIcon" android:layout_width="30.0dip" android:layout_height="30.0dip" fresco:roundAsCircle="false" fresco:roundedCornerRadius="5.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff4d4d4d" android:ellipsize="end" android:id="@id/gameName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_arrow_right" />
+    </LinearLayout>
+    <View android:id="@id/line" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" style="@style/TextViewGameDetailStyle_line_H" />
+    <include layout="@layout/comment_list_item_view" />
+</LinearLayout>

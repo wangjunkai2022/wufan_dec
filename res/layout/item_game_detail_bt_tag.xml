@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btTaglayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RootRl" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.join.mgps.ptr.PtrClassicFrameLayout android:id="@id/mPtrFrame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.join.mgps.customview.XListView2 android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" android:layout_alignParentTop="true" />
+    </com.join.mgps.ptr.PtrClassicFrameLayout>
+    <View android:id="@id/statubar" android:background="#ffc8c8c8" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+    <RelativeLayout android:id="@id/discoveryTitleRl" android:background="@color/white" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/mg_forum_title_layout_actionbar_height" android:layout_below="@id/statubar">
+        <ImageView android:id="@id/discoveryTitleSearchIv" android:padding="@dimen/wdp30" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp96" android:src="@drawable/search_image_normal" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff4d4d4d" android:gravity="center" android:id="@id/discoveryTitleTx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发现" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loding_layout_include" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/failed_layout_include" />
+</RelativeLayout>

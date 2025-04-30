@@ -1,0 +1,105 @@
+package com.umeng.commonsdk.debug;
+
+import com.j256.ormlite.stmt.query.SimpleComparison;
+import com.umeng.commonsdk.utils.UMUtils;
+/* loaded from: classes4.dex */
+public class UMRTLog {
+    private static final String RTLOG_ENABLE = "1";
+    private static final String RTLOG_PROP = "debug.umeng.rtlog";
+    public static final String RTLOG_TAG = "MobclickRT";
+
+    private UMRTLog() {
+    }
+
+    public static void d(String str, String str2) {
+        if (shouldOutput()) {
+            warpperMsg(str2, false);
+        }
+    }
+
+    public static void e(String str, String str2) {
+        if (shouldOutput()) {
+            warpperMsg(str2, false);
+        }
+    }
+
+    public static void i(String str, String str2) {
+        if (shouldOutput()) {
+            warpperMsg(str2, false);
+        }
+    }
+
+    public static void sd(String str, String str2) {
+        if (shouldOutput()) {
+            warpperMsg(str2, true);
+        }
+    }
+
+    public static void se(String str, String str2) {
+        if (shouldOutput()) {
+            warpperMsg(str2, true);
+        }
+    }
+
+    private static boolean shouldOutput() {
+        return "1".equals(UMUtils.getSystemProperty(RTLOG_PROP, "0"));
+    }
+
+    public static void si(String str, String str2) {
+        if (shouldOutput()) {
+            warpperMsg(str2, true);
+        }
+    }
+
+    public static void sv(String str, String str2) {
+        if (shouldOutput()) {
+            warpperMsg(str2, true);
+        }
+    }
+
+    public static void sw(String str, String str2) {
+        if (shouldOutput()) {
+            warpperMsg(str2, true);
+        }
+    }
+
+    public static void v(String str, String str2) {
+        if (shouldOutput()) {
+            warpperMsg(str2, false);
+        }
+    }
+
+    public static void w(String str, String str2) {
+        if (shouldOutput()) {
+            warpperMsg(str2, false);
+        }
+    }
+
+    private static String warpperMsg(String str, boolean z3) {
+        if (z3) {
+            StringBuffer stringBuffer = null;
+            try {
+                StackTraceElement[] stackTrace = new Throwable().getStackTrace();
+                if (stackTrace.length >= 3) {
+                    String fileName = stackTrace[2].getFileName();
+                    String methodName = stackTrace[2].getMethodName();
+                    int lineNumber = stackTrace[2].getLineNumber();
+                    StringBuffer stringBuffer2 = new StringBuffer();
+                    stringBuffer2.append(SimpleComparison.LESS_THAN_OPERATION);
+                    stringBuffer2.append(fileName);
+                    stringBuffer2.append(":");
+                    stringBuffer2.append(methodName);
+                    stringBuffer2.append(":");
+                    stringBuffer2.append(lineNumber);
+                    stringBuffer2.append("> ");
+                    stringBuffer2.append(str);
+                    stringBuffer = stringBuffer2;
+                }
+                return stringBuffer.toString();
+            } catch (Throwable unused) {
+                return str;
+            }
+        }
+        return str;
+    }
+}

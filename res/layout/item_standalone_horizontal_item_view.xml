@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rootView" android:paddingLeft="@dimen/wdp26" android:paddingTop="@dimen/wdp20" android:paddingRight="@dimen/wdp26" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fressco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="@dimen/wdp126" android:layout_height="@dimen/wdp126">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/main_normal_icon" android:layout_centerInParent="true" fressco:failureImage="@drawable/main_normal_icon" fressco:failureImageScaleType="fitXY" fressco:placeholderImage="@drawable/main_normal_icon" fressco:placeholderImageScaleType="fitXY" fressco:roundWithOverlayColor="#ffffffff" fressco:roundedCornerRadius="@dimen/wdp28" fressco:roundingBorderColor="#ffd8d8d8" fressco:roundingBorderWidth="1.0px" />
+        <ImageView android:id="@id/flag" android:visibility="gone" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/flag_new" android:layout_alignLeft="@id/image1" android:layout_alignTop="@id/image1" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/wdp24" android:textColor="#ff3b3b3b" android:ellipsize="end" android:id="@id/appname1" android:layout_width="@dimen/wdp126" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp19" android:text="刀塔传奇" android:lines="2" style="@style/TextViewStyle_10sp" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20">
+        <TextView android:gravity="center" android:id="@id/mgListviewItemInstall" android:focusable="false" android:focusableInTouchMode="true" android:visibility="visible" android:layout_marginBottom="@dimen/wdp50" android:layout_weight="0.0" android:layout_centerHorizontal="true" style="@style/DownloadImageButnSmallStyle" />
+        <TextView android:textSize="@dimen/wdp18" android:textColor="@color/money_text_color" android:id="@id/moneyText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp52" android:text="TextView" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title_bar_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/topBarline" android:layout_alignParentBottom="true" style="@style/TextViewStyle_line_H" />
+    <ImageView android:id="@id/back_image" android:paddingTop="@dimen/wdp32" android:paddingBottom="@dimen/wdp32" android:visibility="visible" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp97" android:src="@drawable/back_icon" android:layout_centerVertical="true" />
+    <TextView android:ellipsize="end" android:gravity="left" android:id="@id/title_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp230" android:singleLine="true" android:layout_toRightOf="@id/back_image" android:layout_centerVertical="true" style="@style/TextViewStyle_18sp" />
+    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:paddingRight="@dimen/titile_normal_download_margin_right" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/commentParent" android:visibility="visible" android:clickable="true" android:layout_width="36.0dip" android:layout_height="fill_parent">
+            <ImageView android:id="@id/comment" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="46.0dip" android:src="@drawable/profile_message" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="10.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/roundMessage" android:background="@drawable/message_round" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginTop="5.0dip" android:layout_alignTop="@id/comment" android:layout_alignRight="@id/comment" />
+        </RelativeLayout>
+        <ImageView android:id="@id/title_normal_search_img" android:visibility="gone" android:layout_marginRight="@dimen/wdp10" android:src="@drawable/search_image" style="@style/title_normal_search_download_img_style" />
+        <com.join.mgps.customview.CustomerDownloadView android:id="@id/title_normal_download_cdv" android:visibility="gone" android:layout_marginBottom="@dimen/wdp5" android:layout_alignBottom="@id/title_normal_search_img" android:layout_centerVertical="false" style="@style/title_normal_search_download_img_style" />
+        <ImageView android:id="@id/share" android:paddingTop="@dimen/wdp28" android:paddingBottom="@dimen/wdp28" android:visibility="gone" android:layout_width="@dimen/wdp80" android:layout_height="fill_parent" android:src="@drawable/papa_share_selecter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+</RelativeLayout>

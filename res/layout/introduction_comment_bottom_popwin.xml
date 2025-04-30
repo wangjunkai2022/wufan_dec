@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.join.kotlin.domain.widget.CornersLinearLayout android:layout_width="@dimen/wdp175" android:layout_height="@dimen/wdp161" app:conner_bottom_left="@dimen/wdp4" app:conner_top_left="@dimen/wdp4" app:conner_top_right="@dimen/wdp4">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffffffff" android:layout_width="@dimen/wdp175" android:layout_height="@dimen/wdp161">
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ff232a36" android:gravity="center" android:id="@id/tv_pop_open_web" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp4" android:text="浏览器打开" android:layout_weight="1.0" />
+            <ImageView android:background="#ffd8d8d8" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/wdp48" android:layout_marginRight="@dimen/wdp47" />
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ff232a36" android:gravity="center" android:id="@id/tv_pop_report" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="举报" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.join.kotlin.domain.widget.CornersLinearLayout>
+    <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_introduction_report_angle_bottom_right" />
+</LinearLayout>

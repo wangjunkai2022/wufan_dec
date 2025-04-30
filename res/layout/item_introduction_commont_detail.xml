@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/commentAllRootLl" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingLeft="@dimen/wdp16" android:paddingRight="@dimen/wdp16" android:paddingBottom="@dimen/wdp16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/siv_head" android:layout_width="@dimen/wdp40" android:layout_height="@dimen/wdp40" android:layout_marginTop="15.0dip" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:roundAsCircle="true" />
+            <TextView android:textSize="@dimen/wdp26" android:textStyle="bold" android:textColor="#ff82888e" android:gravity="center_vertical" android:id="@id/userName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp14" android:text="张三" android:layout_toRightOf="@id/siv_head" android:layout_alignTop="@id/siv_head" android:layout_alignBottom="@id/siv_head" style="@style/TextViewStyle_12sp" />
+            <ImageView android:id="@id/iv_praise" android:padding="@dimen/wdp5" android:layout_width="@dimen/wdp40" android:layout_height="@dimen/wdp40" android:layout_marginRight="@dimen/wdp8" android:src="@drawable/ic_introduction_star_grey" android:layout_toLeftOf="@id/tv_star_num" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/wdp23" android:textColor="#ff58607a" android:id="@id/tv_star_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp19" android:layout_toLeftOf="@id/iv_more" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_more" android:layout_width="@dimen/wdp28" android:layout_height="wrap_content" android:src="@drawable/ic_introduction_report_white_v" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.join.mgps.customview.textview.MovementTextView android:textColor="#ffc1d0dd" android:ellipsize="end" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp64" android:layout_marginTop="@dimen/wdp5" android:layout_marginRight="@dimen/wdp26" android:singleLine="false" android:lineSpacingExtra="@dimen/wdp1" android:lineSpacingMultiplier="1.2" />
+        <View android:id="@id/layoutTop" android:background="#ff323744" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" android:layout_marginTop="@dimen/wdp24" />
+    </LinearLayout>
+</RelativeLayout>

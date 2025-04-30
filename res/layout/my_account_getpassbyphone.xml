@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/nowwufun_item_back" android:paddingLeft="@dimen/wdp22" android:paddingRight="@dimen/wdp22" android:paddingBottom="@dimen/wdp22" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout3" android:background="@drawable/round_conner_listitem_back_15" android:paddingLeft="@dimen/wdp71" android:paddingRight="@dimen/wdp71" android:paddingBottom="@dimen/wdp80" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="@dimen/wdp36" android:textColorHint="#ffa8a8a8" android:id="@id/newPass" android:background="@drawable/alph" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="36.0dip" android:hint="输入新密码，6-16位" android:singleLine="true" android:inputType="textPassword" />
+            <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+            <EditText android:textSize="@dimen/wdp36" android:textColorHint="#ffa8a8a8" android:id="@id/reWhitePass" android:background="@drawable/alph" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="14.0dip" android:hint="再次输入" android:singleLine="true" android:inputType="textPassword" />
+            <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+            <Button android:textSize="@dimen/wdp34" android:textColor="@color/white" android:id="@id/okChange" android:background="@drawable/account_butn_selector" android:layout_width="fill_parent" android:layout_height="@dimen/wdp88" android:layout_marginTop="35.0dip" android:text="完成密码重置" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp636"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <view android:id="@id/cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" app:placeholderImage="@color/choice_recommand_bg" app:placeholderImageScaleType="fitXY" app:roundTopLeft="false" app:roundTopRight="false" class="com.facebook.drawee.view.SimpleDraweeView" />
+    <LinearLayout android:gravity="bottom" android:paddingLeft="15.0dip" android:paddingRight="17.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/wdp318" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <view android:id="@id/icon" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp100" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:roundedCornerRadius="@dimen/mg_forum_avatar_round_width" class="com.facebook.drawee.view.SimpleDraweeView" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp28" android:layout_alignTop="@id/icon">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/wdp34" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="荒野行动" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/wdp25" android:textColor="#ffffffff" android:id="@id/rank" android:background="@drawable/choice_tip_bg" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="8.9" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/wdp26" android:textColor="#ffdfdfdf" android:ellipsize="end" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="黎明杀机手游版，不对称竞技，惊险，技，惊险，技，惊险，技，惊险，技，惊险， 刺超级" android:maxLines="2" android:layout_below="@id/ll" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

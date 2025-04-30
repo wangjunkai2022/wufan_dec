@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/appRecomLayout" android:layout_width="fill_parent" android:layout_height="@dimen/wdp185"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" xmlns:ratingbar="http://schemas.android.com/apk/res-auto">
+            <RelativeLayout android:gravity="center_vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/appIcon" android:layout_width="@dimen/wdp110" android:layout_height="@dimen/wdp110" android:layout_marginLeft="@dimen/wdp40" android:layout_alignParentLeft="false" android:layout_alignParentBottom="false" android:layout_centerVertical="true" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/sp36" android:layout_toRightOf="@id/appIcon" android:layout_alignParentBottom="true">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/scoreLayout" android:layout_centerVertical="true">
+                        <TextView android:textSize="@dimen/wdp36" android:textStyle="bold" android:textColor="@color/white" android:id="@id/appName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="拳皇" android:maxLines="2" android:singleLine="true" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp15" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/scoreLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp20" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <LinearLayout android:gravity="center" android:padding="@dimen/wdp20" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/wdp110" android:layout_height="@dimen/wdp110">
+                                <TextView android:textSize="@dimen/wdp20" android:textColor="#ffd9d9d9" android:id="@id/comment_head_num_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="悟饭评分" />
+                                <TextView android:textSize="@dimen/wdp30" android:textStyle="bold" android:textColor="@color/white" android:id="@id/comment_head_point_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9.5" />
+                                <com.join.mgps.customview.MStarBar android:id="@id/comment_head_mstarBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/display" ratingbar:integerMark="true" ratingbar:starCount="5" ratingbar:starDistance="2.0dip" ratingbar:starEmpty="@drawable/star_empty" ratingbar:starFill="@drawable/star_full" ratingbar:starSize="@dimen/wdp13" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/backLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <it.sephiroth.android.library.widget.HListView android:id="@id/screenListView" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="@dimen/wdp370" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp8" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" app:hlv_dividerWidth="@dimen/wdp20" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/describLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp68" android:layout_marginTop="@dimen/wdp40" android:layout_marginRight="@dimen/wdp34">
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ffffffff" android:id="@id/describ" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="简介：《超级马里奥兄弟》，是任天堂公 -司开  发于1985年出品著名横版过关游戏，最早在红白机上出的有多款后续作品，迄今多个版本共销量已亿… " android:maxLines="4" android:layout_weight="1.0" android:lineSpacingExtra="@dimen/wdp12" />
+            <ImageView android:layout_width="@dimen/wdp28" android:layout_height="@dimen/wdp30" android:layout_marginLeft="@dimen/wdp13" android:src="@drawable/gamelist_detial_ic_more" android:layout_weight="0.0" />
+        </LinearLayout>
+        <it.sephiroth.android.library.widget.HListView android:id="@id/comment" android:paddingLeft="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="@dimen/wdp148" android:layout_marginTop="@dimen/wdp40" android:layout_marginBottom="@dimen/wdp30" android:listSelector="#00000000" android:layout_weight="0.0" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/downloadButn" android:layout_width="fill_parent" android:layout_height="@dimen/wdp78" android:layout_marginLeft="@dimen/wdp40" android:layout_marginRight="@dimen/wdp24">
+            <ImageView android:id="@id/downIcon" android:layout_width="@dimen/wdp36" android:layout_height="@dimen/wdp30" android:layout_marginRight="@dimen/wdp14" android:src="@drawable/gamelist_ic_domn" />
+            <TextView android:textSize="@dimen/wdp32" android:textColor="@color/white" android:id="@id/downButnText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@id/moveImg" android:layout_width="@dimen/wdp77" android:layout_height="@dimen/wdp77" android:src="@drawable/gamelist_uploding_img" />
+    <TextView android:textSize="@dimen/wdp24" android:textColor="@color/gray" android:gravity="center" android:id="@id/bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp77" android:text="已经是最后一个了" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" xmlns:ratingbar="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/wdp185">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/appIcon" android:layout_width="@dimen/wdp140" android:layout_height="@dimen/wdp140" android:layout_marginLeft="@dimen/wdp20" android:layout_alignParentLeft="false" android:layout_alignParentBottom="false" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/sp36" android:layout_toRightOf="@id/appIcon" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/scoreLayout" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff3b3b3b" android:id="@id/appName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp5" android:text="拳皇" android:maxLines="2" android:singleLine="true" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/companyLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp5" android:layout_marginBottom="@dimen/wdp5">
+                    <TextView android:textSize="@dimen/wdp24" android:textColor="#ff4a4a4a" android:id="@id/textView47" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sp16" android:text="厂商" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/wdp20" android:textColor="@color/main_bar_color" android:gravity="center_vertical" android:id="@id/appCompany" android:paddingRight="@dimen/sp29" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sp16" android:singleLine="true" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp5">
+                    <TextView android:textSize="@dimen/wdp24" android:textColor="#ffa6a6a6" android:id="@id/appSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sp20" />
+                    <TextView android:textSize="@dimen/wdp24" android:textColor="#ff686868" android:id="@id/appDownloadCount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sp9" android:textIsSelectable="false" />
+                </LinearLayout>
+                <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/tipsLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp9" />
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/scoreLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp20" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <LinearLayout android:gravity="center" android:background="@drawable/score_image_back" android:padding="@dimen/wdp5" android:layout_width="@dimen/wdp160" android:layout_height="@dimen/wdp160">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/comment_head_point_bg_gamedetial" android:layout_width="@dimen/wdp110" android:layout_height="@dimen/wdp110">
+                        <TextView android:textSize="@dimen/wdp20" android:textColor="#ffa8a8a8" android:id="@id/comment_head_num_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="悟饭评分" />
+                        <TextView android:textSize="@dimen/wdp30" android:textStyle="bold" android:textColor="#ff262626" android:id="@id/comment_head_point_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9.5" />
+                        <com.join.mgps.customview.MStarBar android:id="@id/comment_head_mstarBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/display" ratingbar:integerMark="true" ratingbar:starCount="5" ratingbar:starDistance="2.0dip" ratingbar:starEmpty="@drawable/star_empty" ratingbar:starFill="@drawable/star_full" ratingbar:starSize="@dimen/wdp13" />
+                    </LinearLayout>
+                </LinearLayout>
+                <com.join.mgps.customview.CircleProgressView android:id="@id/gameScore" android:visibility="gone" android:layout_width="@dimen/wdp115" android:layout_height="@dimen/wdp115" android:layout_marginTop="@dimen/wdp16" android:text="收藏" ratingbar:StrokeWidth="@dimen/wdp7" ratingbar:diameter="@dimen/wdp115" />
+            </LinearLayout>
+            <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/layoutGiftx" android:visibility="gone" android:layout_width="@dimen/wdp133" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:layout_alignLeft="@id/scoreLayout" android:layout_alignBottom="@id/scoreLayout">
+                <ImageView android:id="@id/giftImagex" android:layout_width="@dimen/wdp26" android:layout_height="@dimen/wdp26" android:layout_weight="1.0" ratingbar:srcCompat="@drawable/user_gift" />
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ffa8a8a8" android:id="@id/textView72" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分享有奖" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/btTaglayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp30" />
+    </HorizontalScrollView>
+</LinearLayout>

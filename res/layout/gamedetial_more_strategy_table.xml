@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/group" android:background="@color/white" android:paddingLeft="5.0dip" android:paddingTop="2.5dip" android:paddingRight="5.0dip" android:paddingBottom="2.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <View android:id="@id/line" android:layout_below="@id/lLayout" android:layout_alignParentBottom="false" style="@style/TextViewGameDetailStyle2_line_H" />
+</LinearLayout>

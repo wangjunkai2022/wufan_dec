@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/image_show_dialog_0" android:background="#000ff000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/main" android:tag="binding_1" android:padding="@dimen/wdp30" android:layout_width="@dimen/wdp1042" android:layout_height="@dimen/wdp612" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image" android:tag="binding_2" android:background="@color/black" android:layout_width="@dimen/wdp982" android:layout_height="@dimen/wdp552" app:actualImageScaleType="fitCenter" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/main2" android:tag="binding_3" android:padding="@dimen/wdp30" android:layout_width="@dimen/wdp740" android:layout_height="@dimen/wdp433" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/image2" android:tag="binding_4" android:background="@color/black" android:layout_width="@dimen/wdp700" android:layout_height="@dimen/wdp393" app:actualImageScaleType="fitCenter" />
+    </FrameLayout>
+    <ImageView android:id="@id/closed" android:tag="binding_5" android:layout_width="@dimen/wdp52" android:layout_height="@dimen/wdp52" android:src="@drawable/close_round_white" app:layout_constraintRight_toRightOf="@id/main" app:layout_constraintTop_toTopOf="@id/main" />
+    <ImageView android:id="@id/closed2" android:tag="binding_6" android:layout_width="@dimen/wdp52" android:layout_height="@dimen/wdp52" android:src="@drawable/close_round_white" app:layout_constraintRight_toRightOf="@id/main2" app:layout_constraintTop_toTopOf="@id/main2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

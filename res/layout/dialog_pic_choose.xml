@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/colorTextBlack" android:gravity="center" android:layout_gravity="center" android:id="@id/chos_camera" android:background="@color/colorTextWhite" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/btn_take_photo" android:onClick="onClick" />
+    <TextView android:background="@color/colorTextG2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textColor="@color/colorTextBlack" android:gravity="center" android:layout_gravity="center" android:id="@id/pic_lib" android:background="@color/colorTextWhite" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/btn_pic_photo" android:onClick="onClick" />
+    <TextView android:background="@color/colorGray1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textColor="@color/colorTextBlack" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_cancel" android:background="@color/colorTextWhite" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/btn_cancel" android:onClick="onClick" />
+</LinearLayout>

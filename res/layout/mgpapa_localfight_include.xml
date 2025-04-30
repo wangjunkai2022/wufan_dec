@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:background="#fff7f8f9" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/wdp12" android:paddingRight="@dimen/wdp12" android:paddingBottom="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:orientation="horizontal" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/recommendTop" android:background="@drawable/nowwufun_join_item_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp6" android:layout_weight="1.0" android:layout_toRightOf="@id/everdaytimetick" android:layout_below="@id/recommendTop">
+                <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/wdp20" android:paddingTop="@dimen/wdp26" android:paddingBottom="@dimen/wdp26" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp8" android:layout_toLeftOf="@id/recomenTopImage">
+                    <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff18badf" android:id="@id/recomenTopName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="游戏专区" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/wdp22" android:textColor="#ff7e7e7e" android:ellipsize="end" android:id="@id/recomenTopSubTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp14" android:text="描述描述描述描" android:singleLine="true" android:layout_below="@id/recomenRightName" style="@style/TextViewStyle_10sp" />
+                </LinearLayout>
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/recomenTopImage" android:layout_width="@dimen/wdp131" android:layout_height="@dimen/wdp87" android:layout_marginRight="@dimen/wdp12" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/recommendRight" android:background="@drawable/nowwufun_join_item_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp6" android:layout_weight="1.0" android:layout_toRightOf="@id/everdaytimetick" android:layout_below="@id/recommendTop">
+                <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/wdp20" android:paddingTop="@dimen/wdp26" android:paddingBottom="@dimen/wdp26" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp8" android:layout_toLeftOf="@id/recomenRightImage">
+                    <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff29b37e" android:id="@id/recomenRightName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="游戏专区专区" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/wdp22" android:textColor="#ff7e7e7e" android:ellipsize="end" android:id="@id/recomenRightLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp14" android:text="描述" android:singleLine="true" android:layout_below="@id/recomenRightName" style="@style/TextViewStyle_10sp" />
+                </LinearLayout>
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/recomenRightImage" android:layout_width="@dimen/wdp131" android:layout_height="@dimen/wdp87" android:layout_marginRight="@dimen/wdp12" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp16" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/localfight_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp6" android:layout_weight="1.0">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/fightapp_image" android:layout_width="fill_parent" android:layout_height="@dimen/wdp231" android:scaleType="fitXY" app:roundedCornerRadius="@dimen/wdp10" />
+                <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:background="@drawable/home_discover_halfalph_back" android:paddingLeft="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="@dimen/wdp60" android:singleLine="true" />
+                <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="@color/white" android:id="@id/fight_appname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:layout_marginTop="@dimen/wdp20" android:text="拳皇" android:singleLine="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/updatedmore" android:background="@drawable/nowwufun_join_item_back" android:paddingLeft="@dimen/wdp20" android:paddingTop="@dimen/wdp22" android:paddingRight="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="@dimen/wdp231" android:layout_marginLeft="@dimen/wdp6" android:layout_weight="1.0">
+                <RelativeLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+                    <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#fff47500" android:id="@id/xxxx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp4" android:text="每日上新" />
+                    <TextView android:textSize="@dimen/wdp20" android:textColor="#ff7e7e7e" android:id="@id/everday_newtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp7" android:text="10点更新" android:layout_below="@id/xxxx" android:layout_alignParentBottom="false" />
+                    <TextView android:textSize="@dimen/wdp24" android:textColor="#fffd7a4e" android:gravity="center" android:id="@id/everday_newnumber" android:background="@drawable/papa_index_number" android:paddingLeft="@dimen/wdp17" android:paddingRight="@dimen/wdp17" android:layout_width="wrap_content" android:layout_height="@dimen/wdp37" android:text="232人" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/everdayGame" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/game1" android:layout_width="@dimen/wdp86" android:layout_height="@dimen/wdp86" />
+                    <View android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/game2" android:layout_width="@dimen/wdp86" android:layout_height="@dimen/wdp86" />
+                    <View android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/game3" android:layout_width="@dimen/wdp86" android:layout_height="@dimen/wdp86" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

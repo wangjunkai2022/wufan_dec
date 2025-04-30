@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/wdp15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp8" android:scaleType="fitXY" fresco:actualImageScaleType="fitXY" fresco:viewAspectRatio="1.785" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ffffffff" android:id="@id/tv_gameName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="王者荣耀" android:lines="1" />
+        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp5" android:layout_marginRight="26.0dip" android:layout_toRightOf="@id/iv_icon" android:layout_below="@id/tv_gameName">
+            <TextView android:textSize="@dimen/wdp20" android:textColor="@drawable/white" android:id="@id/tv_roomCounts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="324" />
+            <TextView android:textSize="@dimen/wdp20" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="房" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

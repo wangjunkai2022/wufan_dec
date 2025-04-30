@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rl_root" android:layout_width="fill_parent" android:layout_height="@dimen/wdp139"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp139">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/wdp139" android:layout_marginLeft="@dimen/wdp16">
+                <TextView android:textSize="@dimen/wdp28" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp12" android:layout_marginRight="@dimen/wdp8" android:text="存档1" android:singleLine="true" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp9" android:layout_below="@id/tv_name">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/simv" android:layout_width="@dimen/wdp32" android:layout_height="@dimen/wdp32" app:roundAsCircle="true" />
+                    <TextView android:textSize="@dimen/wdp24" android:textColor="#ffc8c8c8" android:ellipsize="end" android:id="@id/authorname" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp4" android:text="胜利的王者" android:maxLines="1" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_vip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp9" android:layout_below="@id/ll_author">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cloud_vip" />
+                    <TextView android:textSize="@dimen/wdp22" android:textColor="#ffffc853" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp9" android:text="会员专属" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp8" android:layout_below="@id/ll_author">
+                    <ImageView android:background="@drawable/clouddn" android:layout_width="@dimen/wdp29" android:layout_height="@dimen/wdp21" />
+                    <TextView android:textSize="@dimen/wdp22" android:textColor="#ffc8c8c8" android:id="@id/tvcouldnum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp9" android:text="221" />
+                    <ImageView android:background="@drawable/goodpraise" android:layout_width="@dimen/wdp23" android:layout_height="@dimen/wdp22" android:layout_marginLeft="@dimen/wdp24" android:layout_marginRight="@dimen/wdp7" />
+                    <TextView android:textSize="@dimen/wdp22" android:textColor="#ffc8c8c8" android:id="@id/tvgoodpraisenum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="89" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff9fabb7" android:id="@id/backUp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp50" android:layout_marginRight="@dimen/wdp54" android:text="备份" android:layout_toLeftOf="@id/shape" />
+                <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff9fabb7" android:id="@id/shape" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp50" android:layout_marginRight="@dimen/wdp54" android:text="分享" android:layout_toLeftOf="@id/downButton" />
+                <com.join.mgps.customview.CloudDownButn1 android:textSize="@dimen/wdp28" android:textColor="#ff9fabb7" android:id="@id/downButton" android:layout_width="@dimen/wdp94" android:layout_height="@dimen/wdp50" android:layout_marginTop="@dimen/wdp56" android:layout_marginRight="@dimen/wdp11" android:text="下载" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

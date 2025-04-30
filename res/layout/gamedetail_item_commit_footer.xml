@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/commentFooterLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/wdp30" android:textColor="@color/main_yello_color" android:gravity="center" android:id="@id/showAllCommit" android:layout_width="fill_parent" android:layout_height="@dimen/wdp90" android:layout_marginLeft="@dimen/wdp35" android:layout_marginRight="@dimen/wdp35" android:text="全部点评" android:layout_weight="1.0" android:layout_toLeftOf="@id/textView51" android:layout_centerHorizontal="true" android:textIsSelectable="false" />
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ff686868" android:gravity="center" android:id="@id/goforum" android:background="@drawable/show_all_comment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp10" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/wdp35" android:text="前往社区" android:layout_weight="1.0" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View style="@style/TextViewStyle_line_H" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/wdp20" android:paddingRight="@dimen/wdp20" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivGameIcon" android:layout_width="@dimen/wdp120" android:layout_height="@dimen/wdp120" />
+    <TextView android:textSize="@dimen/wdp26" android:textColor="#ff303030" android:ellipsize="end" android:id="@id/tvGameName" android:layout_width="@dimen/wdp130" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp12" android:maxLines="1" />
+</LinearLayout>

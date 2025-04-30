@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="263.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tip_title" android:background="#ff3a85e2" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="约战邀请" />
+        <TextView android:textSize="@dimen/main_textsize_16sp" android:textColor="@color/net_invite_whole_dialog_txt" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/dialog_content" android:visibility="visible" android:layout_width="225.0dip" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/game_lay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/rom_lay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@id/romImgIv" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+                <TextView android:textColor="@color/net_invite_whole_dialog_txt" android:layout_gravity="center_horizontal" android:id="@id/romNameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/net_invite_whole_dialog_size_txt" android:layout_gravity="center_horizontal" android:id="@id/romSizeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/plug_lay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@id/plugImgIv" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+                <TextView android:textColor="@color/net_invite_whole_dialog_txt" android:layout_gravity="center_horizontal" android:id="@id/plugNameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/net_invite_whole_dialog_size_txt" android:layout_gravity="center_horizontal" android:id="@id/plugSizeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#fff57e26" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/dialog_content_2" android:visibility="gone" android:layout_width="225.0dip" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:drawableLeft="@drawable/notice_red" android:drawablePadding="3.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/loading_lay" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip">
+            <ProgressBar android:layout_gravity="center_vertical" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/loding_progress" />
+            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="请稍候" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/loding_faile" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/relodingimag" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/reload_butn_selector" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff908f8f" android:id="@id/failedMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="网络连接失败，再试试吧~" />
+            <ImageView android:id="@id/lodingBackImage" android:background="#ffcdcdcd" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_margin="5.0dip" />
+            <Button android:id="@id/setNetwork" android:layout_width="wrap_content" android:text="@string/set_net" style="@style/ButtonStyle12_Text" />
+        </LinearLayout>
+        <TextView android:background="#ff888888" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="9.0dip" />
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:minHeight="40.0dip">
+            <Button android:textSize="16.0sp" android:textColor="#ff6a6a6a" android:id="@id/dialog_button_cancle" android:background="@drawable/forum_dialog_btn_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+            <View android:background="#ff888888" android:layout_width="1.0px" android:layout_height="wrap_content" />
+            <Button android:textSize="16.0sp" android:textColor="#fff57e26" android:id="@id/dialog_button_ok" android:background="@drawable/forum_dialog_btn_selector" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="立即下载" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/yd_ll_root_detail" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/yd_rl_navigation" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:id="@id/yd_iv_navigation" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="10.0dip" android:src="@drawable/yd_left" android:scaleType="centerCrop" android:layout_centerVertical="true" android:onClick="back" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff080808" android:id="@id/yd_tv_navigation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务条款" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <WebView android:id="@id/yd_wv_protocol" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" />
+</LinearLayout>

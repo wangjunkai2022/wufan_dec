@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/topbar_left_title" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/notVip" android:background="#ff3ca4fd" android:padding="@dimen/wdp24" android:layout_width="fill_parent" android:layout_height="@dimen/wdp155">
+        <TextView android:textSize="@dimen/wdp26" android:textColor="@color/white" android:id="@id/notMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp20" android:text="当前下载人数过多导致拥堵 开通专属通道可立即加速到最快网速" android:layout_weight="1.0" android:lineSpacingExtra="@dimen/wdp8" />
+        <TextView android:textStyle="bold" android:textColor="#ff3ca4fd" android:gravity="center" android:id="@id/goVip" android:background="@drawable/round_white_button" android:layout_width="@dimen/wdp156" android:layout_height="@dimen/wdp58" android:text="立即开通" android:layout_weight="0.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/isVip" android:background="#ff0aba07" android:paddingLeft="@dimen/wdp24" android:paddingRight="@dimen/wdp24" android:layout_width="fill_parent" android:layout_height="@dimen/wdp80">
+        <TextView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:id="@id/downMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="专属通道下载中" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/white" android:id="@id/speedText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0M/S" android:layout_weight="0.0" />
+    </LinearLayout>
+    <com.join.mgps.customview.SlidingTabLayoutDownloadCenter android:id="@id/pageIndicator" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp80" app:pstsDividerPadding="@dimen/wdp69" app:pstsIndicatorHeight="@dimen/wdp6" app:pstsShouldExpand="true" app:pstsTabPaddingLeftRight="0.0dip" app:stabTextSelectedColor="@color/white" app:stextColor="#ff696969" app:stextSize="@dimen/wdp30" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/mViewpagerV4" android:background="@android:color/transparent" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

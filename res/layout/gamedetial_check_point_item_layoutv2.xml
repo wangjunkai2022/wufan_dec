@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@drawable/shape_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp10" android:layout_marginRight="@dimen/wdp10"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/icon" android:layout_width="@dimen/wdp258" android:layout_height="wrap_content" android:src="@drawable/main_normal_icon" fresco:failureImage="@drawable/main_normal_icon" fresco:failureImageScaleType="fitXY" fresco:layout_constraintEnd_toEndOf="parent" fresco:layout_constraintLeft_toLeftOf="parent" fresco:layout_constraintRight_toRightOf="parent" fresco:layout_constraintStart_toStartOf="parent" fresco:placeholderImage="@drawable/main_normal_icon" fresco:placeholderImageScaleType="fitXY" fresco:roundTopLeft="@dimen/wdp4" fresco:roundTopRight="@dimen/wdp4" fresco:viewAspectRatio="1.51" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff262626" android:gravity="center" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="@dimen/wdp58" android:singleLine="true" fresco:layout_constraintBottom_toBottomOf="parent" fresco:layout_constraintLeft_toLeftOf="@id/icon" fresco:layout_constraintRight_toRightOf="@id/icon" fresco:layout_constraintTop_toBottomOf="@id/icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

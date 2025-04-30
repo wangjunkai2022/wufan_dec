@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp90"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/handSharkLayout" android:paddingLeft="@dimen/wdp20" android:paddingRight="@dimen/wdp22" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.0">
+        <ImageView android:id="@id/imageView43" android:layout_width="@dimen/wdp32" android:layout_height="@dimen/wdp32" android:layout_weight="0.0" app:srcCompat="@drawable/game_detail_ok" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff686868" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#fff47500" android:id="@id/suntitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp15" android:text="TextView" android:layout_weight="0.0" />
+        <ImageView android:id="@id/imageView42" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" app:srcCompat="@drawable/more_arrow_right1" />
+    </LinearLayout>
+    <View style="@style/TextViewStyle_line_H" />
+</LinearLayout>

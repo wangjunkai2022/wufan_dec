@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="67" android:drawable="@mipmap/spark_2_00" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_01" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_02" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_03" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_04" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_05" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_06" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_07" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_08" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_09" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_10" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_11" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_12" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_13" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_14" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_15" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_16" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_17" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_18" />
+    <item android:duration="67" android:drawable="@mipmap/spark_2_19" />
+</animation-list>

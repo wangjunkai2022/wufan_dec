@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/wdp264" android:layout_height="fill_parent">
+        <ImageView android:layout_width="@dimen/wdp128" android:layout_height="@dimen/wdp128" android:src="@drawable/ic_local_game_zip" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff666666" android:id="@id/beforNameTx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp15" android:maxWidth="@dimen/wdp160" />
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_local_game_trans" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/wdp264" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="@dimen/wdp128" android:layout_height="@dimen/wdp128">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/appIcon" android:layout_width="@dimen/wdp93" android:layout_height="@dimen/wdp93" fresco:failureImage="@drawable/main_normal_icon" fresco:placeholderImage="@drawable/main_normal_icon" fresco:roundAsCircle="false" fresco:roundedCornerRadius="@dimen/wdp10" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff666666" android:id="@id/afterNameTx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp15" android:maxWidth="@dimen/wdp160" />
+    </LinearLayout>
+</LinearLayout>

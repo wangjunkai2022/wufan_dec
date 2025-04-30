@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <EditText android:id="@id/et_apk_path" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/wdp80" android:hint="安装路径 apk zip" />
+        <Button android:id="@id/install" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="install" />
+        <Button android:id="@id/launch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="launch" />
+        <Button android:id="@id/btn_notify" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="发送通知" />
+        <Button android:id="@id/btn_download_finish" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="下载完成" />
+        <Button android:id="@id/btn_delete_file" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="文件删除" />
+        <Button android:id="@id/start_app" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="启动游戏" />
+        <Button android:id="@id/mustpaly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="必玩大作" />
+        <Button android:id="@id/btRegin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="BT专区" />
+        <Button android:id="@id/btnTTTools" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="穿山甲测试工具" />
+        <Button android:id="@id/btnRewardLoad" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="加载TT激励视频" />
+        <Button android:id="@id/btnRewardShow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="显示TT激励视频" />
+        <Button android:id="@id/btnFCLoad" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="加载TT激励视频" />
+        <Button android:id="@id/btnFCShow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="显示TT激励视频" />
+        <Button android:id="@id/btn_install_a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="新版本" />
+        <Button android:id="@id/btn_install_b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="老版本" />
+        <Button android:id="@id/btnVideo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="攻略视频" />
+        <TextView android:id="@id/tv_match" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

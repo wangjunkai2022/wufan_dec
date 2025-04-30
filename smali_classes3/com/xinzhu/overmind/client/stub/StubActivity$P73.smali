@@ -1,0 +1,25 @@
+.class public Lcom/xinzhu/overmind/client/stub/StubActivity$P73;
+.super Lcom/xinzhu/overmind/client/stub/StubActivity;
+.source "StubActivity.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/xinzhu/overmind/client/stub/StubActivity;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "P73"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/xinzhu/overmind/client/stub/StubActivity;-><init>()V
+
+    return-void
+.end method

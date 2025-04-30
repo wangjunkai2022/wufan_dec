@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/main" android:background="@drawable/bg_login_normal" android:layout_width="@dimen/dialog_login_w" android:layout_height="@dimen/dialog_login_h"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_login_bottom_h" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/dialog_login_button_size" android:textColor="#fff47500" android:gravity="center" android:id="@id/vCancel" android:background="@drawable/bg_btn_cancel" android:layout_width="@dimen/dialog_login_button_w" android:layout_height="@dimen/dialog_login_button_h" android:layout_marginRight="12.0dip" android:text="@string/cancel" />
+        <TextView android:textSize="@dimen/dialog_login_button_size" android:textColor="@color/white" android:gravity="center" android:id="@id/vOK" android:background="@drawable/bg_btn_go_login" android:layout_width="@dimen/dialog_login_button_w" android:layout_height="@dimen/dialog_login_button_h" android:text="去登录" />
+    </LinearLayout>
+</RelativeLayout>

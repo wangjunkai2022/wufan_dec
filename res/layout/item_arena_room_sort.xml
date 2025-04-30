@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp32" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_info" android:background="@drawable/room_sort_gray_border" android:layout_width="fill_parent" android:layout_height="@dimen/wdp80" android:layout_marginLeft="@dimen/wdp43" android:layout_marginRight="@dimen/wdp43" android:text="称号等级高的房间" />
+    <View android:id="@id/emptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp20" />
+</LinearLayout>

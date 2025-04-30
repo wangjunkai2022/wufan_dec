@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ic" android:layout_width="@dimen/vip_fun_icon_size" android:layout_height="@dimen/vip_fun_icon_size" android:layout_marginTop="@dimen/wdp24" android:scaleType="fitXY" app:actualImageScaleType="fitXY" app:layout_constraintBottom_toTopOf="@id/name" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" app:placeholderImageScaleType="fitXY" />
+    <TextView android:textSize="@dimen/vip_fun_txt_size" android:textColor="#ffcbcbcb" android:gravity="center" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp9" android:layout_marginBottom="@dimen/wdp27" android:text="一键技能" android:singleLine="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ic" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,167 @@
+.class Lcom/xinzhu/overmind/utils/f;
+.super Ljava/lang/Object;
+.source "ContainerHelpers.java"
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method static a([III)I
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "size",
+            "value"
+        }
+    .end annotation
+
+    add-int/lit8 p1, p1, -0x1
+
+    const/4 v0, 0x0
+
+    :goto_0
+    if-gt v0, p1, :cond_2
+
+    add-int v1, v0, p1
+
+    ushr-int/lit8 v1, v1, 0x1
+
+    .line 1
+    aget v2, p0, v1
+
+    if-ge v2, p2, :cond_0
+
+    add-int/lit8 v1, v1, 0x1
+
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_0
+    if-le v2, p2, :cond_1
+
+    add-int/lit8 v1, v1, -0x1
+
+    move p1, v1
+
+    goto :goto_0
+
+    :cond_1
+    return v1
+
+    :cond_2
+    xor-int/lit8 p0, v0, -0x1
+
+    return p0
+.end method
+
+.method static b([JIJ)I
+    .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "size",
+            "value"
+        }
+    .end annotation
+
+    add-int/lit8 p1, p1, -0x1
+
+    const/4 v0, 0x0
+
+    :goto_0
+    if-gt v0, p1, :cond_2
+
+    add-int v1, v0, p1
+
+    ushr-int/lit8 v1, v1, 0x1
+
+    .line 1
+    aget-wide v2, p0, v1
+
+    cmp-long v4, v2, p2
+
+    if-gez v4, :cond_0
+
+    add-int/lit8 v1, v1, 0x1
+
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_0
+    cmp-long p1, v2, p2
+
+    if-lez p1, :cond_1
+
+    add-int/lit8 v1, v1, -0x1
+
+    move p1, v1
+
+    goto :goto_0
+
+    :cond_1
+    return v1
+
+    :cond_2
+    xor-int/lit8 p0, v0, -0x1
+
+    return p0
+.end method
+
+.method public static c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_2
+
+    if-nez p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    if-eq p0, p1, :cond_1
+
+    .line 1
+    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_2
+
+    :cond_1
+    const/4 v0, 0x1
+
+    :cond_2
+    :goto_0
+    return v0
+.end method

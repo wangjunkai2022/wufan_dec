@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/layoutTop" android:background="#00000000" android:visibility="gone" style="@style/TextViewStyle_line_H" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/backLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp132">
+        <TextView android:id="@id/textView9" android:background="@drawable/papa_yelow_side" android:visibility="invisible" android:layout_width="@dimen/wdp8" android:layout_height="15.0dip" android:layout_marginLeft="@dimen/wdp12" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="0.0" />
+        <ImageView android:id="@id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp9" android:src="@drawable/bt_gift_icon" />
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff2a2a2a" android:gravity="center_vertical" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="最新资讯" android:layout_weight="1.0" android:textIsSelectable="false" style="@style/TextViewStyle_16sp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/look_other" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0">
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#fff47500" android:id="@id/moreText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多" style="@style/TextViewStyle_14sp" />
+            <ImageView android:id="@id/imageView5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="10.0dip" android:src="@drawable/arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/line_h" android:layout_marginLeft="@dimen/dp24" android:layout_marginRight="@dimen/dp24" style="@style/TextViewStyle_line_H" />
+</LinearLayout>

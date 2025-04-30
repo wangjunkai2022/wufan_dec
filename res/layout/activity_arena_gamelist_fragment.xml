@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.join.android.app.component.xrecyclerview.XRecyclerView android:id="@id/listview" android:paddingLeft="@dimen/wdp23" android:paddingRight="@dimen/wdp23" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#ff386270" android:dividerHeight="1.0px" />
+        <RelativeLayout android:id="@id/layout_others_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.join.mgps.customview.TabPageIndicator android:id="@id/pageIndicator" android:background="@drawable/bg_newarena_fast_entrance" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentTop="true" />
+            <View android:id="@id/line" android:visibility="visible" android:layout_alignBottom="@id/pageIndicator" style="@style/TextViewStyle_line_H_Trans" />
+            <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pageIndicator" />
+        </RelativeLayout>
+        <include layout="@layout/loding_layout_include" />
+        <include layout="@layout/failed_layout_include" />
+    </FrameLayout>
+</LinearLayout>

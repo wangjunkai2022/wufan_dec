@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/detial_search_layout" android:layout_width="@dimen/wdp56" android:layout_height="@dimen/wdp56"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/search_detial_back" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/download_bg" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/search_detial_image" android:padding="4.0dip" android:clickable="true" android:layout_width="@dimen/wdp50" android:layout_height="@dimen/wdp50" android:src="@drawable/search_image_white" android:layout_centerInParent="true" />
+</RelativeLayout>

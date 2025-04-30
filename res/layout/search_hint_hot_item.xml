@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/icon" android:background="@drawable/search_rank_1" android:visibility="gone" android:layout_width="@dimen/wdp36" android:layout_height="@dimen/wdp43" />
+    <TextView android:textSize="14.579987sp" android:textColor="#ffa8a8a8" android:gravity="center" android:id="@id/rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/wdp36" android:text="0" android:minLines="2" android:singleLine="true" android:maxLength="2" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff686868" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="" android:singleLine="true" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/recomWifiLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/textView13" android:background="#7f000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" android:layout_alignParentBottom="false">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="52.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="#ff3b3b3b" android:gravity="center" android:id="@id/titleTextview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="初次见面，这些经典为你精挑细选" />
+                <ImageView android:id="@id/close" android:padding="5.0dip" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/closed_butn_selector" android:scaleType="fitXY" android:layout_alignParentTop="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <GridView android:id="@id/gridviewShowRecomed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numColumns="3" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff707070" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/textView15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="12.0dip" android:text="已连接到wifi，请放心下载" android:drawableLeft="@drawable/wifi_icon" android:drawablePadding="5.0dip" />
+            <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/downloadButn" android:background="@drawable/account_butn_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="32.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

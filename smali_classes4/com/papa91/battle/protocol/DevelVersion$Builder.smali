@@ -1,0 +1,100 @@
+.class public final Lcom/papa91/battle/protocol/DevelVersion$Builder;
+.super Lcom/google/protobuf/GeneratedMessageLite$Builder;
+.source "DevelVersion.java"
+
+# interfaces
+.implements Lcom/papa91/battle/protocol/DevelVersionOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/papa91/battle/protocol/DevelVersion;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Builder"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/protobuf/GeneratedMessageLite$Builder<",
+        "Lcom/papa91/battle/protocol/DevelVersion;",
+        "Lcom/papa91/battle/protocol/DevelVersion$Builder;",
+        ">;",
+        "Lcom/papa91/battle/protocol/DevelVersionOrBuilder;"
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    .line 2
+    invoke-static {}, Lcom/papa91/battle/protocol/DevelVersion;->access$000()Lcom/papa91/battle/protocol/DevelVersion;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/papa91/battle/protocol/DevelVersion$1;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/papa91/battle/protocol/DevelVersion$Builder;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public clearVersion()Lcom/papa91/battle/protocol/DevelVersion$Builder;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/papa91/battle/protocol/DevelVersion;
+
+    invoke-static {v0}, Lcom/papa91/battle/protocol/DevelVersion;->access$200(Lcom/papa91/battle/protocol/DevelVersion;)V
+
+    return-object p0
+.end method
+
+.method public getVersion()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/papa91/battle/protocol/DevelVersion;
+
+    invoke-virtual {v0}, Lcom/papa91/battle/protocol/DevelVersion;->getVersion()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public setVersion(I)Lcom/papa91/battle/protocol/DevelVersion$Builder;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/papa91/battle/protocol/DevelVersion;
+
+    invoke-static {v0, p1}, Lcom/papa91/battle/protocol/DevelVersion;->access$100(Lcom/papa91/battle/protocol/DevelVersion;I)V
+
+    return-object p0
+.end method

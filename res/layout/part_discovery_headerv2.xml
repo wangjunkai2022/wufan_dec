@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/discoveryTopRl" android:layout_width="fill_parent" android:layout_height="@dimen/wdp344">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/discovery_top_bg" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/wdp26" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/toFightRl" android:layout_width="wrap_content" android:layout_height="@dimen/wdp96" android:layout_marginLeft="10.0dip" android:layout_marginRight="@dimen/wdp30" android:text="进入大厅  " android:drawableRight="@drawable/more_arrow_right" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/wdp32" android:textColor="@color/white" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="@dimen/wdp96" android:layout_marginLeft="@dimen/wdp39" android:text="对战大厅" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/wdp38" android:paddingRight="@dimen/wdp38" android:paddingBottom="@dimen/wdp32" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+            <GridView android:id="@id/discoveryTopGv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp41" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/wdp20" android:numColumns="3" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/wdp27" android:textColor="#ffd8d8d8" android:gravity="center" android:layout_gravity="center" android:id="@id/number" android:background="@drawable/discover_more_gameback" android:layout_width="@dimen/wdp98" android:layout_height="@dimen/wdp98" android:text="38款" android:layout_weight="0.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/discoveryCommunityLl" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="@dimen/wdp20" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff3b3b3b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp20" android:text="社区" android:layout_weight="1.0" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#fff37500" android:gravity="center" android:id="@id/toCommunityTx" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="22.5dip" android:layout_marginBottom="5.0dip" android:text="进入社区  " android:drawableRight="@drawable/discovery_oringe_ic" />
+    </LinearLayout>
+    <it.sephiroth.android.library.widget.HListView android:id="@id/discoveryBottomGv" android:background="@color/white" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="@dimen/wdp10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/wdp20" android:numColumns="2" />
+    <LinearLayout android:gravity="center" android:id="@id/toCommunityLl" android:background="@drawable/listview_download" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="42.5dip">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#fff37500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="进入社区  " android:drawableRight="@drawable/discovery_oringe_ic" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff3b3b3b" android:layout_width="fill_parent" android:layout_height="22.5dip" android:layout_marginBottom="10.0dip" android:text="  悟饭头条" android:drawableLeft="@drawable/discovery_info_ic" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

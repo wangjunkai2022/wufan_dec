@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/wdp526" android:layout_height="200.0dip" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/tv_top" android:layout_width="fill_parent" android:layout_height="@dimen/wdp65">
+            <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:background="@drawable/newarena_bg_input_border_top" android:paddingLeft="@dimen/wdp36" android:layout_width="fill_parent" android:layout_height="@dimen/wdp65" android:layout_marginLeft="@dimen/wdp138" />
+            <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_title" android:background="@drawable/newarena_titleblack" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp36" android:layout_width="@dimen/wdp236" android:layout_height="fill_parent" android:text="提示" android:singleLine="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/newarena_bg_input_border_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tv_top">
+            <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_hint" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="你确定要离开房间" android:layout_weight="1.0" android:lineSpacingExtra="3.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/iv_close" android:layout_width="@dimen/wdp90" android:layout_height="@dimen/wdp65" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close2" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

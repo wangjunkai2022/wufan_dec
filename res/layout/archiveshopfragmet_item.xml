@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.join.mgps.customview.ClouldItemView2 android:id="@id/coulditem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/wdp145" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_show" android:background="#800a1521" android:paddingTop="@dimen/wdp5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp60" android:layout_marginBottom="@dimen/wdp17">
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff7d848b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp34" android:text="今日赚取：" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ffffffff" android:id="@id/tv_today_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp8" android:text="0" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ffc3c3c3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp10" android:text="铜板" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff7d848b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp108" android:text="累积赚取：" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ffffffff" android:id="@id/tv_zong_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp8" android:text="0" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ffc3c3c3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp8" android:text="铜板" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/wdp4" />
+</LinearLayout>
