@@ -58,54 +58,18 @@
     .end annotation
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 8
+    new-instance v0, Lcom/papa91/arc/bean/Response;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v0}, Lcom/papa91/arc/bean/Response;-><init>()V
 
-    const-string v1, "getGoldenFinger: "
+    .line 9
+    .local v0, "response":Lcom/papa91/arc/bean/Response;, "Lcom/papa91/arc/bean/Response<Lcom/papa91/arc/bean/PopwindowBean;>;"
+    const/16 v1, 0xc8
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Lcom/papa91/arc/bean/Response;->setCode(I)V
 
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 2
-    invoke-static {}, Lcom/papa91/arc/http/HttpUtils;->ensureGsonCreated()V
-
-    .line 3
-    sget-object v0, Lcom/papa91/arc/http/HttpUtils;->gson:Lcom/google/gson/Gson;
-
-    invoke-virtual {v0, p0}, Lcom/google/gson/Gson;->toJson(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    .line 4
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v1, Lcom/papa91/arc/http/rpc/RpcConstant;->gameUrl:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, "/v9/realName/auth/check"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-class v1, Lcom/papa91/arc/bean/PopwindowBean;
-
-    invoke-static {v0, p0, v1}, Lcom/papa91/arc/http/HttpUtils;->post(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)Lcom/papa91/arc/bean/Response;
-
-    move-result-object p0
-
-    return-object p0
+    return-object v0
 .end method
 
 .method private static ensureGsonCreated()V
