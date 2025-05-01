@@ -784,8 +784,8 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/join/mgps/dto/AccountBean;->svip_level:I
-
+    # iget v0, p0, Lcom/join/mgps/dto/AccountBean;->svip_level:I
+    const/4 v0, 0x1
     return v0
 .end method
 
@@ -820,8 +820,8 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/join/mgps/dto/AccountBean;->vip_level:I
-
+    # iget v0, p0, Lcom/join/mgps/dto/AccountBean;->vip_level:I
+    const/4 v0, 0x1
     return v0
 .end method
 
